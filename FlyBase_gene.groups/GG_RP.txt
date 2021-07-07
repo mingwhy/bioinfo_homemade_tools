@@ -1,0 +1,169 @@
+#SUBMITTED ID	NAME	SYMBOL
+FBgn0261602	Ribosomal protein L8	RpL8
+FBgn0003941	Ribosomal protein L40	RpL40
+FBgn0015288	Ribosomal protein L22	RpL22
+FBgn0037328	Ribosomal protein L35A	RpL35A
+FBgn0034822	Ribosomal protein L37b	RpL37b
+FBgn0036825	Ribosomal protein L26	RpL26
+FBgn0037686	Ribosomal protein L34b	RpL34b
+FBgn0035753	Ribosomal protein L18	RpL18
+FBgn0020910	Ribosomal protein L3	RpL3
+FBgn0029785	Ribosomal protein L35	RpL35
+FBgn0002593	Ribosomal protein LP1	RpLP1
+FBgn0036213	Ribosomal protein L10Ab	RpL10Ab
+FBgn0034968	Ribosomal protein L12	RpL12
+FBgn0028697	Ribosomal protein L15	RpL15
+FBgn0039359	Ribosomal protein L27	RpL27
+FBgn0086710	Ribosomal protein L30	RpL30
+FBgn0029897	Ribosomal protein L17	RpL17
+FBgn0033485	Ribosomal protein LP0-like	RpLP0-like
+FBgn0030616	Ribosomal protein L37a	RpL37a
+FBgn0005593	Ribosomal protein L7	RpL7
+FBgn0032518	Ribosomal protein L24	RpL24
+FBgn0003279	Ribosomal protein L4	RpL4
+FBgn0011272	Ribosomal protein L13	RpL13
+FBgn0026372	Ribosomal protein L23A	RpL23A
+FBgn0039406	Ribosomal protein L34a	RpL34a
+FBgn0013325	Ribosomal protein L11	RpL11
+FBgn0038281	Ribosomal protein L10Aa	RpL10Aa
+FBgn0032987	Ribosomal protein L21	RpL21
+FBgn0010078	Ribosomal protein L23	RpL23
+FBgn0003274	Ribosomal protein LP2	RpLP2
+FBgn0002579	Ribosomal protein L36	RpL36
+FBgn0066084	Ribosomal protein L41	RpL41
+FBgn0031980	Ribosomal protein L36A	RpL36A
+FBgn0032404	Ribosomal protein L7-like	RpL7-like
+FBgn0064225	Ribosomal protein L5	RpL5
+FBgn0040007	Ribosomal protein L38	RpL38
+FBgn0024733	Ribosomal protein L10	RpL10
+FBgn0035422	Ribosomal protein L28	RpL28
+FBgn0015756	Ribosomal protein L9	RpL9
+FBgn0023170	Ribosomal protein L39	RpL39
+FBgn0000100	Ribosomal protein LP0	RpLP0
+FBgn0261608	Ribosomal protein L37A	RpL37A
+FBgn0010409	Ribosomal protein L18A	RpL18A
+FBgn0016726	Ribosomal protein L29	RpL29
+FBgn0002626	Ribosomal protein L32	RpL32
+FBgn0014026	Ribosomal protein L7A	RpL7A
+FBgn0034837	Ribosomal protein L22-like	RpL22-like
+FBgn0017579	Ribosomal protein L14	RpL14
+FBgn0037351	Ribosomal protein L13A	RpL13A
+FBgn0039857	Ribosomal protein L6	RpL6
+FBgn0037899	Ribosomal protein L24-like	RpL24-like
+FBgn0285948	Ribosomal protein L27A	RpL27A
+FBgn0285949	Ribosomal protein L31	RpL31
+FBgn0285950	Ribosomal protein L19	RpL19
+FBgn0037566	mitochondrial ribosomal protein L1	mRpL1
+FBgn0031231	mitochondrial ribosomal protein L10	mRpL10
+FBgn0038234	mitochondrial ribosomal protein L11	mRpL11
+FBgn0011787	mitochondrial ribosomal protein L12	mRpL12
+FBgn0032720	mitochondrial ribosomal protein L13	mRpL13
+FBgn0040389	mitochondrial ribosomal protein L14	mRpL14
+FBgn0036990	mitochondrial ribosomal protein L15	mRpL15
+FBgn0023519	mitochondrial ribosomal protein L16	mRpL16
+FBgn0035122	mitochondrial ribosomal protein L17	mRpL17
+FBgn0026741	mitochondrial ribosomal protein L18	mRpL18
+FBgn0037608	mitochondrial ribosomal protein L19	mRpL19
+FBgn0036135	mitochondrial ribosomal protein L2	mRpL2
+FBgn0036335	mitochondrial ribosomal protein L20	mRpL20
+FBgn0036853	mitochondrial ribosomal protein L21	mRpL21
+FBgn0030786	mitochondrial ribosomal protein L22	mRpL22
+FBgn0035335	mitochondrial ribosomal protein L23	mRpL23
+FBgn0031651	mitochondrial ribosomal protein L24	mRpL24
+FBgn0053002	mitochondrial ribosomal protein L27	mRpL27
+FBgn0031660	mitochondrial ribosomal protein L28	mRpL28
+FBgn0030686	mitochondrial ribosomal protein L3	mRpL3
+FBgn0029718	mitochondrial ribosomal protein L30	mRpL30
+FBgn0039835	mitochondrial ribosomal protein L32	mRpL32
+FBgn0040907	mitochondrial ribosomal protein L33	mRpL33
+FBgn0083983	mitochondrial ribosomal protein L34	mRpL34
+FBgn0038923	mitochondrial ribosomal protein L35	mRpL35
+FBgn0042112	mitochondrial ribosomal protein L36	mRpL36
+FBgn0261380	mitochondrial ribosomal protein L37	mRpL37
+FBgn0030552	mitochondrial ribosomal protein L38	mRpL38
+FBgn0036462	mitochondrial ribosomal protein L39	mRpL39
+FBgn0001995	mitochondrial ribosomal protein L4	mRpL4
+FBgn0037892	mitochondrial ribosomal protein L40	mRpL40
+FBgn0034001	mitochondrial ribosomal protein L41	mRpL41
+FBgn0033480	mitochondrial ribosomal protein L42	mRpL42
+FBgn0034893	mitochondrial ribosomal protein L43	mRpL43
+FBgn0037330	mitochondrial ribosomal protein L44	mRpL44
+FBgn0263863	mitochondrial ribosomal protein L45	mRpL45
+FBgn0035272	mitochondrial ribosomal protein L46	mRpL46
+FBgn0014023	mitochondrial ribosomal protein L47	mRpL47
+FBgn0031357	mitochondrial ribosomal protein L48	mRpL48
+FBgn0030433	mitochondrial ribosomal protein L49	mRpL49
+FBgn0028648	mitochondrial ribosomal protein L50	mRpL50
+FBgn0032053	mitochondrial ribosomal protein L51	mRpL51
+FBgn0033208	mitochondrial ribosomal protein L52	mRpL52
+FBgn0050481	mitochondrial ribosomal protein L53	mRpL53
+FBgn0034579	mitochondrial ribosomal protein L54	mRpL54
+FBgn0038678	mitochondrial ribosomal protein L55	mRpL55
+FBgn0038319	mitochondrial ribosomal protein L9	mRpL9
+FBgn0039555	mitochondrial ribosomal protein S22	mRpS22
+FBgn0038474	mitochondrial ribosomal protein S11	mRpS11
+FBgn0033907	mitochondrial ribosomal protein S16	mRpS16
+FBgn0038307	mitochondrial ribosomal protein S10	mRpS10
+FBgn0038426	mitochondrial ribosomal protein S33	mRpS33
+FBgn0044511	mitochondrial ribosomal protein S21	mRpS21
+FBgn0051450	mitochondrial ribosomal protein S18A	mRpS18A
+FBgn0036774	mitochondrial ribosomal protein S26	mRpS26
+FBgn0037529	mitochondrial ribosomal protein S9	mRpS9
+FBgn0044030	mitochondrial ribosomal protein S14	mRpS14
+FBgn0035374	mitochondrial ribosomal protein S35	mRpS35
+FBgn0039159	mitochondrial ribosomal protein S24	mRpS24
+FBgn0032849	mitochondrial ribosomal protein S18B	mRpS18B
+FBgn0036557	mitochondrial ribosomal protein S31	mRpS31
+FBgn0034727	mitochondrial ribosomal protein S29	mRpS29
+FBgn0032236	mitochondrial ribosomal protein S7	mRpS7
+FBgn0039765	mitochondrial ribosomal protein S18C	mRpS18C
+FBgn0030572	mitochondrial ribosomal protein S25	mRpS25
+FBgn0031639	mitochondrial ribosomal protein S2	mRpS2
+FBgn0034361	mitochondrial ribosomal protein S28	mRpS28
+FBgn0034986	mitochondrial ribosomal protein S17	mRpS17
+FBgn0003714	technical knockout	tko
+FBgn0030692	mitochondrial ribosomal protein S30	mRpS30
+FBgn0026261	bonsai	bonsai
+FBgn0035534	mitochondrial ribosomal protein S6	mRpS6
+FBgn0260407	mitochondrial ribosomal protein S23	mRpS23
+FBgn0285951	mitochondrial ribosomal protein S34	mRpS34
+FBgn0287187	mitochondrial ribosomal protein S5	mRpS5
+FBgn0039300	Ribosomal protein S27	RpS27
+FBgn0039129	Ribosomal protein S19b	RpS19b
+FBgn0010412	Ribosomal protein S19a	RpS19a
+FBgn0003517	stubarista	sta
+FBgn0034138	Ribosomal protein S15	RpS15
+FBgn0261592	Ribosomal protein S6	RpS6
+FBgn0015521	Ribosomal protein S21	RpS21
+FBgn0005533	Ribosomal protein S17	RpS17
+FBgn0085211	Ribosomal protein S28-like	RpS28-like
+FBgn0010411	Ribosomal protein S18	RpS18
+FBgn0019936	Ribosomal protein S20	RpS20
+FBgn0034743	Ribosomal protein S16	RpS16
+FBgn0011284	Ribosomal protein S4	RpS4
+FBgn0039713	Ribosomal protein S8	RpS8
+FBgn0033699	Ribosomal protein S11	RpS11
+FBgn0010198	Ribosomal protein S15Aa	RpS15Aa
+FBgn0002590	Ribosomal protein S5a	RpS5a
+FBgn0039739	Ribosomal protein S28a	RpS28a
+FBgn0261596	Ribosomal protein S24	RpS24
+FBgn0030136	Ribosomal protein S28b	RpS28b
+FBgn0038834	Ribosomal protein S30	RpS30
+FBgn0261597	Ribosomal protein S26	RpS26
+FBgn0027494	Ribosomal protein S10a	RpS10a
+FBgn0010265	Ribosomal protein S13	RpS13
+FBgn0261599	Ribosomal protein S29	RpS29
+FBgn0003942	Ribosomal protein S27A	RpS27A
+FBgn0002622	Ribosomal protein S3	RpS3
+FBgn0004867	Ribosomal protein S2	RpS2
+FBgn0004403	Ribosomal protein S14a	RpS14a
+FBgn0038277	Ribosomal protein S5b	RpS5b
+FBgn0033912	Ribosomal protein S23	RpS23
+FBgn0086472	Ribosomal protein S25	RpS25
+FBgn0004404	Ribosomal protein S14b	RpS14b
+FBgn0017545	Ribosomal protein S3A	RpS3A
+FBgn0039757	Ribosomal protein S7	RpS7
+FBgn0010408	Ribosomal protein S9	RpS9
+FBgn0033555	Ribosomal protein S15Ab	RpS15Ab
+FBgn0285947	Ribosomal protein S10b	RpS10b
+FBgn0286213	Ribosomal protein S12	RpS12

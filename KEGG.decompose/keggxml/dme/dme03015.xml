@@ -1,0 +1,425 @@
+<?xml version="1.0"?>
+<!DOCTYPE pathway SYSTEM "https://www.kegg.jp/kegg/xml/KGML_v0.7.2_.dtd">
+<!-- Creation date: Dec 24, 2020 17:20:20 +0900 (GMT+9) -->
+<pathway name="path:dme03015" org="dme" number="03015"
+         title="mRNA surveillance pathway"
+         image="https://www.kegg.jp/kegg/pathway/dme/dme03015.png"
+         link="https://www.kegg.jp/kegg-bin/show_pathway?dme03015">
+    <entry id="14" name="path:dme03040" type="map"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme03040">
+        <graphics name="Spliceosome" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="roundrectangle" x="591" y="229" width="92" height="25"/>
+    </entry>
+    <entry id="62" name="dme:Dmel_CG1559" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG1559">
+        <graphics name="Upf1" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="656" y="798" width="46" height="17"/>
+    </entry>
+    <entry id="63" name="dme:Dmel_CG2253" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG2253">
+        <graphics name="Upf2" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="656" y="815" width="46" height="17"/>
+    </entry>
+    <entry id="64" name="dme:Dmel_CG11184" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG11184">
+        <graphics name="Upf3" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="656" y="832" width="46" height="17"/>
+    </entry>
+    <entry id="65" name="dme:Dmel_CG32743" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG32743">
+        <graphics name="nonC" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="728" y="798" width="46" height="17"/>
+    </entry>
+    <entry id="66" name="dme:Dmel_CG8954" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG8954">
+        <graphics name="Smg5" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="728" y="838" width="46" height="17"/>
+    </entry>
+    <entry id="67" name="ko:K14409" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K14409">
+        <graphics name="K14409" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="rectangle" x="728" y="821" width="46" height="17"/>
+    </entry>
+    <entry id="68" name="dme:Dmel_CG6369" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG6369">
+        <graphics name="Smg6" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="729" y="864" width="46" height="17"/>
+    </entry>
+    <entry id="72" name="dme:Dmel_CG5605" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG5605">
+        <graphics name="eRF1" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="610" y="807" width="46" height="17"/>
+    </entry>
+    <entry id="73" name="dme:Dmel_CG6382" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG6382">
+        <graphics name="eRF3" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="610" y="824" width="46" height="17"/>
+    </entry>
+    <entry id="76" name="path:dme03015" type="map"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme03015">
+        <graphics name="TITLE:mRNA surveillance pathway" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="roundrectangle" x="165" y="58" width="250" height="25"/>
+    </entry>
+    <entry id="77" name="path:dme03013" type="map"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme03013">
+        <graphics name="RNA transport" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="roundrectangle" x="386" y="484" width="92" height="25"/>
+    </entry>
+    <entry id="78" name="dme:Dmel_CG1810" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG1810">
+        <graphics name="mRNA-cap" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="450" y="162" width="46" height="17"/>
+    </entry>
+    <entry id="79" name="dme:Dmel_CG3688" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG3688">
+        <graphics name="Rnmt" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="450" y="141" width="46" height="17"/>
+    </entry>
+    <entry id="112" name="path:dme03018" type="map"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme03018">
+        <graphics name="RNA degradation" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="roundrectangle" x="728" y="950" width="92" height="25"/>
+    </entry>
+    <entry id="126" name="dme:Dmel_CG2163" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG2163">
+        <graphics name="Pabp2" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="627" y="403" width="46" height="17"/>
+    </entry>
+    <entry id="127" name="dme:Dmel_CG5119" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG5119">
+        <graphics name="pAbp" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="649" y="721" width="46" height="17"/>
+    </entry>
+    <entry id="145" name="dme:Dmel_CG17291 dme:Dmel_CG32568 dme:Dmel_CG4733 dme:Dmel_CG5643 dme:Dmel_CG6235 dme:Dmel_CG7109 dme:Dmel_CG7913" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG17291+dme:Dmel_CG32568+dme:Dmel_CG4733+dme:Dmel_CG5643+dme:Dmel_CG6235+dme:Dmel_CG7109+dme:Dmel_CG7913">
+        <graphics name="Pp2A-29B..." fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="774" y="828" width="46" height="17"/>
+    </entry>
+    <entry id="165" name="dme:Dmel_CG5119" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG5119">
+        <graphics name="pAbp" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="1034" y="728" width="46" height="17"/>
+    </entry>
+    <entry id="170" name="dme:Dmel_CG1898" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG1898">
+        <graphics name="HBS1" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="994" y="799" width="46" height="17"/>
+    </entry>
+    <entry id="171" name="dme:Dmel_CG3959" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG3959">
+        <graphics name="pelo" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="994" y="816" width="46" height="17"/>
+    </entry>
+    <entry id="174" name="ko:K12595" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K12595">
+        <graphics name="K12595" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="rectangle" x="994" y="948" width="46" height="17"/>
+    </entry>
+    <entry id="176" name="dme:Dmel_CG10377 dme:Dmel_CG32169 dme:Dmel_CG5099 dme:Dmel_CG6354 dme:Dmel_CG9654" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG10377+dme:Dmel_CG32169+dme:Dmel_CG5099+dme:Dmel_CG6354+dme:Dmel_CG9654">
+        <graphics name="Hrb27C..." fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="649" y="692" width="46" height="17"/>
+    </entry>
+    <entry id="179" name="ko:K12595" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K12595">
+        <graphics name="K12595" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="rectangle" x="200" y="813" width="46" height="17"/>
+    </entry>
+    <entry id="187" name="path:dme03018" type="map"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme03018">
+        <graphics name="RNA degradation" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="roundrectangle" x="790" y="431" width="92" height="25"/>
+    </entry>
+    <entry id="88" name="dme:Dmel_CG1078" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG1078">
+        <graphics name="Fip1" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="856" y="318" width="46" height="17"/>
+    </entry>
+    <entry id="83" name="dme:Dmel_CG3689" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG3689">
+        <graphics name="Cpsf5" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="901" y="208" width="46" height="17"/>
+    </entry>
+    <entry id="84" name="dme:Dmel_CG9854" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG9854">
+        <graphics name="hrg" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="1013" y="209" width="46" height="17"/>
+    </entry>
+    <entry id="85" name="dme:Dmel_CG10228" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG10228">
+        <graphics name="Pcf11" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="947" y="249" width="46" height="17"/>
+    </entry>
+    <entry id="86" name="dme:Dmel_CG5970" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG5970">
+        <graphics name="cbc" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="901" y="249" width="46" height="17"/>
+    </entry>
+    <entry id="87" name="dme:Dmel_CG7185" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG7185">
+        <graphics name="Cpsf6" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="947" y="208" width="46" height="17"/>
+    </entry>
+    <entry id="89" name="dme:Dmel_CG7698" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG7698">
+        <graphics name="Cpsf73" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="994" y="301" width="46" height="17"/>
+    </entry>
+    <entry id="90" name="dme:Dmel_CG1957" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG1957">
+        <graphics name="Cpsf100" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="948" y="301" width="46" height="17"/>
+    </entry>
+    <entry id="91" name="dme:Dmel_CG10110" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG10110">
+        <graphics name="Cpsf160" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="902" y="301" width="46" height="17"/>
+    </entry>
+    <entry id="92" name="dme:Dmel_CG3642" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG3642">
+        <graphics name="Clp" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="902" y="318" width="46" height="17"/>
+    </entry>
+    <entry id="93" name="dme:Dmel_CG2261" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG2261">
+        <graphics name="CstF50" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="901" y="368" width="46" height="17"/>
+    </entry>
+    <entry id="94" name="dme:Dmel_CG7697" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG7697">
+        <graphics name="CstF64" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="947" y="368" width="46" height="17"/>
+    </entry>
+    <entry id="95" name="dme:Dmel_CG17170" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG17170">
+        <graphics name="su(f)" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="993" y="368" width="46" height="17"/>
+    </entry>
+    <entry id="96" name="dme:Dmel_CG2097" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG2097">
+        <graphics name="Sym" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="949" y="394" width="46" height="17"/>
+    </entry>
+    <entry id="188" name="dme:Dmel_CG1109" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG1109">
+        <graphics name="Wdr33" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="1096" y="301" width="46" height="17"/>
+    </entry>
+    <entry id="189" name="dme:Dmel_CG17293 dme:Dmel_CG3515" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG17293+dme:Dmel_CG3515">
+        <graphics name="Wdr82..." fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="1050" y="318" width="46" height="17"/>
+    </entry>
+    <entry id="190" name="ko:K15541" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K15541">
+        <graphics name="K15541" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="rectangle" x="1050" y="301" width="46" height="17"/>
+    </entry>
+    <entry id="191" name="dme:Dmel_CG10138 dme:Dmel_CG10930 dme:Dmel_CG2096 dme:Dmel_CG3245 dme:Dmel_CG40448 dme:Dmel_CG41534 dme:Dmel_CG5650 dme:Dmel_CG6593 dme:Dmel_CG8822 dme:Dmel_CG9156" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG10138+dme:Dmel_CG10930+dme:Dmel_CG2096+dme:Dmel_CG3245+dme:Dmel_CG40448+dme:Dmel_CG41534+dme:Dmel_CG5650+dme:Dmel_CG6593+dme:Dmel_CG8822+dme:Dmel_CG9156">
+        <graphics name="PpD5..." fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="1050" y="335" width="46" height="17"/>
+    </entry>
+    <entry id="192" name="ko:K15543" type="ortholog"
+        link="https://www.kegg.jp/dbget-bin/www_bget?K15543">
+        <graphics name="K15543" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="rectangle" x="1096" y="318" width="46" height="17"/>
+    </entry>
+    <entry id="193" name="dme:Dmel_CG14216" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG14216">
+        <graphics name="Ssu72" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="1096" y="335" width="46" height="17"/>
+    </entry>
+    <entry id="27" name="dme:Dmel_CG8781" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG8781">
+        <graphics name="tsu" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="126" y="272" width="46" height="17"/>
+    </entry>
+    <entry id="28" name="dme:Dmel_CG9401" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG9401">
+        <graphics name="mago" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="126" y="289" width="46" height="17"/>
+    </entry>
+    <entry id="29" name="dme:Dmel_CG7483" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG7483">
+        <graphics name="CG7483" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="172" y="289" width="46" height="17"/>
+    </entry>
+    <entry id="30" name="dme:Dmel_CG12878" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG12878">
+        <graphics name="btz" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="172" y="272" width="46" height="17"/>
+    </entry>
+    <entry id="31" name="dme:Dmel_CG10473" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG10473">
+        <graphics name="Acn" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="264" y="255" width="46" height="17"/>
+    </entry>
+    <entry id="32" name="dme:Dmel_CG16788 dme:Dmel_CG34334" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG16788+dme:Dmel_CG34334">
+        <graphics name="RnpS1..." fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="264" y="272" width="46" height="17"/>
+    </entry>
+    <entry id="33" name="dme:Dmel_CG6046" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG6046">
+        <graphics name="Bin1" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="218" y="272" width="46" height="17"/>
+    </entry>
+    <entry id="34" name="dme:Dmel_CG11274" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG11274">
+        <graphics name="Srrm1" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="267" y="335" width="46" height="17"/>
+    </entry>
+    <entry id="35" name="dme:Dmel_CG1664 dme:Dmel_CG31501 dme:Dmel_CG32135" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG1664+dme:Dmel_CG31501+dme:Dmel_CG32135">
+        <graphics name="sbr..." fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="163" y="335" width="46" height="17"/>
+    </entry>
+    <entry id="36" name="dme:Dmel_CG8383" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG8383">
+        <graphics name="Pnn" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="218" y="289" width="46" height="17"/>
+    </entry>
+    <entry id="37" name="dme:Dmel_CG1101 dme:Dmel_CG17031" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG1101+dme:Dmel_CG17031">
+        <graphics name="Ref1..." fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="264" y="289" width="46" height="17"/>
+    </entry>
+    <entry id="38" name="dme:Dmel_CG12752" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG12752">
+        <graphics name="Nxt1" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="163" y="352" width="46" height="17"/>
+    </entry>
+    <entry id="39" name="dme:Dmel_CG7035 dme:Dmel_CG7907" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG7035+dme:Dmel_CG7907">
+        <graphics name="Cbp80..." fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="172" y="186" width="46" height="17"/>
+    </entry>
+    <entry id="43" name="dme:Dmel_CG11184" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG11184">
+        <graphics name="Upf3" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="126" y="255" width="46" height="17"/>
+    </entry>
+    <entry id="44" name="dme:Dmel_CG7269" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG7269">
+        <graphics name="Hel25E" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="215" y="335" width="46" height="17"/>
+    </entry>
+    <entry id="61" name="dme:Dmel_CG30176" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG30176">
+        <graphics name="Pym" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="215" y="356" width="46" height="17"/>
+    </entry>
+    <entry id="109" name="dme:Dmel_CG12357" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG12357">
+        <graphics name="Cbp20" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="172" y="203" width="46" height="17"/>
+    </entry>
+    <entry id="197" name="dme:Dmel_CG17023" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG17023">
+        <graphics name="Dbp80" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="110" y="335" width="46" height="17"/>
+    </entry>
+    <entry id="198" name="dme:Dmel_CG14749" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG14749">
+        <graphics name="Gle1" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="110" y="352" width="46" height="17"/>
+    </entry>
+    <entry id="199" name="dme:Dmel_CG3606" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG3606">
+        <graphics name="caz" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="568" y="258" width="46" height="17"/>
+    </entry>
+    <entry id="200" name="dme:Dmel_CG10327 dme:Dmel_CG7804" type="gene"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG10327+dme:Dmel_CG7804">
+        <graphics name="TBPH..." fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="568" y="341" width="46" height="17"/>
+    </entry>
+    <entry id="201" name="undefined" type="group">
+        <graphics fgcolor="#000000" bgcolor="#FFFFFF"
+             type="rectangle" x="947" y="368" width="138" height="17"/>
+        <component id="93"/>
+        <component id="94"/>
+        <component id="95"/>
+    </entry>
+    <entry id="202" name="undefined" type="group">
+        <graphics fgcolor="#000000" bgcolor="#FFFFFF"
+             type="rectangle" x="656" y="815" width="46" height="51"/>
+        <component id="62"/>
+        <component id="63"/>
+        <component id="64"/>
+    </entry>
+    <entry id="203" name="undefined" type="group">
+        <graphics fgcolor="#000000" bgcolor="#FFFFFF"
+             type="rectangle" x="925" y="309" width="184" height="34"/>
+        <component id="88"/>
+        <component id="89"/>
+        <component id="90"/>
+        <component id="91"/>
+        <component id="92"/>
+    </entry>
+    <entry id="204" name="undefined" type="group">
+        <graphics fgcolor="#000000" bgcolor="#FFFFFF"
+             type="rectangle" x="1073" y="318" width="92" height="51"/>
+        <component id="188"/>
+        <component id="189"/>
+        <component id="191"/>
+        <component id="193"/>
+    </entry>
+    <relation entry1="39" entry2="109" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="35" entry2="38" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="176" entry2="127" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="170" entry2="171" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="83" entry2="87" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="86" entry2="85" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="96" entry2="201" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="72" entry2="202" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="39" entry2="62" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="73" entry2="127" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="202" entry2="73" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="66" entry2="62" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="68" entry2="62" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="65" entry2="145" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="145" entry2="66" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="145" entry2="68" type="PCrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="65" entry2="62" type="PPrel">
+        <subtype name="activation" value="--&gt;"/>
+        <subtype name="phosphorylation" value="+p"/>
+        <subtype name="binding/association" value="---"/>
+    </relation>
+    <relation entry1="203" entry2="204" type="PPrel">
+        <subtype name="binding/association" value="---"/>
+    </relation>
+</pathway>

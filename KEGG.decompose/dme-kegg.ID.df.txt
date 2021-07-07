@@ -1,0 +1,138 @@
+kegg.id	kegg.function	kegg.name
+dme00010	Glycolysis / Gluconeogenesis - Drosophila melanogaster	Glycolysis / Gluconeogenesis
+dme00020	Citrate cycle (TCA cycle) - Drosophila melanogaster	Citrate cycle (TCA cycle)
+dme00030	Pentose phosphate pathway - Drosophila melanogaster	Pentose phosphate pathway
+dme00040	Pentose and glucuronate interconversions - Drosophila melanogaster	Pentose and glucuronate interconversions
+dme00051	Fructose and mannose metabolism - Drosophila melanogaster	Fructose and mannose metabolism
+dme00052	Galactose metabolism - Drosophila melanogaster	Galactose metabolism
+dme00053	Ascorbate and aldarate metabolism - Drosophila melanogaster	Ascorbate and aldarate metabolism
+dme00061	Fatty acid biosynthesis - Drosophila melanogaster	Fatty acid biosynthesis
+dme00062	Fatty acid elongation - Drosophila melanogaster	Fatty acid elongation
+dme00071	Fatty acid degradation - Drosophila melanogaster	Fatty acid degradation
+dme00072	Synthesis and degradation of ketone bodies - Drosophila melanogaster	Synthesis and degradation of ketone bodies
+dme00100	Steroid biosynthesis - Drosophila melanogaster	Steroid biosynthesis
+dme00130	Ubiquinone and other terpenoid-quinone biosynthesis - Drosophila melanogaster	Ubiquinone and other terpenoid-quinone biosynthesis
+dme00190	Oxidative phosphorylation - Drosophila melanogaster	Oxidative phosphorylation
+dme00220	Arginine biosynthesis - Drosophila melanogaster	Arginine biosynthesis
+dme00230	Purine metabolism - Drosophila melanogaster	Purine metabolism
+dme00232	Caffeine metabolism - Drosophila melanogaster	Caffeine metabolism
+dme00240	Pyrimidine metabolism - Drosophila melanogaster	Pyrimidine metabolism
+dme00250	Alanine, aspartate and glutamate metabolism - Drosophila melanogaster	Alanine, aspartate and glutamate metabolism
+dme00260	Glycine, serine and threonine metabolism - Drosophila melanogaster	Glycine, serine and threonine metabolism
+dme00270	Cysteine and methionine metabolism - Drosophila melanogaster	Cysteine and methionine metabolism
+dme00280	Valine, leucine and isoleucine degradation - Drosophila melanogaster	Valine, leucine and isoleucine degradation
+dme00290	Valine, leucine and isoleucine biosynthesis - Drosophila melanogaster	Valine, leucine and isoleucine biosynthesis
+dme00310	Lysine degradation - Drosophila melanogaster	Lysine degradation
+dme00330	Arginine and proline metabolism - Drosophila melanogaster	Arginine and proline metabolism
+dme00340	Histidine metabolism - Drosophila melanogaster	Histidine metabolism
+dme00350	Tyrosine metabolism - Drosophila melanogaster	Tyrosine metabolism
+dme00360	Phenylalanine metabolism - Drosophila melanogaster	Phenylalanine metabolism
+dme00380	Tryptophan metabolism - Drosophila melanogaster	Tryptophan metabolism
+dme00400	Phenylalanine, tyrosine and tryptophan biosynthesis - Drosophila melanogaster	Phenylalanine, tyrosine and tryptophan biosynthesis
+dme00410	beta-Alanine metabolism - Drosophila melanogaster	beta-Alanine metabolism
+dme00430	Taurine and hypotaurine metabolism - Drosophila melanogaster	Taurine and hypotaurine metabolism
+dme00440	Phosphonate and phosphinate metabolism - Drosophila melanogaster	Phosphonate and phosphinate metabolism
+dme00450	Selenocompound metabolism - Drosophila melanogaster	Selenocompound metabolism
+dme00471	D-Glutamine and D-glutamate metabolism - Drosophila melanogaster	D-Glutamine and D-glutamate metabolism
+dme00472	D-Arginine and D-ornithine metabolism - Drosophila melanogaster	D-Arginine and D-ornithine metabolism
+dme00480	Glutathione metabolism - Drosophila melanogaster	Glutathione metabolism
+dme00500	Starch and sucrose metabolism - Drosophila melanogaster	Starch and sucrose metabolism
+dme00510	N-Glycan biosynthesis - Drosophila melanogaster	N-Glycan biosynthesis
+dme00511	Other glycan degradation - Drosophila melanogaster	Other glycan degradation
+dme00512	Mucin type O-glycan biosynthesis - Drosophila melanogaster	Mucin type O-glycan biosynthesis
+dme00513	Various types of N-glycan biosynthesis - Drosophila melanogaster	Various types of N-glycan biosynthesis
+dme00514	Other types of O-glycan biosynthesis - Drosophila melanogaster	Other types of O-glycan biosynthesis
+dme00515	Mannose type O-glycan biosynthesis - Drosophila melanogaster	Mannose type O-glycan biosynthesis
+dme00520	Amino sugar and nucleotide sugar metabolism - Drosophila melanogaster	Amino sugar and nucleotide sugar metabolism
+dme00531	Glycosaminoglycan degradation - Drosophila melanogaster	Glycosaminoglycan degradation
+dme00532	Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate - Drosophila melanogaster	Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate
+dme00534	Glycosaminoglycan biosynthesis - heparan sulfate / heparin - Drosophila melanogaster	Glycosaminoglycan biosynthesis - heparan sulfate / heparin
+dme00561	Glycerolipid metabolism - Drosophila melanogaster	Glycerolipid metabolism
+dme00562	Inositol phosphate metabolism - Drosophila melanogaster	Inositol phosphate metabolism
+dme00563	Glycosylphosphatidylinositol (GPI)-anchor biosynthesis - Drosophila melanogaster	Glycosylphosphatidylinositol (GPI)-anchor biosynthesis
+dme00564	Glycerophospholipid metabolism - Drosophila melanogaster	Glycerophospholipid metabolism
+dme00565	Ether lipid metabolism - Drosophila melanogaster	Ether lipid metabolism
+dme00590	Arachidonic acid metabolism - Drosophila melanogaster	Arachidonic acid metabolism
+dme00592	alpha-Linolenic acid metabolism - Drosophila melanogaster	alpha-Linolenic acid metabolism
+dme00600	Sphingolipid metabolism - Drosophila melanogaster	Sphingolipid metabolism
+dme00601	Glycosphingolipid biosynthesis - lacto and neolacto series - Drosophila melanogaster	Glycosphingolipid biosynthesis - lacto and neolacto series
+dme00603	Glycosphingolipid biosynthesis - globo and isoglobo series - Drosophila melanogaster	Glycosphingolipid biosynthesis - globo and isoglobo series
+dme00604	Glycosphingolipid biosynthesis - ganglio series - Drosophila melanogaster	Glycosphingolipid biosynthesis - ganglio series
+dme00620	Pyruvate metabolism - Drosophila melanogaster	Pyruvate metabolism
+dme00630	Glyoxylate and dicarboxylate metabolism - Drosophila melanogaster	Glyoxylate and dicarboxylate metabolism
+dme00640	Propanoate metabolism - Drosophila melanogaster	Propanoate metabolism
+dme00650	Butanoate metabolism - Drosophila melanogaster	Butanoate metabolism
+dme00670	One carbon pool by folate - Drosophila melanogaster	One carbon pool by folate
+dme00730	Thiamine metabolism - Drosophila melanogaster	Thiamine metabolism
+dme00740	Riboflavin metabolism - Drosophila melanogaster	Riboflavin metabolism
+dme00750	Vitamin B6 metabolism - Drosophila melanogaster	Vitamin B6 metabolism
+dme00760	Nicotinate and nicotinamide metabolism - Drosophila melanogaster	Nicotinate and nicotinamide metabolism
+dme00770	Pantothenate and CoA biosynthesis - Drosophila melanogaster	Pantothenate and CoA biosynthesis
+dme00780	Biotin metabolism - Drosophila melanogaster	Biotin metabolism
+dme00785	Lipoic acid metabolism - Drosophila melanogaster	Lipoic acid metabolism
+dme00790	Folate biosynthesis - Drosophila melanogaster	Folate biosynthesis
+dme00830	Retinol metabolism - Drosophila melanogaster	Retinol metabolism
+dme00860	Porphyrin and chlorophyll metabolism - Drosophila melanogaster	Porphyrin and chlorophyll metabolism
+dme00900	Terpenoid backbone biosynthesis - Drosophila melanogaster	Terpenoid backbone biosynthesis
+dme00910	Nitrogen metabolism - Drosophila melanogaster	Nitrogen metabolism
+dme00920	Sulfur metabolism - Drosophila melanogaster	Sulfur metabolism
+dme00970	Aminoacyl-tRNA biosynthesis - Drosophila melanogaster	Aminoacyl-tRNA biosynthesis
+dme00980	Metabolism of xenobiotics by cytochrome P450 - Drosophila melanogaster	Metabolism of xenobiotics by cytochrome P450
+dme00981	Insect hormone biosynthesis - Drosophila melanogaster	Insect hormone biosynthesis
+dme00982	Drug metabolism - cytochrome P450 - Drosophila melanogaster	Drug metabolism - cytochrome P450
+dme00983	Drug metabolism - other enzymes - Drosophila melanogaster	Drug metabolism - other enzymes
+dme01040	Biosynthesis of unsaturated fatty acids - Drosophila melanogaster	Biosynthesis of unsaturated fatty acids
+dme01100	Metabolic pathways - Drosophila melanogaster	Metabolic pathways
+dme01200	Carbon metabolism - Drosophila melanogaster	Carbon metabolism
+dme01210	2-Oxocarboxylic acid metabolism - Drosophila melanogaster	2-Oxocarboxylic acid metabolism
+dme01212	Fatty acid metabolism - Drosophila melanogaster	Fatty acid metabolism
+dme01230	Biosynthesis of amino acids - Drosophila melanogaster	Biosynthesis of amino acids
+dme01240	Biosynthesis of cofactors - Drosophila melanogaster	Biosynthesis of cofactors
+dme02010	ABC transporters - Drosophila melanogaster	ABC transporters
+dme03008	Ribosome biogenesis in eukaryotes - Drosophila melanogaster	Ribosome biogenesis in eukaryotes
+dme03010	Ribosome - Drosophila melanogaster	Ribosome
+dme03013	RNA transport - Drosophila melanogaster	RNA transport
+dme03015	mRNA surveillance pathway - Drosophila melanogaster	mRNA surveillance pathway
+dme03018	RNA degradation - Drosophila melanogaster	RNA degradation
+dme03020	RNA polymerase - Drosophila melanogaster	RNA polymerase
+dme03022	Basal transcription factors - Drosophila melanogaster	Basal transcription factors
+dme03030	DNA replication - Drosophila melanogaster	DNA replication
+dme03040	Spliceosome - Drosophila melanogaster	Spliceosome
+dme03050	Proteasome - Drosophila melanogaster	Proteasome
+dme03060	Protein export - Drosophila melanogaster	Protein export
+dme03410	Base excision repair - Drosophila melanogaster	Base excision repair
+dme03420	Nucleotide excision repair - Drosophila melanogaster	Nucleotide excision repair
+dme03430	Mismatch repair - Drosophila melanogaster	Mismatch repair
+dme03440	Homologous recombination - Drosophila melanogaster	Homologous recombination
+dme03450	Non-homologous end-joining - Drosophila melanogaster	Non-homologous end-joining
+dme03460	Fanconi anemia pathway - Drosophila melanogaster	Fanconi anemia pathway
+dme04013	MAPK signaling pathway - fly - Drosophila melanogaster	MAPK signaling pathway
+dme04068	FoxO signaling pathway - Drosophila melanogaster	FoxO signaling pathway
+dme04070	Phosphatidylinositol signaling system - Drosophila melanogaster	Phosphatidylinositol signaling system
+dme04080	Neuroactive ligand-receptor interaction - Drosophila melanogaster	Neuroactive ligand-receptor interaction
+dme04120	Ubiquitin mediated proteolysis - Drosophila melanogaster	Ubiquitin mediated proteolysis
+dme04122	Sulfur relay system - Drosophila melanogaster	Sulfur relay system
+dme04130	SNARE interactions in vesicular transport - Drosophila melanogaster	SNARE interactions in vesicular transport
+dme04136	Autophagy - other - Drosophila melanogaster	Autophagy - other
+dme04137	Mitophagy - animal - Drosophila melanogaster	Mitophagy - animal
+dme04140	Autophagy - animal - Drosophila melanogaster	Autophagy - animal
+dme04141	Protein processing in endoplasmic reticulum - Drosophila melanogaster	Protein processing in endoplasmic reticulum
+dme04142	Lysosome - Drosophila melanogaster	Lysosome
+dme04144	Endocytosis - Drosophila melanogaster	Endocytosis
+dme04145	Phagosome - Drosophila melanogaster	Phagosome
+dme04146	Peroxisome - Drosophila melanogaster	Peroxisome
+dme04150	mTOR signaling pathway - Drosophila melanogaster	mTOR signaling pathway
+dme04213	Longevity regulating pathway - multiple species - Drosophila melanogaster	Longevity regulating pathway - multiple species
+dme04214	Apoptosis - fly - Drosophila melanogaster	Apoptosis
+dme04215	Apoptosis - multiple species - Drosophila melanogaster	Apoptosis - multiple species
+dme04310	Wnt signaling pathway - Drosophila melanogaster	Wnt signaling pathway
+dme04320	Dorso-ventral axis formation - Drosophila melanogaster	Dorso-ventral axis formation
+dme04330	Notch signaling pathway - Drosophila melanogaster	Notch signaling pathway
+dme04341	Hedgehog signaling pathway - fly - Drosophila melanogaster	Hedgehog signaling pathway
+dme04350	TGF-beta signaling pathway - Drosophila melanogaster	TGF-beta signaling pathway
+dme04391	Hippo signaling pathway - fly - Drosophila melanogaster	Hippo signaling pathway
+dme04392	Hippo signaling pathway - multiple species - Drosophila melanogaster	Hippo signaling pathway - multiple species
+dme04512	ECM-receptor interaction - Drosophila melanogaster	ECM-receptor interaction
+dme04624	Toll and Imd signaling pathway - Drosophila melanogaster	Toll and Imd signaling pathway
+dme04711	Circadian rhythm - fly - Drosophila melanogaster	Circadian rhythm
+dme04745	Phototransduction - fly - Drosophila melanogaster	Phototransduction

@@ -1,0 +1,413 @@
+id: GO:0000226
+subset: goslim_drosophila
+--
+id: GO:0000278
+subset: goslim_drosophila
+--
+id: GO:0000902
+subset: goslim_drosophila
+--
+id: GO:0002181
+subset: goslim_drosophila
+--
+id: GO:0002520
+subset: goslim_drosophila
+--
+id: GO:0003677
+subset: goslim_drosophila
+--
+id: GO:0003682
+subset: goslim_drosophila
+--
+id: GO:0003700
+subset: goslim_drosophila
+--
+id: GO:0003712
+subset: goslim_drosophila
+--
+id: GO:0003723
+subset: goslim_drosophila
+--
+id: GO:0003735
+subset: goslim_drosophila
+--
+id: GO:0003924
+subset: goslim_drosophila
+--
+id: GO:0004518
+subset: goslim_drosophila
+--
+id: GO:0005085
+subset: goslim_drosophila
+--
+id: GO:0005201
+subset: goslim_drosophila
+--
+id: GO:0005615
+subset: goslim_drosophila
+--
+id: GO:0005634
+subset: goslim_drosophila
+--
+id: GO:0005694
+subset: goslim_drosophila
+--
+id: GO:0005730
+subset: goslim_drosophila
+--
+id: GO:0005739
+subset: goslim_drosophila
+--
+id: GO:0005768
+subset: goslim_drosophila
+--
+id: GO:0005773
+subset: goslim_drosophila
+--
+id: GO:0005777
+subset: goslim_drosophila
+--
+id: GO:0005783
+subset: goslim_drosophila
+--
+id: GO:0005794
+subset: goslim_drosophila
+--
+id: GO:0005829
+subset: goslim_drosophila
+--
+id: GO:0005856
+subset: goslim_drosophila
+--
+id: GO:0005886
+subset: goslim_drosophila
+--
+id: GO:0005929
+subset: goslim_drosophila
+--
+id: GO:0005975
+subset: goslim_drosophila
+--
+id: GO:0006066
+subset: goslim_drosophila
+--
+id: GO:0006091
+subset: goslim_drosophila
+--
+id: GO:0006260
+subset: goslim_drosophila
+--
+id: GO:0006281
+subset: goslim_drosophila
+--
+id: GO:0006308
+subset: goslim_drosophila
+--
+id: GO:0006310
+subset: goslim_drosophila
+--
+id: GO:0006351
+subset: goslim_drosophila
+--
+id: GO:0006399
+subset: goslim_drosophila
+--
+id: GO:0006401
+subset: goslim_drosophila
+--
+id: GO:0006403
+subset: goslim_drosophila
+--
+id: GO:0006457
+subset: goslim_drosophila
+--
+id: GO:0006497
+subset: goslim_drosophila
+--
+id: GO:0006520
+subset: goslim_drosophila
+--
+id: GO:0006605
+subset: goslim_drosophila
+--
+id: GO:0006629
+subset: goslim_drosophila
+--
+id: GO:0006790
+subset: goslim_drosophila
+--
+id: GO:0006811
+subset: goslim_drosophila
+--
+id: GO:0006839
+subset: goslim_drosophila
+--
+id: GO:0006869
+subset: goslim_drosophila
+--
+id: GO:0006913
+subset: goslim_drosophila
+--
+id: GO:0006914
+subset: goslim_drosophila
+--
+id: GO:0006950
+subset: goslim_drosophila
+--
+id: GO:0006955
+subset: goslim_drosophila
+--
+id: GO:0006997
+subset: goslim_drosophila
+--
+id: GO:0007005
+subset: goslim_drosophila
+--
+id: GO:0007155
+subset: goslim_drosophila
+--
+id: GO:0007166
+subset: goslim_drosophila
+--
+id: GO:0007186
+subset: goslim_drosophila
+--
+id: GO:0007369
+subset: goslim_drosophila
+--
+id: GO:0007389
+subset: goslim_drosophila
+--
+id: GO:0007399
+subset: goslim_drosophila
+--
+id: GO:0007600
+subset: goslim_drosophila
+--
+id: GO:0007623
+subset: goslim_drosophila
+--
+id: GO:0008092
+subset: goslim_drosophila
+--
+id: GO:0008134
+subset: goslim_drosophila
+--
+id: GO:0008168
+subset: goslim_drosophila
+--
+id: GO:0008219
+subset: goslim_drosophila
+--
+id: GO:0008233
+subset: goslim_drosophila
+--
+id: GO:0008283
+subset: goslim_drosophila
+--
+id: GO:0008289
+subset: goslim_drosophila
+--
+id: GO:0009100
+subset: goslim_drosophila
+--
+id: GO:0009306
+subset: goslim_drosophila
+--
+id: GO:0009605
+subset: goslim_drosophila
+--
+id: GO:0010256
+subset: goslim_drosophila
+--
+id: GO:0016049
+subset: goslim_drosophila
+--
+id: GO:0016071
+subset: goslim_drosophila
+--
+id: GO:0016072
+subset: goslim_drosophila
+--
+id: GO:0016073
+subset: goslim_drosophila
+--
+id: GO:0016192
+subset: goslim_drosophila
+--
+id: GO:0016298
+subset: goslim_drosophila
+--
+id: GO:0016301
+subset: goslim_drosophila
+--
+id: GO:0016458
+subset: goslim_drosophila
+--
+id: GO:0016491
+subset: goslim_drosophila
+--
+id: GO:0016746
+subset: goslim_drosophila
+--
+id: GO:0016757
+subset: goslim_drosophila
+--
+id: GO:0016765
+subset: goslim_drosophila
+--
+id: GO:0016773
+subset: goslim_drosophila
+--
+id: GO:0016779
+subset: goslim_drosophila
+--
+id: GO:0016791
+subset: goslim_drosophila
+--
+id: GO:0016798
+subset: goslim_drosophila
+--
+id: GO:0016810
+subset: goslim_drosophila
+--
+id: GO:0016829
+subset: goslim_drosophila
+--
+id: GO:0016853
+subset: goslim_drosophila
+--
+id: GO:0016874
+subset: goslim_drosophila
+--
+id: GO:0016887
+subset: goslim_drosophila
+--
+id: GO:0019787
+subset: goslim_drosophila
+--
+id: GO:0019899
+subset: goslim_drosophila
+--
+id: GO:0022857
+subset: goslim_drosophila
+--
+id: GO:0030036
+subset: goslim_drosophila
+--
+id: GO:0030054
+subset: goslim_drosophila
+--
+id: GO:0030135
+subset: goslim_drosophila
+--
+id: GO:0030154
+subset: goslim_drosophila
+--
+id: GO:0030163
+subset: goslim_drosophila
+--
+id: GO:0030234
+subset: goslim_drosophila
+--
+id: GO:0030246
+subset: goslim_drosophila
+--
+id: GO:0030312
+subset: goslim_drosophila
+--
+id: GO:0030705
+subset: goslim_drosophila
+--
+id: GO:0031012
+subset: goslim_drosophila
+--
+id: GO:0032543
+subset: goslim_drosophila
+--
+id: GO:0034613
+subset: goslim_drosophila
+--
+id: GO:0035556
+subset: goslim_drosophila
+--
+id: GO:0038023
+subset: goslim_drosophila
+--
+id: GO:0042221
+subset: goslim_drosophila
+--
+id: GO:0042254
+subset: goslim_drosophila
+--
+id: GO:0042393
+subset: goslim_drosophila
+--
+id: GO:0044782
+subset: goslim_drosophila
+--
+id: GO:0045182
+subset: goslim_drosophila
+--
+id: GO:0045202
+subset: goslim_drosophila
+--
+id: GO:0046872
+subset: goslim_drosophila
+--
+id: GO:0048018
+subset: goslim_drosophila
+--
+id: GO:0048870
+subset: goslim_drosophila
+--
+id: GO:0048878
+subset: goslim_drosophila
+--
+id: GO:0050808
+subset: goslim_drosophila
+--
+id: GO:0050890
+subset: goslim_drosophila
+--
+id: GO:0051082
+subset: goslim_drosophila
+--
+id: GO:0051276
+subset: goslim_drosophila
+--
+id: GO:0051301
+subset: goslim_drosophila
+--
+id: GO:0051321
+subset: goslim_drosophila
+--
+id: GO:0051604
+subset: goslim_drosophila
+--
+id: GO:0052689
+subset: goslim_drosophila
+--
+id: GO:0055086
+subset: goslim_drosophila
+--
+id: GO:0060090
+subset: goslim_drosophila
+--
+id: GO:0060429
+subset: goslim_drosophila
+--
+id: GO:0061024
+subset: goslim_drosophila
+--
+id: GO:0061061
+subset: goslim_drosophila
+--
+id: GO:0070647
+subset: goslim_drosophila
+--
+id: GO:0071806
+subset: goslim_drosophila
+--
+id: GO:0099503
+subset: goslim_drosophila
