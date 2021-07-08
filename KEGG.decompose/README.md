@@ -89,3 +89,12 @@ $ perl get-ko-hierarchy.pl kegg-T00030.txt ko00001.keg >dme.keg.txt
 
 `dating_kegg_with_flygene.age.R`
 
+## Remove paralogs for each enzyme node for each pathway 
+
+`pairwise.node.steps_per_pathway.R`
+
+For each pathway, one enzyme could have multiple genes, they may be paralogous genes.
+
+I select one fly gene per node for each pathway, and then calculate node pairwise distance matrix, i.e., number of steps between every two nodes in a pathway.
+
+
