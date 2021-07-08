@@ -45,7 +45,7 @@ kegg $./my.sh
 
 ## parse KGML files
 
-`parse_gene.relationship_from_KGML`
+`parse_gene.relationship_from_KGML.R`
 
 There are 137 KGML files for dme in total.
 
