@@ -21,6 +21,6 @@
 | [Fly protein complex database](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/Drosophila_protein.complex) | 2021-07-07 |
 | [Metazoan protein complex database](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/Metazoan.complexes) | 2021-07-07 |
 | [Panther GO slim terms](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/Panther_GOslim) | 2021-07-07 |
-| [Fly genes divergence measured by dN, dS](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/Panther_GOslim) | 2021-07-07 |
+| [Fly genes divergence measured by dN, dS](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/flygene_dNdS) | 2021-07-07 |
 | [PPI database (string, biogrid)](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/PPI_string-biogrid) | 2021-07-07 |
 
