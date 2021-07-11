@@ -32,6 +32,6 @@
 | Name                                                         | Description |  Note |
 | ------------------------------------------------------------ | ----------- |  ----- |
 | [homologene](https://github.com/oganm/homologene)  |An r package that works as a wrapper to [NCBI HomoloGene](https://www.ncbi.nlm.nih.gov/homologene)| [Updating the good old Homologene database](https://oganm.com/homologene-update) |
-| [InParanoid](https://inparanoid.sbc.su.se/cgi-bin/index.cgi) | ortholog groups with inparalogs | in-paralogs,out-paralogs,orthologs |
+| [InParanoid](https://inparanoid.sbc.su.se/cgi-bin/index.cgi) | ortholog groups with inparalogs | [in-paralogs,out-paralogs,orthologs](https://m.ensembl.org/info/genome/compara/homology_types.html) |
 | [EggNOG](http://eggnog5.embl.de/#/app/home) | a hierarchical, functionally and phylogenetically annotated orthology resource |  |
  | 
