@@ -10,3 +10,14 @@ For fly genes, there have been some publications inferring gene age following th
 
 Check out the `Phylostratigraphy_fly.gene_age.Rmd` or [Phylostratigraphy_fly.gene_age](http://htmlpreview.github.io/?https://github.com/mingwhy/bioinfo_homemade_tools/blob/main/Phylostratigraphy_fly.gene_age/Phylostratigraphy_fly.gene_age.html) for detailed information.
 
+
+
+2010 paper contain 6 branches:
+
+<img src="2010-tree.jpg" alt="2010-tree" style="zoom:60%;" />
+
+
+
+2017 paper contain 12 branches:
+
+<img src="2017-tree.jpg" alt="2010-tree" style="zoom:60%;" />
