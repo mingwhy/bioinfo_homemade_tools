@@ -18,15 +18,14 @@ Check out the `Phylostratigraphy_fly.gene_age.Rmd` or [Phylostratigraphy_fly.gen
 
 2010 paper contain 6 branches:
 
-<img src="2010-tree.jpg" alt="2010-tree" style="zoom:40%;" />
+<img src="2010-tree.jpg" alt="2010-tree" style="zoom:50%;" />
 
 
 
 2017 paper contain 12 branches:
 
-<img src="2017-tree.jpg" alt="2010-tree" style="zoom:40%;" />
-
+<img src="2017-tree.jpg" alt="2010-tree" style="zoom:50%;" />
 
 2015 paper contain 13 branches:
 
-<img src="2015-tree.jpg" alt="2015-tree" style="zoom:40%;" />
+<img src="2015-tree.jpg" alt="2015-tree" style="zoom:50%;" />
