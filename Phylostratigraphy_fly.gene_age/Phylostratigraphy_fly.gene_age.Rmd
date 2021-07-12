@@ -32,10 +32,10 @@ library(AnnotationDbi);library(GO.db)
 library(org.Dm.eg.db,verbose=F,quietly=T)
 
 dir.create('2010_data',showWarnings = FALSE)
-
-download.file(url = "https://genome.cshlp.org/content/suppl/2010/08/27/gr.107334.110.DC1/SupplementalTables.xls", 
+if(!file.exists('./2010_data/SupplementalTables.xls')){
+  download.file(url = "https://genome.cshlp.org/content/suppl/2010/08/27/gr.107334.110.DC1/SupplementalTables.xls", 
               destfile = '2010_data/SupplementalTables.xls')
-
+}
 # read in gene age result
 df<-read_excel('./2010_data/SupplementalTables.xls',sheet='S1',skip=1)
 head(df)
@@ -154,4 +154,68 @@ p2+my_theme+theme(axis.text.x = element_text(angle=45,vjust=1.5,hjust = 1))
 pdf('./plot-phylostrata.pdf',width = 14)
 grid.arrange(p1+my_theme,p2+my_theme,nrow=2)
 dev.off()
+```
+
+## 2015, Evidence for Active Maintenance of Phylotranscriptomic Hourglass Patterns in Animal and Plant Embryogenesis
+
+Drost, Hajk-Georg, et al. "Evidence for active maintenance of phylotranscriptomic hourglass patterns in animal and plant embryogenesis." Molecular biology and evolution 32.5 (2015): 1221-1231.
+
+Raw data could be downloaded from [figshare](https://figshare.com/search?q=:keyword:%20%22Evidence%20for%20active%20maintenance%20of%20phylotranscriptomic%20hourglass%20patterns%20in%20animal%20and%20plant%20embryogenesis%22), [sUP]Supplementary table S3: Gene expression values used for TAI computations for all three species](https://figshare.com/articles/dataset/Supplementary_table_S3/1244948)
+
+```{r}
+# read in data and get gene.id for each protein.id
+df2015<-read_excel('./2015_data/SupplementarytableS3.xls',sheet='Drosophila melanogaster')
+dim(df2015) #12043     14
+
+head(df2015)
+table(df2015$Phylostratum)
+barplot(table(df2015$Phylostratum))
+barplot(table(df2015$Phylostratum)/nrow(df2015))
+
+
+# this data contain protein ids
+# check the overlap genes between fly  prot_id in 2017.dataset and fly.prot from org.Dm.eg.db.
+columns(org.Dm.eg.db)
+fly.prot<-keys(org.Dm.eg.db, keytype='FLYBASEPROT')
+length(fly.prot) #30719
+df2015$GeneID=gsub('fb','FB',df2015$GeneID)
+sum(df2015$GeneID %in% fly.prot) #11795 overlap genes
+
+# get flybase ID for each fly prot_id
+df.fly.prot<-AnnotationDbi::select(org.Dm.eg.db,
+                                   keys=df2015$GeneID,
+                                   keytype="FLYBASEPROT",c("FLYBASECG","FLYBASE",'SYMBOL',"GENENAME"))
+dim(df.fly.prot) #12043     5
+sum(is.na(df.fly.prot$SYMBOL)) #248, equals 12043-11795
+
+gene.age=merge(df.fly.prot,df2015,by.x='FLYBASEPROT',by.y='GeneID')
+dim(gene.age) #12043
+table(gene.age$phylostrata)
+sum(is.na(gene.age$FLYBASE)) #248 genes without FLYBASE id.
+sum(table(gene.age$Phylostratum)) #12043 genes can be used
+
+gene.age2=gene.age[!is.na(gene.age$FLYBASE),]
+dim(gene.age2) #11795 genes
+#tmp=data.frame(table(gene.age$Phylostratum)) #all 12043 gene in df2015
+tmp=data.frame(table(gene.age2$Phylostratum)); sum(tmp$Freq);#11795 overlapped genes
+
+colnames(tmp)=c('phylostrata','ngene')
+head(tmp)
+age.name=c('cell','Eukaryota','Opisthokonta','Metazoa','Eumetazoa','Bilateria','Protostomia',
+           'Arthropoda','Pancrustacea','Insecta','Endopterygota','Diptera','Drosophila');
+tmp$age=factor(age.name,levels=age.name)
+p1<-ggplot(tmp,aes(x=age,y=ngene))+
+  geom_bar(stat='identity',fill='white',col='darkblue',width=1)+
+  ylim(0,8000)+geom_text(label=tmp$ngene,vjust=-2)
+  
+
+my_theme<-theme_bw(base_size = 14)+
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text.x = element_text(vjust = 1,angle = 45,hjust=1), 
+        axis.title.x  = element_text(vjust = 5), 
+        axis.text.y =  element_blank())
+p1+my_theme
 ```
