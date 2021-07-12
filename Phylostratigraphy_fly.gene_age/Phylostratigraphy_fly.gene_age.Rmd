@@ -57,7 +57,7 @@ table(df2$branch) #it only contains 6 phylostratra
 ```
 
 
-## 2007, No Evidence for Phylostratigraphic Bias Impacting Inferences on Patterns of Gene Emergence and Evolution
+## 2017, No Evidence for Phylostratigraphic Bias Impacting Inferences on Patterns of Gene Emergence and Evolution
 
 Domazet-Lošo, Tomislav, et al. "No evidence for phylostratigraphic bias impacting inferences on patterns of gene emergence and evolution." Molecular biology and evolution 34.4 (2017): 843-856.
 
