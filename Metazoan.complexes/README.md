@@ -27,11 +27,11 @@ $ wc -l *txt
 
 look at Predicted_122sp_PPI.txt file,
 column explain:
-1, PPI in human with 'ENSG-' ID
-2, PPI in human with gene name ID
-3, Score
-4, Cid1: the complex membership of protein 1 
-5, Cid2: the complex membership of protein 2
+1. PPI in human with 'ENSG-' ID
+2. PPI in human with gene name ID
+3. Score
+4. Cid1: the complex membership of protein 1 
+5. Cid2: the complex membership of protein 2
 for example: Cid1: 561, means this protein belongs to complex ID 561
 Cid2: --- means, this protein doesn't belong to any complex.
 Cid1: 212|296, means this protein belongs to complex ID 212 and 296 
