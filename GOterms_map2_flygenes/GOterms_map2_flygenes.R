@@ -108,3 +108,17 @@ for(go.term in names(select.go2fb)){
 sapply(slim.go2fb,length)
 length(slim.go2fb); #820
 saveRDS(slim.go2fb,'slim.go2fb.5_200.rds')
+
+# map FLLYBASE to SYMBOL
+go2fb=readRDS('./slim.go2fb.5_200.rds')
+length(go2fb) #820 GO terms
+go2fb[[1]]
+# change FBgn to symbol
+go2symbol=lapply(go2fb,function(i){
+    AnnotationDbi::select(org.Dm.eg.db,keys=i,keytype='FLYBASE',c('SYMBOL'))
+})
+names(go2symbol)
+go2symbol[[1]]
+x=sapply(go2symbol,function(i) sum(i$SYMBOL!='') )
+summary(x) #between 5 and 200
+saveRDS(go2symbol,'slim.go2symbol.5_200.rds')
