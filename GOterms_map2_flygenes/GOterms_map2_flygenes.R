@@ -89,22 +89,28 @@ select.go2fb<-select.go2fb[!names(select.go2fb) %in%
                                  'GO:0000004','GO:0005554','GO:0008372')]
 length(select.go2fb) #2629
 
-## slim GO terms: for each term, if it's direct parents contain more than 50% of its genes, remove this GO term
+## slim GO terms: for each term, if it's direct parents (also in this select.go2fb object)
+# contain more than 50% of its genes, remove this GO term
 slim.go2fb=list()
 for(go.term in names(select.go2fb)){
   #GOBPPARENTS$"GO:0000002"
   #go.term=names(select.go2fb)[1]
   parents=GOBPPARENTS[[go.term]] #direct parent in BP category
-  set1=select.go2fb[[go.term]]
+  set1=select.go2fb[[go.term]] 
   signal=0;
   for(i in parents){
-    set2=select.go2fb[[i]]
+    if(is.null(select.go2fb[[i]])){
+      cat(go.term,'parent=',i,',do not exist in selct.go2fb,\n')
+      next
+    }
+    set2=select.go2fb[[i]] # filter inside select.go2fb 
     if(sum(set1 %in% set2) /length(set1)>0.5){signal=1;break}
   }
   if(signal==0){
     slim.go2fb[[go.term]]=set1;
   }
 }
+
 sapply(slim.go2fb,length)
 length(slim.go2fb); #820
 saveRDS(slim.go2fb,'slim.go2fb.5_200.rds')
