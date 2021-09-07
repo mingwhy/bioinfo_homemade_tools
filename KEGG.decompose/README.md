@@ -61,6 +61,9 @@ I used R package [`KEGGREST`](https://bioconductor.org/packages/release/bioc/htm
 
 I extracted gene members of each pathway through web scraping using R package `httr`
 
+This R script generates `dme-kegg.ID.txt`, `dme-kegg.ID.df.txt`, `kegg-flyCGgenes.rds`, and `kegg-flygenes.rds` files.
+
+
 ## KEGG Orthology
 
 KEGG database has its own [**Orthology**](https://www.genome.jp/kegg-bin/show_brite?ko00001)
