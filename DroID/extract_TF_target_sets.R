@@ -1,4 +1,7 @@
 
+options(stringsAsFactors = F)
+library(org.Dm.eg.db)
+
 # read in TF-gene interaction (from DroID database: DroID_v2015_12 )
 df=read.table('./tf_gene_flybase.txt',header = T)
 colnames(df)
