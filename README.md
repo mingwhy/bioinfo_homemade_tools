@@ -5,6 +5,7 @@
 | Name                                                         | Date       |
 | ------------------------------------------------------------ | ---------- |
 | [sva_101](https://github.com/mingwhy/bioinfo_homemade_tools/blob/main/stat_used.cases/sva_101.R) | 2021-09-16 |
+| [anova VS Anova](https://htmlpreview.github.io/?https://github.com/mingwhy/bioinfo_homemade_tools/blob/main/stat_used.cases/anova_VS_Anova/anova_VS_Anova.html) | 2021-09-21 |
 
 
 # bioinfo_homemade_tools
