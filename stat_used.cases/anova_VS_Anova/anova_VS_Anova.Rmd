@@ -1,0 +1,99 @@
+---
+title: "anova_VS_Anova"
+author: "Ming Yang"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    #theme: united
+date: 'Compiled: `r format(Sys.Date(), "%B %d, %Y")`'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message=F,warning = F,cache=F)
+
+```
+
+# anova VS Anova, or Type I tests VS Type-II tests
+
+code modified from `hiercourse` course by Remko Duursma, Jeff Powell:
+
+- http://www.hiercourse.com/
+- http://www.hiercourse.com/mixedeffects.html
+
+```{r}
+litter = read.csv('masslost.csv') #dataset download from above link
+dim(litter)
+head(litter)
+
+litter$plot = as.factor(litter$plot)
+litter$block = as.factor(litter$block)
+litter$profile = as.factor(litter$profile)
+litter$herbicide = as.factor(litter$herbicide)
+
+# there is a date column
+library(lubridate)
+litter$date=mdy(litter$date)
+litter$date2=litter$date-ymd('2006-05-23')
+
+# visualize the data to look for treatment effects
+library(lattice)
+bwplot(masslost ~ factor(date) | profile:herbicide,data=litter)
+
+# count the data to confirm that the design is unbalanced
+xtabs(~date2 + profile + herbicide,data=litter)
+ftable(xtabs(~date2 + profile + herbicide,data=litter))
+
+# fit linear model
+m1fix=lm(masslost ~ date2+herbicide*profile+block,data=litter)
+anova(m1fix)
+m2fix=lm(masslost ~ date2+profile*herbicide+block,data=litter)
+anova(m2fix)
+```
+
+Sums of squares and p-values differ for profile and herbicide across the two fits.
+
+This is due to the order of the variables entered in the model.
+
+As anova performs Type-I tests, each next term is tested against a model that includes all terms preceding it.
+
+Type-II tests implemented by Anova funciton in car package solves this issue.
+
+In such tests, each main effect is tested against a model that includes all other terms.
+
+```{r}
+library(car)
+Anova(m1fix,test='F')
+Anova(m2fix,test='F')
+```
+
+If the data is balanced, the sequential (Type-I) and Type-II tests would be identical.
+
+Select 16 items under each condition to confirm above statement
+
+```{r}
+attach(litter)
+new.df=as.numeric()
+for(i.date in unique(date2)){
+  for(i.profile in unique(profile)){
+    for(i.herbicide in unique(herbicide)){
+      x=litter[date2==i.date & profile==i.profile & herbicide==i.herbicide,]
+      set.seed(123)
+      new.df=rbind(new.df,x[sample(1:nrow(x),16,replace=F),])
+    }
+  }
+}
+dim(new.df)
+ftable(xtabs(~date2 + profile + herbicide,data=new.df))
+
+# fit linear model
+m1fix=lm(masslost ~ date2+herbicide*profile+block,data=new.df)
+anova(m1fix)
+m2fix=lm(masslost ~ date2+profile*herbicide+block,data=new.df)
+anova(m2fix)
+```
+
+```{r}
+installed.packages()[names(sessionInfo()$otherPkgs), "Version"]
+```
+
