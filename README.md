@@ -1,8 +1,10 @@
 # stat_used.cases
 
+<!--START_SECTION:# stat_used.cases-->
+
 | Name                                                         | Date       |
 | ------------------------------------------------------------ | ---------- |
-| [sva_101]https://github.com/mingwhy/bioinfo_homemade_tools/blob/main/stat_used.cases/sva_101.R) | 2021-09-16 |
+| [sva_101](https://github.com/mingwhy/bioinfo_homemade_tools/blob/main/stat_used.cases/sva_101.R) | 2021-09-16 |
 
 
 # bioinfo_homemade_tools
