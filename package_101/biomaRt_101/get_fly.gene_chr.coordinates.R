@@ -1,7 +1,12 @@
 library(biomaRt)
+packageVersion("biomaRt") #2.48.2
+  
 biolist <- as.data.frame(listMarts())
 ensembl=useMart("ensembl")
 esemblist <- as.data.frame(listDatasets(ensembl))
+#dataset                              description  version
+#55 dmelanogaster_gene_ensembl Drosophila melanogaster genes (BDGP6.32) BDGP6.32
+
 
 ensembl = useDataset("dmelanogaster_gene_ensembl",mart=ensembl)
 filters = listFilters(ensembl)
