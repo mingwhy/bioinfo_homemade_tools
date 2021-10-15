@@ -13,8 +13,8 @@ colnames(dcc.has)=c('chromosome','start','end','peak','bed')
 dcc.has=dcc.has[dcc.has$chromosome=='chrX',]
 dim(dcc.has) #257
 
-# original publication use Dmel Assembly 5.
-# my data Dmel Assembly 6 (https://flybase.org/commentaries/2014_07/FB2014_04.html)
+# original publication use Dmel Assembly 3.
+# my data Dmel Assembly 6 
 # output coordinates and use 'Drosophila Sequence Coordinates Converter' on flybase to convert coordinates
 # https://flybase.org/convert/coordinates
 # after conversion, copy and paste result into convert_dcc.has.txt file.
@@ -25,9 +25,13 @@ write.table(x2,file='dcc.has.txt',quote=F,row.names = F,col.names = F)
 
 df=read.table('convert_dcc.has.txt',as.is=T,skip=2)
 head(df)
+colnames(df)=c("dm3",'dm4','dm5','dm6')
 head(dcc.has)
-# parse returned V2 column for coordiantes
-x=df[,2]
+tail(df,10) #row 255 - 263, not useful
+df=df[1:254,]
+
+# parse returned dm6 column for coordiantes
+x=df$dm6
 head(x)
 x1=Reduce(`rbind`,strsplit(x,'\\:|\\.\\.'))
 head(x1)
