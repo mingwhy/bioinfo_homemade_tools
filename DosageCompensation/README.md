@@ -13,6 +13,7 @@ Ramirez, Fidel, Thomas Lingg, Sarah Toscano, Kin Chung Lam, Plamen Georgiev, Ho-
 https://www.sciencedirect.com/science/article/pii/S109727651500670X?via%3Dihub#app3
 
 ```
+library(readxl)
 #data from plos genetics
   dcc.has=read_excel('./DosageCompensation.Complex_HAS/pgen.1000302.s004.xls')
   head(dcc.has)
