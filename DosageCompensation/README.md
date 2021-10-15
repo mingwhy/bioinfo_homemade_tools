@@ -12,7 +12,7 @@ https://www.sciencedirect.com/science/article/pii/S109727651500670X?via%3Dihub#a
 
 >Table S2. High-Affinity Sites, Related to Figure 1. This table contains the genomic coordinates of HAS determined using high-resolution roX CHART (Simon et al., 2011) and MSL2 ChIP-seq (Straub et al., 2013) in BED format.
 
-``{r}
+```
 library(readxl)
 #data from plos genetics
   dcc.has=read_excel('./DosageCompensation.Complex_HAS/pgen.1000302.s004.xls')
