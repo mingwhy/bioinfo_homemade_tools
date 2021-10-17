@@ -18,7 +18,7 @@ $ perl parse_gene.group.pl gene_group_data_fb_2021_02.tsv >terminal_gene.group_m
 #perl parse_gene.group_simpler.pl gene_group_data_fb_2021_02.tsv >terminal_gene.group_members.txt
 $ wc -l terminal_gene.group_members.txt 
     1062 terminal_gene.group_members.txt
-
+$ perl format_terminal_gene.group_members.pl terminal_gene.group_members.txt >format_terminal_gene.group_members.txt
 ```
 
 ## parse version 2: each gene and its belonging groups
