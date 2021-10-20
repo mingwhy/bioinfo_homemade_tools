@@ -92,11 +92,18 @@ length(all.dme) #131
 sig.pathway=data.table::fread('../tradeoff_fella.out_diffusion.csv');
 sig.dme=sig.pathway[grep('dme',sig.pathway$KEGG.id),]$KEGG.id
 
-########################################
+###############################################################################################
+# change node colors: NA(absent from the targeted assay). -1=sig.mz, blue, 1=present mz, yellow
 cpd.data=rep(0,length(mz.info$`KEGG ID`))
 names(cpd.data)=mz.info$`KEGG ID`
 cpd.data[mz.id$`KEGG ID`]=1
 sum(cpd.data) #36
+
+cpd.data=rep(1,length(mz.info$`KEGG ID`))
+names(cpd.data)=mz.info$`KEGG ID`
+cpd.data[mz.id$`KEGG ID`]=-1
+#sum(cpd.data==1) #36. -1=blue. 1=yellow
+sum(cpd.data==-1) #36. -1=blue. 1=yellow
 
 pv.out<-pathview(cpd.data=cpd.data,
                  pathway.id ='dme00270',
