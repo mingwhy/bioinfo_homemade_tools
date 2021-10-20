@@ -12,7 +12,7 @@ mz=df$metabolite
 library(readxl)
 # get metabolite ID through excel file, 
 # alternative, go to MetaboAnalyst to get ID: https://www.metaboanalyst.ca/MetaboAnalyst/upload/ConvertView.xhtml
-mz.info=read_excel('./2020-12-08_xxx-60_Data.xlsx',sheet='Metabolite Information')
+mz.info=read_excel('./2020-12-08_xxxx-60_Data.xlsx',sheet='Metabolite Information')
 length(mz) #85
 sum(mz %in% mz.info$`Current MS Compounds`) #85
 mz.id=mz.info[mz.info$`Current MS Compounds` %in% mz,]
