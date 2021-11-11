@@ -30,6 +30,16 @@ sum(sapply(go2fb,length)>=20)  #456 GO terms
 sum(sapply(go2fb,length)>=100)  #34 GO terms
 sum(sapply(go2fb,length)>=5 & sapply(go2fb,length)<=200) #1808 GO terms
 
+# map FLLYBASE to SYMBOL
+length(go2fb) #5134 BP GO terms
+go2fb[[1]]
+# change FBgn to symbol
+go2symbol=lapply(go2fb,function(i){
+    AnnotationDbi::select(org.Dm.eg.db,keys=i,keytype='FLYBASE',c('SYMBOL'))
+})
+names(go2symbol)
+saveRDS(go2symbol,'go2symbol_BP.rds')
+
 ## get GO term full name
 goterms=Term(GOTERM)
 length(goterms) #44086
