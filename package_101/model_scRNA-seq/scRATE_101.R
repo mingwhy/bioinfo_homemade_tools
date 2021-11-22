@@ -108,6 +108,7 @@ fit$summary()
 
 ################################################################
 ## set up brms.backend and test subfunciton in `fit_count_models`
+library(scRATE)
 options(brms.backend = "cmdstanr")
 message('Fitting data with Zero-Inflated Poisson model...')
 myprior_3 <- get_prior(bf(f34, zi ~ 1),
