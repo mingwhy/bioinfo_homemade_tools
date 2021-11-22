@@ -106,10 +106,15 @@ fit <- mod$sample(
 )
 fit$summary()
 
-################################################################
+###########################################################################
 ## set up brms.backend and test subfunciton in `fit_count_models`
-library(scRATE)
+## on my mac laptop, after installing 'cmdstanr'. directly 'library(scRATE)` 
+## led Rstudio to quite automatically. 
+## My solution is: options(xxx'cmdstanr') first, then load scRATE library
+
 options(brms.backend = "cmdstanr")
+library(scRATE)
+
 message('Fitting data with Zero-Inflated Poisson model...')
 myprior_3 <- get_prior(bf(f34, zi ~ 1),
                        family = zero_inflated_poisson(),
