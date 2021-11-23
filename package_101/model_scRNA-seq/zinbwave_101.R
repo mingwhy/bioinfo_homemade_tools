@@ -92,6 +92,36 @@ fluidigm_gcc <- zinbwave(fluidigm, K=2, V="~gccontent + log(length)", epsilon=10
 dim(fluidigm) #99gene x 130 cell
 zinb <- zinbFit(fluidigm, K=2, V="~gccontent + log(length)", epsilon=1000,verbose=T)
 
+class(fluidigm)
+Y=fluidigm
+K=2; V="~gccontent + log(length)"; epsilon=1000;verbose=T
+commondispersion=TRUE;zeroinflation = TRUE
+nb.repeat.initialize=2; maxiter.optimize=25
+stop.epsilon.optimize=.0001;
+BPPARAM=BiocParallel::bpparam()
+
+assayNames(Y)  
+dataY <- assay(Y, "counts")
+dim(dataY) # 99 130
+
+if(!is.matrix(V)) {
+  tryCatch({
+    f <- as.formula(V)
+    V <- model.matrix(f, data=rowData(Y))
+  },
+  error = function(e) {
+    stop("V must be a matrix or a formula with variables in rowData(Y)")
+  })
+}
+f
+dim(V) #99 x 3
+
+# Apply zinbFit on the assay of SummarizedExperiment
+res <- zinbFit(dataY, V, K, commondispersion, zeroinflation,
+               verbose, nb.repeat.initialize, maxiter.optimize,
+               stop.epsilon.optimize, BPPARAM)
+
+################################################
 head(zinb@X) #130 cell, design matrix for cell
 dim(zinb@V) #99gene x 3
 head(zinb@V) #covarite for each gene
