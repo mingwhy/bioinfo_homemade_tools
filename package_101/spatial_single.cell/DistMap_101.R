@@ -59,17 +59,19 @@ plot(geometry[,1],geometry[,3],pch=16) #x and z (use this)
 
 dim(geometry)  #3039 x 3
 dim(insitu.matrix) # 3039 x 84 marker gene
-i.gene=1; #pick one gene
-genename=colnames(insitu.matrix)[i.gene]
-tmp=cbind(geometry[,c(1,3)],insitu.matrix[,i.gene])
-plot(tmp[,1],tmp[,2],col=tmp[,3],pch=16)
+i.gene=81; #pick one gene
+genename=colnames(insitu.matrix)[i.gene] #twi
+tmp=cbind(geometry,insitu.matrix[,i.gene])
+plot(tmp[,1],tmp[,2],col=tmp[,4],pch=16)
+# compare with https://shiny.mdc-berlin.de/DVEX/
 
 library(ggplot2)
 tmp=as.data.frame(tmp)
-unique(tmp[,3]) #binary: 0 and 1
-ggplot(tmp,aes(x=tmp[,1],tmp[,2],col=factor(tmp[,3])))+
+unique(tmp[,4]) #binary: 0 and 1
+
+# lateral view  
+ggplot(tmp,aes(x=tmp[,1],tmp[,3],col=factor(tmp[,4])))+
   geom_point()+theme_classic()+ggtitle(paste('gene',genename))
-  
 
 ######################################################
 ## check gene names, make sure insitu.matrix match data
