@@ -186,3 +186,12 @@ ggplot(tmp,aes(x=tmp[,1],tmp[,2],col=tmp[,3]))+
   scale_color_gradient2(midpoint=mid, low="blue", mid="white",
                         high="red", space ="Lab" )+
   ggtitle('XA ratio')
+
+## look at cell cluster and XA ratio distribution
+head(cluster.info)
+for(i in unique(cluster.info)){
+  cells=rownames(df.meta)[cluster.info==i]
+  df.sub=all.ratio.df[cells,]
+  cat('cluster',i,'\n')
+  print(summary(df.sub$median.ratio))
+}
