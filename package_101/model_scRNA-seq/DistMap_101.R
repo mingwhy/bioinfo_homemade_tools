@@ -29,6 +29,7 @@ insitu.matrix[1:3,1:3]
 insitu.matrix=as.matrix(insitu.matrix)
 
 #geometry, a matrix containing the cartesian coordinates of each bin in three dimensional space.
+# use geometry file on github: https://github.com/rajewsky-lab/distmap 
 geometry=read.delim('geometry_3039.txt',
                     header = TRUE,sep=' ')
 dim(geometry) #3039 bin x 3 coords (the as insitu.matrix)
