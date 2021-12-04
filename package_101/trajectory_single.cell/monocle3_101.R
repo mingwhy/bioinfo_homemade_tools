@@ -25,6 +25,12 @@ expression_matrix <- readRDS(url("http://staff.washington.edu/hpliner/data/packe
 cell_metadata <- readRDS(url("http://staff.washington.edu/hpliner/data/packer_embryo_colData.rds"))
 gene_annotation <- readRDS(url("http://staff.washington.edu/hpliner/data/packer_embryo_rowData.rds"))
 
+class(expression_matrix) #sparse matrix
+class(cell_metadata) #data.frame
+class(gene_annotation) #data.frame
+
+expression_matrix[1:3,1:3] #umi count matrix
+
 cds <- new_cell_data_set(expression_matrix,
                          cell_metadata = cell_metadata,
                          gene_metadata = gene_annotation)
