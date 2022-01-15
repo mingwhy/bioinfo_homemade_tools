@@ -101,6 +101,26 @@ dim(fluidigm) #99gene x 130 cell
 zinb <- zinbFit(fluidigm, K=2, V="~gccontent + log(length)", epsilon=1000,verbose=T)
 zinb <- zinbFit(fluidigm, K=2,  X="~Coverage_Type", epsilon=1000,verbose=T)
 
+#https://bioconductor.org/packages/devel/bioc/vignettes/zinbwave/inst/doc/intro.html
+#Here, we also specify observationalWeights = TRUE to compute observational weights, useful for differential expression (see next section).
+fluidigm_zinb <- zinbwave(fluidigm, fitted_model = zinb, K = 2, epsilon=1000,
+                          observationalWeights = TRUE)
+
+#The zinbwave package can be used to compute observational weights to “unlock” bulk RNA-seq tools for single-cell applications, as illustrated in (Van den Berge et al. 2018).
+#zinbwave optionally computes the observational weights when specifying observationalWeights = TRUE as in the code chuck above. 
+#See the man page of zinbwave. The weights are stored in an assay named weights and can be accessed with the following call.
+
+# use these weights as posterior probability for 'measurement confidence'
+# https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1406-4#Sec2
+#... From the ZINB-WaVE density of Eq. 1, one can read- ily derive the posterior probability that a count yij was generated from the NB count component: ...
+weights <- assay(fluidigm_zinb, "weights")
+dim(fluidigm); #99 130
+dim(weights); #99 130 
+summary(as.numeric(weights))
+#    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+# 0.001206 0.798709 1.000000 0.788453 1.000000 1.000000 
+apply(weights,2,function(i){sum(i<0.99)}) #if require posterior probability >=0.99, confidence cutoff
+hist(apply(weights,2,function(i){sum(i<0.99)}))
 
 assayNames(Y)  
 dataY <- assay(Y, "counts")
