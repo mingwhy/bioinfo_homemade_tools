@@ -18,7 +18,8 @@ if(F){
 }
 
 ## install in Rstudio
-BiocManager::install("vitkl/ParetoTI", dependencies = c("Depends", "Imports", "LinkingTo"))
+#BiocManager::install("vitkl/ParetoTI", dependencies = c("Depends", "Imports", "LinkingTo"))
+
 library('ParetoTI')
 
 ## Finally, check that py_pcha library is successfully installed and discoverable
@@ -28,7 +29,8 @@ reticulate::py_discover_config("py_pcha")
 reticulate::use_condaenv("reticulate_PCHA", conda = "auto",
                          required = TRUE) # set TRUE to force R to use reticulate_PCHA
 
-
+library(ggplot2)
+library(cowplot)
 ########################################################################################################
 ## https://vitkl.github.io/ParetoTI/articles/Comparison_to_kmeans.html#find-archetypes-with-pcha-and-cluster-centers-with-k-means
 # 1, Comparison of achetypal analysis and k-means clustering
@@ -38,6 +40,8 @@ set.seed(4355)
 # generate archetype positions
 archetypes = generate_arc(arc_coord = list(c(5, 0, 4), c(-10, 15, 0), c(-30, -20, -5)),
                           mean = 0, sd = 1)
+archetypes$XC #3X3
+
 # generate 1000 data points that are a convex combination (weighted sum) of archetypes
 data = generate_data(archetypes$XC, N_examples = 1e3, jiiter = 0.04, size = 0.99)
 colnames(data) = paste0("cell", seq_len(ncol(data)))
@@ -45,8 +49,9 @@ dim(data) #3,1000
 data[1:3,1:10]
 
 # plot
-plot_arc(arc_data = archetypes, data = data,
-         which_dimensions = 1:2) + ylim(-19, 17) +
+plot_arc(arc_data = archetypes, data = data,which_dimensions = 1:2) + ylim(-19, 17) +
+  ggtitle("Ground truth archetypes")
+plot_arc(arc_data = archetypes, data = data,which_dimensions = 2:3) + ylim(-19, 17) +
   ggtitle("Ground truth archetypes")
 
 # 2, Find archetypes with PCHA and cluster centers with k-means and Louvain methods
@@ -154,11 +159,18 @@ plot_grid(plot_arc_var(arc_ks, type = "total_var",
 #heterogeniety in hepatocyte population between those archetypes
 #https://vitkl.github.io/ParetoTI/articles/Hepatocyte_example.html
 
+library(ParetoTI)
+library(SingleCellExperiment)
+library(ggplot2)
+library(cowplot)
+library(Matrix)
 #1. Load data from GEO and filter as described in the paper, normalise and PCs for finding polytopes
 # uncomment to load data -------------------------------------------------------
 #BiocManager::install("GEOquery")
+if(F){
 gse = GEOquery::getGEO("GSE84498", GSEMatrix = TRUE)#dir.create first before run the line below
 filePaths = GEOquery::getGEOSuppFiles("GSE84498", fetch_files = T, baseDir = "./processed_data/")
+}
 
 filePaths = c("./processed_data/GSE84498/GSE84498_experimental_design.txt.gz",
               "./processed_data/GSE84498/GSE84498_umitab.txt.gz")
@@ -208,25 +220,28 @@ hepatocytes = hepatocytes[,colMeans(counts(hepatocytes) > 0) > 0.15]
 hepatocytes #7269 1224
 
 # Normalise gene expression by cell sum factors and log-transform
-hepatocytes = scran::computeSumFactors(hepatocytes)
+hepatocytes = scran::computeSumFactors(hepatocytes)#https://github.com/LTLA/scuttle/issues/12
 #hepatocytes = scater::normalize(hepatocytes)
 #hepatocytes = scater::normalize(hepatocytes, return_log = FALSE) # just normalise
-hepatocytes = scater::logNormCounts(hepatocytes)
 hepatocytes = scater::logNormCounts(hepatocytes,transform='none')
+#assays(2): counts normcounts
+hepatocytes = scuttle::logNormCounts(hepatocytes) #default: log2. https://rdrr.io/github/LTLA/scuttle/man/logNormCounts.html
 hepatocytes #assays(3): counts logcounts normcounts
 
 #Plot below shows first 3 PCs colored by batch.
 # Find principal components
-hepatocytes = scater::runPCA(hepatocytes, ncomponents = 7,
-                             scale = T, exprs_values = "logcounts")
+hepatocytes = scater::runPCA(hepatocytes, ncomponents = 7,scale = T, exprs_values = "logcounts")
+#hepatocytes = scater::runPCA(hepatocytes, ncomponents = 7,scale = T, exprs_values = "normcounts")
 # Plot PCA colored by batch
 scater::plotReducedDim(hepatocytes, ncomponents = 3, dimred = "PCA",
                        colour_by = "batch")
+hepatocytes
+#reducedDimNames(1): PCA
 
 # extract PCs (centered at 0 with runPCA())
 PCs4arch = t(reducedDim(hepatocytes, "PCA"))
 hepatocytes # 7269 1224 
-dim(PCs4arch) #7 1224, 7PC, 1224 cells
+dim(PCs4arch) #7PC X 1224 cells
 
 #Fit k=2:8 polytopes to Hepatocytes to find which k best describes the data
 # find archetypes
@@ -236,6 +251,7 @@ arc_ks = k_fit_pch(PCs4arch, ks = 2:8, check_installed = T,
                    volume_ratio = "t_ratio", # set to "none" if too slow
                    delta=0, conv_crit = 1e-04, order_type = "align",
                    sample_prop = 0.75)
+arc_ks$summary
 
 # Show variance explained by a polytope with each k (cumulative)
 plot_arc_var(arc_ks, type = "varexpl", point_size = 2, line_size = 1.5) + theme_bw()
@@ -249,6 +265,7 @@ plot_arc_var(arc_ks, type = "total_var", point_size = 2, line_size = 1.5) +
   theme_bw() +
   ylab("Mean variance in position of vertices")
 
+
 # Show t-ratio
 plot_arc_var(arc_ks, type = "t_ratio", point_size = 2, line_size = 1.5) + theme_bw()
 
@@ -256,6 +273,7 @@ plot_arc_var(arc_ks, type = "t_ratio", point_size = 2, line_size = 1.5) + theme_
 # fit a polytope with bootstraping of cells to see stability of positions
 arc = fit_pch_bootstrap(PCs4arch, n = 200, sample_prop = 0.75, seed = 235,
                         noc = 4, delta = 0, conv_crit = 1e-04, type = "m")
+
 p_pca = plot_arc(arc_data = arc, data = PCs4arch, 
                  which_dimensions = 1:3, line_size = 1.5,
                  data_lab = as.numeric(logcounts(hepatocytes["Alb",])),
@@ -279,9 +297,6 @@ plotly::layout(p_pca, title = "Hepatocytes colored by Gpx1")
 # find archetypes on all data (allows using archetype weights to describe cells)
 arc_1 = fit_pch(PCs4arch, volume_ratio = "t_ratio", maxiter = 500,
                 noc = 4, delta = 0,
-                conv_crit = 1e-04)
-arc_2 = fit_pch(PCs4arch, volume_ratio = "t_ratio", maxiter = 500,
-                noc = 3, delta = 0,
                 conv_crit = 1e-04)
 
 # check that positions are similar to bootstrapping average from above
@@ -339,7 +354,7 @@ plotly::layout(p_pca, title = "ribosomal_large_subunit_biogenesis activity")
 # use permutations within each dimension - this is only possible for less than 8 vertices because computing convex hull gets exponentially slower with more dimensions
 start = Sys.time()
 pch_rand = randomise_fit_pch(PCs4arch, arc_data = arc_1,
-                             n_rand = 1000,
+                             n_rand = 100,
                              replace = FALSE, bootstrap_N = NA,
                              volume_ratio = "t_ratio",
                              maxiter = 500, delta = 0, conv_crit = 1e-4,
@@ -355,6 +370,7 @@ Sys.time() - start #2min
 plot(pch_rand, type = c("t_ratio"), nudge_y = 5)
 
 pch_rand
+summary(pch_rand$rand_dist$obs_vs_rand)
 
 
 
