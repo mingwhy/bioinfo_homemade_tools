@@ -113,21 +113,22 @@ dim(mean_coefs_sex) #109 x 1000
 head(colnames(Y)) #original metabolites feature names
 rownames(mean_coefs_age)  <- rownames(mean_coefs_sex)  <-  colnames(Y)
 
-map_dfr(list(Age=mean_coefs_age, Sex=mean_coefs_sex), 
-        function(mat) 
-          apply(mat, 1,
-             function(x) {
-                frac_neg  <- mean(x < 0)
-                pval <- 2*min(frac_neg, 1-frac_neg)
-                tstat  <- mean(x) / sd(x)
-                c("P-value"=pval, "T-statistic"=tstat)
-              }) %>% t %>% as_tibble(rownames="Metabolite"), .id="Type") %>%
+
+## save regression result
+tmp=map_dfr(list(Age=mean_coefs_age, Sex=mean_coefs_sex), 
+            function(mat) 
+              apply(mat, 1,
+                    function(x) {
+                      frac_neg  <- mean(x < 0)
+                      pval <- 2*min(frac_neg, 1-frac_neg)
+                      tstat  <- mean(x) / sd(x)
+                      c("P-value"=pval, "T-statistic"=tstat)
+                    }) %>% t %>% as_tibble(rownames="Metabolite"), .id="Type")
+regression_stats <- tmp %>%
   group_by(Type) %>% 
   arrange(`P-value`, desc(abs(`T-statistic`))) %>%
   mutate(`Q-value` = `P-value`*n()/row_number()) %>%
-  ungroup() ->
-  regression_stats
-
+  ungroup() 
 
 regression_stats %>% filter(`Q-value` < 0.05, Type == "Sex") %>%
   kable(format="latex") %>%
@@ -137,11 +138,15 @@ regression_stats %>% filter(`Q-value` < 0.05, Type == "Age") %>%
   kable(format="latex") %>%
   cat(., file = "targeted_age.tex")
 
-X_unique <- unique(Xfit[indices, c("Age", "SexM")])
+
+## plot
+#X_unique <- unique(Xfit[indices, c("Age", "SexM")])
+X_unique <- unique(Xfit[, c("Age", "SexM")])
 dim(Xfit) #85 obs x 2 covars
 dim(X_unique) #63  2
 
-index_map  <- match(apply(Xfit, 1, function(x) paste(x, collapse="_")), apply(X_unique, 1, function(x) paste(x, collapse="_")))
+index_map  <- match(apply(Xfit,1,function(x) 
+  paste(x, collapse="_")),apply(X_unique,1,function(x) paste(x, collapse="_")))
 length(index_map) #85
 
 nms <- paste(X_unique[, 1], X_unique[, 2], sep="_")
@@ -151,9 +156,18 @@ length(nms)  #63
 ## aging_to_plot
 which(X_unique[,2]==1) #male
 which(X_unique[,2]==0) #female
+
+## plot posterior distributions for min, max and quartiles of X
+dim(X_unique[which(X_unique[,2]==1),]) #30 x 2
+ix <- sort(X_unique[which(X_unique[,2]==1),1], index.return=TRUE)$ix
+tmp=floor(c(1, 25, 50, 75, 100)*length(ix)/100)
+if(tmp[1]==0){tmp[1]=1}
+to_plot <- ix[tmp]
+
+## values correspond to the quantiles of x
+names(to_plot)  <- c(0, 0.25, 0.5, 0.75, 1)
 #to_plot  <- c(13, 21, 63, 28, 1, 52) ## MALES
 #to_plot  <- c(13, 21, 62, 28, 1, 52) ## MALES
-to_plot  <- c(44, 26, 43, 8, 25) ## FEMALES
 X_unique[to_plot, ]
 
 #save(Yfit, Xfit, covreg_fit, cov_psamp, Vfit, res, file = paste0("targeted_covreg-", today(), ".Rdata"))
@@ -168,7 +182,8 @@ for(i in seq(1, s, 2)) {
   combo  <- create_plots(res$V, cov_psamp,
                          n1=to_plot[1], n2=to_plot[length(to_plot)],
                          to_plot = to_plot, col_values=cols, nlabeled=20,
-                         obs_names=nms[to_plot], view=c(i, i+1), labels=colnames(Y), main="Targeted", legend.title="Age")
+                         obs_names=nms[to_plot], view=c(i, i+1), labels=colnames(Y), 
+                         main="Targeted", legend.title="Age")
   ggsave(sprintf("aging_plot-%i%i.pdf", i, i+1), combo, width=14)
 }
 
@@ -194,6 +209,7 @@ for(i in seq(1, s, 2)) {
   ggsave(sprintf("sex_plot-%i%i.pdf", i, i+1), combo, width=14)
 }
 
+######################################
 ## Save all metabolites
 all_mets <- subject_data$Metabolite %>% unique %>% as.data.frame
 write_csv(all_mets, "all_mets.csv")
