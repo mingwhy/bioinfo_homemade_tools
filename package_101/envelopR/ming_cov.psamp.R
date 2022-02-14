@@ -6,8 +6,8 @@ cov.psamp <-
     nsave=dim(A.psamp)[3]
     p=dim(A.psamp)[1]
     R=dim(B.psamp)[3]
-    #X=unique(fit$matrix.cov)
-    X=fit$matrix.cov
+    X=unique(fit$matrix.cov)
+    #X=fit$matrix.cov
     n=dim(X)[1]
     s.psamp=array(dim=c(n,p,p,nsave))
     for (iter in 1:nsave){

@@ -8,7 +8,7 @@ library(ggridges)
 library(envelopeR)
 library(modelr)
 library(Matrix)
-library(MetaboAnalystR) #https://github.com/xia-lab/MetaboAnalystR
+#library(MetaboAnalystR) #https://github.com/xia-lab/MetaboAnalystR
 library(kableExtra)
 
 targeted  <- read_csv("data/targeted.csv")
@@ -28,6 +28,7 @@ Y  <- apply(Y, 2, function(x) {
 
 ## Impute missing values using
 Y <- amelia(Y, m = 1, empri = 100)$imputations$imp1
+dim(Y) #198 obs x 109 metabolites
 
 # set covariate matrix
 names(subject_info)
@@ -36,14 +37,14 @@ subject_info  <- subject_info %>% mutate(Type2 = ifelse(Type != "AD", "C", "AD")
 X <- subject_info %>% mutate(Type2 = ifelse(Type != "AD", "C", "AD")) %>%
   model_matrix(~ Age + Type2 + Sex) %>%
   as.matrix
-dim(X) #198 
+dim(X) #198 x 4 covars
 
 ## Focus only on aging among controls
 control_indices  <- which(subject_info$Type %in% c("CY", "CM", "CO"))
 
 Xfit  <- X[control_indices, c("Age", "SexM"), drop=FALSE]
 Yfit  <- Y[control_indices, ]
-dim(Xfit) #85 x2
+dim(Xfit) #85 x2 #age, sex
 dim(Yfit) #85 x 109
 
 Xfit[order(Xfit[, 1]), ]
@@ -51,13 +52,14 @@ xord  <- order(Xfit[, 1])
 
 ## Get the rank
 s <- getRank(Yfit)
-q <- ncol(X)
 s #18
-q #4
+q <- ncol(X)
+q #4 covars
 X[1:3,] #intercept, age, type2c, sexM
 
 fit_obj  <- lm(Yfit ~ Xfit)
 getRank(fit_obj$residuals)
+#17
 
 indices  <- 1:nrow(Xfit)
 prior_counts  <- 1
@@ -66,7 +68,7 @@ prior_counts  <- 1
 #### Envelope Fit
 ############################
 
-res <- fit_envelope(Y=Yfit, X=scale(Xfit[indices, ]), 
+res <- fit_envelope(Y=Yfit, X=Xfit, #X=scale(Xfit[indices, ]), 
                     #D=D, s=s,prior_counts=prior_counts,
                     s=s,
                     distn="covreg",
@@ -75,34 +77,51 @@ res <- fit_envelope(Y=Yfit, X=scale(Xfit[indices, ]),
                     Vinit="OLS", )
 
 YVfit  <- Yfit %*% res$V
-dim(YVfit) #85 2 sub-space fitted features
-dim(Yfit) #85 109 original features
+dim(YVfit) #85 X 2 sub-space fitted features
+dim(Yfit) #85 X 109 original features
 
-covreg_fit  <- covreg::covreg.mcmc(YVfit ~ scale(Xfit[indices, ]) - 1,
-                                   YVfit ~ scale(Xfit[indices, ]),
-                                   #R=10, 
-                                   niter=10000, nthin=10, verb=FALSE)
+#https://rdrr.io/cran/covreg/man/covreg.mcmc.html
+#covreg_fit  <- covreg::covreg.mcmc(YVfit ~ scale(Xfit[indices, ]) - 1,
+#                                   YVfit ~ scale(Xfit[indices, ]),
+#                                   #R=10, 
+#                                   niter=10000, nthin=10, verb=FALSE)
+covreg_fit  <- covreg::covreg.mcmc(YVfit ~ Xfit - 1,
+                                   YVfit ~ Xfit,
+                                   #R=5, 
+                                   niter=10000,
+                                   nthin=10)
+
 lapply(covreg_fit,dim)
 
 ## mean fit
 mean_coefs  <- covreg_fit$B1.psamp
-dim(mean_coefs)
+dim(mean_coefs) #18 x 2 x 1000
 
 ## Covariance Fit
+##https://rdrr.io/cran/covreg/src/R/cov.psamp.R
 cov_psamp  <- covreg::cov.psamp(covreg_fit)
-dim(cov_psamp)
+dim(cov_psamp) #63   18   18 1000
+
+nrow(covreg_fit$matrix.cov) #85 obs
+nrow(unique(covreg_fit$matrix.cov)) #63, only 63 unique obs 
 
 mean_coefs_age  <- res$V %*% mean_coefs[, 1, ]
 mean_coefs_sex  <- res$V %*% mean_coefs[, 2, ]
+dim(mean_coefs_age) #109 x 1000, 109, original #feature
+dim(mean_coefs_sex) #109 x 1000
+
+head(colnames(Y)) #original metabolites feature names
 rownames(mean_coefs_age)  <- rownames(mean_coefs_sex)  <-  colnames(Y)
 
-map_dfr(list(Age=mean_coefs_age, Sex=mean_coefs_sex), function(mat) apply(mat, 1,
-                                                                          function(x) {
-                                                                            frac_neg  <- mean(x < 0)
-                                                                            pval <- 2*min(frac_neg, 1-frac_neg)
-                                                                            tstat  <- mean(x) / sd(x)
-                                                                            c("P-value"=pval, "T-statistic"=tstat)
-                                                                          }) %>% t %>% as_tibble(rownames="Metabolite"), .id="Type") %>%
+map_dfr(list(Age=mean_coefs_age, Sex=mean_coefs_sex), 
+        function(mat) 
+          apply(mat, 1,
+             function(x) {
+                frac_neg  <- mean(x < 0)
+                pval <- 2*min(frac_neg, 1-frac_neg)
+                tstat  <- mean(x) / sd(x)
+                c("P-value"=pval, "T-statistic"=tstat)
+              }) %>% t %>% as_tibble(rownames="Metabolite"), .id="Type") %>%
   group_by(Type) %>% 
   arrange(`P-value`, desc(abs(`T-statistic`))) %>%
   mutate(`Q-value` = `P-value`*n()/row_number()) %>%
@@ -119,19 +138,28 @@ regression_stats %>% filter(`Q-value` < 0.05, Type == "Age") %>%
   cat(., file = "targeted_age.tex")
 
 X_unique <- unique(Xfit[indices, c("Age", "SexM")])
+dim(Xfit) #85 obs x 2 covars
+dim(X_unique) #63  2
 
 index_map  <- match(apply(Xfit, 1, function(x) paste(x, collapse="_")), apply(X_unique, 1, function(x) paste(x, collapse="_")))
+length(index_map) #85
 
 nms <- paste(X_unique[, 1], X_unique[, 2], sep="_")
 nms <- X_unique[, 1]
+length(nms)  #63
 
 ## aging_to_plot
-to_plot  <- c(13, 21, 63, 28, 1, 52) ## MALES
-to_plot  <- c(44, 26, 43, 2, 27) ## FEMALES
+which(X_unique[,2]==1) #male
+which(X_unique[,2]==0) #female
+#to_plot  <- c(13, 21, 63, 28, 1, 52) ## MALES
+#to_plot  <- c(13, 21, 62, 28, 1, 52) ## MALES
+to_plot  <- c(44, 26, 43, 8, 25) ## FEMALES
 X_unique[to_plot, ]
 
 #save(Yfit, Xfit, covreg_fit, cov_psamp, Vfit, res, file = paste0("targeted_covreg-", today(), ".Rdata"))
 
+dim(res$V) #109 metabolites x 18 subspace
+dim(cov_psamp) #63 unique obs x 18 subspace
 
 cols <- rev(colorspace::sequential_hcl(length(to_plot)+1, "Viridis"))
 
