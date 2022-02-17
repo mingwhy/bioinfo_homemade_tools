@@ -91,3 +91,56 @@ sapply(partcorr,dim)
 sapply(partcorr,sum)
 #Intermediate Group 4 Group 3
 
+#GSEA
+# metabolism enzyme only pathway
+meta2 <- read.csv("Mammalian_Metabolic_enzyme_genes.txt") #https://github.com/meichendong/JGNsc/tree/main/vignettes/data
+dim(meta2) #904 x 3
+
+test <- Map2Pathways(partcorr.list = partcorr,
+                     #conditions = unique(sobj$group3),
+                     conditions=c('Group 3','Intermediate','Group 4'),
+                     #GeneInterest = "MYC",
+                     GeneInterest = "OTX2",
+                     pathwayRef = meta2,
+                     pathwayRef_geneVariable = "GeneSymbol",
+                     pathwayRef_pathVariable = "SigmaMiniMap.Term",
+                     threshold =0)
+length(test$cond.connect)
+sapply(test$cond.connect,dim)
+
+GSEA.table <- test$GSEA.table
+dim(GSEA.table) #16 x 12
+
+#Visualize joint networks for MYC connected genes
+#devtools::install_github("briatte/ggnet")
+#BiocManager::install('sna',force=T)
+library(ggnet);
+
+#gene1 = "MYC"
+gene1 = "OTX2"
+gconnect = c(toupper(test$cond.connect[[1]]$GeneSymbol), gene1)
+highlight = gconnect %in% c(gene1)
+net1 = plot_onenet(partcorr[[1]][gconnect,gconnect], 
+                   #gname = unique(sobj$group3)[1], 
+                   gname='Group 3',
+                   circlenet = T, nodecolor = c("orange","lightblue")[highlight+1], family.vec = highlight)
+
+gconnect = c(toupper(test$cond.connect[[2]]$GeneSymbol), gene1)
+highlight = gconnect %in% c(gene1)
+net2 = plot_onenet(partcorr[[2]][gconnect,gconnect], 
+                   #gname = unique(sobj$group3)[2], 
+                   gname='Intermediate',
+                   circlenet = T, nodecolor = c("orange","lightblue")[highlight+1], family.vec = highlight)
+
+gconnect = c(toupper(test$cond.connect[[3]]$GeneSymbol), gene1)
+highlight = gconnect %in% c(gene1)
+net3 = plot_onenet(partcorr[[3]][gconnect,gconnect], 
+                   #gname = unique(sobj$group3)[3], 
+                   gname='Group 4',
+                   circlenet = T, nodecolor = c("orange","lightblue")[highlight+1], family.vec = highlight)
+
+library(cowplot)
+#plot_grid(net1, net2, ncol = 2) #MYC
+plot_grid(net1, net2, net3, ncol = 3) #OTX2
+
+
