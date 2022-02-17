@@ -29,6 +29,11 @@ simulation.result <- RunJGNsc(observed.list = observed.list, min.cell = 10, runN
 
 # check the structure of the result
 str(simulation.result)
+length(simulation.result$partcorr)#the list of partial correlation matrices)
+length(simulation.result$JGL$theta)# precision matrices 
+
+simulation.result$partcorr[[1]][1:5,1:5]
+simulation.result$JGL$theta[[1]][1:5,1:5]
 # check the AIC values
 library(ggplot2)
 dt <- as.data.frame(simulation.result$aic.table)
@@ -36,7 +41,12 @@ ggplot(dt, aes(x=V1, y=V3, color = V2)) + geom_point() + xlab("lambda1") + ylab(
 
 library(pheatmap)
 # ESTIMATED
-partcorr.est1.trunc <- trunc_precision(simulation.result$partcorr[[1]], threshold = 0.0001)
+dim(simulation.result$partcorr[[1]])
+tmp=simulation.result$partcorr[[1]];
+x=tmp[upper.tri(tmp)]
+summary(x)
+partcorr.est1.trunc <- trunc_precision(simulation.result$partcorr[[1]], 
+                                       threshold = 0.0001)
 pheatmap(partcorr.est1.trunc, cluster_rows = F, cluster_cols = F)
 
 # SIMULATION TRUTH
@@ -45,4 +55,6 @@ partcorr.true1.trunc <- trunc_precision(partcorr.true1, threshold = 0.0001)
 partcorr.true1[1:6,1:6]
 pheatmap(partcorr.true1, cluster_rows = F, cluster_cols = F)
 
+partcorr.est1.trunc[1:6,1:6]
+partcorr.true1[1:6,1:6]
 
