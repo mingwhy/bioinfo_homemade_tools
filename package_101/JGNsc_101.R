@@ -3,6 +3,8 @@
 
 #devtools::install_github("meichendong/JGNsc")
 #BiocManager::install('matrixcalc')
+#BiocManager::install('huge',force=T)
+#BiocManager::install('JGL',force=T)
 library(huge)#due to 'Error in 'RunJGNsc': lapply(theta.star.t, huge.npn) : object 'huge.npn' not found'
 library(JGL)#used in RunJGNsc
 
