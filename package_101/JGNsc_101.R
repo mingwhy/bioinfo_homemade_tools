@@ -58,3 +58,36 @@ pheatmap(partcorr.true1, cluster_rows = F, cluster_cols = F)
 partcorr.est1.trunc[1:6,1:6]
 partcorr.true1[1:6,1:6]
 
+########################
+#https://github.com/meichendong/JGNsc/tree/main/vignettes/data
+#MB.3cond <- getObservedList(mtx = as.matrix(sobj@assays$RNA@counts), group = sobj$group3, geneSet = c(toupper(meta2$GeneSymbol), "MYC", "OTX2"))
+# the list of observed count matrices can be import as below
+MB.3cond <- readRDS("J0001_MB3cond.rds")
+length(MB.3cond)
+sapply(MB.3cond,dim)
+#     Intermediate Group 4 Group 3
+#[1,]          775     775     775
+#[2,]          952    1765    2138
+MB.3cond[[1]][1:3,1:3] #gene X cell matrix
+
+if(F){
+#Run JGNsc imputation and continuization step. The current version may take hours or longer if the data dimension is high. Faster computational method is in development.
+MB.3cond.continuous <- RunJGNsc(observed.list = MB.3cond, min.cell = 20, runNetwork = F)
+
+#Tuning parameter selection by AIC, for JGL model:
+res <- getJGLTuningParamResult(GauList = MB.3cond.continuous$theta.star.npn)
+# transform the precision matrix to partial correlation
+partcorr <- lapply(res$jgl.res, prec2partialcorr)
+# you can read in the calculated partial correlation matrices for the visualization steps
+}
+
+partcorr <- readRDS("J0001_MB_partcorr.rds")
+length(partcorr) #3 groups
+sapply(partcorr,dim)
+#     [,1] [,2] [,3]
+#[1,]  653  653  653
+#[2,]  653  653  653
+
+sapply(partcorr,sum)
+#Intermediate Group 4 Group 3
+
