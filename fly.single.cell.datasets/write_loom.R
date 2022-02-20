@@ -70,10 +70,22 @@ names(ds$col.attrs)
 cell.names <- ds$col.attrs$CellID[]
 cell.types<-ds$col.attrs$cell.type[]
 batch.labels<-ds$col.attrs$batch[]
+
+names(ds$col.attrs)
+cell.info=c()
+for(var in names(ds$col.attrs)){
+  cell.info=cbind(cell.info,ds$col.attrs[[var]][])
+}
+colnames(cell.info)=names(ds$col.attrs)
+head(cell.info)
+
 ds$close_all()
+
+
 
 dim(mat)
 length(gene.names)
 length(cell.names)
+dim(cell.info)
 
 
