@@ -12,8 +12,8 @@ if(F){
 library(loomR)
 
 # Generate a loom object containing sample scRNA-seq data
-if(F){remotes::install_github("aertslab/SCopeLoomR")}
-library(SCopeLoomR)
+#if(F){remotes::install_github("aertslab/SCopeLoomR")}
+#library(SCopeLoomR)
 
 
 ##read in data and extract three pieces of info: matrix, genes, cells
