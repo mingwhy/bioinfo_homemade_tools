@@ -61,3 +61,19 @@ library(loomR)
 create('midgut_2celltypes_10x.loom',data=raw.sub,cell.attrs=cell.info.sub.list)
 
 
+## read in small loomR file
+library(loomR)
+ds <- connect('midgut_2celltypes_10x.loom')
+mat <- t(ds$matrix[,])
+gene.names <- ds$row.attrs$Gene[]
+names(ds$col.attrs)
+cell.names <- ds$col.attrs$CellID[]
+cell.types<-ds$col.attrs$cell.type[]
+batch.labels<-ds$col.attrs$batch[]
+ds$close_all()
+
+dim(mat)
+length(gene.names)
+length(cell.names)
+
+
