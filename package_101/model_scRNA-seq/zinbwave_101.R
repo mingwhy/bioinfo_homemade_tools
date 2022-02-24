@@ -3,7 +3,7 @@
 
 #BiocManager::install("zinbwave")
 library(zinbwave)
-library(scRNAseq)
+library(scRNAseq) #remotes::install_github("LTLA/scRNAseq")
 library(matrixStats)
 library(magrittr)
 library(ggplot2)
