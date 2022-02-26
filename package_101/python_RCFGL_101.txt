@@ -38,11 +38,13 @@ https://bit.ly/3IFkdon
 download RCFGL to local laptop: /Users/mingyang/Downloads/RCFGL-main
 use 'ipython' to enter python 
 
+## setup
 import pandas as pd
 import sys
 import os
 from sklearn.preprocessing import StandardScaler
 
+os.getcwd() #'/Users/mingyang'
 
 RCFGL_path = '/Users/mingyang/Downloads/RCFGL-main'
 os.chdir(RCFGL_path)
@@ -51,9 +53,13 @@ from RCFGL import RFGL, RCFGL
 os.chdir(RCFGL_path)
 from Dstream_functions import*
 
+## read in data
 B = pd.read_csv('Data/Data_1.csv')
 H = pd.read_csv('Data/Data_2.csv')
 M = pd.read_csv('Data/Data_3.csv')
+
+type(B) # pandas.core.frame.DataFrame
+B.shape # (100, 500) [100 rows x 500 columns], number of genes (p=500) and the same number of samples (n=100).
 
 # Scaling the dataframes such that the columns have 0 mean
 scalerB = StandardScaler(with_std=False); scalerB.fit(B)
@@ -64,6 +70,8 @@ H = scalerH.transform(H)
 
 scalerM = StandardScaler(with_std=False); scalerM.fit(M)
 M = scalerM.transform(M)
+
+type(B) #numpy.ndarray
 
 # Combined list of the scaled dataframes
 A = []; A.append(B); A.append(H); A.append(M);
@@ -84,4 +92,76 @@ Adj_all_new = MakeAdjMatrix_all(RCFGL_output, truncation_value = 0.005, top_N = 
 SummaryTable(Adj_all_new)
 
 #We notice that out of 485 edges detected in the condition 1, 99.6% also appear in the condition 2. Similarly, out of 492 edges detected in the condition 3, 82.3% appear both in the conditions 1 and 2.
+
+####################################################
+## benchmark RCFGL in handling 4k genes
+
+# inside R
+> sapply(theta.star.npn,dim); #122 or 185 cells, 4606 genes
+     young  old
+[1,]   122  185
+[2,]  4606 4606
+
+# center in R instead of in python (may be not necessary, check time cost of 'centering' in R later)
+> x1=theta.star.npn[[1]]
+> x1=apply(x1,2,function(i) scale(i,center=T,scale=F))
+> x2=theta.star.npn[[2]]
+> x2=apply(x2,2,function(i) scale(i,center=T,scale=F))
+
+> data.table::fwrite(x1,'~/Downloads/young.csv')
+x being coerced from class: matrix to data.table
+> data.table::fwrite(x2,'~/Downloads/old.csv')
+x being coerced from class: matrix to data.table
+
+
+# inside python
+from datetime import datetime
+B = pd.read_csv('~/Downloads/MG_young.csv')
+H = pd.read_csv('~/Downloads/MG_old.csv')
+#B= B.to_numpy();H= H.to_numpy()
+
+# Scaling the dataframes such that the columns have 0 mean, 1s
+start = datetime.now()
+scalerB = StandardScaler(with_std=False); scalerB.fit(B)
+B = scalerB.transform(B)
+scalerH = StandardScaler(with_std=False);  scalerH.fit(H)
+H = scalerH.transform(H)
+end = datetime.now()
+
+# Combined list of the scaled dataframes
+type(B) # numpy.ndarray
+A = []; A.append(B); A.append(H); 
+
+
+start = datetime.now()
+RFGL_output = RFGL(lambda1 = 0.1, lambda2 = 0.1, A = A, ADMMmaxiter = 100, admmtol = 0.001)
+#RCFGL_output = RCFGL(lambda1 = 0.1, lambda2 = 0.1, A = A, ADMMmaxiter = 100, admmtol = 0.001)
+end=datetime.now()
+
+#input: (122, 4606), (185, 4606), 40min
+#input: (1656, 4606), (2254, 4606), 40min
+type(RFGL_output) #list
+len(RFGL_output) #3， 0 big matrix, 1 one number, 2 one number
+RFGL_output[0].shape #(4606, 4606, 2)
+RFGL_output[0][0]
+RFGL_output[0][1]
+
+Adj_all_new = MakeAdjMatrix_all(RFGL_output, truncation_value = 0, top_N = 'all')
+SummaryTable(Adj_all_new)
+
+# save RFGL_output using pickle module (https://stackoverflow.com/questions/27745500/how-to-save-a-list-to-a-file-and-read-it-as-a-list-type)
+import pickle
+with open("test", "wb") as fp:
+    pickle.dump(RFGL_output, fp)
+with open("test", "rb") as fp:
+    b = pickle.load(fp)
+b
+
+#https://github.com/sealx017/RCFGL/blob/main/Python_functions/RCFGL.py
+list = []
+list.append(final_theta)
+list.append(AIC)
+list.append(t1+t2) 
+#list.append(logdet)
+return list
 
