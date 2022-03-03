@@ -45,6 +45,8 @@ cortex.saver <- saver(cortex, ncores = 8, estimates.only = TRUE)
 end.time=Sys.time()
 end.time-start.time
 
+# gene by cell: 9012 3910
+# ncore = 6, iMac: 11min
 #Correlation example
 #Because the SAVER estimates contain uncertainty, correlations between genes and cells cannot be directly calculated using the SAVER estimates. To adjust for the uncertainty, we provide the functions cor.genes and cor.cells to construct gene-to-gene and cell-to-cell correlation matrices respectively for the SAVER output. These functions take in the saver result and outputs the gene-to-gene or cell-to-cell correlation matrix. For example,
 saver1.cor.gene <- cor.genes(saver1)
