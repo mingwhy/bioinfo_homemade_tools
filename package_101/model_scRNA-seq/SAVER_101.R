@@ -23,6 +23,7 @@ cellnames <- read.table(data.path, skip = 7, nrows = 1, row.names = 1,
 colnames(cortex) <- cellnames[-1]
 dim(cortex) #19972  3005
 
+# test saver on a small dataset
 cortex.tmp=cortex[1:100,]
 dim(cortex.tmp) #100 x 3005 cell
 cortex.saver <- saver(cortex.tmp, ncores = 2)
@@ -36,7 +37,8 @@ cortex.saver$se[1:3,1:3]
 #info gives the more information about the run.
 
 #only interested in the estimate, you can run saver setting estimates.only = TRUE. For example,
-cortex.saver <- saver(cortex, ncores = 2, estimates.only = TRUE)
+dim(cortex) #19972  3005
+cortex.saver <- saver(cortex, ncores = 8, estimates.only = TRUE)
 
 #Correlation example
 #Because the SAVER estimates contain uncertainty, correlations between genes and cells cannot be directly calculated using the SAVER estimates. To adjust for the uncertainty, we provide the functions cor.genes and cor.cells to construct gene-to-gene and cell-to-cell correlation matrices respectively for the SAVER output. These functions take in the saver result and outputs the gene-to-gene or cell-to-cell correlation matrix. For example,
