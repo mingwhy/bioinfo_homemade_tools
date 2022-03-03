@@ -4,9 +4,10 @@
 devtools::install_github("mohuangx/SAVER")
 library(SAVER)
 packageVersion("SAVER")
+#'1.1.2'
 
 #run SAVER on the mouse cortex data from Zeisel (2015).
-# data download: https://storage.googleapis.com/linnarsson-lab-www-blobs/blobs/cortex/expression_mRNA_17-Aug-2014.txt
+# data download: $wget https://storage.googleapis.com/linnarsson-lab-www-blobs/blobs/cortex/expression_mRNA_17-Aug-2014.txt
 data.path <- "expression_mRNA_17-Aug-2014.txt"
 
 # Need to remove first 10 rows of metadata
