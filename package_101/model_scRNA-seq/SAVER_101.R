@@ -37,8 +37,11 @@ cortex.saver$se[1:3,1:3]
 #info gives the more information about the run.
 
 #only interested in the estimate, you can run saver setting estimates.only = TRUE. For example,
+start.time=Sys.time()
 dim(cortex) #19972  3005
 cortex.saver <- saver(cortex, ncores = 8, estimates.only = TRUE)
+end.time=Sys.time()
+end.time-start.time
 
 #Correlation example
 #Because the SAVER estimates contain uncertainty, correlations between genes and cells cannot be directly calculated using the SAVER estimates. To adjust for the uncertainty, we provide the functions cor.genes and cor.cells to construct gene-to-gene and cell-to-cell correlation matrices respectively for the SAVER output. These functions take in the saver result and outputs the gene-to-gene or cell-to-cell correlation matrix. For example,
