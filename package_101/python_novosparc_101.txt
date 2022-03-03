@@ -10,7 +10,7 @@ conda install -c conda-forge altair vega_datasets
 ###################
 
 # imports
-%matplotlib inline
+# %matplotlib inline
 import novosparc
 
 import os
@@ -28,6 +28,7 @@ random.seed(0)
 
 pl_genes = ['sna', 'ken', 'eve']
 
+
 # Reading expression data to scanpy AnnData (cells x genes)
 data_dir = '/Users/mingyang/Downloads/novosparc-master/novosparc/datasets/drosophila_scRNAseq/'
 data_path = os.path.join(data_dir, 'dge_normalized.txt')
@@ -38,14 +39,18 @@ num_cells, num_genes = dataset.shape # 1297 cells x 8924 genes
 
 print('number of cells: %d' % num_cells)
 print('number of genes: %d' % num_genes)
-
 #number of cells: 1297
 #number of genes: 8924
 
-# optional: subset cells
+# Preprocess data
+# sc.pp.normalize_per_cell(dataset)
+# sc.pp.log1p(dataset)
+
+#(Optional): subset cells
 num_cells = 1000
 sc.pp.subsample(dataset, n_obs=num_cells)
 
+#(Optional) Generate low dimensional representation of the data
 dge_rep = None # a representation of cells gene expression
 sc.pp.highly_variable_genes(dataset)
 is_var_gene = dataset.var['highly_variable']
@@ -58,8 +63,9 @@ dge_rep = dataset.to_df()[var_genes]
 sc.pp.pca(dataset)
 # dge_rep = pd.DataFrame(dataset.obsm['X_pca'])
 
-#Create a target space
-#Alternative 1: using a reference atlas
+
+# Create a target space
+# Alternative 1: using a reference atlas
 atlas_dir = '/Users/mingyang/Downloads/novosparc-master/novosparc/datasets/bdtnp/'
 target_space_path = os.path.join(atlas_dir, 'geometry.txt')
 locations = pd.read_csv(target_space_path, sep=' ')
@@ -93,13 +99,12 @@ ax[2].axis('off')
 plt.tight_layout()
 plt.show()
 
-#Reconstruct the tissue de novo
+# Reconstruct the tissue de novo
 # construct tissue object
 tissue = novosparc.cm.Tissue(dataset=dataset, locations=locations_from_image)
 
 #Compute cost matrices
 num_neighbors_s = num_neighbors_t = 5
-
 # tissue.setup_reconstruction(num_neighbors_s=num_neighbors_s, num_neighbors_t=num_neighbors_t)
 
 # alternative: since we don't have the atlas assumption, we can also setup only the smooth costs.
@@ -108,7 +113,7 @@ tissue.setup_smooth_costs(dge_rep=dge_rep, num_neighbors_s=num_neighbors_s, num_
 # Compute OT of cells to locations with a given alpha parameter
 tissue.reconstruct(alpha_linear=0, epsilon=5e-3)
 
-
+# Validate predicted expression over target space
 # reconstructed expression of individual genes
 sdge = tissue.sdge
 dataset_reconst = sc.AnnData(pd.DataFrame(sdge.T, columns=gene_names))
@@ -116,7 +121,8 @@ dataset_reconst.obsm['spatial'] = locations_from_image
 
 novosparc.pl.embedding(dataset_reconst, pl_genes)
 
-#Reconstruct the tissue with marker genes
+
+# Reconstruct the tissue with marker genes
 # reading reference atlas
 locations = locations_apriori
 atlas_dir = '/Users/mingyang/Downloads/novosparc-master/novosparc/datasets/bdtnp/'
@@ -131,7 +137,7 @@ novosparc.pl.plot_exp_loc_dists(atlas.X, locations)
 novosparc.pl.plot_exp_loc_dists(atlas.X, locations)
 
 
-#Testing spatial information in atlas
+# Testing spatial information in atlas
 # Tip: one can test how "spatially informative" are the marker genes. 
 # one measure indicating how localized is the expression is Moran's I
 
@@ -147,4 +153,12 @@ title = ['%s, Morans`I=%.02f' % (gene_max_mI, df.loc[gene_max_mI]['moransI']),
 novosparc.pl.embedding(atlas, [gene_max_mI, gene_min_mI], title=title)
 
 print('Mean MoransI: %.02f' % df['moransI'].mean())
+
+# Numpy array dimensions
+tissue.gw.shape # (1000, 3039)
+tissue.gw[1,].size #3039 potential assigned locations
+tissue.gw[1,].sum() #0.01
+tissue.gw.sum(axis=1).size #1000, row.sum
+tissue.gw.sum(axis=0).size #3039, col.sum
+tissue.gw.sum(axis=1) #all equal to 0.001
 
