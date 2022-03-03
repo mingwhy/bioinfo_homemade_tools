@@ -17,6 +17,8 @@ dim(raw.data)#19972  3006
 raw.data[1:3,1:3]
 cortex <- as.matrix(raw.data[, -1])
 dim(cortex)#19972  3005
+class(cortex)
+#[1] "matrix" "array" 
 
 cellnames <- read.table(data.path, skip = 7, nrows = 1, row.names = 1, 
                         stringsAsFactors = FALSE)
