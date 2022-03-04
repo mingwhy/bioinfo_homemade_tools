@@ -27,6 +27,8 @@ import scanpy as sc
 ######################################
 # 1. Set the data and output paths ###
 ######################################
+#$pwd
+#/Users/mingyang/Downloads/novosparc-master
 
 dataset_path = 'novosparc/datasets/bdtnp/dge.txt'
 target_space_path = 'novosparc/datasets/bdtnp/geometry.txt'

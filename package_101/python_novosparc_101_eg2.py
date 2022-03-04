@@ -16,6 +16,11 @@ pip install novosparc
 conda install -c conda-forge altair vega_datasets
 ##################################################################################
 
+#$pwd
+#/Users/mingyang/Downloads/novosparc-master 
+#!! important for tissue.setup_reconstruction(markers_to_use=markers_to_use, atlas_matrix=atlas_matrix)  
+# and you must specify this path in terminal before entering python, have no idea why
+
 import novosparc
 import os
 import numpy as np
@@ -116,6 +121,9 @@ tissue.reconstruct(alpha_linear=alpha_linear, epsilon=epsilon)
 # save the sdge to file
 output_folder='/Users/mingyang/Downloads/'
 novosparc.io.write_sdge_to_disk(tissue, output_folder)
+# a 'sdge_1297_cells_3039_locations.txt' file is saved
+# 8924 row by 3039 columns, 8924: gene, 3039: spatial bins. 
+
 
 
 # adjust location marginals gradual cell density from the tissue’s center
@@ -124,8 +132,10 @@ novosparc.io.write_sdge_to_disk(tissue, output_folder)
 #novosparc.pl.embedding(atlas, ['Alternative location marginals'])
 ##tissue.reconstruct(alpha_linear=alpha_linear, epsilon=epsilon, p_locations=rdist) 
 
-#Once computed, the transport matrix is available in tissue’s object field tissue.gw (numpy ndarray of dimensions num_cells x num_locations), and the predicted expression in tissue.sdge (numpy ndarray shaped as num_genes x num_locations).
-
+#Once computed, the transport matrix is available in tissue’s object field tissue.gw (numpy ndarray of dimensions num_cells x num_locations), 
+#and the predicted expression in tissue.sdge (numpy ndarray shaped as num_genes x num_locations).
+tissue.gw.shape # (1297, 3039)
+tissue.sdge.shape # (8924, 3039)
 
 # Validate predicted expression over target space
 # reconstructed expression of individual genes
@@ -150,11 +160,25 @@ novosparc.pl.embedding(dataset_reconst, pl_genes, title=title)
 
 #Validate localized mapping of individual cells
 # probability of individual cells belonging to each location
-gw = tissue.gw
+gw = tissue.gw #(1297 cell, 3039 bins)
+len(gw.sum(1)) #1297 rowSums
 ngw = (gw.T / gw.sum(1)).T
+ngw.sum(1) #all equal to 1
+
+import numpy as np
+a_file=os.path.join(output_folder, 'tissue.gw_1297gene_3039bin.txt')
+np.savetxt(a_file, gw) #1297 x 3039 file
+
+a_file=os.path.join(output_folder, 'tissue.ngw_1297gene_3039bin.txt')
+np.savetxt(a_file, ngw) #1297 x 3039 file
+
+
+
 cell_idx = [1, 12]
 cell_prb_cols = ['cell %d' % i for i in cell_idx]
 dataset_reconst.obs = pd.DataFrame(ngw.T[:, cell_idx], columns=cell_prb_cols)
+dataset_reconst.obs['cell 1'].sum() # equal to 1
+dataset_reconst.obs['cell 12'].sum() # equal to 1
 
 title=['Cell %d, entropy=%.02f' % (i, novosparc.an.get_cell_entropy(ngw[i,:])) for i in cell_idx]
 novosparc.pl.embedding(dataset_reconst, cell_prb_cols, title=title)
