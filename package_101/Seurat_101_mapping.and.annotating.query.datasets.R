@@ -5,7 +5,7 @@ library(Seurat)
 #devtools::install_github('satijalab/seurat-data')
 library(SeuratData)
 
-InstallData("panc8")
+#InstallData("panc8")
 
 #Dataset preprocessing
 #To construct a reference, we will identify ‘anchors’ between the individual datasets. First, we split the combined object into a list, with each dataset as an element (this is only necessary because the data was bundled together for easy distribution).
@@ -55,6 +55,7 @@ pancreas.anchors <- FindTransferAnchors(reference = pancreas.integrated, query =
 predictions <- TransferData(anchorset = pancreas.anchors, refdata = pancreas.integrated$celltype,
                             dims = 1:30)
 pancreas.query <- AddMetaData(pancreas.query, metadata = predictions)
+pancreas.query$predicted.id
 
 #Because we have the original label annotations from our full integrated analysis, we can evaluate how well our predicted cell type annotations match the full reference. In this example, we find that there is a high agreement in cell type classification, with over 96% of cells being labeled correctly.
 pancreas.query$prediction.match <- pancreas.query$predicted.id == pancreas.query$celltype
