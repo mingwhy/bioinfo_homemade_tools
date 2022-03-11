@@ -67,6 +67,7 @@ x=colnames(log2TPM.df.genes)
 rownames(df.meta)=df.meta[,3]
 df.meta=as.data.frame(df.meta[x,])
 sum(df.meta[,3]==colnames(log2TPM.df.genes)) #54
+df.meta.keep=df.meta;
 
 library(factoextra)
 res.pca=prcomp(t(log2TPM.df.genes),scale=T)
@@ -116,3 +117,15 @@ fviz_cluster(out,data=df,geom=c('point'))
 markers=c('FBgn0264270','FBgn0005616','FBgn0019661','FBgn0019660')
 rownames(sub.df)=c('msl-2','lncRNA:roX2','lncRNA:roX1','Sxl')
 saveRDS(list(data=sub.df,meta=df.meta),'2019_bulk.rds')
+###########################################################
+# remove PB samples and perform PCA
+df.meta=df.meta.keep
+test=log2TPM.df.genes[,df.meta$cluster!='PB']
+df.meta=df.meta[df.meta$cluster!='PB',]
+res.pca=prcomp(t(test),scale=T)
+
+head((res.pca$sdev^2)/sum(res.pca$sdev^2))
+basic_plot <- fviz_pca_ind(res.pca,axes = c(1,2), label="none")
+ggplot(cbind(basic_plot$data,df.meta),
+       aes(x=x,y=y,col=stage,shape=cluster))+geom_point()+theme_bw()
+
