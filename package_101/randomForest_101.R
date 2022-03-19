@@ -1,4 +1,6 @@
 
+###############################################
+#UC Business Analytics R Programming Guide
 #https://uc-r.github.io/random_forests
 library(rsample)      # data splitting 
 library(randomForest) # basic implementation
@@ -6,17 +8,24 @@ library(ranger)       # a faster implementation of randomForest
 library(caret)        # an aggregator package for performing many machine learning models
 library(h2o)          # an extremely fast java-based platform
 
+library(tidyverse)
 # Create training (70%) and test (30%) sets for the AmesHousing::make_ames() data.
 # Use set.seed for reproducibility
 
 set.seed(123)
-ames_split <- initial_split(AmesHousing::make_ames(), prop = .7)
+dat=AmesHousing::make_ames()
+dim(dat) #2930 obs x 81 feature
+nrow(dat) * 0.7 #2051 for trainning
+ames_split <- rsample::initial_split(AmesHousing::make_ames(), prop = .7)
+ames_split
+#<Analysis/Assess/Total>
+#  <2051/879/2930>
+
 ames_train <- training(ames_split)
 ames_test  <- testing(ames_split)
 
 dim(ames_train) #2051 81
-sort(colnames(ames_train))
-ncol(ames_train)/3 #26 features randomly subset every time
+ncol(ames_train)/3 #~27 features randomly subset every time
 
 # what to predict: a continuous variable
 summary(ames_train$Sale_Price)
@@ -27,11 +36,100 @@ m1 <- randomForest(
   data    = ames_train
 )
 m1
-plot(m1)
+plot(m1) #OOB error
 which.min(m1$mse) #number of trees with lowest MSE
+# 500
 sqrt(min(m1$mse))
+# 25924.37
 
+# randomForest also allows us to use a validation set to measure predictive accuracy if we did not want to use the OOB samples. 
+# create training and validation data 
+nrow(ames_train)*0.8 #1640 for training
+set.seed(123)
+valid_split <- rsample::initial_split(ames_train, .8)
+valid_split
+#<1640/411/2051>
 
+# training data
+ames_train_v2 <- rsample::analysis(valid_split)
+dim(ames_train_v2) #1640   81
+ames_train_v2
+
+# validation data
+ames_valid <- assessment(valid_split)
+dim(ames_valid) #411 for validation
+x_test <- ames_valid[setdiff(names(ames_valid), "Sale_Price")] #as 'Sale_Price' to be predicted
+y_test <- ames_valid$Sale_Price
+dim(x_test) #411 obs x 80 predictors
+length(y_test) #411 y to be predicted
+
+rf_oob_comp <- randomForest(
+  formula = Sale_Price ~ .,
+  data    = ames_train_v2,
+  xtest   = x_test,
+  ytest   = y_test
+)
+
+# extract OOB & validation errors
+oob <- sqrt(rf_oob_comp$mse)
+validation <- sqrt(rf_oob_comp$test$mse)
+length(oob) #500, one with one ntree value
+
+# compare error rates 
+
+tibble::tibble(
+  `Out of Bag Error` = oob,
+  `Test error` = validation,
+  ntrees = 1:rf_oob_comp$ntree
+) %>%  #gather, wide to long
+  gather(Metric, RMSE, -ntrees) %>%
+  ggplot(aes(ntrees, RMSE, color = Metric)) +
+  geom_line() +
+  scale_y_continuous(labels = scales::dollar) +
+  xlab("Number of trees")
+
+## Tuning, mtry, #var used in each bootstrap
+# names of features
+features <- setdiff(names(ames_train), "Sale_Price")
+features #80 predictors
+#tuneRf will start at a value of mtry that you supply and increase by a certain step factor until the OOB error stops improving be a specified amount. For example, the below starts with mtry = 5 and increases by a factor of 1.5 until the OOB error stops improving by 1%. 
+set.seed(123)
+m2 <- tuneRF(
+  x          = ames_train[features],
+  y          = ames_train$Sale_Price,
+  ntreeTry   = 500,
+  mtryStart  = 5,
+  stepFactor = 1.5,
+  improve    = 0.01,
+  trace      = FALSE      # to not show real-time progress 
+)
+plot(m2) #optimal mtry ~ 15
+
+#Full grid search with ranger, which is faster than randomForest
+# randomForest speed
+system.time(
+  ames_randomForest <- randomForest(
+    formula = Sale_Price ~ ., 
+    data    = ames_train, 
+    ntree   = 500,
+    mtry    = floor(length(features) / 3)
+  )
+)
+#user  system elapsed 
+#27.788   0.051  27.828 
+# ranger speed
+system.time(
+  ames_ranger <- ranger(
+    formula   = Sale_Price ~ ., 
+    data      = ames_train, 
+    num.trees = 500,
+    mtry      = floor(length(features) / 3)
+  )
+)
+#user  system elapsed 
+#5.404   0.023   0.301 
+
+# after parameter tuning is done, Lets repeat this model to get a better expectation of our error rate. 
 OOB_RMSE <- vector(mode = "numeric", length = 100)
 
 for(i in seq_along(OOB_RMSE)) {
@@ -51,7 +149,8 @@ for(i in seq_along(OOB_RMSE)) {
 
 hist(OOB_RMSE, breaks = 20)
 
-
+#Furthermore, you may have noticed we set importance = 'impurity' in the above modeling, which allows us to assess variable importance. 
+# Variable importance is measured by recording the decrease in MSE each time a variable is used as a node split in a tree. 
 optimal_ranger$variable.importance %>% 
   tidy() %>%
   dplyr::arrange(desc(x)) %>%
@@ -60,6 +159,16 @@ optimal_ranger$variable.importance %>%
   geom_col() +
   coord_flip() +
   ggtitle("Top 25 important variables")
+
+## predicting
+# randomForest
+pred_randomForest <- predict(ames_randomForest, ames_test)
+head(pred_randomForest)
+
+# ranger
+pred_ranger <- predict(ames_ranger, ames_test)
+head(pred_ranger$predictions)
+
 ###############################################
 ## https://stats.stackexchange.com/questions/56895/do-the-predictions-of-a-random-forest-model-have-a-prediction-interval
 # predict a continuous variable
@@ -89,6 +198,7 @@ pred.rf.int <- apply(pred.rf$individual, 1, function(x) {
 
 t(pred.rf.int)
 
+###############################################
 # Create random forest
 # For classification
 library(randomForest)
@@ -100,12 +210,12 @@ iris.rf <- randomForest(Species ~ .,
 # Print classification model
 print(iris.rf)
 
-#########################################
+########################################################################################
 ## read in gene expression data and sample meta information 
-expr.mat=data.table::fread('../2019_paper_reproduce.result/gene_by_sample_log2TPM.txt')
+expr.mat=data.table::fread('../external_data/2019_paper_reproduce.result/gene_by_sample_log2TPM.txt')
 expr.mat=as.matrix(expr.mat,rownames=1)
 
-sample.meta=data.table::fread('../2019_paper_reproduce.result/sample.meta_sex.label.txt')
+sample.meta=data.table::fread('../external_data/2019_paper_reproduce.result/sample.meta_sex.label.txt')
 
 dim(expr.mat) #8934, 54
 dim(sample.meta) #54, 4
