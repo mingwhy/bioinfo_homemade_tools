@@ -293,4 +293,92 @@ dim(prob) #49 x 2
 sum(prob[,1]>0.5) #29 assigned to female
 sum(prob[,2]>0.5) #20 assigned to male
 
+## if you are using ranger for prediction
+# https://stackoverflow.com/questions/55654644/predicted-probabilities-in-r-ranger-package
+library("ranger")
+#You need to train a "probabilistic classifier"-type ranger object:
+iris.ranger = ranger(Species ~ ., data = iris, probability = TRUE)
+#This object computes a matrix (n_samples, n_classes) when used in the predict.ranger function:
+probabilities = predict(iris.ranger, data = iris)$predictions
+
+
+##############################################
+# training and testing, prediction confidence
+
+library(rsample)      # data splitting 
+library(randomForest) # basic implementation
+library(ranger)       # a faster implementation of randomForest
+library(caret)        # an aggregator package for performing many machine learning models
+library(h2o)          # an extremely fast java-based platform
+
+# create training and validation data 
+set.seed(123)
+valid_split <- initial_split(input.dat, .8)
+ames_train <- training(valid_split)
+ames_test  <- testing(valid_split)
+dim(ames_train) #13713  6074
+dim(ames_test) #3429 6074
+
+system.time(
+  rf_ranger<- ranger(
+    formula=sex ~ ., 
+    data = ames_train, 
+    num.trees = 500,
+    importance = 'impurity',
+    mtry = floor(length(features) / 3),
+    probability = TRUE
+  )
+)
+
+rf_ranger
+rf_ranger$variable.importance %>% 
+  tidy() %>%
+  dplyr::arrange(desc(x)) %>%
+  dplyr::top_n(25) %>%
+  ggplot(aes(reorder(names, x), x)) +
+  geom_col() +
+  coord_flip() +
+  ggtitle("Top 25 important variables")
+
+pred_ranger = predict(rf_ranger, ames_test)
+head(pred_ranger$predictions) #probabilities
+predict.labels=ifelse(pred_ranger$predictions[,1]>0.5,'embryoFemale','embryoMale')
+table(predict.labels,ames_test$sex)
+#embryoFemale embryoMale
+#embryoFemale         2040        131
+#embryoMale             53       1205
+
+library(caret)
+
+y <- as.factor(ames_test$sex) # factor of positive / negative cases
+predictions <- as.factor(predict.labels) # factor of predictions
+# comfusion matrix
+cm <- confusionMatrix(predictions, reference =y)
+cm$byClass
+
+(precision <- posPredValue(predictions, y))
+(recall <- sensitivity(predictions, y))
+(F1 <- (2 * precision * recall) / (precision + recall))
+
+#https://stackoverflow.com/questions/8499361/easy-way-of-counting-precision-recall-and-f1-score-in-r
+library (ROCR);
+y=ames_test$sex=='embryoFemale'# logical array of positive / negative cases
+predictions <- pred_ranger$predictions[,1] # array of predictions， 1nd <=> embryoFemale
+
+pred <- prediction(predictions, y);
+
+# Recall-Precision curve             
+RP.perf <- performance(pred, "prec", "rec");
+plot (RP.perf);
+
+# ROC curve
+ROC.perf <- performance(pred, "tpr", "fpr");
+plot (ROC.perf);
+
+# ROC area under the curve
+auc.tmp <- performance(pred,"auc");
+(auc <- as.numeric(auc.tmp@y.values))
+
+# F1-score performance(pred,"f") gives a vector of F1-scores 
+performance(pred,"f")
 
