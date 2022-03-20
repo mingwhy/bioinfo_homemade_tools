@@ -84,13 +84,26 @@ DimPlot(sc, label = TRUE)
 DefaultAssay(sc) = "RNA"
 
 # Cell-type prioritization
-augur = calculate_auc(sc)
+#augur = calculate_auc(sc)
 
 #Alternatively, if the input data are not in a Seurat, monocle or SingleCellExperiment object, the user can pass in the expression matrix and the accompanying metadata data frame separately, as described above in ‘Overview of the procedure’. For instance, these can be extracted from the Seurat object and provided as input into Augur directly, using the following commands:
 expr = GetAssayData(sc)
 meta = sc@meta.data
-augur = calculate_auc(input = expr, meta = meta)
-
-
-
+dim(expr); #15706 24673
+dim(meta); #24673    14
+colnames(meta)
+table(meta$label) 
+#ctrl  stim 
+#12315 12358 
+#https://rdrr.io/github/neurorestore/Augur/man/calculate_auc.html
+Sys.time()
+system.time(
+  augur <- calculate_auc(input = expr, meta = meta,
+                         n_threads = 4,
+                         cell_type_col='cell_type',label_col='label')
+)
+Sys.time()
+#user  system elapsed 
+#881.340  10.679 259.279 
+#elapsed 259.279 seconds
 
