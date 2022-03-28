@@ -13,9 +13,12 @@ model <- svm(Y~., reg)
 errors(model$last_result)[1]
 
 #Multi-Class Classification
+#https://github.com/liquidSVM/liquidSVM
 banana <- liquidData('banana-mc')
 banana
-model <- svm(Y~., banana$train)
+model <- mcSVM(Y~., banana$train,display=1, threads=2)
+result <- test(model, banana$test)
+errors(result)
 
 mycol <- c('red', 'blue', 'cyan', 'green')
 plot(banana$train$X1, banana$train$X2, pch=20, col=mycol[banana$train$Y], ylab='', xlab='', axes=F, lwd=0.25)
