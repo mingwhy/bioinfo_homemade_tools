@@ -6,17 +6,19 @@ library(biomaRt)
 #Every analysis with biomaRt starts with selecting a BioMart database to use.
 #https://bioconductor.org/packages/release/bioc/vignettes/biomaRt/inst/doc/accessing_ensembl.html
 if(F){
-# 1. Selecting an Ensembl BioMart database and dataset
-# step1, identifying the database you need
-listEnsembl()
-ensembl <- useEnsembl(biomart = "genes")
-emsembl
-# step2, Choosing a dataset
-datasets <- listDatasets(ensembl)
-head(datasets)
-
-#Using archived versions of Ensembl
-listEnsemblArchives()
+    # 1. Selecting an Ensembl BioMart database and dataset
+    # step1, identifying the database you need
+    listEnsembl()
+    ensembl <- useEnsembl(biomart = "genes")
+    ensembl
+    # step2, Choosing a dataset
+    datasets <- listDatasets(ensembl)
+    head(datasets)
+    datasets[grep('musculus',datasets$dataset),]
+    datasets[grep('melanogaster',datasets$dataset),]
+    
+    #Using archived versions of Ensembl
+    listEnsemblArchives()
 }
 
 # as a used case show here: https://support.bioconductor.org/p/9141035/
