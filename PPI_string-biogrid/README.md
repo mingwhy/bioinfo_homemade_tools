@@ -1,12 +1,14 @@
 interaction data download from here:
+
 https://string-db.org/cgi/download.pl?sessionId=PQrSeUflURzI&species_text=Drosophila+melanogaster
+
 https://string-db.org/cgi/download?sessionId=buI2TCj0zJk7&species_text=Mus+musculus
 
-INTERACTION DATA
+**INTERACTION DATA**
 
 10090.protein.links.v11.5.txt.gz (84.6 Mb)	protein network data (scored links between proteins)
 
-ACCESSORY DATA
+**ACCESSORY DATA**
 
 10090.protein.info.v11.5.txt.gz (1.8 Mb)	list of STRING proteins incl. their display names and descriptions
 
