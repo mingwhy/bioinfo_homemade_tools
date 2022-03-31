@@ -12,6 +12,8 @@ https://string-db.org/cgi/download?sessionId=buI2TCj0zJk7&species_text=Mus+muscu
 
 10090.protein.info.v11.5.txt.gz (1.8 Mb)	list of STRING proteins incl. their display names and descriptions
 
+10090.protein.aliases.v11.5.txt.gz (13.6 Mb)	aliases for STRING proteins: locus names, accessions, descriptions...
+
 ```
 # accessory data
 $wc -l 7227.protein.info.v11.0.txt
