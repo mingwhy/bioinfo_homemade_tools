@@ -15,7 +15,12 @@ if(F){
     datasets <- listDatasets(ensembl)
     head(datasets)
     datasets[grep('musculus',datasets$dataset),]
+    #dataset                    description     version
+    #18  bmusculus_gene_ensembl Blue whale genes (mBalMus1.v2) mBalMus1.v2
+    #107 mmusculus_gene_ensembl           Mouse genes (GRCm39)      GRCm39
     datasets[grep('melanogaster',datasets$dataset),]
+    #dataset                              description  version
+    #55 dmelanogaster_gene_ensembl Drosophila melanogaster genes (BDGP6.32) BDGP6.32
     
     #Using archived versions of Ensembl
     listEnsemblArchives()
@@ -92,3 +97,20 @@ filter_mouse_rat=mouse_rat[!is.na(mouse_rat$rnorvegicus_homolog_dn),]
 dim(filter_mouse_rat) #30033     5
 head(filter_mouse_rat)
 
+#####
+fly= useEnsembl(version = 99, #this archived still contain dn ds values
+                  biomart = 'ENSEMBL_MART_ENSEMBL', 
+                  dataset = 'dmelanogaster_gene_ensembl')
+x=listAttributes(fly) 
+head(x,20)
+head(x[grep('homolog',x$name),])
+
+fly.genes <- getBM(attributes = c('ensembl_gene_id', 
+                                  'chromosome_name',  
+                                  'start_position', 
+                                  'end_position',
+                                  'strand',
+                                  'percentage_gene_gc_content'),
+                                  mart=fly)
+head(fly.genes)                   
+dim(fly.genes) # 17807     6
