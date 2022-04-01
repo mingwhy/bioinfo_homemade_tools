@@ -9,6 +9,9 @@ if(F){
   library(SeuratDisk)
 }
 
+
+BiocManager::install("HDF5Array")
+BiocManager::install("rhdf5")
 # library(zellkonverter) works
 #https://rdrr.io/github/theislab/zellkonverter/man/readH5AD.html
 #BiocManager::install("zellkonverter")
