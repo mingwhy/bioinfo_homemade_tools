@@ -3,7 +3,7 @@
 =============================================
 Introduction to Optimal Transport with Python
 =============================================
-
+https://pythonot.github.io/auto_examples/plot_Intro_OT.html
 This example gives an introduction on how to use Optimal Transport in Python.
 
 """
@@ -47,7 +47,7 @@ import time
 # Or inline help:
 #
 
-help(ot.dist)
+#help(ot.dist)
 
 
 ##############################################################################
@@ -206,6 +206,7 @@ pl.title('Transport matrix')
 pl.xlabel('Cafés')
 pl.ylabel('Bakeries')
 pl.tight_layout()
+pl.show()
 
 ##############################################################################
 # The transport matrix gives the number of croissants that can be transported
@@ -303,7 +304,7 @@ pl.title('Transport matrix')
 pl.xlabel('Cafés')
 pl.ylabel('Bakeries')
 pl.tight_layout()
-
+pl.show()
 
 ##############################################################################
 # We notice right away that the matrix is not sparse at all with Sinkhorn,
@@ -338,7 +339,7 @@ for k in range(len(reg_parameter)):
     # Compute the Wasserstein loss for Sinkhorn, and compare with EMD
     W_sinkhorn_reg[k] = np.sum(ot_sinkhorn * C)
 pl.tight_layout()
-
+pl.show()
 
 ##############################################################################
 # This series of graph shows that the solution of Sinkhorn starts with something
@@ -363,6 +364,7 @@ pl.plot(XLim, [W, W], '--k', label="EMD")
 pl.legend()
 pl.xlabel("reg")
 pl.ylabel("Wasserstein loss")
+pl.show()
 
 ##############################################################################
 # In this last graph, we show the impact of the regularization parameter on
