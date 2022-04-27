@@ -1,3 +1,15 @@
+
+#https://www.rdocumentation.org/packages/transport/versions/0.12-2/topics/wasserstein
+library(transport)
+set.seed(27)
+x <- pp(matrix(runif(500),250,2))
+y <- pp(matrix(runif(500),250,2))
+x; #250 obs x 2 dim
+y; #250 obs x 2 dim
+wasserstein(x,y,p=1) #0.067
+wasserstein(x,y,p=2) #0.079
+
+#######################################################################################
 #https://www.r-bloggers.com/2017/07/matching-optimal-transport-and-statistical-tests/
 #https://freakonometrics.hypotheses.org/50958
 
