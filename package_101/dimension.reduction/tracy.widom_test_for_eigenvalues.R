@@ -1,7 +1,10 @@
 ##################################################################
 # R package `AssocTests` https://rdrr.io/cran/AssocTests/man/tw.html
 library(AssocTests)
-tw(eigenvalues = c(5, 3, 1, 0), eigenL = 4, criticalpoint = 2.0234)
+out=tw(eigenvalues = c(5, 3, 1, 0), eigenL = 4, criticalpoint = 2.0234)
+out$statistic
+out$method
+out$SigntEigenL # choose PC1-4
 
 #tw funciton: https://rdrr.io/cran/AssocTests/man/tw.html
 #a numeric value corresponding to the significance level. If the significance level is 
