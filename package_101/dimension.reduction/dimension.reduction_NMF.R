@@ -6,7 +6,7 @@ library(ggpubr)
 library(Seurat)
 library(irlba) # for fast PCA on large matrix: https://github.com/bwlewis/irlba
 library(RcppML) #for fast NMF
-
+library(SingleCellExperiment)
 ########################################################
 ## read in dataset
 #BiocManager::install("zellkonverter")
@@ -80,7 +80,7 @@ FQnorm <- function(counts){
   return(norm)
 }
 
-table(cell.meta$tissue_cell.type,cell.meta$binary.age)
+table(cell.meta$tissue_cell.type,cell.meta$age)
 all.tcs=sort(unique(cell.meta$tissue_cell.type))
 #my.colors <- colorRampPalette(brewer.pal(11,'Spectral')[-6])(100)
 plotcol <- brewer.pal(8,'Dark2')
@@ -118,8 +118,8 @@ for(tc in all.tcs){
   pca <- prcomp(t(A), scale. = TRUE) #may be slow for big data
   rd1 <- pca$x[,1:2]
   if(F){
-    n1=sum(cell_metadata$binary.age=='young')
-    n2=sum(cell_metadata$binary.age=='old')
+    n1=sum(cell_metadata$age=='young')
+    n2=sum(cell_metadata$age=='old')
     S=irlba(A, nv=min(n1+n2,200))
     dim(S$v) #ncell X pc1..100
     rd1 <- S$v[,1:2]
@@ -134,23 +134,26 @@ for(tc in all.tcs){
   
   # NMF
   nmf_model<-RcppML::nmf(A,k=200,tol=1e-5)
-  dim(nmf_model@w) #
+  dim(A) # ngene x ncell
+  dim(nmf_model@w) # ngene x k
   dim(nmf_model@h) # k x ncell
-  length(nmf_model@d) #k
+  length(nmf_model@d) # k
   rd3=t(nmf_model@h[c(1,2),])
   plot(rd3, col = rgb(0,0,0,.5), pch=16, asp = 1)
   #add both dimensionality reductions to the SingleCellExperiment object
   #reducedDims(sce) <- SimpleList(PCA = rd1, UMAP = rd2, NMF=rd3)
+  R_mse <- mean((A - nmf_model$w %*% Diagonal(x = nmf_model$d) %*% nmf_model$h)^2)
+  R_mse
   
   tmp=as.data.frame(cbind(rd1,rd2,rd3))
-  tmp$binary.age=cell_metadata$binary.age
-  p1<-ggplot(tmp,aes(x=PC1,y=PC2,col=binary.age))+geom_point()+theme_classic()+scale_color_manual(values=plotcol)+ggtitle(tc)
-  p2<-ggplot(tmp,aes(x=UMAP1,y=UMAP2,col=binary.age))+geom_point()+theme_classic()+scale_color_manual(values=plotcol)+ggtitle(tc)
+  tmp$age=cell_metadata$age
+  p1<-ggplot(tmp,aes(x=PC1,y=PC2,col=age))+geom_point()+theme_classic()+scale_color_manual(values=plotcol)+ggtitle(tc)
+  p2<-ggplot(tmp,aes(x=UMAP1,y=UMAP2,col=age))+geom_point()+theme_classic()+scale_color_manual(values=plotcol)+ggtitle(tc)
   grid.arrange(p1,p2,ncol=2)
   #par(mfrow=c(1,2),mar=c(5.1, 4.1, 4.1, 8.1), xpd=TRUE)
-  #plot(rd1, col = plotcol[as.numeric(factor(cell_metadata$binary.age))], pch=16, asp = 1)
-  #legend(0,0,legend=unique(cell_metadata$binary.age),col=plotcol[1:2],pch=16, horiz=TRUE, cex=0.5,bty='n')
-  #plot(rd2, col =  plotcol[as.numeric(factor(cell_metadata$binary.age))], pch=16, asp = 1)
+  #plot(rd1, col = plotcol[as.numeric(factor(cell_metadata$age))], pch=16, asp = 1)
+  #legend(0,0,legend=unique(cell_metadata$age),col=plotcol[1:2],pch=16, horiz=TRUE, cex=0.5,bty='n')
+  #plot(rd2, col =  plotcol[as.numeric(factor(cell_metadata$age))], pch=16, asp = 1)
   
   
 }

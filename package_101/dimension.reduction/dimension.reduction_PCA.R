@@ -102,6 +102,7 @@ for(tc in all.tcs){
   pca <- obj[["pca"]]
   # Get the total variance:
   total_variance <- sum(matrixStats::rowVars(mat))
+  total_variance; #gene.var has already been scaled, show equal to #gene
   eigValues = (pca@stdev)^2  ## EigenValues
   varExplained = eigValues / total_variance
   cat(tc,',varExplained',sum(varExplained),'\n')
