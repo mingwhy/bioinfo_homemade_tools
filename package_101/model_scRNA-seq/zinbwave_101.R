@@ -1,4 +1,4 @@
-
+## parameter choice suggestion: https://support.bioconductor.org/p/p134550/
 #https://bioconductor.org/packages/release/bioc/vignettes/zinbwave/inst/doc/intro.html
 
 #BiocManager::install("zinbwave")
