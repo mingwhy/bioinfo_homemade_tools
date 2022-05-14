@@ -4,7 +4,7 @@ library(Seurat)
 library(ggplot2);library(gridExtra);
 options(stringsAsFactors = F)
 
-
+## read in data
 file="~/Documents/Data_fly_FCA/fly.brain.atlas/wholebrain_filtered_valid.rds";
 
 dat=readRDS(file);
@@ -35,7 +35,7 @@ i.cluster='A/B-KC'
 #i.cluster=c('Pm1/Pm2','Ensheathing_glia');
 #i.cluster=pick.cell.clusters;
 
-# select 1000 var genes
+# select 2000 var genes
 one.dat=subset(dat,annotation==i.cluster & dat$Age %in% c(1,9,30))
 one.dat
 one.dat <- NormalizeData(one.dat, normalization.method = "LogNormalize", scale.factor = 10000)
@@ -130,34 +130,81 @@ if(F){
   saveRDS(res,'A-B-KC_256cell_2000gene_fitResult.rds')
 }
 
-YVfit  <- Yfit %*% res$V
-dim(YVfit) #256 X 5 sub-space fitted features
-dim(Yfit) #256 X 2000 original features
+names(res) #V, intercept, ...
 
-covreg_fit=readRDS('A-B-KC_256cell_2000gene_fitResult.rds');
+YVfit  <- Yfit %*% res$V
+dim(Yfit) #1508 cell x 200 gene, original response Y
+dim(YVfit) #1508 cell x 5, project Y into reduced sub-space
+
+## cal mahalanobis distance for projected data
+dim(subject_info)
+dim(YVfit)
+sum(rownames(YVfit)==rownames(subject_info))
+mh.out<-lapply(unique(subject_info$Age),function(age){
+  x=YVfit[subject_info$Age==age,]
+  d.mh=mahalanobis(x,colMeans(x),cov(x)) #https://www.geeksforgeeks.org/how-to-calculate-mahalanobis-distance-in-r/
+})
+df=data.frame(age=rep(unique(subject_info$Age),sapply(mh.out,length)),dist=unlist(mh.out))
+head(df)
+df$age=factor(df$age)
+ggplot(df,aes(x=dist,group=age,col=age))+geom_density()
+
+ggplot(df,aes(x=age,y=dist,col=age))+geom_violin()+#geom_boxplot(outlier.shape = NA)+
+  scale_y_log10()+geom_jitter(size=0.1)+theme_bw()
+
+#######
+covreg_fit=readRDS('A-B-KC_256cell_2000gene_covreg_fit.rds');
 if(F){
   #https://rdrr.io/cran/covreg/man/covreg.mcmc.html
   covreg_fit  <- covreg::covreg.mcmc(YVfit ~ Xfit - 1,
                                      YVfit ~ Xfit,
                                      #R=5, 
                                      niter=10000,
-                                     nthin=10)
+                                     nthin=10) #10000/10, 1000 samples extracted
   saveRDS(covreg_fit,'A-B-KC_256cell_2000gene_covreg_fit.rds')
 }
 lapply(covreg_fit,dim)
+names(covreg_fit) #"B1.psamp"    "B2.psamp"    "A.psamp"     "matrix.mean" "matrix.cov"    
 
 ## mean fit
 mean_coefs  <- covreg_fit$B1.psamp
-dim(mean_coefs) #5 subspace x 2 x 1000
+dim(mean_coefs) #5-dim subspace x 2 est.para(age,sex) x 1000 (posterior.samples)
+mean_coefs[,,1]
 
 ## Covariance Fit
 ##https://rdrr.io/cran/covreg/src/R/cov.psamp.R
 cov_psamp  <- covreg::cov.psamp(covreg_fit)
-dim(cov_psamp) #6   5   5 1000
+dim(cov_psamp) # 6 5 5 1000, 6 due to unique sex_age combination, 3 age x 2 sex=6 combos
+cov_psamp[,,,1]
+cov_psamp[1,,,1] #one sex_age combo (predictor) <=> one posterior.sample of cov.mat
+sum(diag(cov_psamp[1,,,1])) #155.7345
+det(cov_psamp[1,,,1]) #4981383
+sum(eigen(cov_psamp[1,,,1])$values)  #155.7345 #https://stats.stackexchange.com/questions/225434/a-measure-of-variance-from-the-covariance-matrix
+combo6.1000var<-lapply(1:6,function(j){
+  tmp=sapply(1:1000,function(i){
+    #tmp=cov_psamp[j,,,i] #one sex_age combo (predictor) <=> one posterior.sample of cov.mat
+    #sum(diag(tmp))
+    det(cov_psamp[j,,,i]) 
+  })
+  return(tmp)
+})
 
+X_unique <- unique(Xfit[, c("Age", "Sexmale")])
+dim(Xfit) #256 obs x 2 covars
+dim(X_unique) #6  2
+label=paste0('Age',X_unique[,1],', Sexmale',X_unique[,2])
+
+df.group.var=data.frame(group=rep(label,sapply(combo6.1000var,length)),var=unlist(combo6.1000var))
+summary(df.group.var$var)
+ggplot(df.group.var,aes(x=group,y=var))+geom_jitter(size=0.01)+coord_flip()+
+  theme_bw()+geom_violin(fill=NA)
+
+##
 nrow(covreg_fit$matrix.cov) #256 obs
 nrow(unique(covreg_fit$matrix.cov)) #6 unique obs (sex+age)
 
+dim(res$V) #2000 gene x 5 factors
+dim(mean_coefs[, 1, ]) #5 factors X 1000 post.samples
 mean_coefs_age  <- res$V %*% mean_coefs[, 1, ]
 mean_coefs_sex  <- res$V %*% mean_coefs[, 2, ]
 dim(mean_coefs_age) #2000gene x 1000, 2000, original #feature
@@ -166,16 +213,19 @@ dim(mean_coefs_sex) #2000gene x 1000
 head(colnames(Y)) #original gene feature names
 rownames(mean_coefs_age)  <- rownames(mean_coefs_sex)  <-  colnames(Y)
 
+mean_coefs_age[1:3,1:3]
 
 ## plot
 dim(Xfit) #256 x 2
 X_unique <- unique(Xfit[, c("Age", "Sexmale")])
 dim(Xfit) #256 obs x 2 covars
 dim(X_unique) #6  2
+X_unique
 
 index_map  <- match(apply(Xfit, 1, function(x) 
   paste(x, collapse="_")),apply(X_unique, 1, function(x) paste(x, collapse="_")))
 length(index_map) #256
+table(index_map) #number of cell per age-sex combination
 
 nms <- paste(X_unique[, 1], X_unique[, 2], sep="_")
 nms <- X_unique[, 1] #age
@@ -193,9 +243,10 @@ which(X_unique[,2]==0) #female 1 5 6
 #tmp=floor(c(1, 25, 50, 75, 100)*length(ix)/100)
 #if(tmp[1]==0){tmp[1]=1}
 #to_plot <- ix[tmp]
-to_plot <- which(X_unique[,2]==1)
+to_plot <- which(X_unique[,2]==1) #male
+X_unique[to_plot, 1] #3 ages
 names(to_plot)=X_unique[to_plot, 1] 
-to_plot
+to_plot #plot 3 age groups
 
 ## values correspond to the quantiles of x
 #names(to_plot)  <- c(0, 0.25, 0.5, 0.75, 1)
@@ -205,14 +256,15 @@ X_unique[to_plot, ] # males
 
 #save(Yfit, Xfit, covreg_fit, cov_psamp, Vfit, res, file = paste0("targeted_covreg-", today(), ".Rdata"))
 
-dim(res$V) #2000 metabolites x 53 subspace
-dim(cov_psamp) #16   53   53 1000
+dim(res$V) #2000 gene x 5 (factors) subspace
+dim(cov_psamp) # 6    5    5 1000
 
 cols <- rev(colorspace::sequential_hcl(length(to_plot)+1, "Viridis"))
 #cols <-RColorBrewer::brewer.pal(length(to_plot), 'Dark2')
 s #5
 
-source('ming_posterior_plot.R') #for age colors
+#source('ming_posterior_plot.R') #for age colors
+dir.create('aging_Plots')
 for(i in seq(1, (s-1), 2)) {
   
   combo  <- create_plots(res$V, cov_psamp,
@@ -221,7 +273,7 @@ for(i in seq(1, (s-1), 2)) {
                          obs_names=nms[to_plot],  #cell at selected ages
                          view=c(i, i+1), nlabeled=20,
                          labels=colnames(Y),  #gene names
-                         main="Ensheathing_glia",legend.title="Age")
+                         main="Kenyon cells",legend.title="Age")
   combo
   
   ggsave(sprintf("aging_Plots/aging_plot-%i%i.pdf", i, i+1), combo, width=14)
@@ -244,16 +296,17 @@ regression_stats <- tmp %>%
   arrange(`P-value`, desc(abs(`T-statistic`))) %>%
   mutate(`Q-value` = `P-value`*n()/row_number()) %>%
   ungroup() 
-
+dim(regression_stats) #4000 x 5
+head(regression_stats)
 
 regression_stats %>% filter(`Q-value` < 0.05, Type == "Sex") %>%
   kable(format="latex") %>%
-  cat(., file = "Ensheathing_glia_sex.tex")
+  cat(., file = "KC_sex.tex")
+head(regression_stats)
 
 regression_stats %>% filter(`Q-value` < 0.05, Type == "Age") %>%
   kable(format="latex") %>%
-  cat(., file = "Ensheathing_glia_age.tex")
-
-
+  cat(., file = "KC_age.tex")
+dim(regression_stats) #4000 x 5
 
 
