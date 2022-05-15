@@ -40,8 +40,8 @@ one.dat=subset(dat,annotation==i.cluster & dat$Age %in% c(1,9,30))
 one.dat
 one.dat <- NormalizeData(one.dat, normalization.method = "LogNormalize", scale.factor = 10000)
 one.dat <- FindVariableFeatures(one.dat, selection.method = "vst", nfeatures = 2000)
+#one.dat <- FindVariableFeatures(one.dat, selection.method = "vst", nfeatures = 3000)
 var.genes=one.dat@assays$RNA@var.features
-
 
 mat.meta=dat@meta.data[dat$annotation %in% i.cluster & dat$Age %in% c(1,9,30),]
 dim(mat.meta) #688 cells
@@ -52,18 +52,28 @@ mat=df.expr[,dat$annotation %in% i.cluster & dat$Age %in% c(1,9,30)]
 #mat=mat[gene.filter,]
 mat=mat[var.genes,]
 dim(mat); # 2000  256, ngene>ncell, ncell>ngene
-
+sum(colnames(mat)==rownames(mat.meta)) #256 cells
 
 #Normalize and log-transform the data
 expr.norm <- t(t(as.matrix(mat))/colSums(mat))*10000
-expr.norm.log <- log(expr.norm + 1)
+#expr.norm.log <- log(expr.norm + 1)
+t.expr.norm <- t(expr.norm)
 
-expr.scale <- t(scale(t(expr.norm.log))) #scale for each gene: center and scale
-dim(expr.scale)  #gene by cell, every gene has 1508 'time series' data points
-h=expr.scale
-m=nrow(h) #ngene
-t=ncol(h) #ncell
-dim(h) #2000 gene by 256 cell 
+#scale for each gene within each age group: center
+mat.meta$Age[!duplicated(mat.meta$Age)]
+df<-Reduce(`rbind`,lapply(mat.meta$Age[!duplicated(mat.meta$Age)],function(i){
+  tmp=t.expr.norm[mat.meta$Age==i,];
+  tmp=scale(tmp,center = T,scale=F)
+  #summary(apply(tmp,1,mean))
+  tmp
+}) )
+dim(df)
+df<-df[rownames(mat.meta),]
+sum(rownames(df)==rownames(mat.meta)) #256
+
+expr.scale=df;
+summary(apply(expr.scale,1,mean)) #cell
+summary(apply(expr.scale,2,mean)) #gene
 
 #############################################
 ## envelop
@@ -78,7 +88,7 @@ library(Matrix)
 library(kableExtra)
 
 subject_info=mat.meta
-targeted=t(expr.scale)
+targeted=expr.scale
 dim(subject_info) #256 cells x 34 attributes
 dim(targeted) #256 obs x 2000 gene
 
@@ -96,7 +106,8 @@ dim(X) #256 x 3 covars
 head(X)
 
 
-Xfit  <- X[, c("Age", "Sexmale"), drop=FALSE]
+#Xfit  <- X[, c("Age", "Sexmale"), drop=FALSE]
+Xfit  <- X[, c("Age"), drop=FALSE]
 Yfit  <- Y[, ]
 dim(Xfit) #256 x 2 #age, sex
 dim(Yfit) #256 2000
@@ -104,7 +115,7 @@ dim(Yfit) #256 2000
 
 ## Get the rank
 s <- getRank(Yfit)
-s #5
+s #48
 q <- ncol(X)
 q #3 covars
 X[1:3,] #intercept, age, sex
