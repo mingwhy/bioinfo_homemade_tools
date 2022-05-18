@@ -112,4 +112,73 @@ hist(nbres$coefX[,1],breaks=100,main="feature-specific intercepts")
 
 print(nbres$glmpca_family)
 
+#########################################################
+## Seurat wrapper for GLM-PCA
+# https://github.com/willtownes/glmpca/issues/14
+# https://htmlpreview.github.io/?https://github.com/satijalab/seurat-wrappers/blob/master/docs/glmpca.html
+#BiocManager::install("scry")
+library(Seurat)
+library(SeuratData)
+#remotes::install_github('satijalab/seurat-wrappers')
+library(SeuratWrappers) #https://github.com/satijalab/seurat-wrappers/blob/master/README.md
+library(glmpca)
+library(scry)
 
+data("pbmc_small")
+ls()
+# Initial processing to select variable features
+pbmc3k<-pbmc_small
+m <- GetAssayData(pbmc3k, slot = "counts", assay = "RNA")
+dim(m) #230 x 80
+devs <- scry::devianceFeatureSelection(m)
+head(devs);length(devs) #230 gene
+dev_ranked_genes <- rownames(pbmc3k)[order(devs, decreasing = TRUE)]
+topdev <- head(dev_ranked_genes, 200)
+
+# run GLM-PCA on Seurat object.Uses Poisson model by default
+# Note that data in the counts slot is used
+# We choose 10 dimensions for computational efficiency
+ndims <- 30
+pbmc3k <- RunGLMPCA(pbmc3k, features = topdev, L = ndims)
+#pbmc3k <- FindNeighbors(pbmc3k, reduction = 'glmpca', dims = 1:ndims, verbose = FALSE)
+#pbmc3k <- FindClusters(pbmc3k, verbose = FALSE)
+#pbmc3k <- RunUMAP(pbmc3k, reduction = 'glmpca', dims = 1:ndims, verbose = FALSE)
+fit<-pbmc3k@reductions$glmpca 
+
+#check out: https://github.com/satijalab/seurat-wrappers/blob/master/R/glmpca.R#L58
+str(fit)
+dim(fit@cell.embeddings); #factors in glmpca, ncell x npc
+dim(fit@feature.loadings); #loadings in glmpca, ngene x npc
+fit@stdev # factors_l2_norm <- sqrt(colSums(factors^2))
+
+factors=fit@cell.embeddings
+apply(factors,2,mean) # mean = 0
+sqrt(colSums(factors^2)) # sd of each factor, the same as fit@stdev
+
+##################################################################
+## related question: how to choose the number of PC in GLM-PCA
+# https://github.com/willtownes/glmpca/issues/32
+#quote: Since both PCA and GLM-PCA return the components in decreasing order of variance, you could make a similar plot (x-axis: dimension index, y-axis: standard deviation of corresponding column in the factors matrix). Note this is possible because GLM-PCA automatically post-processes the model fit to make the loadings orthonormal, without this step the variance of the factors is not interpretable.
+plot(fit@stdev)
+
+## compare total.variance explained by glm-pca and original variance in the input matrix
+m <- GetAssayData(pbmc3k[topdev,], slot = "counts", assay = "RNA")
+dim(m) #200 x 80
+m[1:3,1:3] #gene by cell matrix
+sum(apply(m,1,var)) #4761.617
+sum(fit@stdev) # 4718.27
+
+## test var% with differnet rank values
+length(topdev)
+m <- GetAssayData(pbmc3k[topdev,], slot = "counts", assay = "RNA")
+dim(m) #200 x 80
+
+for(rank in seq(10,100,10)){
+  ndims <- rank
+  pbmc3k <- RunGLMPCA(pbmc3k, features = topdev, L = ndims,verbose = T)
+  fit<-pbmc3k@reductions$glmpca 
+  cat(rank,sum(apply(m,1,var)), sum(fit@stdev),'\n')
+}
+# looks like rank=30 explain the largest variance in the original 200x80 matrix
+
+##################################################################
