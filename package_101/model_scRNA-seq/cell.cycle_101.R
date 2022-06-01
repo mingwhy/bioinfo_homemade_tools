@@ -1,6 +1,6 @@
 
 #tutorial: http://bioconductor.org/books/3.12/OSCA/cell-cycle-assignment.html
-
+#https://hbctraining.github.io/scRNA-seq/lessons/cell_cycle_scoring.html
 #################################################################
 # data loading: http://bioconductor.org/books/3.14/OSCA.workflows/lun-416b-cell-line-smart-seq2.html
 library(scRNAseq)
