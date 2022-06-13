@@ -7,6 +7,17 @@ library(dplyr)
 library(Matrix)
 options(future.globals.maxSize = 3.2 * 1024^3)
 
+## a used case: process data downloaded from GSE158055
+## count matrix
+# check which column contain gene feature names
+#$gzip -cd /Users/mingyang/Documents/Data_human/blood/GSE158055_covid19_features.tsv.gz | less
+# check which column contain cell barcode names
+#$gzip -cd /Users/mingyang/Documents/Data_human/blood/GSE158055_covid19_barcodes.tsv.gz | less
+df.expr=Seurat::ReadMtx(mtx="GSE158055_covid19_counts.mtx.gz",
+                        features='GSE158055_covid19_features.tsv.gz',feature.column = 1,
+                        cells='GSE158055_covid19_barcodes.tsv.gz',cell.column=1)
+
+df.expr=readMM("GSE158055_covid19_counts.mtx.gz")
 #############################################################################
 ## raw expr.mat:https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134722
 df.expr=readMM("GSE134722_larvabrain/GSE134722_FirstInstarLarvalBrainNormalCondition_aggr_10X_matrix.mtx.gz")
