@@ -17,7 +17,7 @@ library(parallel)
 load('scPNMF-main/data/zheng4.rda')
 #data(zheng4, package = "scPNMF")
 Input_zheng4 <- SingleCellExperiment::logcounts(zheng4)
-dim(Input_zheng4) #2192 3994
+dim(Input_zheng4) #2192 gene by 3994 cells
 
 ########################################
 ## scPNMF::PNMFfun
