@@ -1,4 +1,33 @@
 
+#############################################################################
+#https://htmlpreview.github.io/?https://github.com/JSB-UCLA/scPNMF/blob/main/inst/docs/scPNMF2.html
+library(scPNMF);
+library(SingleCellExperiment);
+library(umap);library(ggplot2)
+
+data(zheng4, package = "scPNMF")
+Input_zheng4 <- logcounts(zheng4)
+dim(Input_zheng4) #2192 3994
+
+res_pnmf <- scPNMF::PNMFfun(X = Input_zheng4,
+                            K = 15, method="EucDist", tol=1e-4, maxIter=1000, verboseN = TRUE)
+W <- res_pnmf$Weight
+S <- res_pnmf$Score
+res_annotation <- scPNMF::basisAnnotate(W = W, 
+                                        dim_use = 1:5,
+                                        id_type = "ENSEMBL",
+                                        return_fig = TRUE)
+plot(res_annotation$p_comp)
+
+res_test <- scPNMF::basisTest(S = S, X = Input_zheng4,
+                              return_fig = TRUE, ncol = 5,
+                              mc.cores = 1)
+
+W_select <- scPNMF::basisSelect(W = W, S = S,
+                                X=Input_zheng4, toTest = TRUE, toAnnotate = FALSE, mc.cores = 1)
+colnames(W_select)
+####################################################
+####################################################
 #https://github.com/JSB-UCLA/scPNMF
 #https://htmlpreview.github.io/?https://github.com/JSB-UCLA/scPNMF/blob/main/inst/docs/scPNMF2.html
 
@@ -26,8 +55,8 @@ Rcpp::sourceCpp('scPNMF-main/src/all_func.cpp')
 
 #res_pnmf <- scPNMF::PNMFfun(X = Input_zheng4,K = 15, method="EucDist", tol=1e-4, maxIter=1000, verboseN = TRUE)
 X = Input_zheng4;K = 15; 
-method="EucDist"; tol=1e-4; maxIter=1000; verboseN = TRUE;
-zerotol=1e-10;maxIter=500; label=NULL;mu=1;lambda=0.01;seed=123;
+method="EucDist"; tol=1e-4;  verboseN = TRUE;
+zerotol=1e-10;maxIter=1000; label=NULL;mu=1;lambda=0.01;seed=123;
 
 if (is.null(rownames(X))) {
   stop("Gene names missing!")
@@ -73,8 +102,5 @@ colnames(ld) <- paste0("Basis", 1:K)
 res_pnmf=list(Weight=W, Score=ld)
 #return(list(Weight=W, Score=ld))
 
-########################################
 W <- res_pnmf$Weight
 S <- res_pnmf$Score
-
-
