@@ -7,7 +7,11 @@ library(umap);library(ggplot2)
 
 data(zheng4, package = "scPNMF")
 Input_zheng4 <- logcounts(zheng4)
-dim(Input_zheng4) #2192 3994
+dim(Input_zheng4) #2192 gene by 3994 sample
+cell.size=Matrix::colSums(Input_zheng4)
+hist(cell.size) #range from 400 to 900
+apply(Input_zheng4,1,mean)
+apply(Input_zheng4,1,sd)
 
 res_pnmf <- scPNMF::PNMFfun(X = Input_zheng4,
                             K = 15, method="EucDist", tol=1e-4, maxIter=1000, verboseN = TRUE)
@@ -26,6 +30,9 @@ res_test <- scPNMF::basisTest(S = S, X = Input_zheng4,
 W_select <- scPNMF::basisSelect(W = W, S = S,
                                 X=Input_zheng4, toTest = TRUE, toAnnotate = FALSE, mc.cores = 1)
 colnames(W_select)
+dim(W_select) #2192 gene by 14 selected dimensions
+W_select[1:3,1:3]
+
 ####################################################
 ####################################################
 #https://github.com/JSB-UCLA/scPNMF
