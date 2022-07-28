@@ -1,0 +1,83 @@
+FBgn0000479 31309 GO:0007268 IMP BP dunce
+FBgn0029733 31419 GO:0007268 IBA BP uncharacterized protein
+FBgn0015519 31767 GO:0007268 IBA BP nicotinic Acetylcholine Receptor alpha3
+FBgn0052677 31997 GO:0007268 IBA BP X11Lbeta
+FBgn0003360 32007 GO:0007268 IDA BP stress-sensitive B
+FBgn0001624 32083 GO:0007268 IBA BP discs large 1
+FBgn0263111 32158 GO:0007268 IBA BP cacophony
+FBgn0003301 32406 GO:0007268 IMP BP rutabaga
+FBgn0000319 32537 GO:0007268 IMP BP Clathrin heavy chain
+FBgn0030707 32553 GO:0007268 IBA BP uncharacterized protein
+FBgn0010240 32554 GO:0007268 IBA BP Ligand-gated chloride channel homolog 3
+FBgn0030897 32797 GO:0007268 IMP BP Frequenin 1
+FBgn0083228 32799 GO:0007268 IMP BP Frequenin 2
+FBgn0086778 32928 GO:0007268 IBA BP nicotinic Acetylcholine Receptor alpha7
+FBgn0031261 33228 GO:0007268 IBA BP nicotinic Acetylcholine Receptor beta3
+FBgn0046113 33275 GO:0007268 IMP BP Glutamate receptor IIC
+FBgn0250906 33461 GO:0007268 IDA BP Phosphoglycerate kinase
+FBgn0004242 33473 GO:0007268 IDA BP Synaptotagmin 1
+FBgn0004620 33788 GO:0007268 IDA BP Glutamate receptor IIA
+FBgn0263916 33921 GO:0007268 IMP BP Equilibrative nucleoside transporter 2
+FBgn0026439 34251 GO:0007268 IMP BP Excitatory amino acid transporter 1
+FBgn0032151 34304 GO:0007268 IBA BP nicotinic Acetylcholine Receptor alpha6
+FBgn0259822 34557 GO:0007268 IBA BP Ca2+-channel-protein-beta-subunit
+FBgn0028875 34826 GO:0007268 IBA BP nicotinic Acetylcholine Receptor alpha5
+FBgn0032901 35359 GO:0007268 IMP BP skywalker
+FBgn0086784 35865 GO:0007268 IMP BP stambha A
+FBgn0259246 35977 GO:0007268 IDA BP bruchpilot
+FBgn0033558 36145 GO:0007268 IBA BP uncharacterized protein
+FBgn0266708 36733 GO:0007268 IMP BP Centrosomal protein 89kDa
+FBgn0265297 37070 GO:0007268 IMP BP poly(A) binding protein
+FBgn0263116 37191 GO:0007268 IBA BP 5-hydroxytryptamine (serotonin) receptor 1B
+FBgn0004168 37196 GO:0007268 IBA BP 5-hydroxytryptamine (serotonin) receptor 1A
+FBgn0001123 37805 GO:0007268 IMP BP G protein alpha s subunit
+FBgn0000037 37892 GO:0007268 IBA BP muscarinic Acetylcholine Receptor, A-type
+FBgn0001148 38005 GO:0007268 IDA BP gooseberry
+FBgn0262593 38352 GO:0007268 IMP BP Shaker cognate b
+FBgn0035390 38362 GO:0007268 IMP BP scramblase 2
+FBgn0004574 38493 GO:0007268 IDA BP Ras opposite
+FBgn0000038 38545 GO:0007268 IBA BP nicotinic Acetylcholine Receptor beta1
+FBgn0004244 39054 GO:0007268 IBA BP Resistant to dieldrin
+FBgn0259824 39747 GO:0007268 IMP BP Huntingtin-interacting protein 14
+FBgn0036727 39949 GO:0007268 IBA BP uncharacterized protein
+FBgn0001134 39984 GO:0007268 IBA BP Glycine receptor
+FBgn0005564 40129 GO:0007268 IMP BP Shaker cognate l
+FBgn0250791 40233 GO:0007268 IMP BP alpha Soluble NSF attachment protein
+FBgn0025702 40461 GO:0007268 IMP BP Serine-arginine protein kinase at 79D
+FBgn0266347 40521 GO:0007268 IBA BP nicotinic Acetylcholine Receptor alpha4
+FBgn0087012 40575 GO:0007268 IBA BP 5-hydroxytryptamine (serotonin) receptor 2A
+FBgn0010399 40665 GO:0007268 IMP BP NMDA receptor 1
+FBgn0266672 40712 GO:0007268 IBA BP Secretory 8
+FBgn0086372 40863 GO:0007268 IMP BP like-AP180
+FBgn0037546 40955 GO:0007268 IBA BP muscarinic Acetylcholine Receptor, B-type
+FBgn0003165 41094 GO:0007268 IMP BP pumilio
+FBgn0037950 41426 GO:0007268 IBA BP Histamine-gated chloride channel subunit 1
+FBgn0000024 41625 GO:0007268 IMP BP Acetylcholine esterase
+FBgn0016672 41701 GO:0007268 IMP BP Inositol polyphosphate 1-phosphatase
+FBgn0011582 41726 GO:0007268 IBA BP Dopamine 1-like receptor 1
+FBgn0013334 41938 GO:0007268 NAS BP Synapse-associated protein 47kD
+FBgn0024963 42350 GO:0007268 IBA BP GluClalpha
+FBgn0038975 42646 GO:0007268 IDA BP Neurexin 1
+FBgn0000036 42918 GO:0007268 IBA BP nicotinic Acetylcholine Receptor alpha1
+FBgn0000039 42919 GO:0007268 IBA BP nicotinic Acetylcholine Receptor alpha2
+FBgn0004118 42920 GO:0007268 IBA BP nicotinic Acetylcholine Receptor beta2
+FBgn0039747 43583 GO:0007268 IMP BP Adenosine receptor
+FBgn0039774 43618 GO:0007268 IMP BP Ceramidase
+FBgn0004573 43669 GO:0007268 IBA BP 5-hydroxytryptamine (serotonin) receptor 7
+FBgn0039840 43703 GO:0007268 IBA BP pH-sensitive chloride channel 2
+FBgn0264607 43828 GO:0007268 IMP BP Calcium/calmodulin-dependent protein kinase II
+FBgn0025726 43841 GO:0007268 IMP BP unc-13
+FBgn0029147 43935 GO:0007268 IBA BP NtR
+FBgn0024944 43982 GO:0007268 IBA BP Octopamine receptor in mushroom bodies
+FBgn0000017 45821 GO:0007268 IMP BP Abl tyrosine kinase
+FBgn0263995 45840 GO:0007268 IMP BP couch potato
+FBgn0003011 45910 GO:0007268 IBA BP ora transientless
+FBgn0003392 45928 GO:0007268 IMP BP shibire
+FBgn0263120 46068 GO:0007268 IMP BP Acyl-CoA synthetase long-chain
+FBgn0002921 48971 GO:0007268 IDA BP Na pump alpha subunit
+FBgn0029830 50391 GO:0007268 IBA BP Glutamate receptor binding protein
+FBgn0026313 252671 GO:0007268 IBA BP X11L
+FBgn0052220 317923 GO:0007268 IMP BP CMP-sialic acid synthase
+FBgn0023090 318856 GO:0007268 IMP BP defective transmitter release
+FBgn0052056 326186 GO:0007268 IMP BP scramblase 1
+FBgn0016975 4379834 GO:0007268 IMP BP stoned B

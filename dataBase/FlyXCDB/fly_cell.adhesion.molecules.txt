@@ -1,0 +1,293 @@
+FBgn0000071	Ama	Ig[I-set:1, Ig_2:0.0714]	GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:ISS; 
+FBgn0000547	ed	Ig[C2-set_2:0.733, Ig_3:1, V-set:1, I-set:0.2, Ig_2:1, ig:0.8]; fn3[fn3:1]	GO:0005886:plasma membrane:IDA; GO:0016021:integral component of membrane:ISM; GO:0005913:cell-cell adherens junction:IDA; GO:0005912:adherens junction:IDA; GO:0005912:adherens junction:IDA; GO:0005886:plasma membrane:IDA; GO:0005938:cell cortex:IDA; 
+FBgn0000633	fas	Ig[I-set:0.875, C2-set_2:1, Ig_2:1]	N/A
+FBgn0000635	Fas2	Ig[I-set:1, Ig_2:0.979]; fn3[fn3:1]	GO:0005886:plasma membrane:IDA; GO:0030424:axon:TAS; GO:0005886:plasma membrane:NAS; GO:0042734:presynaptic membrane:TAS; GO:0045211:postsynaptic membrane:TAS; GO:0016021:integral component of membrane:TAS; GO:0005737:cytoplasm:IDA; GO:0043005:neuron projection:IDA; GO:0042734:presynaptic membrane:IMP; GO:0031594:neuromuscular junction:IDA; GO:0042995:cell projection:IDA; GO:0036062:presynaptic periactive zone:IDA; GO:0097482:muscle cell postsynaptic density:IDA; GO:0048786:presynaptic active zone:IDA; GO:0031594:neuromuscular junction:IDA; GO:0005886:plasma membrane:IDA; GO:0005737:cytoplasm:IDA; GO:0005886:plasma membrane:IDA; GO:0005829:cytosol:IDA; 
+FBgn0000636	Fas3	Ig[C2-set_2:1, I-set:1]	GO:0031594:neuromuscular junction:IDA; GO:0005886:plasma membrane:TAS; GO:0016021:integral component of membrane:NAS; GO:0016323:basolateral plasma membrane:NAS; GO:0005918:septate junction:TAS; GO:0016328:lateral plasma membrane:TAS; GO:0005918:septate junction:TAS; GO:0005886:plasma membrane:IDA; GO:0005920:smooth septate junction:IDA; GO:0005886:plasma membrane:IDA; GO:0031965:nuclear membrane:IDA; GO:0005737:cytoplasm:IDA; GO:0005886:plasma membrane:IDA; GO:0005829:cytosol:IDA; GO:0055037:recycling endosome:IDA; 
+FBgn0003137	Ppn	Ig[I-set:1, ig:0.146]; Kunitz_BPTI:1; TSP_1:1; ADAM_spacer1:1; PLAC:1	GO:0005604:basement membrane:IDA; GO:0005578:proteinaceous extracellular matrix:NAS; GO:0005604:basement membrane:IDA; GO:0005578:proteinaceous extracellular matrix:NAS; 
+FBgn0003285	rst	Ig[I-set:1, C2-set_2:0.923, Ig_2:1]	GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:NAS; GO:0016021:integral component of membrane:TAS; GO:0016021:integral component of membrane:NAS; GO:0005886:plasma membrane:IDA; GO:0045177:apical part of cell:IDA; GO:0005886:plasma membrane:IDA; GO:0005913:cell-cell adherens junction:IDA; 
+FBgn0004839	otk	Ig[I-set:1, Ig_3:0.0769, Ig_2:1]	GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:ISS; GO:0016021:integral component of membrane:ISM; GO:0005886:plasma membrane:IDA; 
+FBgn0005592	btl	Ig[I-set:1, Ig_2:0.3, ig:0.7]	GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:IC; GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:NAS; GO:0005886:plasma membrane:IDA; 
+FBgn0005631	robo1	Ig[I-set:1]; fn3[fn3:1]	GO:0005886:plasma membrane:IDA; GO:0005887:integral component of plasma membrane:ISS; GO:0044295:axonal growth cone:IDA; GO:0031982:vesicle:IDA; GO:0005886:plasma membrane:IDA; GO:0030425:dendrite:IDA; GO:0030424:axon:IDA; GO:0043025:neuronal cell body:IDA; GO:0071666:Slit-Robo signaling complex:IDA; GO:0043234:protein complex:IPI; GO:0030424:axon:IDA; 
+FBgn0010238	Lac	Ig[I-set:1]	GO:0019898:extrinsic component of membrane:NAS; GO:0005918:septate junction:IDA; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0010389	htl	Ig[I-set:1, Ig_2:0.462]	GO:0005886:plasma membrane:ISS; GO:0016021:integral component of membrane:ISS; GO:0016021:integral component of membrane:NAS; 
+FBgn0010473	tutl	Ig[V-set:0.965, I-set:1, Ig_2:0.947]; fn3[fn3:0.947]	GO:0005887:integral component of plasma membrane:IC; 
+FBgn0011592	fra	Ig[I-set:1, Ig_2:0.893]; fn3[fn3:1]	GO:0005886:plasma membrane:ISS; GO:0030425:dendrite:IDA; GO:0043025:neuronal cell body:IDA; GO:0030424:axon:IDA; GO:0016021:integral component of membrane:IEA; GO:0005886:plasma membrane:IDA; GO:0098595:perivitelline space:IDA; 
+FBgn0015399	kek1	Ig[I-set:1]; LRR[LRR_8:1, LRR_4:1, LRR_5:1]	GO:0005887:integral component of plasma membrane:ISM; GO:0016021:integral component of membrane:TAS; GO:0005887:integral component of plasma membrane:ISM; 
+FBgn0015400	kek2	Ig[I-set:1]; LRR[LRR_8:1, LRR_5:1]; LRRCT:0.417	GO:0005887:integral component of plasma membrane:ISM; GO:0005887:integral component of plasma membrane:ISM; 
+FBgn0016061	side	Ig[C2-set_2:1, V-set:1, Ig_3:0.946, Ig_2:1]; fn3[Pur_ac_phosph_N:0.027]	N/A
+FBgn0017590	klg	Ig[I-set:1, Ig_2:0.917]; fn3[fn3:1]	GO:0019897:extrinsic component of plasma membrane:ISS; 
+FBgn0024189	sns	Ig[C2-set_2:1, I-set:1, Ig_2:1]; fn3[fn3:0.963]	GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:IDA; GO:0005917:nephrocyte diaphragm:IDA; GO:0005917:nephrocyte diaphragm:IDA; 
+FBgn0025878	wrapper	Ig[V-set:0.75, I-set:1, Ig_2:0.75, ig:0.25]; fn3[fn3:1]	GO:0005886:plasma membrane:IDA; 
+FBgn0028369	kirre	<del>Omega_toxin[Conotoxin:0.0769]</del>; Ig[C2-set_2:1, V-set:1, I-set:0.846, Ig_3:0.462, Ig_2:1, ig:0.0769]	GO:0005886:plasma membrane:NAS; GO:0009986:cell surface:IDA; GO:0005912:adherens junction:IDA; GO:0005886:plasma membrane:IDA; GO:0005917:nephrocyte diaphragm:IDA; GO:0005917:nephrocyte diaphragm:IDA; 
+FBgn0028370	kek3	Ig[I-set:1]; LRR[LRR_8:1, LRR_5:1]	GO:0005886:plasma membrane:ISS; GO:0005887:integral component of plasma membrane:ISM; 
+FBgn0028482	bdl	Ig[V-set:0.933, I-set:1, Ig_2:0.933]; fn3[fn3:1]	GO:0005887:integral component of plasma membrane:IDA; 
+FBgn0029082	hbs	Ig[C2-set_2:1, I-set:1, Ig_3:0.13, Ig_2:0.522]; fn3[fn3:1]	GO:0005886:plasma membrane:ISS; GO:0016324:apical plasma membrane:IDA; GO:0005913:cell-cell adherens junction:IDA; 
+FBgn0029974	dpr14	Ig[V-set:0.0833, I-set:1, Ig_3:0.167]	GO:0005575:cellular_component:ND; 
+FBgn0030174	CG15312	Ig[Ig_2:1]; fn3[fn3:0.214]	N/A
+FBgn0030887	CG6867	Ig[I-set:1]; Beta_propeller_XC[OLF:1]; Collagen:1	N/A
+FBgn0031016	kek5	Ig[I-set:1]; LRR[LRR_8:1, LRR_4:0.0714, LRR_5:1]; LRRCT:0.786; LRRNT:0.143	GO:0005887:integral component of plasma membrane:ISM; GO:0005886:plasma membrane:IDA; 
+FBgn0031627	CG15630	Ig[I-set:1, ig:1]; fn3[fn3:0.769]	N/A
+FBgn0031725	DIP-eta	Ig[I-set:1, Ig_2:0.0455]	N/A
+FBgn0031837	DIP-iota	Ig[I-set:1, ig:0.273]	GO:0005886:plasma membrane:ISS; 
+FBgn0031872	ihog	Ig[Ig_3:0.333, I-set:1, Ig_2:0.917, ig:0.833]; fn3[fn3:1]	GO:0016021:integral component of membrane:ISS; GO:0009986:cell surface:IDA; 
+FBgn0032006	Pvr	Ig[Adeno_E3_CR1:0.37, V-set:0.575, I-set:1, Ig_3:0.0137, Ig_2:0.26, ig:0.411]	GO:0005886:plasma membrane:NAS; GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0033159	Dscam1	Ig[Ig_3:0.369, I-set:1, Ig_2:0.0763, ig:0.0169]; fn3[fn3:1]	GO:0005887:integral component of plasma membrane:ISS; GO:0030425:dendrite:IDA; GO:0043025:neuronal cell body:IDA; GO:0030424:axon:IDA; GO:0005887:integral component of plasma membrane:ISM; GO:0043005:neuron projection:IDA; GO:0043025:neuronal cell body:IDA; 
+FBgn0034013	unc-5	Ig[I-set:1]; TSP_1:1	N/A
+FBgn0034083	lbk	Ig[I-set:1, Ig_2:0.583]; LRR[LRR_8:1, LRR_9:0.0833, LRR_4:0.333, LRR_5:1]	N/A
+FBgn0034286	dpr13	Ig[V-set:0.938, Ig_3:1]	GO:0005575:cellular_component:ND; 
+FBgn0034723	CG13506	Ig[I-set:1, Ig_3:0.417, ig:0.167, Ig_2:0.833]	N/A
+FBgn0036146	CG14141	Ig[I-set:1]	N/A
+FBgn0036454	CG17839	Ig[I-set:0.929, Ig_2:0.929, ig:1]; fn3[fn3:1, Pur_ac_phosph_N:0.143]; DB:1	GO:0005634:nucleus:IDA; 
+FBgn0037107	CG7166	Ig[I-set:1, Ig_2:0.571]	GO:0005576:extracellular region:ISS; 
+FBgn0037240	Cont	Lectin_C[Herpes_UL45:0.25, Lectin_C:0.75]; Ig[I-set:1, Ig_2:0.833, ig:0.917]; fn3[fn3:1]	GO:0005918:septate junction:NAS; GO:0005918:septate junction:IDA; GO:0005919:pleated septate junction:IDA; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0037736	CG12950	Ig[C2-set_2:1, Ig_3:1, V-set:0.933, I-set:0.467, Ig_2:0.533]; fn3[fn3:0.933]	N/A
+FBgn0037908	dpr5	Ig[V-set:1, Ig_2:1]	GO:0005575:cellular_component:ND; 
+FBgn0037993	dpr15	Ig[V-set:1, Ig_3:0.143, Ig_2:0.0714]	GO:0005575:cellular_component:ND; 
+FBgn0038084	beat-Vc	Ig[C2-set_2:1, Ig_2:1]	GO:0005576:extracellular region:NAS; 
+FBgn0038156	CG14372	Ig[C2-set_2:1, Ig_3:1, V-set:1, I-set:0.933, Ig_2:0.267]; fn3[fn3:0.933]	N/A
+FBgn0038282	dpr9	Ig[V-set:1, ig:0.44, Ig_2:0.56]	GO:0005575:cellular_component:ND; 
+FBgn0038494	beat-IIb	Ig[Ig_2:1]	GO:0005576:extracellular region:NAS; 
+FBgn0039089	beat-IV	Ig[V-set:1, C2-set_2:0.929]	GO:0005576:extracellular region:NAS; 
+FBgn0039584	beat-VI	Ig[V-set:1, C2-set_2:1, Ig_3:0.0833]	GO:0005576:extracellular region:NAS; GO:0031225:anchored component of membrane:ISM; 
+FBgn0039617	DIP-gamma	Ig[V-set:0.0769, I-set:1]	N/A
+FBgn0040823	dpr6	Ig[I-set:1]	GO:0005575:cellular_component:ND; 
+FBgn0041097	robo3	Ig[I-set:1, Ig_2:1]; fn3[fn3:1]	GO:0005886:plasma membrane:NAS; GO:0030424:axon:IDA; 
+FBgn0051361	dpr17	Ig[V-set:1, ig:0.429, Ig_2:0.571]	GO:0005575:cellular_component:ND; 
+FBgn0051431	CG31431	Ig[I-set:1, Ig_2:1]	GO:0016021:integral component of membrane:ISS; 
+FBgn0051646	DIP-theta	Ig[V-set:0.476, I-set:1]	N/A
+FBgn0051774	fred	Ig[C2-set_2:0.238, Ig_3:0.952, V-set:0.857, I-set:1, Ig_2:1, ig:0.905]; fn3[fn3:1]	GO:0005575:cellular_component:ND; 
+FBgn0051814	CG31814	Ig[I-set:1]	N/A
+FBgn0053543	CG33543	Ig[I-set:1, ig:1]	GO:0016020:membrane:ISS; 
+FBgn0085400	CG34371	Ig[C2-set_2:1, Ig_3:0.167, V-set:1, I-set:1, Ig_2:0.25]; fn3[fn3:0.167]	N/A
+FBgn0085414	dpr12	Ig[V-set:0.259, I-set:0.704, Ig_2:1]	GO:0005575:cellular_component:ND; 
+FBgn0085420	DIP-delta	Ig[I-set:1, Ig_2:0.087, ig:0.0435]; <del>CBM_14_19[CBM_14:0.0435]</del>	N/A
+FBgn0086604	CG12484	Ig[C2-set_2:1, V-set:1, Ig_3:1, Ig_2:1, ig:0.286]	GO:0005886:plasma membrane:ISS; 
+FBgn0259213	CG42313	Ig[C2-set_2:0.923, V-set:0.846, I-set:0.846, Ig_3:1]	GO:0005575:cellular_component:ND; 
+FBgn0259714	DIP-epsilon	Ig[I-set:1]	GO:0005575:cellular_component:ND; 
+FBgn0261871	dpr2	Ig[V-set:0.933, I-set:1]	GO:0005575:cellular_component:ND; 
+FBgn0263219	Dscam4	Ig[I-set:1, Ig_3:0.878, Ig_2:0.98]; fn3[fn3:1]	GO:0005887:integral component of plasma membrane:ISM; 
+FBgn0264975	Nrg	Ig[Ig_3:0.68, I-set:1, ig:0.72]; fn3[fn3:1]	GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:NAS; GO:0016328:lateral plasma membrane:TAS; GO:0005918:septate junction:IDA; GO:0005919:pleated septate junction:IDA; GO:0030175:filopodium:IDA; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; GO:0005918:septate junction:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0265296	Dscam2	Ig[I-set:1, Ig_3:0.968]; fn3[fn3:0.903]	GO:0005887:integral component of plasma membrane:ISM; 
+FBgn0265607	beat-IIIa	Ig[V-set:1, Ig_3:1]	GO:0005576:extracellular region:NAS; 
+FBgn0267428	CG45781	Ig[I-set:1]	GO:0005575:cellular_component:ND; 
+FBgn0267728	otk2	Ig[V-set:0.833, I-set:1, ig:0.0833]	GO:0016021:integral component of membrane:ISM; 
+FBgn0267911	trol	Ig[Ig_3:0.743, I-set:1, Ig_2:1, ig:0.439]; EGF[hEGF:0.193, Laminin_EGF:0.994, EGF_2:0.00585, EGF:0.977]; SEA[SEA:0.129]; Laminin_G[Laminin_G_2:0.977, Laminin_G_1:0.819]; Ldl_recept_a:0.994; Laminin_B:0.994; <del>Trypan_PARP:0.216</del>	GO:0005578:proteinaceous extracellular matrix:NAS; GO:0005604:basement membrane:ISS; GO:0005811:lipid particle:IDA; GO:0005654:nucleoplasm:IDA; GO:0005829:cytosol:IDA; 
+FBgn0051619	nolo	Ig[I-set:0.976]; PLAC:0.756; TSP_1:1	GO:0005578:proteinaceous extracellular matrix:IEA; 
+FBgn0021764	sdk	Ig[I-set:0.971, Ig_2:0.882]; fn3[fn3:1]	GO:0005887:integral component of plasma membrane:NAS; GO:0098595:perivitelline space:IDA; 
+FBgn0261046	Dscam3	Ig[I-set:0.967, Ig_3:0.767, Ig_2:0.2]; fn3[fn3:0.933]	GO:0005886:plasma membrane:ISS; GO:0005887:integral component of plasma membrane:ISM; 
+FBgn0051708	DIP-zeta	Ig[V-set:0.0417, I-set:0.958]	N/A
+FBgn0052057	dpr10	Ig[I-set:0.958, Ig_3:0.0417, Ig_2:0.875]	GO:0005575:cellular_component:ND; 
+FBgn0000464	Lar	Ig[I-set:0.955]; fn3[fn3:1]	GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:ISS; GO:0016021:integral component of membrane:NAS; GO:0005875:microtubule associated complex:IDA; GO:0030424:axon:IDA; GO:0005886:plasma membrane:IDA; GO:0005925:focal adhesion:IDA; 
+FBgn0001257	ImpL2	Ig[I-set:0.955, Ig_2:0.636]	GO:0005576:extracellular region:NAS; GO:0005615:extracellular space:IDA; 
+FBgn0011260	Sema-2a	Ig[ig:0.95]; Beta_propeller_XC[Sema:1]; PSI:1	GO:0005576:extracellular region:ISS; GO:0005576:extracellular region:NAS; GO:0005576:extracellular region:NAS; GO:0012505:endomembrane system:IDA; GO:0005829:cytosol:IDA; 
+FBgn0052600	dpr8	Ig[V-set:0.737, ig:0.947]	GO:0005575:cellular_component:ND; 
+FBgn0259245	DIP-beta	Ig[V-set:0.0556, I-set:0.944, ig:0.0556]	GO:0005575:cellular_component:ND; 
+FBgn0003984	vn	Ig[I-set:0.941]; EGF[EGF:0.824]	GO:0005576:extracellular region:NAS; GO:0005576:extracellular region:TAS; GO:0005576:extracellular region:NAS; GO:0005886:plasma membrane:NAS; GO:0005576:extracellular region:TAS; 
+FBgn0013433	beat-Ia	Ig[V-set:0.941, C2-set_2:0.353, ig:0.0588, Ig_2:0.176]	GO:0005576:extracellular region:ISS; 
+FBgn0038498	beat-IIa	Ig[Ig_2:0.941]	GO:0005576:extracellular region:NAS; GO:0005887:integral component of plasma membrane:ISM; 
+FBgn0052791	DIP-alpha	Ig[I-set:0.938, ig:0.0625, Ig_2:0.0625]	N/A
+FBgn0083950	CG34114	Ig[C2-set_2:0.938, Ig_3:0.875, V-set:0.25, I-set:0.5, Ig_2:0.875]; fn3[fn3:0.812]	N/A
+FBgn0040726	dpr1	Ig[V-set:0.267, I-set:0.6, Ig_3:0.933, ig:0.0667]	GO:0005886:plasma membrane:IDA; GO:0016021:integral component of membrane:ISM; 
+FBgn0002543	robo2	Ig[I-set:0.929]; fn3[fn3:0.929]	GO:0005886:plasma membrane:NAS; GO:0030424:axon:IDA; 
+FBgn0011828	Pxn	FnI-like[VWC:0.923]; Ig[I-set:0.923, Ig_3:0.0769, Ig_2:0.0769]; LRR[LRR_8:0.923, LRR_9:0.0769, LRR_4:0.154, LRR_5:0.692]; LRRNT:0.462; An_peroxidase:0.923	GO:0005578:proteinaceous extracellular matrix:ISS; 
+FBgn0038092	beat-Vb	Ig[Ig_3:0.0769, Ig_2:0.923]	GO:0005576:extracellular region:NAS; 
+FBgn0053179	beat-IIIb	Ig[Ig_3:0.923, Ig_2:0.923]	GO:0005576:extracellular region:NAS; 
+FBgn0053202	dpr11	Ig[I-set:0.923, ig:0.923]	GO:0005575:cellular_component:ND; 
+FBgn0261822	Bsg	Ig[I-set:0.92, Ig_3:0.44, ig:0.44, Ig_2:0.08]	GO:0048786:presynaptic active zone:IMP; GO:0048788:presynaptic cytoskeletal matrix assembled at active zones:IDA; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0035170	dpr20	Ig[V-set:0.917, I-set:0.333, ig:0.75]	GO:0005575:cellular_component:ND; 
+FBgn0036145	CG7607	Ig[I-set:0.917]	N/A
+FBgn0039431	plum	Ig[Ig_3:0.25, I-set:0.917, Ig_2:0.333, ig:0.25]; fn3[fn3:0.5]	GO:0030425:dendrite:IDA; GO:0030424:axon:IDA; 
+FBgn0053512	dpr4	Ig[V-set:0.0833, I-set:0.917, ig:0.833, Ig_3:0.0833]	GO:0005575:cellular_component:ND; 
+FBgn0028645	beat-Ib	Ig[Ig_2:0.909]; <del>Trypsin[Trypsin:0.0909]</del>	GO:0005576:extracellular region:NAS; GO:0005887:integral component of plasma membrane:ISM; 
+FBgn0040388	boi	Ig[I-set:0.909, Ig_2:0.909, ig:0.545]; fn3[fn3:1]	N/A
+FBgn0032629	beat-IIIc	Ig[V-set:0.2, C2-set_2:0.25, Ig_3:0.9, Ig_2:0.75]	GO:0005576:extracellular region:NAS; 
+FBgn0262509	nrm	Ig[C2-set_2:0.894, V-set:0.894, I-set:0.818, Ig_3:0.712, Ig_2:0.879, ig:0.0455]	GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:ISS; 
+FBgn0260995	dpr21	Ig[V-set:0.889, I-set:0.111, Ig_3:0.333, Ig_2:0.111, ig:0.444]	N/A
+FBgn0028644	beat-Ic	Ig[C2-set_2:0.875, ig:0.625, Ig_2:0.25]	GO:0005576:extracellular region:NAS; GO:0005887:integral component of plasma membrane:ISM; 
+FBgn0014007	Ptp69D	Ig[Ig_3:0.867, V-set:0.0667, I-set:0.267, Ig_2:0.533, ig:0.2]; fn3[fn3:1]	GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:NAS; GO:0030424:axon:IDA; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0053481	dpr7	Ig[V-set:0.864, ig:0.682, Ig_2:0.182]	GO:0005575:cellular_component:ND; 
+FBgn0085382	CG34353	Ig[I-set:0.864, ig:0.773, Ig_2:0.273]	N/A
+FBgn0030723	dpr18	Ig[Receptor_2B4:0.0714, ig:0.857, Ig_3:0.357]	GO:0005575:cellular_component:ND; 
+FBgn0034920	CG5597	Ig[C1-set:0.857, ig:0.5, V-set:0.5]	N/A
+FBgn0053516	dpr3	Ig[V-set:0.833, I-set:0.0833, Ig_3:0.833, Ig_2:0.167]	GO:0005575:cellular_component:ND; 
+FBgn0032233	dpr19	Ig[V-set:0.8, I-set:0.133, Ig_3:0.333, Ig_2:0.333]	GO:0005575:cellular_component:ND; 
+FBgn0083949	CG34113	Ig[C2-set_2:0.8, V-set:0.8, I-set:0.133, Ig_3:0.467, Ig_2:0.667, ig:0.667]	N/A
+FBgn0265002	CG44153	Ig[I-set:0.0667, Ig_2:0.8]; EGF[EGF:0.733]; HRM:1	GO:0005575:cellular_component:ND; GO:0016020:membrane:IEA; 
+FBgn0039862	kek6	Ig[I-set:0.769, Ig_2:0.231]; LRR[LRR_8:1, LRR_5:1]; LRRNT:0.154	GO:0005887:integral component of plasma membrane:ISM; 
+FBgn0034724	babos	Ig[I-set:0.167, ig:0.75, Ig_2:0.0833]	GO:0098595:perivitelline space:IDA; 
+FBgn0032479	CG16974	Ig[I-set:0.692, Ig_2:0.308]; LRR[LRR_8:1, LRR_4:0.692, LRR_5:1]	N/A
+FBgn0037295	dpr16	Ig[V-set:0.667, ig:0.5, Ig_3:0.125, Ig_2:0.667]	GO:0005575:cellular_component:ND; 
+FBgn0038087	beat-Va	Ig[V-set:0.0833, Ig_2:0.667]	GO:0005576:extracellular region:NAS; 
+FBgn0034725	CG6044	Ig[C1-set:0.636, I-set:0.0909, Ig_3:0.0909]	N/A
+FBgn0032484	kek4	Ig[I-set:0.4, ig:0.6]; LRR[LRR_8:1, LRR_5:0.9]	GO:0005887:integral component of plasma membrane:ISM; 
+FBgn0250908	beat-VII	Ig[V-set:0.462, I-set:0.0769, Ig_3:0.538]	GO:0005576:extracellular region:NAS; 
+FBgn0266801	CG45263	Ig[I-set:0.462, C2-set_2:0.462, Ig_2:0.462]	N/A
+FBgn0034788	CG13532	Ig[V-set_CD47:0.375, C1-set:0.25, ig:0.125]	GO:0005576:extracellular region:ISM; 
+FBgn0010114	hig	Ig[I-set:0.125]; Sushi:0.958	GO:0005576:extracellular region:NAS; GO:0043025:neuronal cell body:IDA; GO:0043083:synaptic cleft:IDA; 
+FBgn0032797	CG10186	Ig[V-set:0.111]; Sushi:1; WAP:0.963	GO:0016020:membrane:ISS; GO:0005576:extracellular region:IEA; 
+FBgn0004369	Ptp99A	fn3[fn3:0.778]	GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:NAS; GO:0030424:axon:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0030466	CG15744	LRR[LRR_8:0.846]; HRM:0.923	GO:0016021:integral component of membrane:IEA; 
+FBgn0043903	dome	fn3[fn3:1]	GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:NAS; GO:0016324:apical plasma membrane:TAS; GO:0016327:apicolateral plasma membrane:IDA; 
+FBgn0000119	arr	EGF[FXa_inhibition:1]; Beta_propeller_XC[DUF5050:1, Ldl_recept_b:1]; Ldl_recept_a:1	GO:0005886:plasma membrane:IDA; 
+FBgn0000463	Dl	EGF[cEGF:0.214, DSL:0.929, EGF_2:0.286, EGF:1]; MNNL:0.929	GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; GO:0031410:cytoplasmic vesicle:IDA; GO:0005912:adherens junction:IDA; GO:0016021:integral component of membrane:NAS; GO:0016021:integral component of membrane:TAS; GO:0016021:integral component of membrane:NAS; GO:0016021:integral component of membrane:IEA; GO:0035003:subapical complex:IDA; GO:0005912:adherens junction:IDA; GO:0030139:endocytic vesicle:IDA; GO:0005886:plasma membrane:IDA; GO:0031410:cytoplasmic vesicle:IDA; GO:0009986:cell surface:IDA; GO:0005768:endosome:IDA; 
+FBgn0001967	NimC3	EGF[EGF_MSP1_1:1]	GO:0005639:integral component of nuclear inner membrane:IEA; GO:0016021:integral component of membrane:ISM; 
+FBgn0002526	LanA	EGF[Laminin_EGF:1]; Laminin_G[Laminin_G_2:1]; Laminin_II:1; Laminin_B:1; Laminin_N:1; Laminin_I:1	GO:0005604:basement membrane:IDA; GO:0005605:basal lamina:IDA; GO:0005604:basement membrane:ISS; GO:0005604:basement membrane:NAS; GO:0005604:basement membrane:ISS; GO:0036062:presynaptic periactive zone:IDA; 
+FBgn0003174	pwn	SEA[SEA:1]; EGF[EGF_2:0.905, EGF_CA:1]	N/A
+FBgn0003390	shf	EGF[EGF_2:1, hEGF:0.289, EGF:0.158]; WIF:1	GO:0005578:proteinaceous extracellular matrix:IDA; GO:0005576:extracellular region:IDA; 
+FBgn0003719	tld	CUB[CUB:1]; EGF[EGF_CA:1, FXa_inhibition:1]; Astacin:1	GO:0005576:extracellular region:NAS; 
+FBgn0004647	N	SEA[NOD:1, NODP:1]; EGF[EGF_CA:1, cEGF:0.917, EGF_2:0.583, EGF:1]; Notch:1	GO:0005886:plasma membrane:IDA; GO:0005622:intracellular:IDA; GO:0005887:integral component of plasma membrane:NAS; GO:0005622:intracellular:NAS; GO:0016021:integral component of membrane:TAS; GO:0005634:nucleus:NAS; GO:0005634:nucleus:IDA; GO:0005634:nucleus:TAS; GO:0016021:integral component of membrane:IEA; GO:0035003:subapical complex:IDA; GO:0005912:adherens junction:IDA; GO:0043234:protein complex:IPI; GO:0030139:endocytic vesicle:IDA; GO:0009986:cell surface:IDA; GO:0005737:cytoplasm:IDA; GO:0005768:endosome:IDA; GO:0005770:late endosome:IDA; 
+FBgn0004649	yl	EGF[EGF_CA:1, cEGF:1, FXa_inhibition:1]; Beta_propeller_XC[Ldl_recept_b:1]; Ldl_recept_a:1	GO:0030135:coated vesicle:IDA; GO:0031410:cytoplasmic vesicle:IDA; 
+FBgn0004885	tok	CUB[CUB:1]; EGF[EGF_CA:0.0667, FXa_inhibition:1]; Astacin:1	GO:0016020:membrane:IEA; 
+FBgn0010395	Itgbn	VWA[Integrin_beta:1]; EGF[EGF_2:1, hEGF:0.6]	GO:0008305:integrin complex:ISS; GO:0008305:integrin complex:ISS; GO:0008305:integrin complex:TAS; GO:0008305:integrin complex:NAS; GO:0008305:integrin complex:NAS; GO:0008305:integrin complex:IDA; GO:0016021:integral component of membrane:IDA; 
+FBgn0013997	Nrx-IV	EGF[EGF:1]; Laminin_G[Laminin_G_2:1]; F5_F8_type_C:1	GO:0005886:plasma membrane:ISS; GO:0005918:septate junction:TAS; GO:0005918:septate junction:NAS; GO:0016021:integral component of membrane:NAS; GO:0005887:integral component of plasma membrane:NAS; GO:0005918:septate junction:NAS; GO:0005918:septate junction:TAS; GO:0005918:septate junction:TAS; GO:0005918:septate junction:TAS; GO:0005919:pleated septate junction:IDA; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0015773	NetA	EGF[Laminin_EGF:1]; TIMP-like[NTR:0.579]; Laminin_N:1	GO:0005576:extracellular region:ISS; GO:0005576:extracellular region:ISS; GO:0005578:proteinaceous extracellular matrix:ISS; GO:0005578:proteinaceous extracellular matrix:ISS; GO:0005829:cytosol:IDA; 
+FBgn0015774	NetB	EGF[Laminin_EGF:1]; TIMP-like[NTR:0.812]; Laminin_N:0.75	GO:0005576:extracellular region:ISS; GO:0005576:extracellular region:ISS; GO:0005578:proteinaceous extracellular matrix:ISS; 
+FBgn0021742	C901	EGF[hEGF:0.25, DSL:0.333, Laminin_EGF:0.833, EGF_2:1, EGF:1]	GO:0016020:membrane:IEA; 
+FBgn0024836	stan	EGF[Laminin_EGF:1, EGF:1]; Laminin_G[Laminin_G_2:1]; Cadherin[Cadherin:1, Cadherin_3:1]; HRM:0.222; GAIN:1; GPS:0.944	GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:ISS; GO:0005911:cell-cell junction:IDA; GO:0016021:integral component of membrane:ISM; GO:0016021:integral component of membrane:NAS; GO:0016021:integral component of membrane:ISS; GO:0005887:integral component of plasma membrane:ISS; GO:0005887:integral component of plasma membrane:ISS; GO:0005886:plasma membrane:IEA; GO:0016021:integral component of membrane:IEA; 
+FBgn0026403	Ndg	EGF[EGF_CA:0.923, cEGF:0.538, EGF_3:1, EGF:0.0769]; Beta_propeller_XC[Ldl_recept_b:1]; NIDO:1; G2F:1	GO:0005604:basement membrane:ISS; GO:0005604:basement membrane:ISS; 
+FBgn0027594	drpr	EGF[DSL:1, Laminin_EGF:1, EGF_2:0.756, EGF:0.39, hEGF:1]; EMI:0.366	GO:0031224:intrinsic component of membrane:NAS; 
+FBgn0030551	CG11674	EGF[EB:1]	GO:0005681:spliceosomal complex:ISS; 
+FBgn0031089	CG9572	EGF[EGF_3:0.0625, EGF:1]	N/A
+FBgn0031414	eys	EGF[EGF:1]; Laminin_G[Laminin_G_2:1]	GO:0005886:plasma membrane:ISS; GO:0005576:extracellular region:IDA; GO:0005615:extracellular space:IDA; GO:0009986:cell surface:IDA; GO:0031513:nonmotile primary cilium:IDA; 
+FBgn0031879	uif	CUB[CUB:1]; EGF[EGF_CA:1, cEGF:0.8, EGF_3:0.95, EGF:0.95, FXa_inhibition:1]; Lectin_C[Lectin_C:0.2]; Laminin_G[Laminin_G_3:0.95]; F5_F8_type_C:1; Ldl_recept_a:1; GCC2_GCC3:1; HYR:1; Sushi:1	GO:0016324:apical plasma membrane:IDA; 
+FBgn0031981	CG7466	CUB[CUB:1]; EGF[hEGF:0.923, EGF_CA:1, Laminin_EGF:1, EGF_2:0.0769]; Beta_propeller_XC[Kelch_3:1, Kelch_2:0.769, Kelch_1:0.923, Kelch_5:0.846, Kelch_4:1]; PSI:1	GO:0016020:membrane:IEA; 
+FBgn0036391	CG17364	EGF[EB:1]	N/A
+FBgn0038098	CG7381	EGF[EB:1]	GO:0005575:cellular_component:ND; 
+FBgn0039528	dsd	CUB[CUB:0.692]; EGF[Laminin_EGF:0.846, EGF_2:1, EGF:0.231]; Beta_propeller_XC[Kelch_3:1, Kelch_5:1]; PSI:0.923	GO:0005575:cellular_component:ND; 
+FBgn0039647	CG14509	EGF[EB:1]	N/A
+FBgn0051999	CG31999	EGF[cEGF:1, FXa_inhibition:0.909, EGF_CA:1]	GO:0005578:proteinaceous extracellular matrix:ISS; 
+FBgn0052179	Krn	EGF[EGF:1]	GO:0005886:plasma membrane:ISS; GO:0005783:endoplasmic reticulum:IDA; 
+FBgn0052373	CG32373	EGF[EGF_CA:1, cEGF:1, FXa_inhibition:1]; Sushi:1	N/A
+FBgn0052702	Cubn	CUB[CUB:1]; EGF[EGF_CA:1, cEGF:0.846, FXa_inhibition:0.0769, EGF_3:0.615, EGF:1]	GO:0016020:membrane:IEA; 
+FBgn0053087	LRP1	EGF[EGF_CA:1, cEGF:1, EGF_2:0.938, FXa_inhibition:1, EGF:1]; Beta_propeller_XC[Ldl_recept_b:1]; Ldl_recept_a:1	GO:0005829:cytosol:IDA; 
+FBgn0053196	dpy	EGF[EGF_3:1, cEGF:0.865, EGF:0.712, EGF_CA:0.865]	GO:0005578:proteinaceous extracellular matrix:NAS; GO:0031012:extracellular matrix:ISM; 
+FBgn0259685	crb	EGF[EGF_CA:1, cEGF:0.392, EGF:1]; Laminin_G[Laminin_G_2:1, Laminin_G_1:1]	GO:0005886:plasma membrane:ISS; GO:0016324:apical plasma membrane:IDA; GO:0016324:apical plasma membrane:TAS; GO:0016021:integral component of membrane:TAS; GO:0005886:plasma membrane:ISS; GO:0016021:integral component of membrane:NAS; GO:0016324:apical plasma membrane:TAS; GO:0005886:plasma membrane:IDA; GO:0016324:apical plasma membrane:TAS; GO:0016324:apical plasma membrane:NAS; GO:0016327:apicolateral plasma membrane:IPI; GO:0016327:apicolateral plasma membrane:IDA; GO:0005913:cell-cell adherens junction:NAS; GO:0035003:subapical complex:TAS; GO:0016021:integral component of membrane:TAS; GO:0005918:septate junction:TAS; GO:0016324:apical plasma membrane:NAS; GO:0016327:apicolateral plasma membrane:IDA; GO:0016028:rhabdomere:IDA; GO:0016324:apical plasma membrane:IDA; GO:0016028:rhabdomere:IDA; GO:0016324:apical plasma membrane:IDA; 
+FBgn0261260	mgl	EGF[EGF_CA:0.833, cEGF:1, FXa_inhibition:1, EGF:0.333]; Beta_propeller_XC[DUF5050:0.0833, Ldl_recept_b:1]; Ldl_recept_a:1	GO:0016324:apical plasma membrane:IDA; GO:0005886:plasma membrane:IDA; GO:0005829:cytosol:IDA; 
+FBgn0261563	wb	EGF[hEGF:0.19, Laminin_EGF:1]; Laminin_G[Laminin_G_2:1, Laminin_G_1:0.0476]; Laminin_II:0.476; Laminin_B:1; Laminin_N:0.714	GO:0005605:basal lamina:IDA; GO:0005605:basal lamina:ISS; GO:0005605:basal lamina:NAS; GO:0005604:basement membrane:ISS; 
+FBgn0261800	LanB1	EGF[Laminin_EGF:1]; Laminin_N:1	GO:0031012:extracellular matrix:IDA; GO:0005604:basement membrane:IDA; GO:0005604:basement membrane:IDA; GO:0005605:basal lamina:IDA; GO:0005604:basement membrane:ISS; GO:0005604:basement membrane:NAS; GO:0005604:basement membrane:ISS; GO:0012505:endomembrane system:IDA; 
+FBgn0262018	CadN2	EGF[EGF_2:1, EGF:1]; Laminin_G[Laminin_G_2:1]; Cadherin[Cadherin_3:0.905, Cadherin:1]	GO:0005887:integral component of plasma membrane:ISS; GO:0005887:integral component of plasma membrane:ISS; GO:0005886:plasma membrane:IEA; 
+FBgn0262870	axo	EGF[EGF:1]; Laminin_G[Laminin_G_2:1, Laminin_G_1:0.0286]; Kunitz_BPTI:0.971	GO:0005576:extracellular region:ISS; 
+FBgn0264089	sli	EGF[EGF:1]; LRR[LRR_5:1, LRR_8:1]; Laminin_G[Laminin_G_1:1]; LRRCT:1; LRRNT:1	GO:0031012:extracellular matrix:IDA; GO:0005578:proteinaceous extracellular matrix:TAS; GO:0071666:Slit-Robo signaling complex:IDA; 
+FBgn0267001	Ten-a	EGF[EGF_2:1]; Tox-GHH:0.966; RHS_repeat:1	GO:0005576:extracellular region:ISM; GO:0005578:proteinaceous extracellular matrix:ISS; GO:0005576:extracellular region:ISS; GO:0005886:plasma membrane:NAS; GO:0042734:presynaptic membrane:IDA; GO:0031594:neuromuscular junction:IDA; 
+FBgn0267348	LanB2	EGF[Laminin_EGF:1]; Laminin_N:1; Laminin_B:1	GO:0005604:basement membrane:IDA; GO:0031012:extracellular matrix:IDA; GO:0005605:basal lamina:IDA; GO:0005604:basement membrane:ISS; GO:0005604:basement membrane:NAS; GO:0005604:basement membrane:ISS; GO:0012505:endomembrane system:IDA; 
+FBgn0051092	LpR2	EGF[EGF_CA:0.993, cEGF:0.148, FXa_inhibition:0.993]; Beta_propeller_XC[DUF5050:0.362, Ldl_recept_b:0.993]; Ldl_recept_a:1	GO:0005886:plasma membrane:IDA; 
+FBgn0066101	LpR1	EGF[EGF_CA:0.993, cEGF:0.148, FXa_inhibition:0.993]; Beta_propeller_XC[DUF5050:0.362, Ldl_recept_b:0.993]; Ldl_recept_a:1	GO:0016020:membrane:ISS; 
+FBgn0038975	Nrx-1	EGF[EGF:0.98]; Laminin_G[Laminin_G_2:0.98]; <del>PBP:0.02</del>	GO:0005886:plasma membrane:NAS; GO:0016021:integral component of membrane:IEA; GO:0005886:plasma membrane:IDA; GO:0031594:neuromuscular junction:IDA; 
+FBgn0259110	mmd	Reprolysin[Reprolysin:1]; EGF[EGF_2:0.98]; ADAM_CR:1; Pep_M12B_propep:1; Disintegrin:1	GO:0016021:integral component of membrane:ISS; 
+FBgn0015609	CadN	EGF[EGF_2:0.979, EGF:0.979]; Laminin_G[Laminin_G_2:0.979]; Cadherin[Cadherin:1, Cadherin_3:0.979]	GO:0005911:cell-cell junction:IDA; GO:0016021:integral component of membrane:ISS; GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:TAS; GO:0005887:integral component of plasma membrane:ISS; GO:0005887:integral component of plasma membrane:ISS; GO:0030424:axon:IDA; GO:0030425:dendrite:IDA; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0030706	CG8909	<del>SGL[SGL:0.154]</del>; EGF[EGF_CA:0.654, cEGF:0.346, FXa_inhibition:0.962]; Beta_propeller_XC[DUF5050:0.385, Ldl_recept_b:0.962]; Ldl_recept_a:0.692	N/A
+FBgn0051665	wry	EGF[EGF:0.952]	GO:0009986:cell surface:IDA; 
+FBgn0004449	Ten-m	CarboxypepD_reg[CarboxypepD_reg:0.0526]; EGF[EGF_2:0.947]; Tox-GHH:1; RHS:0.158; RHS_repeat:1	GO:0005578:proteinaceous extracellular matrix:ISS; GO:0005578:proteinaceous extracellular matrix:ISS; GO:0005887:integral component of plasma membrane:IDA; GO:0031594:neuromuscular junction:IDA; GO:0045211:postsynaptic membrane:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0035798	frac	EGF[cEGF:0.947, FXa_inhibition:0.947, EGF_CA:0.947, EGF:0.474]; Sushi:0.895; HYR:0.947	N/A
+FBgn0004197	Ser	EGF[EGF_CA:0.857, cEGF:0.643, DSL:0.929, EGF_2:0.929, EGF:0.929, hEGF:0.429]; MNNL:0.929	GO:0005886:plasma membrane:IDA; GO:0030673:axolemma:IDA; GO:0005887:integral component of plasma membrane:NAS; GO:0016021:integral component of membrane:NAS; GO:0016021:integral component of membrane:IEA; GO:0016324:apical plasma membrane:IDA; GO:0009986:cell surface:IDA; 
+FBgn0259140	CG42255	EGF[EGF_CA:0.929, cEGF:0.929, EGF_2:0.214, EGF_3:0.929, EGF:0.929]; CUB[CUB_2:0.214, CUB:0.929]	GO:0016020:membrane:IEA; GO:0005875:microtubule associated complex:IDA; GO:0005829:cytosol:IDA; 
+FBgn0005672	spi	EGF[EGF:0.923]	GO:0005576:extracellular region:TAS; GO:0005886:plasma membrane:NAS; GO:0005794:Golgi apparatus:IGI; GO:0005783:endoplasmic reticulum:IDA; GO:0016021:integral component of membrane:NAS; GO:0005576:extracellular region:NAS; GO:0005783:endoplasmic reticulum:NAS; GO:0016021:integral component of membrane:NAS; GO:0005783:endoplasmic reticulum:IDA; 
+FBgn0001075	ft	EGF[EGF:0.917]; Laminin_G[Laminin_G_2:0.917, Laminin_G_1:0.917]; Cadherin[Cadherin_3:0.75, Cadherin:1]	GO:0005887:integral component of plasma membrane:NAS; GO:0016021:integral component of membrane:TAS; GO:0005887:integral component of plasma membrane:ISS; GO:0005887:integral component of plasma membrane:ISS; GO:0005887:integral component of plasma membrane:IDA; 
+FBgn0011204	cue	EGF[hEGF:0.917, EGF_2:0.0833, EGF:0.833]; Beta_propeller_XC[Ldl_recept_b:1]	N/A
+FBgn0034070	SP2353	EGF[FXa_inhibition:0.917, EGF:0.917]; Laminin_G[Laminin_G_2:0.917]	GO:0005615:extracellular space:ISS; 
+FBgn0051195	CG31195	EGF[EGF_CA:0.5, cEGF:0.917, EGF:0.417]	GO:0005886:plasma membrane:IDA; 
+FBgn0004657	mys	VWA[Integrin_beta:1]; EGF[EGF_2:0.889]; Integrin_B_tail:0.889	GO:0005887:integral component of plasma membrane:IDA; GO:0008305:integrin complex:IDA; GO:0009925:basal plasma membrane:IDA; GO:0008305:integrin complex:IPI; GO:0008305:integrin complex:NAS; GO:0008305:integrin complex:NAS; GO:0005925:focal adhesion:ISS; GO:0008305:integrin complex:ISS; GO:0008305:integrin complex:NAS; GO:0031252:cell leading edge:IDA; GO:0005886:plasma membrane:IDA; GO:0009925:basal plasma membrane:IDA; GO:0005886:plasma membrane:IDA; GO:0016328:lateral plasma membrane:IDA; GO:0005886:plasma membrane:IDA; GO:0005927:muscle tendon junction:IDA; GO:0043034:costamere:IDA; GO:0005925:focal adhesion:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0034797	nahoda	SEA[SEA:0.944]; EGF[EGF_2:0.889]; DOMON:1; <del>Trypan_PARP:0.167</del>; Chitin_bind_3:0.944	GO:0005575:cellular_component:ND; 
+FBgn0035539	slow	EGF[EGF_CA:0.889, cEGF:0.889, FXa_inhibition:0.111, hEGF:0.333, EGF_2:0.833]; EMI:0.889	GO:0005927:muscle tendon junction:IMP; 
+FBgn0040505	Alk	EGF[FXa_inhibition:0.846]; Ldl_recept_a:1; MAM:1; Gly_rich:1	GO:0005886:plasma membrane:ISS; GO:0061176:type Ib terminal bouton:IDA; GO:0071212:subsynaptic reticulum:IDA; GO:0061177:type Is terminal bouton:IDA; 
+FBgn0031850	Tsp	EGF[EGF_CA:0.812, cEGF:0.5, EGF_3:0.312, EGF_MSP1_1:0.375, EGF:0.125]; COMP:0.562; TSP_3:0.812; TSP_C:0.812	GO:0031012:extracellular matrix:IDA; GO:0043234:protein complex:IDA; GO:0005576:extracellular region:IEA; GO:0005927:muscle tendon junction:IDA; GO:0031012:extracellular matrix:IDA; 
+FBgn0028543	NimB2	EGF[cEGF:0.8, EGF:0.1]	GO:0005576:extracellular region:ISS; GO:0005576:extracellular region:ISM; 
+FBgn0001253	ImpE1	EGF[EB:0.786]; Mucin:0.214; Ldl_recept_a:0.929	GO:0019898:extrinsic component of membrane:TAS; 
+FBgn0261574	kug	EGF[EGF_CA:0.75, EGF:0.75]; Laminin_G[Laminin_G_2:0.75]; Cadherin[Cadherin_3:0.95, Cadherin:1]	GO:0005887:integral component of plasma membrane:ISS; GO:0005887:integral component of plasma membrane:ISS; GO:0005925:focal adhesion:IDA; GO:0009925:basal plasma membrane:IDA; 
+FBgn0001137	grk	EGF[EGF:0.714]	GO:0005576:extracellular region:NAS; GO:0005783:endoplasmic reticulum:TAS; 
+FBgn0027929	NimB1	EGF[EGF_2:0.667, cEGF:0.0667]	GO:0005576:extracellular region:ISM; 
+FBgn0029167	Hml	FnI-like[VWC:0.154]; EGF[EGF_2:0.615]; F5_F8_type_C:1; Pacifastin_I:0.692; TIL:1; VWD:1; C8:1	GO:0005576:extracellular region:IDA; 
+FBgn0028936	NimB5	EGF[cEGF:0.545]	GO:0005576:extracellular region:ISM; 
+FBgn0243514	eater	EGF[EGF_2:0.0667, cEGF:0.533]	GO:0016021:integral component of membrane:ISM; GO:0009986:cell surface:IDA; 
+FBgn0053978	CG33978	EGF[EGF_CA:0.467]; DUF4758:0.6	GO:0005575:cellular_component:ND; 
+FBgn0261514	NimA	EGF[hEGF:0.412]; EMI:0.765	GO:0016021:integral component of membrane:ISM; 
+FBgn0259896	NimC1	EGF[EGF_2:0.375, hEGF:0.125, cEGF:0.375]	GO:0005886:plasma membrane:IDA; GO:0016021:integral component of membrane:ISM; 
+FBgn0260011	NimC4	EGF[cEGF:0.167]	GO:0016021:integral component of membrane:ISM; GO:0005886:plasma membrane:IDA; 
+FBgn0028542	NimB4	EGF[EGF_2:0.154]	GO:0005576:extracellular region:ISM; 
+FBgn0264339	CG43795	EGF[EGF_CA:0.0588]	GO:0016021:integral component of membrane:IEA; 
+FBgn0003391	shg	Laminin_G[Laminin_G_2:1]; Cadherin[Cadherin_3:0.312, Cadherin:1]	GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:NAS; GO:0005887:integral component of plasma membrane:ISS; GO:0005887:integral component of plasma membrane:ISS; GO:0016021:integral component of membrane:NAS; GO:0005912:adherens junction:NAS; GO:0005912:adherens junction:NAS; GO:0005914:spot adherens junction:NAS; GO:0005915:zonula adherens:NAS; GO:0005912:adherens junction:NAS; GO:0005913:cell-cell adherens junction:TAS; GO:0005914:spot adherens junction:IDA; GO:0043296:apical junction complex:IDA; GO:0030175:filopodium:IDA; GO:0016342:catenin complex:IDA; GO:0005913:cell-cell adherens junction:IDA; GO:0005938:cell cortex:IDA; GO:0055037:recycling endosome:IDA; 
+FBgn0032683	kon	Laminin_G[Laminin_G_2:1]; Cadherin[Cadherin_3:1]	GO:0051286:cell tip:IDA; GO:0030018:Z disc:IDA; GO:0043034:costamere:IDA; GO:0005927:muscle tendon junction:IDA; 
+FBgn0003255	rk	LRR[LRR_8:1, LRR_5:1]	GO:0016021:integral component of membrane:ISS; GO:0005886:plasma membrane:NAS; GO:0016021:integral component of membrane:ISS; GO:0005887:integral component of plasma membrane:IDA; 
+FBgn0003731	Egfr	GF_recep_C-rich[Furin-like:1, GF_recep_IV:1]; LRR[Recep_L_domain:1]	GO:0005886:plasma membrane:TAS; GO:0005887:integral component of plasma membrane:NAS; GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0004364	18w	LRR[LRR_8:1, LRR_9:0.25, LRR_5:1]	GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:IDA; GO:0005737:cytoplasm:IDA; GO:0016021:integral component of membrane:ISS; 
+FBgn0005775	Con	LRR[LRR_8:1, LRR_5:1]	GO:0044295:axonal growth cone:IDA; GO:0009986:cell surface:IDA; GO:0031594:neuromuscular junction:IDA; GO:0031594:neuromuscular junction:IDA; GO:0005886:plasma membrane:TAS; 
+FBgn0010452	trn	LRR[LRR_8:1, LRR_5:1, LRR_9:0.308]; LRRCT:0.538	GO:0005886:plasma membrane:NAS; 
+FBgn0013272	Gp150	LRR[LRR_8:1, LRR_4:0.857, LRR_5:1]	GO:0005886:plasma membrane:IDA; 
+FBgn0013984	InR	GF_recep_C-rich[Furin-like:1]; fn3[fn3:0.846]; LRR[Recep_L_domain:1]	GO:0005899:insulin receptor complex:IDA; GO:0005886:plasma membrane:ISS; GO:0005911:cell-cell junction:IDA; GO:0005899:insulin receptor complex:IDA; GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:ISS; GO:0005887:integral component of plasma membrane:NAS; 
+FBgn0015770	MstProx	LRR[LRR_8:1]; LRRNT:0.667	GO:0005886:plasma membrane:NAS; GO:0005886:plasma membrane:NAS; GO:0016021:integral component of membrane:ISS; 
+FBgn0023095	caps	LRR[LRR_8:1, LRR_5:1]	GO:0016020:membrane:NAS; GO:0036194:muscle cell projection:IDA; 
+FBgn0026760	Tehao	LRR[LRR_5:0.857, LRR_8:1, LRR_4:0.0714]; LRRNT:0.786	GO:0005886:plasma membrane:NAS; GO:0016021:integral component of membrane:ISS; 
+FBgn0028518	CG18480	LRR[LRR_8:1, LRR_9:0.154, LRR_5:1]	N/A
+FBgn0028523	CG5888	LRR[LRR_8:0.786, LRR_5:1]	N/A
+FBgn0028872	CG18095	LRR[LRR_8:1, LRR_4:0.769, LRR_5:1]	N/A
+FBgn0028888	CG4168	LRR[LRR_8:1, LRR_9:0.273, LRR_4:0.409, LRR_5:1]	N/A
+FBgn0029114	Tollo	LRR[LRR_8:1, LRR_5:1]	GO:0005886:plasma membrane:ISS; GO:0016021:integral component of membrane:ISS; 
+FBgn0031100	CG1504	LRR[LRR_8:0.727, LRR_5:1]; LRRNT:0.0909	N/A
+FBgn0031548	CG8852	LRR[LRR_8:1, LRR_4:0.0833, LRR_5:0.0833]	GO:0005575:cellular_component:ND; 
+FBgn0032235	CG5096	LRR[LRR_8:1, LRR_9:0.0909, LRR_4:0.545, LRR_5:0.727]	N/A
+FBgn0032752	CG10702	GF_recep_C-rich[Furin-like:1]; fn3[fn3:0.143]; LRR[Recep_L_domain:1]	GO:0005887:integral component of plasma membrane:ISS; 
+FBgn0033250	CG14762	LRR[LRR_8:1, LRR_5:1]	N/A
+FBgn0034262	swi2	LRR[LRR_8:1, LRR_4:0.0714]	GO:0005575:cellular_component:ND; 
+FBgn0034476	Toll-7	LRR[LRR_8:1, LRR_9:0.154, LRR_5:1]	GO:0005886:plasma membrane:NAS; GO:0016021:integral component of membrane:ISS; GO:0009897:external side of plasma membrane:IDA; 
+FBgn0034540	Lrt	LRR[LRR_8:1, LRR_9:0.824, LRR_5:0.941]	GO:0016021:integral component of membrane:IDA; GO:0005886:plasma membrane:IDA; GO:0005927:muscle tendon junction:IDA; GO:0043234:protein complex:IPI; 
+FBgn0034602	Lapsyn	LRR[LRR_8:1, LRR_4:0.25, LRR_5:0.583]	GO:0043025:neuronal cell body:IDA; 
+FBgn0034717	CG5819	LRR[LRR_8:1, LRR_9:0.308, LRR_4:0.923, LRR_5:0.769]	N/A
+FBgn0035043	CG4781	LRR[LRR_8:1, LRR_9:0.0833, LRR_5:0.25]	N/A
+FBgn0035575	CG7509	LRR[LRR_8:1, LRR_5:1]	N/A
+FBgn0036040	CG6749	LRR[LRR_8:1, LRR_9:0.667, LRR_4:0.583, LRR_5:0.667]	N/A
+FBgn0036494	Toll-6	LRR[LRR_8:1, LRR_4:0.25, LRR_5:1]	GO:0005886:plasma membrane:NAS; GO:0016021:integral component of membrane:ISS; 
+FBgn0036587	CG4950	LRR[LRR_8:1, LRR_5:1]	N/A
+FBgn0036995	atk	LRR[LRR_8:1, LRR_4:1, LRR_5:1]	GO:0005737:cytoplasm:IDA; GO:0031012:extracellular matrix:IDA; 
+FBgn0037552	CG7800	LRR[LRR_8:1, LRR_4:0.25, LRR_5:1]	N/A
+FBgn0037553	CG18249	LRR[LRR_8:1, LRR_4:0.789, LRR_5:0.684]	N/A
+FBgn0037956	CG6959	LRR[LRR_8:1]	N/A
+FBgn0038279	Sdr	GF_recep_C-rich[Furin-like:1]; fn3[fn3:0.923]; LRR[Recep_L_domain:1]	GO:0016020:membrane:IEA; GO:0005615:extracellular space:IDA; 
+FBgn0038638	CG7702	LRR[LRR_8:1, LRR_9:0.0714, LRR_4:0.286]	N/A
+FBgn0038865	cDIP	LRR[LRR_8:1, LRR_9:0.167, LRR_4:0.167, LRR_5:0.917]	N/A
+FBgn0039332	alrm	LRR[LRR_8:1, LRR_4:0.273, LRR_5:1]	GO:0005575:cellular_component:ND; 
+FBgn0039354	Lgr3	LRR[LRR_8:1, LRR_9:0.417, LRR_5:1]; Ldl_recept_a:1	GO:0016021:integral component of membrane:ISS; GO:0016021:integral component of membrane:ISS; GO:0016021:integral component of membrane:IEA; 
+FBgn0039728	CG7896	LRR[LRR_8:1, LRR_4:0.462, LRR_5:1]	N/A
+FBgn0052055	CG32055	LRR[LRR_8:1, LRR_9:0.545, LRR_4:0.364, LRR_5:1]	GO:0016942:insulin-like growth factor binding protein complex:ISS; 
+FBgn0243486	rdo	LRR[LRR_8:1, LRR_4:0.0625, LRR_5:1]	N/A
+FBgn0259677	CG42346	LRR[LRR_8:1, LRR_4:0.846, LRR_5:1]	GO:0005575:cellular_component:ND; 
+FBgn0261269	conv	LRR[LRR_8:1, LRR_9:0.0769, LRR_4:0.538, LRR_5:1]	N/A
+FBgn0261674	CG42709	LRR[LRR_8:1, LRR_5:1]; LRRNT:0.467	N/A
+FBgn0262473	Tl	LRR[LRR_8:1, LRR_4:0.0714, LRR_5:0.929]; LRRCT:0.357; LRRNT:0.857	GO:0005887:integral component of plasma membrane:NAS; GO:0016021:integral component of membrane:NAS; GO:0043234:protein complex:IPI; GO:0005886:plasma membrane:IDA; GO:0005769:early endosome:IDA; GO:0005737:cytoplasm:IDA; GO:0009897:external side of plasma membrane:IDA; GO:0005886:plasma membrane:IDA; 
+FBgn0267435	chp	LRR[LRR_8:1, LRR_9:0.0625, LRR_4:0.875, LRR_5:1]	GO:0005886:plasma membrane:IDA; GO:0005886:plasma membrane:NAS; GO:0005886:plasma membrane:NAS; GO:0035996:rhabdomere microvillus:IDA; GO:0005886:plasma membrane:IDA; GO:0016028:rhabdomere:IDA; GO:0046658:anchored component of plasma membrane:IDA; GO:0016028:rhabdomere:IDA; 
+FBgn0268063	ltl	LRR[LRR_8:1, LRR_4:1, LRR_5:0.667]	GO:0005615:extracellular space:IDA; 
+FBgn0261509	haf	LRR[LRR_8:0.962, LRR_4:0.962, LRR_5:0.923]	N/A
+FBgn0032095	Toll-4	<del>Fibrinogen_C[Fibrinogen_C:0.0286]</del>; LRR[LRR_8:0.943, LRR_4:0.257]; LRRNT:0.371	GO:0005886:plasma membrane:NAS; GO:0016021:integral component of membrane:ISS; 
+FBgn0036978	Toll-9	LRR[LRR_8:0.941, LRR_4:0.294, LRR_5:0.765]	GO:0016021:integral component of membrane:ISS; 
+FBgn0016650	Lgr1	LRR[LRR_8:0.938, LRR_5:0.812]	GO:0016021:integral component of membrane:ISS; GO:0016021:integral component of membrane:ISS; GO:0005887:integral component of plasma membrane:IDA; 
+FBgn0260793	2mit	LRR[LRR_8:0.933, LRR_4:0.867, LRR_5:0.333]	GO:0005575:cellular_component:ND; 
+FBgn0001189	hfw	LRR[LRR_8:0.929, LRR_9:0.0714]; LRRNT:0.786	GO:0005575:cellular_component:ND; 
+FBgn0034718	wdp	LRR[LRR_8:0.923, LRR_4:0.0769]	GO:0005886:plasma membrane:NAS; GO:0016021:integral component of membrane:ISM; GO:0005886:plasma membrane:IDA; 
+FBgn0085397	Fili	LRR[LRR_8:0.867, LRR_5:0.8]	GO:0016021:integral component of membrane:ISM; 
+FBgn0037291	CG14662	LRR[LRR_8:0.833, LRR_4:0.167]	GO:0005575:cellular_component:ND; 
+FBgn0085440	CG34411	LRR[LRR_8:0.786, LRR_9:0.286, LRR_4:0.143, LRR_5:0.786]; Ldl_recept_a:0.786	GO:0016021:integral component of membrane:ISS; GO:0016021:integral component of membrane:ISS; GO:0016021:integral component of membrane:IEA; 
+FBgn0030603	CG5541	LRR[LRR_8:0.75, LRR_5:0.0833]	GO:0005575:cellular_component:ND; 
+FBgn0038866	CG5810	LRR[LRR_8:0.6, LRR_4:0.7, LRR_5:0.7]	N/A
+FBgn0002306	sas	FnI-like[TILa:0.778, VWC:0.778]; fn3[fn3:1]	GO:0005887:integral component of plasma membrane:NAS; GO:0016324:apical plasma membrane:NAS; GO:0016324:apical plasma membrane:IDA; 
+FBgn0003366	sev	fn3[fn3:1]	GO:0005886:plasma membrane:IDA; GO:0005887:integral component of plasma membrane:IDA; 
+FBgn0004368	Ptp4E	fn3[fn3:1]	GO:0005886:plasma membrane:ISS; GO:0030424:axon:IDA; GO:0043025:neuronal cell body:IDA; GO:0016324:apical plasma membrane:IDA; 
+FBgn0030245	CG1637	fn3[Pur_ac_phosph_N:1]; Metallophos_C:1; Metallophos:1	GO:0005575:cellular_component:ND; 
+FBgn0034085	Ptp52F	fn3[fn3:1]	GO:0005886:plasma membrane:IDA; 
+FBgn0039155	Kal1	fn3[fn3:1]; WAP:0.846	GO:0005578:proteinaceous extracellular matrix:ISS; GO:0005576:extracellular region:IDA; GO:0009986:cell surface:IDA; GO:0009897:external side of plasma membrane:IDA; 
+FBgn0046685	Wsck	fn3[fn3:1]; WSC:1	GO:0005886:plasma membrane:NAS; 
+FBgn0050418	nord	fn3[DUF2369:1]	GO:0005575:cellular_component:ND; 
+FBgn0004370	Ptp10D	fn3[fn3:0.929]	GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:NAS; GO:0030424:axon:IDA; GO:0045177:apical part of cell:IDA; 
+FBgn0025936	Eph	fn3[fn3:0.929]; GCC2_GCC3:0.929; Ephrin_lbd:0.929	GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:ISS; GO:0005886:plasma membrane:ISS; GO:0005887:integral component of plasma membrane:IEA; 
+FBgn0003733	tor	fn3[fn3:0.875]	GO:0005887:integral component of plasma membrane:ISM; GO:0005886:plasma membrane:NAS; 
+FBgn0053143	CG33143	fn3[fn3:0.795]	N/A
+FBgn0000497	ds	Cadherin[Cadherin:1, Cadherin_3:0.875]	GO:0005886:plasma membrane:ISS; GO:0016021:integral component of membrane:TAS; GO:0005887:integral component of plasma membrane:ISS; GO:0005887:integral component of plasma membrane:ISS; GO:0005887:integral component of plasma membrane:IDA; 
+FBgn0036715	Cad74A	Cadherin[Cadherin:1, Cadherin_3:0.917]	GO:0005887:integral component of plasma membrane:ISS; GO:0016324:apical plasma membrane:IDA; GO:0016324:apical plasma membrane:IDA; GO:0005902:microvillus:IDA; 
+FBgn0037963	Cad87A	Cadherin[Cadherin:1, Cadherin_3:1]	GO:0005887:integral component of plasma membrane:ISS; GO:0016021:integral component of membrane:NAS; GO:0005886:plasma membrane:IEA; 
+FBgn0038247	Cad88C	Cadherin[Cadherin:1, Cadherin_3:0.786]	GO:0005887:integral component of plasma membrane:ISS; GO:0005886:plasma membrane:IEA; 
+FBgn0038439	Cad89D	Cadherin[Cadherin:1]	GO:0005887:integral component of plasma membrane:ISS; GO:0005886:plasma membrane:IEA; 
+FBgn0039294	Cad96Cb	Cadherin[Cadherin:1]	GO:0005887:integral component of plasma membrane:ISS; GO:0005886:plasma membrane:IEA; 
+FBgn0039709	Cad99C	Cadherin[Cadherin:1, Cadherin_3:0.615]	GO:0005887:integral component of plasma membrane:ISS; GO:0016021:integral component of membrane:ISS; GO:0005902:microvillus:IDA; GO:0005902:microvillus:IDA; GO:0016324:apical plasma membrane:IDA; 
+FBgn0039928	Cals	Laminin_G[Laminin_G_2:0.867, Laminin_G_3:0.267]; Cadherin[Cadherin:1]	GO:0005887:integral component of plasma membrane:ISS; GO:0005576:extracellular region:ISS; GO:0045211:postsynaptic membrane:ISS; 
+FBgn0261053	Cad86C	Cadherin[Cadherin:0.963]	GO:0005887:integral component of plasma membrane:ISS; GO:0016021:integral component of membrane:NAS; GO:0035003:subapical complex:IDA; 
+FBgn0022800	Cad96Ca	Cadherin[Cadherin:0.667]	GO:0005887:integral component of plasma membrane:ISS; GO:0016020:membrane:IEA; GO:0045177:apical part of cell:IDA; 
+FBgn0259716	CG42370	<del>Ig[I-set:0.143]</del>; Peptidase_M13_N:1; Peptidase_M13:1	GO:0005575:cellular_component:ND; 
+FBgn0051823	CG31823	<del>Ig[Ig_2:0.0833]</del>; Peptidase_S10:1	N/A

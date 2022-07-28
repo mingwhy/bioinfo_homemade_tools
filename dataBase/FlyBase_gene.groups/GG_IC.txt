@@ -1,0 +1,274 @@
+#SUBMITTED ID	NAME	SYMBOL
+FBgn0029733	-	CG6927
+FBgn0036727	Secretory chloride channel	SecCl
+FBgn0037950	Histamine-gated chloride channel subunit 1	HisCl1
+FBgn0003011	ora transientless	ort
+FBgn0051116	Chloride channel-a	ClC-a
+FBgn0033755	Chloride channel-b	ClC-b
+FBgn0036566	Chloride channel-c	ClC-c
+FBgn0264908	pH-sensitive chloride channel 1	pHCl-1
+FBgn0039840	pH-sensitive chloride channel 2	pHCl-2
+FBgn0015558	tweety	tty
+FBgn0261444	-	CG3638
+FBgn0038721	subdued	subdued
+FBgn0033995	Golgi pH Regulator	GPHR
+FBgn0004244	Resistant to dieldrin	Rdl
+FBgn0001134	Glycine receptor	Grd
+FBgn0010240	Ligand-gated chloride channel homolog 3	Lcch3
+FBgn0033558	-	CG12344
+FBgn0030707	-	CG8916
+FBgn0028879	-	CG15270
+FBgn0036235	-	CG6938
+FBgn0030349	-	CG10353
+FBgn0000152	Abnormal X segregation	Axs
+FBgn0024963	GluClalpha	GluClalpha
+FBgn0263397	I[[h]] channel	Ih
+FBgn0263220	Hyperkinetic	Hk
+FBgn0265042	Inwardly rectifying potassium channel 1	Irk1
+FBgn0039081	Inwardly rectifying potassium channel 2	Irk2
+FBgn0032706	Inwardly rectifying potassium channel 3	Irk3
+FBgn0003380	Shaker	Sh
+FBgn0262593	Shaker cognate b	Shab
+FBgn0033494	KCNQ potassium channel	KCNQ
+FBgn0000535	ether a go-go	eag
+FBgn0003353	seizure	sei
+FBgn0011589	Eag-like K[+] channel	Elk
+FBgn0003386	Shaker cognate w	Shaw
+FBgn0085395	Shaw-like	Shawl
+FBgn0005564	Shaker cognate l	Shal
+FBgn0003429	slowpoke	slo
+FBgn0261698	slowpoke 2	SLO2
+FBgn0029761	small conductance calcium-activated potassium channel	SK
+FBgn0003861	transient receptor potential	trp
+FBgn0005614	transient receptor potential-like	trpl
+FBgn0016920	no mechanoreceptor potential C	nompC
+FBgn0032593	Transient receptor potential cation channel gamma	Trpgamma
+FBgn0035934	Transient receptor potential cation channel A1	TrpA1
+FBgn0060296	painless	pain
+FBgn0035113	pyrexia	pyx
+FBgn0260005	water witch	wtrw
+FBgn0086693	inactive	iav
+FBgn0036414	nanchung	nan
+FBgn0265194	Transient receptor potential cation channel, subfamily M	Trpm
+FBgn0041195	Polycystic kidney disease 2	Pkd2
+FBgn0262516	Transient receptor potential cation channel, mucolipin	Trpml
+FBgn0261361	-	CG42638
+FBgn0040238	Bestrophin 1	Best1
+FBgn0035696	Bestrophin 2	Best2
+FBgn0036492	Bestrophin 3	Best3
+FBgn0036491	Bestrophin 4	Best4
+FBgn0031634	Ionotropic receptor 25a	Ir25a
+FBgn0052704	Ionotropic receptor 8a	Ir8a
+FBgn0000036	nicotinic Acetylcholine Receptor alpha1	nAChRalpha1
+FBgn0000039	nicotinic Acetylcholine Receptor alpha2	nAChRalpha2
+FBgn0015519	nicotinic Acetylcholine Receptor alpha3	nAChRalpha3
+FBgn0266347	nicotinic Acetylcholine Receptor alpha4	nAChRalpha4
+FBgn0028875	nicotinic Acetylcholine Receptor alpha5	nAChRalpha5
+FBgn0032151	nicotinic Acetylcholine Receptor alpha6	nAChRalpha6
+FBgn0086778	nicotinic Acetylcholine Receptor alpha7	nAChRalpha7
+FBgn0000038	nicotinic Acetylcholine Receptor beta1	nAChRbeta1
+FBgn0004118	nicotinic Acetylcholine Receptor beta2	nAChRbeta2
+FBgn0031261	nicotinic Acetylcholine Receptor beta3	nAChRbeta3
+FBgn0035785	pickpocket 26	ppk26
+FBgn0035458	pickpocket 27	ppk27
+FBgn0265001	pickpocket 18	ppk18
+FBgn0032602	pickpocket 17	ppk17
+FBgn0034965	pickpocket 29	ppk29
+FBgn0039424	pickpocket 15	ppk15
+FBgn0039839	pickpocket 24	ppk24
+FBgn0039677	pickpocket 30	ppk30
+FBgn0050181	pickpocket 3	ppk3
+FBgn0051105	pickpocket 22	ppk22
+FBgn0052792	pickpocket 8	ppk8
+FBgn0053289	pickpocket 5	ppk5
+FBgn0085398	pickpocket 9	ppk9
+FBgn0024319	Nach	Nach
+FBgn0020258	pickpocket	ppk
+FBgn0034489	pickpocket 6	ppk6
+FBgn0031802	pickpocket 7	ppk7
+FBgn0065110	pickpocket 10	ppk10
+FBgn0065109	pickpocket 11	ppk11
+FBgn0034730	pickpocket 12	ppk12
+FBgn0053508	pickpocket 13	ppk13
+FBgn0031803	pickpocket 14	ppk14
+FBgn0065108	pickpocket 16	ppk16
+FBgn0039679	pickpocket 19	ppk19
+FBgn0039676	pickpocket 20	ppk20
+FBgn0039675	pickpocket 21	ppk21
+FBgn0030844	pickpocket 23	ppk23
+FBgn0053349	pickpocket 25	ppk25
+FBgn0030795	pickpocket 28	ppk28
+FBgn0022981	ripped pocket	rpk
+FBgn0051065	pickpocket 31	ppk31
+FBgn0010399	NMDA receptor 1	Nmdar1
+FBgn0053513	NMDA receptor 2	Nmdar2
+FBgn0039879	Ionotropic receptor 100a	Ir100a
+FBgn0083979	Ionotropic receptor 10a	Ir10a
+FBgn0030385	Ionotropic receptor 11a	Ir11a
+FBgn0031181	Ionotropic receptor 20a	Ir20a
+FBgn0033515	Ionotropic receptor 47a	Ir47a
+FBgn0033648	Ionotropic receptor 48b	Ir48b
+FBgn0033651	Ionotropic receptor 48c	Ir48c
+FBgn0050081	Ionotropic receptor 51b	Ir51b
+FBgn0034023	Ionotropic receptor 52a	Ir52a
+FBgn0050469	Ionotropic receptor 52b	Ir52b
+FBgn0050468	Ionotropic receptor 52c	Ir52c
+FBgn0050464	Ionotropic receptor 52d	Ir52d
+FBgn0034272	Ionotropic receptor 54a	Ir54a
+FBgn0050125	Ionotropic receptor 56a	Ir56a
+FBgn0034456	Ionotropic receptor 56b	Ir56b
+FBgn0034457	Ionotropic receptor 56c	Ir56c
+FBgn0034458	Ionotropic receptor 56d	Ir56d
+FBgn0259185	Ionotropic receptor 60b	Ir60b
+FBgn0259187	Ionotropic receptor 60d	Ir60d
+FBgn0035019	Ionotropic receptor 60e	Ir60e
+FBgn0053971	Ionotropic receptor 62a	Ir62a
+FBgn0036010	Ionotropic receptor 67a	Ir67a
+FBgn0036083	Ionotropic receptor 67b	Ir67b
+FBgn0052058	Ionotropic receptor 67c	Ir67c
+FBgn0036250	Ionotropic receptor 68b	Ir68b
+FBgn0029961	Ionotropic receptor 7a	Ir7a
+FBgn0029965	Ionotropic receptor 7b	Ir7b
+FBgn0029966	Ionotropic receptor 7c	Ir7c
+FBgn0259190	Ionotropic receptor 7d	Ir7d
+FBgn0259189	Ionotropic receptor 7e	Ir7e
+FBgn0259188	Ionotropic receptor 7f	Ir7f
+FBgn0029968	Ionotropic receptor 7g	Ir7g
+FBgn0037630	Ionotropic receptor 85a	Ir85a
+FBgn0038153	Ionotropic receptor 87a	Ir87a
+FBgn0051164	Ionotropic receptor 94a	Ir94a
+FBgn0051424	Ionotropic receptor 94b	Ir94b
+FBgn0051423	Ionotropic receptor 94c	Ir94c
+FBgn0259193	Ionotropic receptor 94d	Ir94d
+FBgn0259194	Ionotropic receptor 94e	Ir94e
+FBgn0051225	Ionotropic receptor 94f	Ir94f
+FBgn0039079	Ionotropic receptor 94g	Ir94g
+FBgn0039080	Ionotropic receptor 94h	Ir94h
+FBgn0004619	Glutamate receptor IA	GluRIA
+FBgn0264000	Glutamate receptor IB	GluRIB
+FBgn0039927	-	CG11155
+FBgn0039916	Eye-enriched kainate receptor	Ekar
+FBgn0038837	Kainate-type ionotropic glutamate receptor subunit 1D	KaiR1D
+FBgn0038840	-	Grik
+FBgn0026255	clumsy	clumsy
+FBgn0029521	Odorant receptor 1a	Or1a
+FBgn0023523	Odorant receptor 2a	Or2a
+FBgn0030016	Odorant receptor 7a	Or7a
+FBgn0030204	Odorant receptor 9a	Or9a
+FBgn0030298	Odorant receptor 10a	Or10a
+FBgn0030715	Odorant receptor 13a	Or13a
+FBgn0041626	Odorant receptor 19a	Or19a
+FBgn0062565	Odorant receptor 19b	Or19b
+FBgn0026398	Odorant receptor 22a	Or22a
+FBgn0026397	Odorant receptor 22b	Or22b
+FBgn0026396	Odorant receptor 22c	Or22c
+FBgn0026395	Odorant receptor 23a	Or23a
+FBgn0026394	Odorant receptor 24a	Or24a
+FBgn0032096	Odorant receptor 30a	Or30a
+FBgn0026392	Odorant receptor 33a	Or33a
+FBgn0026391	Odorant receptor 33b	Or33b
+FBgn0026390	Odorant receptor 33c	Or33c
+FBgn0028946	Odorant receptor 35a	Or35a
+FBgn0033041	Odorant receptor 42a	Or42a
+FBgn0033043	Odorant receptor 42b	Or42b
+FBgn0026389	Odorant receptor 43a	Or43a
+FBgn0026393	Odorant receptor 43b	Or43b
+FBgn0033404	Odorant receptor 45a	Or45a
+FBgn0033422	Odorant receptor 45b	Or45b
+FBgn0026388	Odorant receptor 46a	Or46a
+FBgn0026386	Odorant receptor 47a	Or47a
+FBgn0026385	Odorant receptor 47b	Or47b
+FBgn0033727	Odorant receptor 49a	Or49a
+FBgn0028963	Odorant receptor 49b	Or49b
+FBgn0034473	Odorant receptor 56a	Or56a
+FBgn0026384	Odorant receptor 59a	Or59a
+FBgn0034865	Odorant receptor 59b	Or59b
+FBgn0034866	Odorant receptor 59c	Or59c
+FBgn0035382	Odorant receptor 63a	Or63a
+FBgn0041625	Odorant receptor 65a	Or65a
+FBgn0041624	Odorant receptor 65b	Or65b
+FBgn0041623	Odorant receptor 65c	Or65c
+FBgn0036009	Odorant receptor 67a	Or67a
+FBgn0036019	Odorant receptor 67b	Or67b
+FBgn0036078	Odorant receptor 67c	Or67c
+FBgn0036080	Odorant receptor 67d	Or67d
+FBgn0041622	Odorant receptor 69a	Or69a
+FBgn0036474	Odorant receptor 71a	Or71a
+FBgn0036709	Odorant receptor 74a	Or74a
+FBgn0041621	Odorant receptor 82a	Or82a
+FBgn0037322	Odorant receptor 83a	Or83a
+FBgn0037399	Odorant receptor 83c	Or83c
+FBgn0037576	Odorant receptor 85a	Or85a
+FBgn0037590	Odorant receptor 85b	Or85b
+FBgn0037591	Odorant receptor 85c	Or85c
+FBgn0037594	Odorant receptor 85d	Or85d
+FBgn0026399	Odorant receptor 85e	Or85e
+FBgn0037685	Odorant receptor 85f	Or85f
+FBgn0038203	Odorant receptor 88a	Or88a
+FBgn0038798	Odorant receptor 92a	Or92a
+FBgn0039033	Odorant receptor 94a	Or94a
+FBgn0039034	Odorant receptor 94b	Or94b
+FBgn0039551	Odorant receptor 98a	Or98a
+FBgn0039582	Odorant receptor 98b	Or98b
+FBgn0037324	Odorant receptor co-receptor	Orco
+FBgn0067407	Odorant receptor 98a pseudogene	Or98P
+FBgn0031209	Ionotropic receptor 21a	Ir21a
+FBgn0051718	Ionotropic receptor 31a	Ir31a
+FBgn0259683	Ionotropic receptor 40a	Ir40a
+FBgn0040849	Ionotropic receptor 41a	Ir41a
+FBgn0034994	Ionotropic receptor 60a	Ir60a
+FBgn0035604	Ionotropic receptor 64a	Ir64a
+FBgn0036150	Ionotropic receptor 68a	Ir68a
+FBgn0036757	Ionotropic receptor 75a	Ir75a
+FBgn0261402	Ionotropic receptor 75b	Ir75b
+FBgn0261401	Ionotropic receptor 75c	Ir75c
+FBgn0036829	Ionotropic receptor 75d	Ir75d
+FBgn0260874	Ionotropic receptor 76a	Ir76a
+FBgn0036937	Ionotropic receptor 76b	Ir76b
+FBgn0037501	Ionotropic receptor 84a	Ir84a
+FBgn0038789	Ionotropic receptor 92a	Ir92a
+FBgn0259215	Ionotropic receptor 93a	Ir93a
+FBgn0260971	-	CG42594
+FBgn0262685	-	CG43155
+FBgn0033257	sandman	sand
+FBgn0035192	galene	galene
+FBgn0037690	TWIK-related acid-sensitive K[+] channel 7	Task7
+FBgn0017561	Open rectifier K[+] channel 1	Ork1
+FBgn0038165	TWIK-related acid-sensitive K[+] channel 6	Task6
+FBgn0038621	-	CG10864
+FBgn0027589	-	CG1688
+FBgn0085425	-	CG34396
+FBgn0261612	Cyclic nucleotide-gated ion channel subunit A	CngA
+FBgn0266346	Cyclic nucleotide-gated ion channel subunit B	CngB
+FBgn0259145	-	CG42260
+FBgn0263257	Cyclic nucleotide-gated ion channel-like	Cngl
+FBgn0042185	Mitochondrial calcium uniporter	MCU
+FBgn0062440	Essential MCU regulator	EMRE
+FBgn0031893	Mitochondrial calcium uptake 1	MICU1
+FBgn0041585	Orai	Orai
+FBgn0045073	Stromal interaction molecule	Stim
+FBgn0263111	cacophony	cac
+FBgn0001991	Ca[2+]-channel protein alpha[[1]] subunit D	Ca-alpha1D
+FBgn0028863	stolid	stol
+FBgn0261041	straightjacket	stj
+FBgn0264386	Ca[2+]-channel protein alpha[[1]] subunit T	Ca-alpha1T
+FBgn0261999	Ca[2+] channel Muscle-specific alpha2/delta subunit	Ca-Ma2d
+FBgn0287724	Ca2+-channel-protein-beta-subunit	Ca-beta
+FBgn0085434	Na channel protein 60E	NaCP60E
+FBgn0010051	Inositol 1,4,5,-trisphosphate receptor	Itpr
+FBgn0011286	Ryanodine receptor	RyR
+FBgn0261722	flower	fwe
+FBgn0003710	temperature-induced paralytic E	tipE
+FBgn0037766	tipE homolog 1	Teh1
+FBgn0035505	tipE homolog 2	Teh2
+FBgn0040697	tipE homolog 3	Teh3
+FBgn0035504	tipE homolog 4	Teh4
+FBgn0264953	Piezo	Piezo
+FBgn0267430	Piezo-like	Pzl
+FBgn0285944	paralytic	para
+FBgn0004620	Glutamate receptor IIA	GluRIIA
+FBgn0020429	Glutamate receptor IIB	GluRIIB
+FBgn0046113	Glutamate receptor IIC	GluRIIC
+FBgn0028422	Glutamate receptor IID	GluRIID
+FBgn0051201	Glutamate receptor IIE	GluRIIE
+FBgn0030529	Chloride intracellular channel	Clic

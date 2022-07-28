@@ -1,0 +1,3884 @@
+FBgn0000100	ribosomal genes
+FBgn0001995	ribosomal genes
+FBgn0002579	ribosomal genes
+FBgn0002590	ribosomal genes
+FBgn0002593	ribosomal genes
+FBgn0002622	ribosomal genes
+FBgn0002626	ribosomal genes
+FBgn0003274	ribosomal genes
+FBgn0003279	ribosomal genes
+FBgn0003517	ribosomal genes
+FBgn0003714	ribosomal genes
+FBgn0003941	ribosomal genes
+FBgn0003942	ribosomal genes
+FBgn0004403	ribosomal genes
+FBgn0004404	ribosomal genes
+FBgn0004867	ribosomal genes
+FBgn0005533	ribosomal genes
+FBgn0005593	ribosomal genes
+FBgn0010078	ribosomal genes
+FBgn0010198	ribosomal genes
+FBgn0010265	ribosomal genes
+FBgn0010408	ribosomal genes
+FBgn0010409	ribosomal genes
+FBgn0010411	ribosomal genes
+FBgn0010412	ribosomal genes
+FBgn0011272	ribosomal genes
+FBgn0011284	ribosomal genes
+FBgn0011787	ribosomal genes
+FBgn0013325	ribosomal genes
+FBgn0014023	ribosomal genes
+FBgn0014026	ribosomal genes
+FBgn0015288	ribosomal genes
+FBgn0015521	ribosomal genes
+FBgn0015756	ribosomal genes
+FBgn0016726	ribosomal genes
+FBgn0017545	ribosomal genes
+FBgn0017579	ribosomal genes
+FBgn0019936	ribosomal genes
+FBgn0020910	ribosomal genes
+FBgn0023170	ribosomal genes
+FBgn0023519	ribosomal genes
+FBgn0024733	ribosomal genes
+FBgn0026261	ribosomal genes
+FBgn0026372	ribosomal genes
+FBgn0026741	ribosomal genes
+FBgn0027494	ribosomal genes
+FBgn0028648	ribosomal genes
+FBgn0028697	ribosomal genes
+FBgn0029718	ribosomal genes
+FBgn0029785	ribosomal genes
+FBgn0029897	ribosomal genes
+FBgn0030136	ribosomal genes
+FBgn0030433	ribosomal genes
+FBgn0030552	ribosomal genes
+FBgn0030572	ribosomal genes
+FBgn0030616	ribosomal genes
+FBgn0030686	ribosomal genes
+FBgn0030692	ribosomal genes
+FBgn0030786	ribosomal genes
+FBgn0031231	ribosomal genes
+FBgn0031357	ribosomal genes
+FBgn0031639	ribosomal genes
+FBgn0031651	ribosomal genes
+FBgn0031660	ribosomal genes
+FBgn0031980	ribosomal genes
+FBgn0032053	ribosomal genes
+FBgn0032236	ribosomal genes
+FBgn0032404	ribosomal genes
+FBgn0032518	ribosomal genes
+FBgn0032720	ribosomal genes
+FBgn0032849	ribosomal genes
+FBgn0032987	ribosomal genes
+FBgn0033208	ribosomal genes
+FBgn0033480	ribosomal genes
+FBgn0033485	ribosomal genes
+FBgn0033555	ribosomal genes
+FBgn0033699	ribosomal genes
+FBgn0033907	ribosomal genes
+FBgn0033912	ribosomal genes
+FBgn0034001	ribosomal genes
+FBgn0034138	ribosomal genes
+FBgn0034361	ribosomal genes
+FBgn0034579	ribosomal genes
+FBgn0034727	ribosomal genes
+FBgn0034743	ribosomal genes
+FBgn0034822	ribosomal genes
+FBgn0034837	ribosomal genes
+FBgn0034893	ribosomal genes
+FBgn0034968	ribosomal genes
+FBgn0034986	ribosomal genes
+FBgn0035122	ribosomal genes
+FBgn0035272	ribosomal genes
+FBgn0035335	ribosomal genes
+FBgn0035374	ribosomal genes
+FBgn0035422	ribosomal genes
+FBgn0035534	ribosomal genes
+FBgn0035753	ribosomal genes
+FBgn0036135	ribosomal genes
+FBgn0036213	ribosomal genes
+FBgn0036335	ribosomal genes
+FBgn0036462	ribosomal genes
+FBgn0036557	ribosomal genes
+FBgn0036774	ribosomal genes
+FBgn0036825	ribosomal genes
+FBgn0036853	ribosomal genes
+FBgn0036990	ribosomal genes
+FBgn0037328	ribosomal genes
+FBgn0037330	ribosomal genes
+FBgn0037351	ribosomal genes
+FBgn0037529	ribosomal genes
+FBgn0037566	ribosomal genes
+FBgn0037608	ribosomal genes
+FBgn0037686	ribosomal genes
+FBgn0037892	ribosomal genes
+FBgn0037899	ribosomal genes
+FBgn0038234	ribosomal genes
+FBgn0038277	ribosomal genes
+FBgn0038281	ribosomal genes
+FBgn0038307	ribosomal genes
+FBgn0038319	ribosomal genes
+FBgn0038426	ribosomal genes
+FBgn0038474	ribosomal genes
+FBgn0038678	ribosomal genes
+FBgn0038834	ribosomal genes
+FBgn0038923	ribosomal genes
+FBgn0039129	ribosomal genes
+FBgn0039159	ribosomal genes
+FBgn0039300	ribosomal genes
+FBgn0039359	ribosomal genes
+FBgn0039406	ribosomal genes
+FBgn0039555	ribosomal genes
+FBgn0039713	ribosomal genes
+FBgn0039739	ribosomal genes
+FBgn0039757	ribosomal genes
+FBgn0039765	ribosomal genes
+FBgn0039835	ribosomal genes
+FBgn0039857	ribosomal genes
+FBgn0040007	ribosomal genes
+FBgn0040389	ribosomal genes
+FBgn0040907	ribosomal genes
+FBgn0042112	ribosomal genes
+FBgn0044030	ribosomal genes
+FBgn0044511	ribosomal genes
+FBgn0050481	ribosomal genes
+FBgn0051450	ribosomal genes
+FBgn0053002	ribosomal genes
+FBgn0064225	ribosomal genes
+FBgn0066084	ribosomal genes
+FBgn0083983	ribosomal genes
+FBgn0085211	ribosomal genes
+FBgn0086472	ribosomal genes
+FBgn0086710	ribosomal genes
+FBgn0260407	ribosomal genes
+FBgn0261380	ribosomal genes
+FBgn0261592	ribosomal genes
+FBgn0261596	ribosomal genes
+FBgn0261597	ribosomal genes
+FBgn0261599	ribosomal genes
+FBgn0261602	ribosomal genes
+FBgn0261608	ribosomal genes
+FBgn0263863	ribosomal genes
+FBgn0285947	ribosomal genes
+FBgn0285948	ribosomal genes
+FBgn0285949	ribosomal genes
+FBgn0285950	ribosomal genes
+FBgn0285951	ribosomal genes
+FBgn0286213	ribosomal genes
+FBgn0287187	ribosomal genes
+FBgn0000014	transcription factors
+FBgn0000015	transcription factors
+FBgn0000022	transcription factors
+FBgn0000028	transcription factors
+FBgn0000061	transcription factors
+FBgn0000097	transcription factors
+FBgn0000137	transcription factors
+FBgn0000157	transcription factors
+FBgn0000166	transcription factors
+FBgn0000179	transcription factors
+FBgn0000233	transcription factors
+FBgn0000251	transcription factors
+FBgn0000283	transcription factors
+FBgn0000286	transcription factors
+FBgn0000287	transcription factors
+FBgn0000289	transcription factors
+FBgn0000370	transcription factors
+FBgn0000411	transcription factors
+FBgn0000412	transcription factors
+FBgn0000439	transcription factors
+FBgn0000448	transcription factors
+FBgn0000459	transcription factors
+FBgn0000492	transcription factors
+FBgn0000504	transcription factors
+FBgn0000520	transcription factors
+FBgn0000529	transcription factors
+FBgn0000541	transcription factors
+FBgn0000546	transcription factors
+FBgn0000560	transcription factors
+FBgn0000567	transcription factors
+FBgn0000568	transcription factors
+FBgn0000575	transcription factors
+FBgn0000576	transcription factors
+FBgn0000577	transcription factors
+FBgn0000591	transcription factors
+FBgn0000606	transcription factors
+FBgn0000611	transcription factors
+FBgn0000617	transcription factors
+FBgn0000625	transcription factors
+FBgn0000659	transcription factors
+FBgn0000964	transcription factors
+FBgn0001077	transcription factors
+FBgn0001078	transcription factors
+FBgn0001133	transcription factors
+FBgn0001138	transcription factors
+FBgn0001147	transcription factors
+FBgn0001148	transcription factors
+FBgn0001150	transcription factors
+FBgn0001168	transcription factors
+FBgn0001170	transcription factors
+FBgn0001179	transcription factors
+FBgn0001180	transcription factors
+FBgn0001185	transcription factors
+FBgn0001222	transcription factors
+FBgn0001235	transcription factors
+FBgn0001269	transcription factors
+FBgn0001291	transcription factors
+FBgn0001297	transcription factors
+FBgn0001319	transcription factors
+FBgn0001320	transcription factors
+FBgn0001323	transcription factors
+FBgn0001325	transcription factors
+FBgn0001978	transcription factors
+FBgn0001983	transcription factors
+FBgn0001990	transcription factors
+FBgn0001994	transcription factors
+FBgn0002023	transcription factors
+FBgn0002521	transcription factors
+FBgn0002522	transcription factors
+FBgn0002561	transcription factors
+FBgn0002573	transcription factors
+FBgn0002576	transcription factors
+FBgn0002609	transcription factors
+FBgn0002631	transcription factors
+FBgn0002633	transcription factors
+FBgn0002723	transcription factors
+FBgn0002733	transcription factors
+FBgn0002734	transcription factors
+FBgn0002735	transcription factors
+FBgn0002914	transcription factors
+FBgn0002922	transcription factors
+FBgn0002931	transcription factors
+FBgn0002941	transcription factors
+FBgn0002985	transcription factors
+FBgn0003002	transcription factors
+FBgn0003028	transcription factors
+FBgn0003053	transcription factors
+FBgn0003117	transcription factors
+FBgn0003118	transcription factors
+FBgn0003129	transcription factors
+FBgn0003130	transcription factors
+FBgn0003145	transcription factors
+FBgn0003254	transcription factors
+FBgn0003267	transcription factors
+FBgn0003270	transcription factors
+FBgn0003300	transcription factors
+FBgn0003339	transcription factors
+FBgn0003345	transcription factors
+FBgn0003396	transcription factors
+FBgn0003411	transcription factors
+FBgn0003430	transcription factors
+FBgn0003448	transcription factors
+FBgn0003459	transcription factors
+FBgn0003460	transcription factors
+FBgn0003499	transcription factors
+FBgn0003507	transcription factors
+FBgn0003511	transcription factors
+FBgn0003512	transcription factors
+FBgn0003513	transcription factors
+FBgn0003567	transcription factors
+FBgn0003651	transcription factors
+FBgn0003683	transcription factors
+FBgn0003687	transcription factors
+FBgn0003720	transcription factors
+FBgn0003866	transcription factors
+FBgn0003870	transcription factors
+FBgn0003896	transcription factors
+FBgn0003900	transcription factors
+FBgn0003944	transcription factors
+FBgn0003963	transcription factors
+FBgn0003964	transcription factors
+FBgn0004050	transcription factors
+FBgn0004053	transcription factors
+FBgn0004054	transcription factors
+FBgn0004101	transcription factors
+FBgn0004102	transcription factors
+FBgn0004110	transcription factors
+FBgn0004170	transcription factors
+FBgn0004198	transcription factors
+FBgn0004362	transcription factors
+FBgn0004394	transcription factors
+FBgn0004396	transcription factors
+FBgn0004510	transcription factors
+FBgn0004567	transcription factors
+FBgn0004595	transcription factors
+FBgn0004606	transcription factors
+FBgn0004607	transcription factors
+FBgn0004618	transcription factors
+FBgn0004652	transcription factors
+FBgn0004656	transcription factors
+FBgn0004666	transcription factors
+FBgn0004795	transcription factors
+FBgn0004837	transcription factors
+FBgn0004854	transcription factors
+FBgn0004858	transcription factors
+FBgn0004859	transcription factors
+FBgn0004862	transcription factors
+FBgn0004863	transcription factors
+FBgn0004865	transcription factors
+FBgn0004870	transcription factors
+FBgn0004878	transcription factors
+FBgn0004880	transcription factors
+FBgn0004892	transcription factors
+FBgn0004893	transcription factors
+FBgn0004895	transcription factors
+FBgn0004896	transcription factors
+FBgn0004897	transcription factors
+FBgn0004898	transcription factors
+FBgn0004914	transcription factors
+FBgn0004915	transcription factors
+FBgn0005427	transcription factors
+FBgn0005558	transcription factors
+FBgn0005561	transcription factors
+FBgn0005612	transcription factors
+FBgn0005613	transcription factors
+FBgn0005638	transcription factors
+FBgn0005642	transcription factors
+FBgn0005658	transcription factors
+FBgn0005659	transcription factors
+FBgn0005660	transcription factors
+FBgn0005677	transcription factors
+FBgn0005694	transcription factors
+FBgn0005771	transcription factors
+FBgn0008636	transcription factors
+FBgn0008646	transcription factors
+FBgn0008651	transcription factors
+FBgn0010109	transcription factors
+FBgn0010228	transcription factors
+FBgn0010278	transcription factors
+FBgn0010280	transcription factors
+FBgn0010282	transcription factors
+FBgn0010323	transcription factors
+FBgn0010328	transcription factors
+FBgn0010355	transcription factors
+FBgn0010356	transcription factors
+FBgn0010417	transcription factors
+FBgn0010421	transcription factors
+FBgn0010433	transcription factors
+FBgn0010768	transcription factors
+FBgn0011236	transcription factors
+FBgn0011274	transcription factors
+FBgn0011276	transcription factors
+FBgn0011277	transcription factors
+FBgn0011278	transcription factors
+FBgn0011289	transcription factors
+FBgn0011290	transcription factors
+FBgn0011291	transcription factors
+FBgn0011648	transcription factors
+FBgn0011655	transcription factors
+FBgn0011656	transcription factors
+FBgn0011701	transcription factors
+FBgn0011723	transcription factors
+FBgn0011758	transcription factors
+FBgn0011763	transcription factors
+FBgn0011766	transcription factors
+FBgn0011836	transcription factors
+FBgn0013263	transcription factors
+FBgn0013347	transcription factors
+FBgn0013469	transcription factors
+FBgn0013751	transcription factors
+FBgn0013799	transcription factors
+FBgn0014018	transcription factors
+FBgn0014143	transcription factors
+FBgn0014179	transcription factors
+FBgn0014343	transcription factors
+FBgn0014859	transcription factors
+FBgn0014931	transcription factors
+FBgn0014949	transcription factors
+FBgn0015025	transcription factors
+FBgn0015239	transcription factors
+FBgn0015240	transcription factors
+FBgn0015371	transcription factors
+FBgn0015381	transcription factors
+FBgn0015396	transcription factors
+FBgn0015524	transcription factors
+FBgn0015550	transcription factors
+FBgn0015561	transcription factors
+FBgn0015664	transcription factors
+FBgn0015828	transcription factors
+FBgn0015829	transcription factors
+FBgn0015903	transcription factors
+FBgn0015904	transcription factors
+FBgn0015919	transcription factors
+FBgn0016076	transcription factors
+FBgn0016660	transcription factors
+FBgn0016694	transcription factors
+FBgn0016917	transcription factors
+FBgn0017578	transcription factors
+FBgn0019650	transcription factors
+FBgn0019809	transcription factors
+FBgn0020307	transcription factors
+FBgn0020309	transcription factors
+FBgn0020378	transcription factors
+FBgn0020379	transcription factors
+FBgn0020617	transcription factors
+FBgn0020912	transcription factors
+FBgn0021738	transcription factors
+FBgn0021767	transcription factors
+FBgn0021872	transcription factors
+FBgn0022699	transcription factors
+FBgn0022724	transcription factors
+FBgn0022740	transcription factors
+FBgn0022935	transcription factors
+FBgn0022936	transcription factors
+FBgn0023076	transcription factors
+FBgn0023091	transcription factors
+FBgn0023094	transcription factors
+FBgn0023215	transcription factors
+FBgn0023489	transcription factors
+FBgn0024184	transcription factors
+FBgn0024244	transcription factors
+FBgn0024249	transcription factors
+FBgn0024250	transcription factors
+FBgn0024251	transcription factors
+FBgn0024288	transcription factors
+FBgn0024321	transcription factors
+FBgn0024371	transcription factors
+FBgn0024909	transcription factors
+FBgn0024956	transcription factors
+FBgn0024975	transcription factors
+FBgn0025185	transcription factors
+FBgn0025334	transcription factors
+FBgn0025360	transcription factors
+FBgn0025525	transcription factors
+FBgn0025635	transcription factors
+FBgn0025679	transcription factors
+FBgn0025776	transcription factors
+FBgn0025800	transcription factors
+FBgn0025874	transcription factors
+FBgn0026058	transcription factors
+FBgn0026262	transcription factors
+FBgn0026324	transcription factors
+FBgn0026411	transcription factors
+FBgn0026441	transcription factors
+FBgn0026575	transcription factors
+FBgn0026582	transcription factors
+FBgn0026869	transcription factors
+FBgn0027339	transcription factors
+FBgn0027364	transcription factors
+FBgn0027503	transcription factors
+FBgn0027514	transcription factors
+FBgn0027788	transcription factors
+FBgn0027951	transcription factors
+FBgn0028398	transcription factors
+FBgn0028550	transcription factors
+FBgn0028647	transcription factors
+FBgn0028789	transcription factors
+FBgn0028878	transcription factors
+FBgn0028895	transcription factors
+FBgn0028926	transcription factors
+FBgn0028931	transcription factors
+FBgn0028979	transcription factors
+FBgn0028991	transcription factors
+FBgn0028996	transcription factors
+FBgn0028999	transcription factors
+FBgn0029123	transcription factors
+FBgn0029504	transcription factors
+FBgn0029711	transcription factors
+FBgn0029822	transcription factors
+FBgn0029824	transcription factors
+FBgn0029867	transcription factors
+FBgn0029895	transcription factors
+FBgn0029905	transcription factors
+FBgn0029928	transcription factors
+FBgn0029936	transcription factors
+FBgn0029939	transcription factors
+FBgn0030003	transcription factors
+FBgn0030005	transcription factors
+FBgn0030008	transcription factors
+FBgn0030009	transcription factors
+FBgn0030010	transcription factors
+FBgn0030012	transcription factors
+FBgn0030058	transcription factors
+FBgn0030093	transcription factors
+FBgn0030206	transcription factors
+FBgn0030240	transcription factors
+FBgn0030314	transcription factors
+FBgn0030316	transcription factors
+FBgn0030408	transcription factors
+FBgn0030455	transcription factors
+FBgn0030477	transcription factors
+FBgn0030505	transcription factors
+FBgn0030659	transcription factors
+FBgn0030680	transcription factors
+FBgn0030710	transcription factors
+FBgn0030787	transcription factors
+FBgn0030899	transcription factors
+FBgn0030963	transcription factors
+FBgn0031086	transcription factors
+FBgn0031144	transcription factors
+FBgn0031232	transcription factors
+FBgn0031309	transcription factors
+FBgn0031375	transcription factors
+FBgn0031434	transcription factors
+FBgn0031573	transcription factors
+FBgn0031597	transcription factors
+FBgn0031608	transcription factors
+FBgn0031610	transcription factors
+FBgn0031873	transcription factors
+FBgn0031874	transcription factors
+FBgn0031894	transcription factors
+FBgn0032150	transcription factors
+FBgn0032202	transcription factors
+FBgn0032209	transcription factors
+FBgn0032223	transcription factors
+FBgn0032295	transcription factors
+FBgn0032401	transcription factors
+FBgn0032473	transcription factors
+FBgn0032493	transcription factors
+FBgn0032512	transcription factors
+FBgn0032600	transcription factors
+FBgn0032651	transcription factors
+FBgn0032707	transcription factors
+FBgn0032730	transcription factors
+FBgn0032741	transcription factors
+FBgn0032763	transcription factors
+FBgn0032814	transcription factors
+FBgn0032815	transcription factors
+FBgn0032816	transcription factors
+FBgn0032817	transcription factors
+FBgn0032847	transcription factors
+FBgn0032940	transcription factors
+FBgn0032979	transcription factors
+FBgn0033010	transcription factors
+FBgn0033155	transcription factors
+FBgn0033185	transcription factors
+FBgn0033186	transcription factors
+FBgn0033252	transcription factors
+FBgn0033449	transcription factors
+FBgn0033458	transcription factors
+FBgn0033459	transcription factors
+FBgn0033491	transcription factors
+FBgn0033569	transcription factors
+FBgn0033581	transcription factors
+FBgn0033748	transcription factors
+FBgn0033749	transcription factors
+FBgn0033782	transcription factors
+FBgn0033929	transcription factors
+FBgn0033934	transcription factors
+FBgn0033993	transcription factors
+FBgn0033998	transcription factors
+FBgn0034012	transcription factors
+FBgn0034062	transcription factors
+FBgn0034096	transcription factors
+FBgn0034114	transcription factors
+FBgn0034120	transcription factors
+FBgn0034240	transcription factors
+FBgn0034379	transcription factors
+FBgn0034425	transcription factors
+FBgn0034520	transcription factors
+FBgn0034534	transcription factors
+FBgn0034570	transcription factors
+FBgn0034643	transcription factors
+FBgn0034650	transcription factors
+FBgn0034814	transcription factors
+FBgn0034821	transcription factors
+FBgn0034878	transcription factors
+FBgn0034946	transcription factors
+FBgn0035036	transcription factors
+FBgn0035137	transcription factors
+FBgn0035144	transcription factors
+FBgn0035157	transcription factors
+FBgn0035213	transcription factors
+FBgn0035238	transcription factors
+FBgn0035405	transcription factors
+FBgn0035407	transcription factors
+FBgn0035414	transcription factors
+FBgn0035481	transcription factors
+FBgn0035518	transcription factors
+FBgn0035625	transcription factors
+FBgn0035643	transcription factors
+FBgn0035687	transcription factors
+FBgn0035690	transcription factors
+FBgn0035691	transcription factors
+FBgn0035702	transcription factors
+FBgn0035769	transcription factors
+FBgn0035849	transcription factors
+FBgn0035903	transcription factors
+FBgn0035954	transcription factors
+FBgn0035956	transcription factors
+FBgn0035993	transcription factors
+FBgn0035997	transcription factors
+FBgn0036126	transcription factors
+FBgn0036134	transcription factors
+FBgn0036179	transcription factors
+FBgn0036248	transcription factors
+FBgn0036249	transcription factors
+FBgn0036274	transcription factors
+FBgn0036285	transcription factors
+FBgn0036294	transcription factors
+FBgn0036395	transcription factors
+FBgn0036396	transcription factors
+FBgn0036411	transcription factors
+FBgn0036522	transcription factors
+FBgn0036725	transcription factors
+FBgn0036791	transcription factors
+FBgn0037031	transcription factors
+FBgn0037085	transcription factors
+FBgn0037120	transcription factors
+FBgn0037202	transcription factors
+FBgn0037275	transcription factors
+FBgn0037317	transcription factors
+FBgn0037379	transcription factors
+FBgn0037436	transcription factors
+FBgn0037445	transcription factors
+FBgn0037446	transcription factors
+FBgn0037475	transcription factors
+FBgn0037540	transcription factors
+FBgn0037584	transcription factors
+FBgn0037617	transcription factors
+FBgn0037618	transcription factors
+FBgn0037619	transcription factors
+FBgn0037620	transcription factors
+FBgn0037621	transcription factors
+FBgn0037672	transcription factors
+FBgn0037698	transcription factors
+FBgn0037717	transcription factors
+FBgn0037722	transcription factors
+FBgn0037746	transcription factors
+FBgn0037751	transcription factors
+FBgn0037794	transcription factors
+FBgn0037876	transcription factors
+FBgn0037877	transcription factors
+FBgn0037918	transcription factors
+FBgn0037920	transcription factors
+FBgn0037921	transcription factors
+FBgn0037922	transcription factors
+FBgn0037923	transcription factors
+FBgn0037931	transcription factors
+FBgn0037937	transcription factors
+FBgn0038016	transcription factors
+FBgn0038047	transcription factors
+FBgn0038197	transcription factors
+FBgn0038244	transcription factors
+FBgn0038273	transcription factors
+FBgn0038301	transcription factors
+FBgn0038391	transcription factors
+FBgn0038402	transcription factors
+FBgn0038418	transcription factors
+FBgn0038472	transcription factors
+FBgn0038547	transcription factors
+FBgn0038548	transcription factors
+FBgn0038549	transcription factors
+FBgn0038550	transcription factors
+FBgn0038551	transcription factors
+FBgn0038592	transcription factors
+FBgn0038626	transcription factors
+FBgn0038741	transcription factors
+FBgn0038765	transcription factors
+FBgn0038766	transcription factors
+FBgn0038767	transcription factors
+FBgn0038768	transcription factors
+FBgn0038787	transcription factors
+FBgn0038805	transcription factors
+FBgn0038833	transcription factors
+FBgn0038851	transcription factors
+FBgn0038852	transcription factors
+FBgn0038978	transcription factors
+FBgn0038979	transcription factors
+FBgn0039039	transcription factors
+FBgn0039044	transcription factors
+FBgn0039078	transcription factors
+FBgn0039169	transcription factors
+FBgn0039201	transcription factors
+FBgn0039209	transcription factors
+FBgn0039225	transcription factors
+FBgn0039227	transcription factors
+FBgn0039283	transcription factors
+FBgn0039286	transcription factors
+FBgn0039329	transcription factors
+FBgn0039355	transcription factors
+FBgn0039411	transcription factors
+FBgn0039509	transcription factors
+FBgn0039602	transcription factors
+FBgn0039683	transcription factors
+FBgn0039712	transcription factors
+FBgn0039740	transcription factors
+FBgn0039808	transcription factors
+FBgn0039831	transcription factors
+FBgn0039860	transcription factors
+FBgn0039932	transcription factors
+FBgn0039937	transcription factors
+FBgn0039938	transcription factors
+FBgn0039946	transcription factors
+FBgn0040305	transcription factors
+FBgn0040318	transcription factors
+FBgn0040338	transcription factors
+FBgn0040366	transcription factors
+FBgn0040392	transcription factors
+FBgn0040465	transcription factors
+FBgn0040466	transcription factors
+FBgn0040467	transcription factors
+FBgn0040765	transcription factors
+FBgn0040929	transcription factors
+FBgn0041092	transcription factors
+FBgn0041105	transcription factors
+FBgn0041111	transcription factors
+FBgn0041156	transcription factors
+FBgn0042205	transcription factors
+FBgn0042630	transcription factors
+FBgn0042696	transcription factors
+FBgn0043364	transcription factors
+FBgn0043796	transcription factors
+FBgn0045759	transcription factors
+FBgn0045852	transcription factors
+FBgn0050011	transcription factors
+FBgn0050020	transcription factors
+FBgn0050401	transcription factors
+FBgn0050431	transcription factors
+FBgn0050443	transcription factors
+FBgn0051224	transcription factors
+FBgn0051365	transcription factors
+FBgn0051388	transcription factors
+FBgn0051441	transcription factors
+FBgn0051481	transcription factors
+FBgn0051612	transcription factors
+FBgn0051632	transcription factors
+FBgn0052006	transcription factors
+FBgn0052105	transcription factors
+FBgn0052121	transcription factors
+FBgn0052296	transcription factors
+FBgn0052532	transcription factors
+FBgn0052767	transcription factors
+FBgn0052772	transcription factors
+FBgn0053213	transcription factors
+FBgn0053557	transcription factors
+FBgn0054031	transcription factors
+FBgn0067779	transcription factors
+FBgn0083981	transcription factors
+FBgn0085369	transcription factors
+FBgn0085396	transcription factors
+FBgn0085405	transcription factors
+FBgn0085424	transcription factors
+FBgn0085432	transcription factors
+FBgn0085450	transcription factors
+FBgn0086350	transcription factors
+FBgn0086655	transcription factors
+FBgn0086680	transcription factors
+FBgn0086758	transcription factors
+FBgn0259162	transcription factors
+FBgn0259176	transcription factors
+FBgn0259211	transcription factors
+FBgn0259785	transcription factors
+FBgn0259789	transcription factors
+FBgn0259938	transcription factors
+FBgn0260632	transcription factors
+FBgn0260642	transcription factors
+FBgn0260741	transcription factors
+FBgn0261109	transcription factors
+FBgn0261239	transcription factors
+FBgn0261283	transcription factors
+FBgn0261434	transcription factors
+FBgn0261588	transcription factors
+FBgn0261648	transcription factors
+FBgn0261679	transcription factors
+FBgn0261703	transcription factors
+FBgn0261705	transcription factors
+FBgn0261723	transcription factors
+FBgn0261850	transcription factors
+FBgn0261930	transcription factors
+FBgn0261953	transcription factors
+FBgn0261963	transcription factors
+FBgn0262139	transcription factors
+FBgn0262160	transcription factors
+FBgn0262477	transcription factors
+FBgn0262582	transcription factors
+FBgn0262636	transcription factors
+FBgn0262656	transcription factors
+FBgn0262975	transcription factors
+FBgn0263072	transcription factors
+FBgn0263102	transcription factors
+FBgn0263108	transcription factors
+FBgn0263112	transcription factors
+FBgn0263118	transcription factors
+FBgn0263237	transcription factors
+FBgn0263239	transcription factors
+FBgn0263490	transcription factors
+FBgn0263511	transcription factors
+FBgn0263512	transcription factors
+FBgn0263667	transcription factors
+FBgn0263772	transcription factors
+FBgn0264005	transcription factors
+FBgn0264075	transcription factors
+FBgn0264442	transcription factors
+FBgn0264490	transcription factors
+FBgn0264562	transcription factors
+FBgn0264744	transcription factors
+FBgn0264954	transcription factors
+FBgn0265193	transcription factors
+FBgn0265276	transcription factors
+FBgn0265784	transcription factors
+FBgn0265968	transcription factors
+FBgn0266129	transcription factors
+FBgn0266411	transcription factors
+FBgn0266450	transcription factors
+FBgn0267033	transcription factors
+FBgn0267336	transcription factors
+FBgn0267337	transcription factors
+FBgn0267792	transcription factors
+FBgn0267821	transcription factors
+FBgn0267978	transcription factors
+FBgn0270924	transcription factors
+FBgn0278608	transcription factors
+FBgn0283451	transcription factors
+FBgn0283521	transcription factors
+FBgn0284249	transcription factors
+FBgn0284250	transcription factors
+FBgn0285879	transcription factors
+FBgn0285954	transcription factors
+FBgn0285971	transcription factors
+FBgn0286204	transcription factors
+FBgn0287186	transcription factors
+FBgn0287478	transcription factors
+FBgn0287768	transcription factors
+FBgn0260400	RNA-binding proteins
+FBgn0003575	RNA-binding proteins
+FBgn0003638	RNA-binding proteins
+FBgn0024360	RNA-binding proteins
+FBgn0024364	RNA-binding proteins
+FBgn0024987	RNA-binding proteins
+FBgn0001330	RNA-binding proteins
+FBgn0000377	RNA-binding proteins
+FBgn0024998	RNA-binding proteins
+FBgn0029666	RNA-binding proteins
+FBgn0029715	RNA-binding proteins
+FBgn0263987	RNA-binding proteins
+FBgn0015818	RNA-binding proteins
+FBgn0029907	RNA-binding proteins
+FBgn0027553	RNA-binding proteins
+FBgn0029992	RNA-binding proteins
+FBgn0030085	RNA-binding proteins
+FBgn0030170	RNA-binding proteins
+FBgn0030217	RNA-binding proteins
+FBgn0030246	RNA-binding proteins
+FBgn0030251	RNA-binding proteins
+FBgn0030354	RNA-binding proteins
+FBgn0030479	RNA-binding proteins
+FBgn0030524	RNA-binding proteins
+FBgn0026713	RNA-binding proteins
+FBgn0030571	RNA-binding proteins
+FBgn0030623	RNA-binding proteins
+FBgn0053172	RNA-binding proteins
+FBgn0005411	RNA-binding proteins
+FBgn0010416	RNA-binding proteins
+FBgn0261791	RNA-binding proteins
+FBgn0030833	RNA-binding proteins
+FBgn0030915	RNA-binding proteins
+FBgn0030956	RNA-binding proteins
+FBgn0030959	RNA-binding proteins
+FBgn0052533	RNA-binding proteins
+FBgn0031062	RNA-binding proteins
+FBgn0027334	RNA-binding proteins
+FBgn0031114	RNA-binding proteins
+FBgn0015527	RNA-binding proteins
+FBgn0031227	RNA-binding proteins
+FBgn0031229	RNA-binding proteins
+FBgn0031252	RNA-binding proteins
+FBgn0031266	RNA-binding proteins
+FBgn0020305	RNA-binding proteins
+FBgn0031319	RNA-binding proteins
+FBgn0031401	RNA-binding proteins
+FBgn0010263	RNA-binding proteins
+FBgn0031492	RNA-binding proteins
+FBgn0031493	RNA-binding proteins
+FBgn0031603	RNA-binding proteins
+FBgn0031631	RNA-binding proteins
+FBgn0031822	RNA-binding proteins
+FBgn0000392	RNA-binding proteins
+FBgn0028554	RNA-binding proteins
+FBgn0004838	RNA-binding proteins
+FBgn0016978	RNA-binding proteins
+FBgn0031883	RNA-binding proteins
+FBgn0003607	RNA-binding proteins
+FBgn0032050	RNA-binding proteins
+FBgn0032115	RNA-binding proteins
+FBgn0032156	RNA-binding proteins
+FBgn0032194	RNA-binding proteins
+FBgn0004419	RNA-binding proteins
+FBgn0011305	RNA-binding proteins
+FBgn0262601	RNA-binding proteins
+FBgn0051719	RNA-binding proteins
+FBgn0032256	RNA-binding proteins
+FBgn0004872	RNA-binding proteins
+FBgn0000146	RNA-binding proteins
+FBgn0032346	RNA-binding proteins
+FBgn0032388	RNA-binding proteins
+FBgn0032408	RNA-binding proteins
+FBgn0000114	RNA-binding proteins
+FBgn0028658	RNA-binding proteins
+FBgn0024183	RNA-binding proteins
+FBgn0000182	RNA-binding proteins
+FBgn0261068	RNA-binding proteins
+FBgn0086707	RNA-binding proteins
+FBgn0032701	RNA-binding proteins
+FBgn0086444	RNA-binding proteins
+FBgn0003346	RNA-binding proteins
+FBgn0032883	RNA-binding proteins
+FBgn0002774	RNA-binding proteins
+FBgn0033060	RNA-binding proteins
+FBgn0026761	RNA-binding proteins
+FBgn0033092	RNA-binding proteins
+FBgn0033160	RNA-binding proteins
+FBgn0033169	RNA-binding proteins
+FBgn0027548	RNA-binding proteins
+FBgn0005648	RNA-binding proteins
+FBgn0033380	RNA-binding proteins
+FBgn0033475	RNA-binding proteins
+FBgn0033528	RNA-binding proteins
+FBgn0033556	RNA-binding proteins
+FBgn0023167	RNA-binding proteins
+FBgn0000426	RNA-binding proteins
+FBgn0033741	RNA-binding proteins
+FBgn0033889	RNA-binding proteins
+FBgn0086895	RNA-binding proteins
+FBgn0003742	RNA-binding proteins
+FBgn0264962	RNA-binding proteins
+FBgn0034181	RNA-binding proteins
+FBgn0034187	RNA-binding proteins
+FBgn0265487	RNA-binding proteins
+FBgn0022987	RNA-binding proteins
+FBgn0028382	RNA-binding proteins
+FBgn0003520	RNA-binding proteins
+FBgn0265297	RNA-binding proteins
+FBgn0034564	RNA-binding proteins
+FBgn0034572	RNA-binding proteins
+FBgn0261067	RNA-binding proteins
+FBgn0034646	RNA-binding proteins
+FBgn0034659	RNA-binding proteins
+FBgn0028734	RNA-binding proteins
+FBgn0034703	RNA-binding proteins
+FBgn0022984	RNA-binding proteins
+FBgn0022986	RNA-binding proteins
+FBgn0022985	RNA-binding proteins
+FBgn0034731	RNA-binding proteins
+FBgn0034739	RNA-binding proteins
+FBgn0034740	RNA-binding proteins
+FBgn0003062	RNA-binding proteins
+FBgn0034834	RNA-binding proteins
+FBgn0034838	RNA-binding proteins
+FBgn0034879	RNA-binding proteins
+FBgn0034918	RNA-binding proteins
+FBgn0025790	RNA-binding proteins
+FBgn0259937	RNA-binding proteins
+FBgn0035016	RNA-binding proteins
+FBgn0035024	RNA-binding proteins
+FBgn0035047	RNA-binding proteins
+FBgn0260456	RNA-binding proteins
+FBgn0035111	RNA-binding proteins
+FBgn0035121	RNA-binding proteins
+FBgn0265574	RNA-binding proteins
+FBgn0035271	RNA-binding proteins
+FBgn0035323	RNA-binding proteins
+FBgn0035336	RNA-binding proteins
+FBgn0035397	RNA-binding proteins
+FBgn0027616	RNA-binding proteins
+FBgn0041164	RNA-binding proteins
+FBgn0035532	RNA-binding proteins
+FBgn0035591	RNA-binding proteins
+FBgn0052423	RNA-binding proteins
+FBgn0035675	RNA-binding proteins
+FBgn0002775	RNA-binding proteins
+FBgn0011640	RNA-binding proteins
+FBgn0010406	RNA-binding proteins
+FBgn0035842	RNA-binding proteins
+FBgn0035901	RNA-binding proteins
+FBgn0017430	RNA-binding proteins
+FBgn0264307	RNA-binding proteins
+FBgn0011206	RNA-binding proteins
+FBgn0036018	RNA-binding proteins
+FBgn0036184	RNA-binding proteins
+FBgn0036277	RNA-binding proteins
+FBgn0036314	RNA-binding proteins
+FBgn0036330	RNA-binding proteins
+FBgn0264001	RNA-binding proteins
+FBgn0036386	RNA-binding proteins
+FBgn0036450	RNA-binding proteins
+FBgn0036451	RNA-binding proteins
+FBgn0036487	RNA-binding proteins
+FBgn0036496	RNA-binding proteins
+FBgn0036534	RNA-binding proteins
+FBgn0036621	RNA-binding proteins
+FBgn0036640	RNA-binding proteins
+FBgn0036641	RNA-binding proteins
+FBgn0036696	RNA-binding proteins
+FBgn0260943	RNA-binding proteins
+FBgn0036828	RNA-binding proteins
+FBgn0036889	RNA-binding proteins
+FBgn0036915	RNA-binding proteins
+FBgn0262737	RNA-binding proteins
+FBgn0037200	RNA-binding proteins
+FBgn0037255	RNA-binding proteins
+FBgn0051550	RNA-binding proteins
+FBgn0037342	RNA-binding proteins
+FBgn0014366	RNA-binding proteins
+FBgn0037369	RNA-binding proteins
+FBgn0261789	RNA-binding proteins
+FBgn0051501	RNA-binding proteins
+FBgn0037504	RNA-binding proteins
+FBgn0037549	RNA-binding proteins
+FBgn0037550	RNA-binding proteins
+FBgn0037602	RNA-binding proteins
+FBgn0037610	RNA-binding proteins
+FBgn0003165	RNA-binding proteins
+FBgn0037716	RNA-binding proteins
+FBgn0002431	RNA-binding proteins
+FBgn0260944	RNA-binding proteins
+FBgn0037939	RNA-binding proteins
+FBgn0051368	RNA-binding proteins
+FBgn0038090	RNA-binding proteins
+FBgn0263396	RNA-binding proteins
+FBgn0010258	RNA-binding proteins
+FBgn0004587	RNA-binding proteins
+FBgn0041188	RNA-binding proteins
+FBgn0038345	RNA-binding proteins
+FBgn0003483	RNA-binding proteins
+FBgn0261286	RNA-binding proteins
+FBgn0266917	RNA-binding proteins
+FBgn0266053	RNA-binding proteins
+FBgn0027841	RNA-binding proteins
+FBgn0261065	RNA-binding proteins
+FBgn0002962	RNA-binding proteins
+FBgn0038746	RNA-binding proteins
+FBgn0038811	RNA-binding proteins
+FBgn0038826	RNA-binding proteins
+FBgn0038872	RNA-binding proteins
+FBgn0038927	RNA-binding proteins
+FBgn0264491	RNA-binding proteins
+FBgn0039117	RNA-binding proteins
+FBgn0039120	RNA-binding proteins
+FBgn0051184	RNA-binding proteins
+FBgn0039165	RNA-binding proteins
+FBgn0039183	RNA-binding proteins
+FBgn0039210	RNA-binding proteins
+FBgn0039226	RNA-binding proteins
+FBgn0039233	RNA-binding proteins
+FBgn0046214	RNA-binding proteins
+FBgn0011666	RNA-binding proteins
+FBgn0039385	RNA-binding proteins
+FBgn0004903	RNA-binding proteins
+FBgn0045862	RNA-binding proteins
+FBgn0039557	RNA-binding proteins
+FBgn0001215	RNA-binding proteins
+FBgn0039828	RNA-binding proteins
+FBgn0039846	RNA-binding proteins
+FBgn0039868	RNA-binding proteins
+FBgn0022361	RNA-binding proteins
+FBgn0039920	RNA-binding proteins
+FBgn0267791	RNA-binding proteins
+FBgn0025571	RNA-binding proteins
+FBgn0003321	RNA-binding proteins
+FBgn0029148	RNA-binding proteins
+FBgn0286786	RNA-binding proteins
+FBgn0283652	RNA-binding proteins
+FBgn0261933	RNA-binding proteins
+FBgn0010391	RNA-binding proteins
+FBgn0004581	RNA-binding proteins
+FBgn0004237	RNA-binding proteins
+FBgn0001986	RNA-binding proteins
+FBgn0015949	RNA-binding proteins
+FBgn0043884	RNA-binding proteins
+FBgn0040235	RNA-binding proteins
+FBgn0283477	RNA-binding proteins
+FBgn0265298	RNA-binding proteins
+FBgn0042134	RNA-binding proteins
+FBgn0043455	RNA-binding proteins
+FBgn0262475	RNA-binding proteins
+FBgn0263232	RNA-binding proteins
+FBgn0052364	RNA-binding proteins
+FBgn0052706	RNA-binding proteins
+FBgn0052708	RNA-binding proteins
+FBgn0260648	RNA-binding proteins
+FBgn0052344	RNA-binding proteins
+FBgn0052418	RNA-binding proteins
+FBgn0259935	RNA-binding proteins
+FBgn0053505	RNA-binding proteins
+FBgn0261872	RNA-binding proteins
+FBgn0039943	RNA-binding proteins
+FBgn0044510	RNA-binding proteins
+FBgn0250816	RNA-binding proteins
+FBgn0032240	RNA-binding proteins
+FBgn0264270	RNA-binding proteins
+FBgn0083976	RNA-binding proteins
+FBgn0085521	RNA-binding proteins
+FBgn0085693	RNA-binding proteins
+FBgn0039977	RNA-binding proteins
+FBgn0265047	RNA-binding proteins
+FBgn0283442	RNA-binding proteins
+FBgn0026197	non-coding RNA genes
+FBgn0040569	non-coding RNA genes
+FBgn0052553	non-coding RNA genes
+FBgn0051526	non-coding RNA genes
+FBgn0050009	non-coding RNA genes
+FBgn0052660	non-coding RNA genes
+FBgn0062961	non-coding RNA genes
+FBgn0063127	non-coding RNA genes
+FBgn0020546	non-coding RNA genes
+FBgn0047092	non-coding RNA genes
+FBgn0019661	non-coding RNA genes
+FBgn0052657	non-coding RNA genes
+FBgn0019660	non-coding RNA genes
+FBgn0063083	non-coding RNA genes
+FBgn0047205	non-coding RNA genes
+FBgn0030356	non-coding RNA genes
+FBgn0040859	non-coding RNA genes
+FBgn0053963	non-coding RNA genes
+FBgn0053987	non-coding RNA genes
+FBgn0250817	non-coding RNA genes
+FBgn0083990	non-coding RNA genes
+FBgn0058469	non-coding RNA genes
+FBgn0085812	non-coding RNA genes
+FBgn0259993	non-coding RNA genes
+FBgn0260722	non-coding RNA genes
+FBgn0061188	non-coding RNA genes
+FBgn0050055	non-coding RNA genes
+FBgn0262105	non-coding RNA genes
+FBgn0085540	non-coding RNA genes
+FBgn0052218	non-coding RNA genes
+FBgn0261429	non-coding RNA genes
+FBgn0262106	non-coding RNA genes
+FBgn0261638	non-coding RNA genes
+FBgn0261861	non-coding RNA genes
+FBgn0262025	non-coding RNA genes
+FBgn0262108	non-coding RNA genes
+FBgn0261709	non-coding RNA genes
+FBgn0261835	non-coding RNA genes
+FBgn0085505	non-coding RNA genes
+FBgn0262148	non-coding RNA genes
+FBgn0051044	non-coding RNA genes
+FBgn0052690	non-coding RNA genes
+FBgn0262149	non-coding RNA genes
+FBgn0262028	non-coding RNA genes
+FBgn0262109	non-coding RNA genes
+FBgn0261814	non-coding RNA genes
+FBgn0262944	non-coding RNA genes
+FBgn0051386	non-coding RNA genes
+FBgn0054044	non-coding RNA genes
+FBgn0262992	non-coding RNA genes
+FBgn0263380	non-coding RNA genes
+FBgn0263616	non-coding RNA genes
+FBgn0052160	non-coding RNA genes
+FBgn0052194	non-coding RNA genes
+FBgn0262998	non-coding RNA genes
+FBgn0262969	non-coding RNA genes
+FBgn0052027	non-coding RNA genes
+FBgn0263415	non-coding RNA genes
+FBgn0263507	non-coding RNA genes
+FBgn0262968	non-coding RNA genes
+FBgn0262989	non-coding RNA genes
+FBgn0263509	non-coding RNA genes
+FBgn0262687	non-coding RNA genes
+FBgn0263502	non-coding RNA genes
+FBgn0262996	non-coding RNA genes
+FBgn0263338	non-coding RNA genes
+FBgn0263339	non-coding RNA genes
+FBgn0262963	non-coding RNA genes
+FBgn0263327	non-coding RNA genes
+FBgn0263090	non-coding RNA genes
+FBgn0263095	non-coding RNA genes
+FBgn0262543	non-coding RNA genes
+FBgn0263611	non-coding RNA genes
+FBgn0263333	non-coding RNA genes
+FBgn0263581	non-coding RNA genes
+FBgn0263582	non-coding RNA genes
+FBgn0263583	non-coding RNA genes
+FBgn0262631	non-coding RNA genes
+FBgn0263497	non-coding RNA genes
+FBgn0263498	non-coding RNA genes
+FBgn0263383	non-coding RNA genes
+FBgn0262883	non-coding RNA genes
+FBgn0263412	non-coding RNA genes
+FBgn0054046	non-coding RNA genes
+FBgn0263384	non-coding RNA genes
+FBgn0262994	non-coding RNA genes
+FBgn0262995	non-coding RNA genes
+FBgn0262901	non-coding RNA genes
+FBgn0084008	non-coding RNA genes
+FBgn0263586	non-coding RNA genes
+FBgn0262993	non-coding RNA genes
+FBgn0263413	non-coding RNA genes
+FBgn0054052	non-coding RNA genes
+FBgn0053218	non-coding RNA genes
+FBgn0263505	non-coding RNA genes
+FBgn0267910	non-coding RNA genes
+FBgn0262990	non-coding RNA genes
+FBgn0263506	non-coding RNA genes
+FBgn0262945	non-coding RNA genes
+FBgn0263340	non-coding RNA genes
+FBgn0046297	non-coding RNA genes
+FBgn0263341	non-coding RNA genes
+FBgn0052835	non-coding RNA genes
+FBgn0263503	non-coding RNA genes
+FBgn0263328	non-coding RNA genes
+FBgn0263019	non-coding RNA genes
+FBgn0263088	non-coding RNA genes
+FBgn0263329	non-coding RNA genes
+FBgn0263615	non-coding RNA genes
+FBgn0263330	non-coding RNA genes
+FBgn0263504	non-coding RNA genes
+FBgn0263089	non-coding RNA genes
+FBgn0263587	non-coding RNA genes
+FBgn0263379	non-coding RNA genes
+FBgn0263343	non-coding RNA genes
+FBgn0263626	non-coding RNA genes
+FBgn0263331	non-coding RNA genes
+FBgn0051781	non-coding RNA genes
+FBgn0265270	non-coding RNA genes
+FBgn0263410	non-coding RNA genes
+FBgn0263411	non-coding RNA genes
+FBgn0263622	non-coding RNA genes
+FBgn0263623	non-coding RNA genes
+FBgn0263624	non-coding RNA genes
+FBgn0263625	non-coding RNA genes
+FBgn0054024	non-coding RNA genes
+FBgn0263382	non-coding RNA genes
+FBgn0263385	non-coding RNA genes
+FBgn0262741	non-coding RNA genes
+FBgn0263588	non-coding RNA genes
+FBgn0262943	non-coding RNA genes
+FBgn0263489	non-coding RNA genes
+FBgn0263612	non-coding RNA genes
+FBgn0263335	non-coding RNA genes
+FBgn0263336	non-coding RNA genes
+FBgn0050121	non-coding RNA genes
+FBgn0263337	non-coding RNA genes
+FBgn0263290	non-coding RNA genes
+FBgn0263618	non-coding RNA genes
+FBgn0054047	non-coding RNA genes
+FBgn0263802	non-coding RNA genes
+FBgn0264857	non-coding RNA genes
+FBgn0263595	non-coding RNA genes
+FBgn0263500	non-coding RNA genes
+FBgn0263501	non-coding RNA genes
+FBgn0263001	non-coding RNA genes
+FBgn0262951	non-coding RNA genes
+FBgn0263376	non-coding RNA genes
+FBgn0263613	non-coding RNA genes
+FBgn0263405	non-coding RNA genes
+FBgn0262903	non-coding RNA genes
+FBgn0085511	non-coding RNA genes
+FBgn0263499	non-coding RNA genes
+FBgn0262971	non-coding RNA genes
+FBgn0263334	non-coding RNA genes
+FBgn0263406	non-coding RNA genes
+FBgn0263407	non-coding RNA genes
+FBgn0263130	non-coding RNA genes
+FBgn0263452	non-coding RNA genes
+FBgn0263217	non-coding RNA genes
+FBgn0051451	non-coding RNA genes
+FBgn0263409	non-coding RNA genes
+FBgn0262886	non-coding RNA genes
+FBgn0262887	non-coding RNA genes
+FBgn0286827	non-coding RNA genes
+FBgn0263342	non-coding RNA genes
+FBgn0051647	non-coding RNA genes
+FBgn0031778	non-coding RNA genes
+FBgn0263617	non-coding RNA genes
+FBgn0263585	non-coding RNA genes
+FBgn0263495	non-coding RNA genes
+FBgn0263496	non-coding RNA genes
+FBgn0264834	non-coding RNA genes
+FBgn0264835	non-coding RNA genes
+FBgn0264616	non-coding RNA genes
+FBgn0264793	non-coding RNA genes
+FBgn0264794	non-coding RNA genes
+FBgn0264618	non-coding RNA genes
+FBgn0264445	non-coding RNA genes
+FBgn0264948	non-coding RNA genes
+FBgn0264949	non-coding RNA genes
+FBgn0264380	non-coding RNA genes
+FBgn0264893	non-coding RNA genes
+FBgn0264385	non-coding RNA genes
+FBgn0264383	non-coding RNA genes
+FBgn0264382	non-coding RNA genes
+FBgn0264942	non-coding RNA genes
+FBgn0264384	non-coding RNA genes
+FBgn0264786	non-coding RNA genes
+FBgn0264500	non-coding RNA genes
+FBgn0264675	non-coding RNA genes
+FBgn0264678	non-coding RNA genes
+FBgn0264941	non-coding RNA genes
+FBgn0264960	non-coding RNA genes
+FBgn0264268	non-coding RNA genes
+FBgn0264818	non-coding RNA genes
+FBgn0263769	non-coding RNA genes
+FBgn0264444	non-coding RNA genes
+FBgn0264390	non-coding RNA genes
+FBgn0264677	non-coding RNA genes
+FBgn0264940	non-coding RNA genes
+FBgn0263665	non-coding RNA genes
+FBgn0083994	non-coding RNA genes
+FBgn0265039	non-coding RNA genes
+FBgn0265040	non-coding RNA genes
+FBgn0264912	non-coding RNA genes
+FBgn0264787	non-coding RNA genes
+FBgn0261503	non-coding RNA genes
+FBgn0263768	non-coding RNA genes
+FBgn0265161	non-coding RNA genes
+FBgn0264984	non-coding RNA genes
+FBgn0264828	non-coding RNA genes
+FBgn0264831	non-coding RNA genes
+FBgn0265162	non-coding RNA genes
+FBgn0265164	non-coding RNA genes
+FBgn0265163	non-coding RNA genes
+FBgn0265165	non-coding RNA genes
+FBgn0265167	non-coding RNA genes
+FBgn0264987	non-coding RNA genes
+FBgn0264430	non-coding RNA genes
+FBgn0263650	non-coding RNA genes
+FBgn0263651	non-coding RNA genes
+FBgn0265066	non-coding RNA genes
+FBgn0264431	non-coding RNA genes
+FBgn0264982	non-coding RNA genes
+FBgn0265064	non-coding RNA genes
+FBgn0264840	non-coding RNA genes
+FBgn0264898	non-coding RNA genes
+FBgn0264825	non-coding RNA genes
+FBgn0263662	non-coding RNA genes
+FBgn0264826	non-coding RNA genes
+FBgn0264905	non-coding RNA genes
+FBgn0263663	non-coding RNA genes
+FBgn0264428	non-coding RNA genes
+FBgn0263664	non-coding RNA genes
+FBgn0265156	non-coding RNA genes
+FBgn0265157	non-coding RNA genes
+FBgn0264906	non-coding RNA genes
+FBgn0264901	non-coding RNA genes
+FBgn0264429	non-coding RNA genes
+FBgn0263652	non-coding RNA genes
+FBgn0263653	non-coding RNA genes
+FBgn0264792	non-coding RNA genes
+FBgn0264985	non-coding RNA genes
+FBgn0264833	non-coding RNA genes
+FBgn0264900	non-coding RNA genes
+FBgn0264909	non-coding RNA genes
+FBgn0264914	non-coding RNA genes
+FBgn0264956	non-coding RNA genes
+FBgn0264957	non-coding RNA genes
+FBgn0264958	non-coding RNA genes
+FBgn0264980	non-coding RNA genes
+FBgn0264505	non-coding RNA genes
+FBgn0265044	non-coding RNA genes
+FBgn0264506	non-coding RNA genes
+FBgn0265049	non-coding RNA genes
+FBgn0265051	non-coding RNA genes
+FBgn0265059	non-coding RNA genes
+FBgn0265061	non-coding RNA genes
+FBgn0265095	non-coding RNA genes
+FBgn0265098	non-coding RNA genes
+FBgn0265107	non-coding RNA genes
+FBgn0263970	non-coding RNA genes
+FBgn0264877	non-coding RNA genes
+FBgn0263660	non-coding RNA genes
+FBgn0264879	non-coding RNA genes
+FBgn0265106	non-coding RNA genes
+FBgn0264271	non-coding RNA genes
+FBgn0264508	non-coding RNA genes
+FBgn0264501	non-coding RNA genes
+FBgn0264510	non-coding RNA genes
+FBgn0264539	non-coding RNA genes
+FBgn0264358	non-coding RNA genes
+FBgn0264359	non-coding RNA genes
+FBgn0264378	non-coding RNA genes
+FBgn0264379	non-coding RNA genes
+FBgn0263659	non-coding RNA genes
+FBgn0263708	non-coding RNA genes
+FBgn0263709	non-coding RNA genes
+FBgn0265143	non-coding RNA genes
+FBgn0265144	non-coding RNA genes
+FBgn0264715	non-coding RNA genes
+FBgn0264716	non-coding RNA genes
+FBgn0264336	non-coding RNA genes
+FBgn0264337	non-coding RNA genes
+FBgn0264338	non-coding RNA genes
+FBgn0265074	non-coding RNA genes
+FBgn0265075	non-coding RNA genes
+FBgn0265151	non-coding RNA genes
+FBgn0265153	non-coding RNA genes
+FBgn0265152	non-coding RNA genes
+FBgn0265149	non-coding RNA genes
+FBgn0265150	non-coding RNA genes
+FBgn0263872	non-coding RNA genes
+FBgn0263871	non-coding RNA genes
+FBgn0263870	non-coding RNA genes
+FBgn0263657	non-coding RNA genes
+FBgn0263658	non-coding RNA genes
+FBgn0264869	non-coding RNA genes
+FBgn0264870	non-coding RNA genes
+FBgn0264882	non-coding RNA genes
+FBgn0264883	non-coding RNA genes
+FBgn0264884	non-coding RNA genes
+FBgn0264864	non-coding RNA genes
+FBgn0265017	non-coding RNA genes
+FBgn0264875	non-coding RNA genes
+FBgn0264084	non-coding RNA genes
+FBgn0264085	non-coding RNA genes
+FBgn0264943	non-coding RNA genes
+FBgn0264944	non-coding RNA genes
+FBgn0264434	non-coding RNA genes
+FBgn0264369	non-coding RNA genes
+FBgn0264549	non-coding RNA genes
+FBgn0264370	non-coding RNA genes
+FBgn0264371	non-coding RNA genes
+FBgn0263843	non-coding RNA genes
+FBgn0264885	non-coding RNA genes
+FBgn0264886	non-coding RNA genes
+FBgn0264887	non-coding RNA genes
+FBgn0264866	non-coding RNA genes
+FBgn0264867	non-coding RNA genes
+FBgn0264868	non-coding RNA genes
+FBgn0264889	non-coding RNA genes
+FBgn0263869	non-coding RNA genes
+FBgn0263866	non-coding RNA genes
+FBgn0263867	non-coding RNA genes
+FBgn0263868	non-coding RNA genes
+FBgn0264352	non-coding RNA genes
+FBgn0264345	non-coding RNA genes
+FBgn0261699	non-coding RNA genes
+FBgn0264890	non-coding RNA genes
+FBgn0264439	non-coding RNA genes
+FBgn0264891	non-coding RNA genes
+FBgn0264997	non-coding RNA genes
+FBgn0264951	non-coding RNA genes
+FBgn0264952	non-coding RNA genes
+FBgn0264083	non-coding RNA genes
+FBgn0264437	non-coding RNA genes
+FBgn0264269	non-coding RNA genes
+FBgn0264998	non-coding RNA genes
+FBgn0264999	non-coding RNA genes
+FBgn0264266	non-coding RNA genes
+FBgn0265069	non-coding RNA genes
+FBgn0264351	non-coding RNA genes
+FBgn0264441	non-coding RNA genes
+FBgn0263874	non-coding RNA genes
+FBgn0264992	non-coding RNA genes
+FBgn0264994	non-coding RNA genes
+FBgn0264565	non-coding RNA genes
+FBgn0262353	non-coding RNA genes
+FBgn0264366	non-coding RNA genes
+FBgn0265072	non-coding RNA genes
+FBgn0265086	non-coding RNA genes
+FBgn0265087	non-coding RNA genes
+FBgn0265088	non-coding RNA genes
+FBgn0265147	non-coding RNA genes
+FBgn0263648	non-coding RNA genes
+FBgn0263649	non-coding RNA genes
+FBgn0264349	non-coding RNA genes
+FBgn0264438	non-coding RNA genes
+FBgn0264435	non-coding RNA genes
+FBgn0264436	non-coding RNA genes
+FBgn0265085	non-coding RNA genes
+FBgn0263765	non-coding RNA genes
+FBgn0264264	non-coding RNA genes
+FBgn0264261	non-coding RNA genes
+FBgn0264263	non-coding RNA genes
+FBgn0264347	non-coding RNA genes
+FBgn0264373	non-coding RNA genes
+FBgn0264374	non-coding RNA genes
+FBgn0264392	non-coding RNA genes
+FBgn0265000	non-coding RNA genes
+FBgn0264440	non-coding RNA genes
+FBgn0264346	non-coding RNA genes
+FBgn0264367	non-coding RNA genes
+FBgn0264348	non-coding RNA genes
+FBgn0264365	non-coding RNA genes
+FBgn0265073	non-coding RNA genes
+FBgn0263838	non-coding RNA genes
+FBgn0265078	non-coding RNA genes
+FBgn0265080	non-coding RNA genes
+FBgn0265079	non-coding RNA genes
+FBgn0264391	non-coding RNA genes
+FBgn0264376	non-coding RNA genes
+FBgn0264375	non-coding RNA genes
+FBgn0265076	non-coding RNA genes
+FBgn0265077	non-coding RNA genes
+FBgn0264995	non-coding RNA genes
+FBgn0264865	non-coding RNA genes
+FBgn0264262	non-coding RNA genes
+FBgn0265148	non-coding RNA genes
+FBgn0264265	non-coding RNA genes
+FBgn0264548	non-coding RNA genes
+FBgn0264720	non-coding RNA genes
+FBgn0264700	non-coding RNA genes
+FBgn0264310	non-coding RNA genes
+FBgn0264475	non-coding RNA genes
+FBgn0264553	non-coding RNA genes
+FBgn0264518	non-coding RNA genes
+FBgn0264471	non-coding RNA genes
+FBgn0264474	non-coding RNA genes
+FBgn0264473	non-coding RNA genes
+FBgn0264476	non-coding RNA genes
+FBgn0264705	non-coding RNA genes
+FBgn0264604	non-coding RNA genes
+FBgn0264511	non-coding RNA genes
+FBgn0264701	non-coding RNA genes
+FBgn0264722	non-coding RNA genes
+FBgn0264721	non-coding RNA genes
+FBgn0264479	non-coding RNA genes
+FBgn0264726	non-coding RNA genes
+FBgn0263661	non-coding RNA genes
+FBgn0264514	non-coding RNA genes
+FBgn0264513	non-coding RNA genes
+FBgn0264512	non-coding RNA genes
+FBgn0263767	non-coding RNA genes
+FBgn0264704	non-coding RNA genes
+FBgn0264724	non-coding RNA genes
+FBgn0264843	non-coding RNA genes
+FBgn0264842	non-coding RNA genes
+FBgn0264602	non-coding RNA genes
+FBgn0264462	non-coding RNA genes
+FBgn0264466	non-coding RNA genes
+FBgn0264719	non-coding RNA genes
+FBgn0264717	non-coding RNA genes
+FBgn0264485	non-coding RNA genes
+FBgn0264484	non-coding RNA genes
+FBgn0264697	non-coding RNA genes
+FBgn0264571	non-coding RNA genes
+FBgn0264573	non-coding RNA genes
+FBgn0263844	non-coding RNA genes
+FBgn0263845	non-coding RNA genes
+FBgn0264551	non-coding RNA genes
+FBgn0264550	non-coding RNA genes
+FBgn0264567	non-coding RNA genes
+FBgn0264568	non-coding RNA genes
+FBgn0264708	non-coding RNA genes
+FBgn0264709	non-coding RNA genes
+FBgn0264480	non-coding RNA genes
+FBgn0264470	non-coding RNA genes
+FBgn0264727	non-coding RNA genes
+FBgn0264698	non-coding RNA genes
+FBgn0264569	non-coding RNA genes
+FBgn0264570	non-coding RNA genes
+FBgn0058053	non-coding RNA genes
+FBgn0264676	non-coding RNA genes
+FBgn0265822	non-coding RNA genes
+FBgn0265721	non-coding RNA genes
+FBgn0265446	non-coding RNA genes
+FBgn0267154	non-coding RNA genes
+FBgn0264600	non-coding RNA genes
+FBgn0265955	non-coding RNA genes
+FBgn0266849	non-coding RNA genes
+FBgn0266357	non-coding RNA genes
+FBgn0265696	non-coding RNA genes
+FBgn0267286	non-coding RNA genes
+FBgn0265978	non-coding RNA genes
+FBgn0265681	non-coding RNA genes
+FBgn0265888	non-coding RNA genes
+FBgn0266043	non-coding RNA genes
+FBgn0265677	non-coding RNA genes
+FBgn0265683	non-coding RNA genes
+FBgn0265690	non-coding RNA genes
+FBgn0265963	non-coding RNA genes
+FBgn0265646	non-coding RNA genes
+FBgn0267115	non-coding RNA genes
+FBgn0265366	non-coding RNA genes
+FBgn0267139	non-coding RNA genes
+FBgn0266279	non-coding RNA genes
+FBgn0265341	non-coding RNA genes
+FBgn0266984	non-coding RNA genes
+FBgn0267034	non-coding RNA genes
+FBgn0266281	non-coding RNA genes
+FBgn0265418	non-coding RNA genes
+FBgn0265930	non-coding RNA genes
+FBgn0266391	non-coding RNA genes
+FBgn0266800	non-coding RNA genes
+FBgn0267027	non-coding RNA genes
+FBgn0266026	non-coding RNA genes
+FBgn0265831	non-coding RNA genes
+FBgn0266586	non-coding RNA genes
+FBgn0265922	non-coding RNA genes
+FBgn0266966	non-coding RNA genes
+FBgn0266787	non-coding RNA genes
+FBgn0266979	non-coding RNA genes
+FBgn0266837	non-coding RNA genes
+FBgn0265793	non-coding RNA genes
+FBgn0265548	non-coding RNA genes
+FBgn0267169	non-coding RNA genes
+FBgn0265829	non-coding RNA genes
+FBgn0267179	non-coding RNA genes
+FBgn0266676	non-coding RNA genes
+FBgn0267147	non-coding RNA genes
+FBgn0267113	non-coding RNA genes
+FBgn0266817	non-coding RNA genes
+FBgn0266066	non-coding RNA genes
+FBgn0262620	non-coding RNA genes
+FBgn0267299	non-coding RNA genes
+FBgn0267029	non-coding RNA genes
+FBgn0267067	non-coding RNA genes
+FBgn0267152	non-coding RNA genes
+FBgn0266254	non-coding RNA genes
+FBgn0267119	non-coding RNA genes
+FBgn0265652	non-coding RNA genes
+FBgn0265862	non-coding RNA genes
+FBgn0266950	non-coding RNA genes
+FBgn0265845	non-coding RNA genes
+FBgn0267206	non-coding RNA genes
+FBgn0261636	non-coding RNA genes
+FBgn0265378	non-coding RNA genes
+FBgn0266883	non-coding RNA genes
+FBgn0267011	non-coding RNA genes
+FBgn0266230	non-coding RNA genes
+FBgn0266899	non-coding RNA genes
+FBgn0266913	non-coding RNA genes
+FBgn0266902	non-coding RNA genes
+FBgn0266812	non-coding RNA genes
+FBgn0267078	non-coding RNA genes
+FBgn0266381	non-coding RNA genes
+FBgn0265382	non-coding RNA genes
+FBgn0266074	non-coding RNA genes
+FBgn0266400	non-coding RNA genes
+FBgn0267165	non-coding RNA genes
+FBgn0266786	non-coding RNA genes
+FBgn0266904	non-coding RNA genes
+FBgn0265765	non-coding RNA genes
+FBgn0265720	non-coding RNA genes
+FBgn0265880	non-coding RNA genes
+FBgn0267073	non-coding RNA genes
+FBgn0266983	non-coding RNA genes
+FBgn0266839	non-coding RNA genes
+FBgn0265369	non-coding RNA genes
+FBgn0266903	non-coding RNA genes
+FBgn0265593	non-coding RNA genes
+FBgn0266139	non-coding RNA genes
+FBgn0267110	non-coding RNA genes
+FBgn0267188	non-coding RNA genes
+FBgn0266989	non-coding RNA genes
+FBgn0265759	non-coding RNA genes
+FBgn0267069	non-coding RNA genes
+FBgn0267090	non-coding RNA genes
+FBgn0266976	non-coding RNA genes
+FBgn0265750	non-coding RNA genes
+FBgn0267185	non-coding RNA genes
+FBgn0267018	non-coding RNA genes
+FBgn0266682	non-coding RNA genes
+FBgn0265678	non-coding RNA genes
+FBgn0265711	non-coding RNA genes
+FBgn0265982	non-coding RNA genes
+FBgn0266206	non-coding RNA genes
+FBgn0267083	non-coding RNA genes
+FBgn0267129	non-coding RNA genes
+FBgn0265707	non-coding RNA genes
+FBgn0265940	non-coding RNA genes
+FBgn0266947	non-coding RNA genes
+FBgn0266315	non-coding RNA genes
+FBgn0266219	non-coding RNA genes
+FBgn0266169	non-coding RNA genes
+FBgn0265734	non-coding RNA genes
+FBgn0266954	non-coding RNA genes
+FBgn0261813	non-coding RNA genes
+FBgn0267013	non-coding RNA genes
+FBgn0266791	non-coding RNA genes
+FBgn0266068	non-coding RNA genes
+FBgn0265805	non-coding RNA genes
+FBgn0267019	non-coding RNA genes
+FBgn0266242	non-coding RNA genes
+FBgn0266734	non-coding RNA genes
+FBgn0266048	non-coding RNA genes
+FBgn0265907	non-coding RNA genes
+FBgn0267247	non-coding RNA genes
+FBgn0266901	non-coding RNA genes
+FBgn0265527	non-coding RNA genes
+FBgn0265838	non-coding RNA genes
+FBgn0266036	non-coding RNA genes
+FBgn0265861	non-coding RNA genes
+FBgn0265347	non-coding RNA genes
+FBgn0266536	non-coding RNA genes
+FBgn0265787	non-coding RNA genes
+FBgn0266821	non-coding RNA genes
+FBgn0054006	non-coding RNA genes
+FBgn0265866	non-coding RNA genes
+FBgn0267218	non-coding RNA genes
+FBgn0265344	non-coding RNA genes
+FBgn0265315	non-coding RNA genes
+FBgn0030911	non-coding RNA genes
+FBgn0266151	non-coding RNA genes
+FBgn0266029	non-coding RNA genes
+FBgn0266683	non-coding RNA genes
+FBgn0266992	non-coding RNA genes
+FBgn0266748	non-coding RNA genes
+FBgn0266314	non-coding RNA genes
+FBgn0265819	non-coding RNA genes
+FBgn0266407	non-coding RNA genes
+FBgn0266326	non-coding RNA genes
+FBgn0267201	non-coding RNA genes
+FBgn0265992	non-coding RNA genes
+FBgn0266235	non-coding RNA genes
+FBgn0265530	non-coding RNA genes
+FBgn0266970	non-coding RNA genes
+FBgn0267229	non-coding RNA genes
+FBgn0265984	non-coding RNA genes
+FBgn0265379	non-coding RNA genes
+FBgn0265580	non-coding RNA genes
+FBgn0265692	non-coding RNA genes
+FBgn0265420	non-coding RNA genes
+FBgn0266592	non-coding RNA genes
+FBgn0266698	non-coding RNA genes
+FBgn0267227	non-coding RNA genes
+FBgn0265891	non-coding RNA genes
+FBgn0265733	non-coding RNA genes
+FBgn0265796	non-coding RNA genes
+FBgn0267125	non-coding RNA genes
+FBgn0265699	non-coding RNA genes
+FBgn0267267	non-coding RNA genes
+FBgn0267144	non-coding RNA genes
+FBgn0265719	non-coding RNA genes
+FBgn0265788	non-coding RNA genes
+FBgn0265987	non-coding RNA genes
+FBgn0266155	non-coding RNA genes
+FBgn0267176	non-coding RNA genes
+FBgn0266356	non-coding RNA genes
+FBgn0266008	non-coding RNA genes
+FBgn0265198	non-coding RNA genes
+FBgn0267316	non-coding RNA genes
+FBgn0265730	non-coding RNA genes
+FBgn0265551	non-coding RNA genes
+FBgn0265470	non-coding RNA genes
+FBgn0265863	non-coding RNA genes
+FBgn0267291	non-coding RNA genes
+FBgn0265745	non-coding RNA genes
+FBgn0265744	non-coding RNA genes
+FBgn0265645	non-coding RNA genes
+FBgn0266978	non-coding RNA genes
+FBgn0266938	non-coding RNA genes
+FBgn0265854	non-coding RNA genes
+FBgn0265964	non-coding RNA genes
+FBgn0266010	non-coding RNA genes
+FBgn0265592	non-coding RNA genes
+FBgn0266262	non-coding RNA genes
+FBgn0266631	non-coding RNA genes
+FBgn0266783	non-coding RNA genes
+FBgn0266362	non-coding RNA genes
+FBgn0265650	non-coding RNA genes
+FBgn0267174	non-coding RNA genes
+FBgn0267130	non-coding RNA genes
+FBgn0266355	non-coding RNA genes
+FBgn0266856	non-coding RNA genes
+FBgn0266840	non-coding RNA genes
+FBgn0267159	non-coding RNA genes
+FBgn0265655	non-coding RNA genes
+FBgn0266228	non-coding RNA genes
+FBgn0265809	non-coding RNA genes
+FBgn0266878	non-coding RNA genes
+FBgn0265979	non-coding RNA genes
+FBgn0267059	non-coding RNA genes
+FBgn0262898	non-coding RNA genes
+FBgn0267220	non-coding RNA genes
+FBgn0265728	non-coding RNA genes
+FBgn0267216	non-coding RNA genes
+FBgn0265718	non-coding RNA genes
+FBgn0265951	non-coding RNA genes
+FBgn0265447	non-coding RNA genes
+FBgn0266070	non-coding RNA genes
+FBgn0267323	non-coding RNA genes
+FBgn0266892	non-coding RNA genes
+FBgn0265806	non-coding RNA genes
+FBgn0265890	non-coding RNA genes
+FBgn0266039	non-coding RNA genes
+FBgn0266694	non-coding RNA genes
+FBgn0266648	non-coding RNA genes
+FBgn0267274	non-coding RNA genes
+FBgn0265687	non-coding RNA genes
+FBgn0265926	non-coding RNA genes
+FBgn0267015	non-coding RNA genes
+FBgn0265698	non-coding RNA genes
+FBgn0265062	non-coding RNA genes
+FBgn0265204	non-coding RNA genes
+FBgn0266684	non-coding RNA genes
+FBgn0266165	non-coding RNA genes
+FBgn0265715	non-coding RNA genes
+FBgn0266149	non-coding RNA genes
+FBgn0266549	non-coding RNA genes
+FBgn0265741	non-coding RNA genes
+FBgn0267213	non-coding RNA genes
+FBgn0265097	non-coding RNA genes
+FBgn0265881	non-coding RNA genes
+FBgn0267297	non-coding RNA genes
+FBgn0266380	non-coding RNA genes
+FBgn0266707	non-coding RNA genes
+FBgn0265640	non-coding RNA genes
+FBgn0266738	non-coding RNA genes
+FBgn0266030	non-coding RNA genes
+FBgn0266142	non-coding RNA genes
+FBgn0266893	non-coding RNA genes
+FBgn0266739	non-coding RNA genes
+FBgn0266823	non-coding RNA genes
+FBgn0266693	non-coding RNA genes
+FBgn0265591	non-coding RNA genes
+FBgn0266835	non-coding RNA genes
+FBgn0266972	non-coding RNA genes
+FBgn0266985	non-coding RNA genes
+FBgn0267140	non-coding RNA genes
+FBgn0266162	non-coding RNA genes
+FBgn0265826	non-coding RNA genes
+FBgn0265727	non-coding RNA genes
+FBgn0265708	non-coding RNA genes
+FBgn0266834	non-coding RNA genes
+FBgn0267198	non-coding RNA genes
+FBgn0267133	non-coding RNA genes
+FBgn0266831	non-coding RNA genes
+FBgn0266249	non-coding RNA genes
+FBgn0266689	non-coding RNA genes
+FBgn0265444	non-coding RNA genes
+FBgn0265643	non-coding RNA genes
+FBgn0267309	non-coding RNA genes
+FBgn0266095	non-coding RNA genes
+FBgn0265419	non-coding RNA genes
+FBgn0265923	non-coding RNA genes
+FBgn0267028	non-coding RNA genes
+FBgn0266982	non-coding RNA genes
+FBgn0265738	non-coding RNA genes
+FBgn0265648	non-coding RNA genes
+FBgn0267155	non-coding RNA genes
+FBgn0266928	non-coding RNA genes
+FBgn0266910	non-coding RNA genes
+FBgn0265821	non-coding RNA genes
+FBgn0267281	non-coding RNA genes
+FBgn0266073	non-coding RNA genes
+FBgn0052111	non-coding RNA genes
+FBgn0263085	non-coding RNA genes
+FBgn0267321	non-coding RNA genes
+FBgn0267007	non-coding RNA genes
+FBgn0266350	non-coding RNA genes
+FBgn0265685	non-coding RNA genes
+FBgn0266033	non-coding RNA genes
+FBgn0267096	non-coding RNA genes
+FBgn0266001	non-coding RNA genes
+FBgn0265820	non-coding RNA genes
+FBgn0266870	non-coding RNA genes
+FBgn0262897	non-coding RNA genes
+FBgn0265872	non-coding RNA genes
+FBgn0265875	non-coding RNA genes
+FBgn0265663	non-coding RNA genes
+FBgn0265906	non-coding RNA genes
+FBgn0265348	non-coding RNA genes
+FBgn0265581	non-coding RNA genes
+FBgn0265254	non-coding RNA genes
+FBgn0267235	non-coding RNA genes
+FBgn0266752	non-coding RNA genes
+FBgn0266805	non-coding RNA genes
+FBgn0265920	non-coding RNA genes
+FBgn0265986	non-coding RNA genes
+FBgn0265996	non-coding RNA genes
+FBgn0262142	non-coding RNA genes
+FBgn0265766	non-coding RNA genes
+FBgn0267062	non-coding RNA genes
+FBgn0267293	non-coding RNA genes
+FBgn0266643	non-coding RNA genes
+FBgn0267311	non-coding RNA genes
+FBgn0266965	non-coding RNA genes
+FBgn0266990	non-coding RNA genes
+FBgn0265635	non-coding RNA genes
+FBgn0261924	non-coding RNA genes
+FBgn0267063	non-coding RNA genes
+FBgn0267089	non-coding RNA genes
+FBgn0266383	non-coding RNA genes
+FBgn0266217	non-coding RNA genes
+FBgn0265898	non-coding RNA genes
+FBgn0266087	non-coding RNA genes
+FBgn0266589	non-coding RNA genes
+FBgn0265099	non-coding RNA genes
+FBgn0266774	non-coding RNA genes
+FBgn0267264	non-coding RNA genes
+FBgn0265934	non-coding RNA genes
+FBgn0267257	non-coding RNA genes
+FBgn0266772	non-coding RNA genes
+FBgn0267212	non-coding RNA genes
+FBgn0266912	non-coding RNA genes
+FBgn0267282	non-coding RNA genes
+FBgn0266951	non-coding RNA genes
+FBgn0265883	non-coding RNA genes
+FBgn0267191	non-coding RNA genes
+FBgn0267207	non-coding RNA genes
+FBgn0265814	non-coding RNA genes
+FBgn0265338	non-coding RNA genes
+FBgn0262825	non-coding RNA genes
+FBgn0266909	non-coding RNA genes
+FBgn0259996	non-coding RNA genes
+FBgn0265453	non-coding RNA genes
+FBgn0266961	non-coding RNA genes
+FBgn0266778	non-coding RNA genes
+FBgn0264723	non-coding RNA genes
+FBgn0265644	non-coding RNA genes
+FBgn0266024	non-coding RNA genes
+FBgn0265633	non-coding RNA genes
+FBgn0265636	non-coding RNA genes
+FBgn0266034	non-coding RNA genes
+FBgn0266731	non-coding RNA genes
+FBgn0265903	non-coding RNA genes
+FBgn0266051	non-coding RNA genes
+FBgn0265798	non-coding RNA genes
+FBgn0266535	non-coding RNA genes
+FBgn0266052	non-coding RNA genes
+FBgn0266830	non-coding RNA genes
+FBgn0265587	non-coding RNA genes
+FBgn0265660	non-coding RNA genes
+FBgn0266245	non-coding RNA genes
+FBgn0267118	non-coding RNA genes
+FBgn0265801	non-coding RNA genes
+FBgn0266280	non-coding RNA genes
+FBgn0265713	non-coding RNA genes
+FBgn0267318	non-coding RNA genes
+FBgn0265921	non-coding RNA genes
+FBgn0267283	non-coding RNA genes
+FBgn0266152	non-coding RNA genes
+FBgn0265857	non-coding RNA genes
+FBgn0266836	non-coding RNA genes
+FBgn0266218	non-coding RNA genes
+FBgn0266898	non-coding RNA genes
+FBgn0267300	non-coding RNA genes
+FBgn0266203	non-coding RNA genes
+FBgn0266744	non-coding RNA genes
+FBgn0266781	non-coding RNA genes
+FBgn0262097	non-coding RNA genes
+FBgn0265851	non-coding RNA genes
+FBgn0267275	non-coding RNA genes
+FBgn0265804	non-coding RNA genes
+FBgn0266930	non-coding RNA genes
+FBgn0267204	non-coding RNA genes
+FBgn0267233	non-coding RNA genes
+FBgn0267149	non-coding RNA genes
+FBgn0265740	non-coding RNA genes
+FBgn0265303	non-coding RNA genes
+FBgn0265712	non-coding RNA genes
+FBgn0266255	non-coding RNA genes
+FBgn0265860	non-coding RNA genes
+FBgn0265654	non-coding RNA genes
+FBgn0265345	non-coding RNA genes
+FBgn0266328	non-coding RNA genes
+FBgn0266678	non-coding RNA genes
+FBgn0267065	non-coding RNA genes
+FBgn0266956	non-coding RNA genes
+FBgn0265421	non-coding RNA genes
+FBgn0265697	non-coding RNA genes
+FBgn0267313	non-coding RNA genes
+FBgn0266224	non-coding RNA genes
+FBgn0265844	non-coding RNA genes
+FBgn0267120	non-coding RNA genes
+FBgn0265980	non-coding RNA genes
+FBgn0267116	non-coding RNA genes
+FBgn0266140	non-coding RNA genes
+FBgn0267793	non-coding RNA genes
+FBgn0265736	non-coding RNA genes
+FBgn0267232	non-coding RNA genes
+FBgn0265653	non-coding RNA genes
+FBgn0266743	non-coding RNA genes
+FBgn0265364	non-coding RNA genes
+FBgn0265754	non-coding RNA genes
+FBgn0267273	non-coding RNA genes
+FBgn0266789	non-coding RNA genes
+FBgn0266244	non-coding RNA genes
+FBgn0265679	non-coding RNA genes
+FBgn0267320	non-coding RNA genes
+FBgn0267122	non-coding RNA genes
+FBgn0265961	non-coding RNA genes
+FBgn0265509	non-coding RNA genes
+FBgn0265841	non-coding RNA genes
+FBgn0266007	non-coding RNA genes
+FBgn0266850	non-coding RNA genes
+FBgn0267082	non-coding RNA genes
+FBgn0267142	non-coding RNA genes
+FBgn0266213	non-coding RNA genes
+FBgn0266398	non-coding RNA genes
+FBgn0265763	non-coding RNA genes
+FBgn0266877	non-coding RNA genes
+FBgn0266379	non-coding RNA genes
+FBgn0266897	non-coding RNA genes
+FBgn0265909	non-coding RNA genes
+FBgn0267175	non-coding RNA genes
+FBgn0267322	non-coding RNA genes
+FBgn0267060	non-coding RNA genes
+FBgn0265661	non-coding RNA genes
+FBgn0266871	non-coding RNA genes
+FBgn0265947	non-coding RNA genes
+FBgn0262604	non-coding RNA genes
+FBgn0265196	non-coding RNA genes
+FBgn0265422	non-coding RNA genes
+FBgn0265756	non-coding RNA genes
+FBgn0265962	non-coding RNA genes
+FBgn0266564	non-coding RNA genes
+FBgn0265902	non-coding RNA genes
+FBgn0265919	non-coding RNA genes
+FBgn0265846	non-coding RNA genes
+FBgn0262981	non-coding RNA genes
+FBgn0262033	non-coding RNA genes
+FBgn0266365	non-coding RNA genes
+FBgn0266727	non-coding RNA genes
+FBgn0266231	non-coding RNA genes
+FBgn0266768	non-coding RNA genes
+FBgn0267178	non-coding RNA genes
+FBgn0266392	non-coding RNA genes
+FBgn0265710	non-coding RNA genes
+FBgn0265312	non-coding RNA genes
+FBgn0265299	non-coding RNA genes
+FBgn0267231	non-coding RNA genes
+FBgn0267305	non-coding RNA genes
+FBgn0266980	non-coding RNA genes
+FBgn0266009	non-coding RNA genes
+FBgn0267284	non-coding RNA genes
+FBgn0265832	non-coding RNA genes
+FBgn0266652	non-coding RNA genes
+FBgn0265897	non-coding RNA genes
+FBgn0266726	non-coding RNA genes
+FBgn0266944	non-coding RNA genes
+FBgn0266815	non-coding RNA genes
+FBgn0266851	non-coding RNA genes
+FBgn0266159	non-coding RNA genes
+FBgn0265752	non-coding RNA genes
+FBgn0265985	non-coding RNA genes
+FBgn0265942	non-coding RNA genes
+FBgn0266960	non-coding RNA genes
+FBgn0266981	non-coding RNA genes
+FBgn0264515	non-coding RNA genes
+FBgn0266116	non-coding RNA genes
+FBgn0265672	non-coding RNA genes
+FBgn0267186	non-coding RNA genes
+FBgn0265808	non-coding RNA genes
+FBgn0265583	non-coding RNA genes
+FBgn0266616	non-coding RNA genes
+FBgn0265202	non-coding RNA genes
+FBgn0267143	non-coding RNA genes
+FBgn0265925	non-coding RNA genes
+FBgn0266687	non-coding RNA genes
+FBgn0266154	non-coding RNA genes
+FBgn0265691	non-coding RNA genes
+FBgn0265941	non-coding RNA genes
+FBgn0266003	non-coding RNA genes
+FBgn0266891	non-coding RNA genes
+FBgn0265946	non-coding RNA genes
+FBgn0267166	non-coding RNA genes
+FBgn0267032	non-coding RNA genes
+FBgn0265511	non-coding RNA genes
+FBgn0266932	non-coding RNA genes
+FBgn0267141	non-coding RNA genes
+FBgn0267009	non-coding RNA genes
+FBgn0265307	non-coding RNA genes
+FBgn0267100	non-coding RNA genes
+FBgn0265067	non-coding RNA genes
+FBgn0267228	non-coding RNA genes
+FBgn0265889	non-coding RNA genes
+FBgn0267075	non-coding RNA genes
+FBgn0266873	non-coding RNA genes
+FBgn0265539	non-coding RNA genes
+FBgn0266145	non-coding RNA genes
+FBgn0266846	non-coding RNA genes
+FBgn0265965	non-coding RNA genes
+FBgn0266358	non-coding RNA genes
+FBgn0266858	non-coding RNA genes
+FBgn0266094	non-coding RNA genes
+FBgn0262681	non-coding RNA genes
+FBgn0052773	non-coding RNA genes
+FBgn0266457	non-coding RNA genes
+FBgn0266394	non-coding RNA genes
+FBgn0266936	non-coding RNA genes
+FBgn0266832	non-coding RNA genes
+FBgn0266931	non-coding RNA genes
+FBgn0266578	non-coding RNA genes
+FBgn0266826	non-coding RNA genes
+FBgn0267151	non-coding RNA genes
+FBgn0265976	non-coding RNA genes
+FBgn0265748	non-coding RNA genes
+FBgn0267148	non-coding RNA genes
+FBgn0267003	non-coding RNA genes
+FBgn0265674	non-coding RNA genes
+FBgn0266207	non-coding RNA genes
+FBgn0265304	non-coding RNA genes
+FBgn0266022	non-coding RNA genes
+FBgn0266987	non-coding RNA genes
+FBgn0266776	non-coding RNA genes
+FBgn0265104	non-coding RNA genes
+FBgn0265825	non-coding RNA genes
+FBgn0267288	non-coding RNA genes
+FBgn0265526	non-coding RNA genes
+FBgn0266138	non-coding RNA genes
+FBgn0265700	non-coding RNA genes
+FBgn0265676	non-coding RNA genes
+FBgn0267248	non-coding RNA genes
+FBgn0265662	non-coding RNA genes
+FBgn0266939	non-coding RNA genes
+FBgn0265547	non-coding RNA genes
+FBgn0267128	non-coding RNA genes
+FBgn0265928	non-coding RNA genes
+FBgn0265594	non-coding RNA genes
+FBgn0266825	non-coding RNA genes
+FBgn0265308	non-coding RNA genes
+FBgn0266894	non-coding RNA genes
+FBgn0266784	non-coding RNA genes
+FBgn0267214	non-coding RNA genes
+FBgn0265449	non-coding RNA genes
+FBgn0266067	non-coding RNA genes
+FBgn0265760	non-coding RNA genes
+FBgn0265694	non-coding RNA genes
+FBgn0266237	non-coding RNA genes
+FBgn0267132	non-coding RNA genes
+FBgn0266412	non-coding RNA genes
+FBgn0266811	non-coding RNA genes
+FBgn0267153	non-coding RNA genes
+FBgn0266049	non-coding RNA genes
+FBgn0265993	non-coding RNA genes
+FBgn0265879	non-coding RNA genes
+FBgn0265899	non-coding RNA genes
+FBgn0267238	non-coding RNA genes
+FBgn0263388	non-coding RNA genes
+FBgn0265666	non-coding RNA genes
+FBgn0266147	non-coding RNA genes
+FBgn0265895	non-coding RNA genes
+FBgn0267102	non-coding RNA genes
+FBgn0267187	non-coding RNA genes
+FBgn0266688	non-coding RNA genes
+FBgn0265370	non-coding RNA genes
+FBgn0266587	non-coding RNA genes
+FBgn0266408	non-coding RNA genes
+FBgn0266927	non-coding RNA genes
+FBgn0265577	non-coding RNA genes
+FBgn0266853	non-coding RNA genes
+FBgn0267039	non-coding RNA genes
+FBgn0265060	non-coding RNA genes
+FBgn0266232	non-coding RNA genes
+FBgn0266884	non-coding RNA genes
+FBgn0266973	non-coding RNA genes
+FBgn0266764	non-coding RNA genes
+FBgn0267287	non-coding RNA genes
+FBgn0265887	non-coding RNA genes
+FBgn0267199	non-coding RNA genes
+FBgn0267038	non-coding RNA genes
+FBgn0265735	non-coding RNA genes
+FBgn0266975	non-coding RNA genes
+FBgn0265689	non-coding RNA genes
+FBgn0267107	non-coding RNA genes
+FBgn0266730	non-coding RNA genes
+FBgn0265255	non-coding RNA genes
+FBgn0262828	non-coding RNA genes
+FBgn0266414	non-coding RNA genes
+FBgn0266958	non-coding RNA genes
+FBgn0267005	non-coding RNA genes
+FBgn0265910	non-coding RNA genes
+FBgn0266214	non-coding RNA genes
+FBgn0265839	non-coding RNA genes
+FBgn0265789	non-coding RNA genes
+FBgn0267177	non-coding RNA genes
+FBgn0267170	non-coding RNA genes
+FBgn0265957	non-coding RNA genes
+FBgn0267020	non-coding RNA genes
+FBgn0267217	non-coding RNA genes
+FBgn0267301	non-coding RNA genes
+FBgn0265938	non-coding RNA genes
+FBgn0267317	non-coding RNA genes
+FBgn0267256	non-coding RNA genes
+FBgn0267203	non-coding RNA genes
+FBgn0266888	non-coding RNA genes
+FBgn0265467	non-coding RNA genes
+FBgn0266226	non-coding RNA genes
+FBgn0261700	non-coding RNA genes
+FBgn0265950	non-coding RNA genes
+FBgn0265585	non-coding RNA genes
+FBgn0265414	non-coding RNA genes
+FBgn0266864	non-coding RNA genes
+FBgn0266069	non-coding RNA genes
+FBgn0266618	non-coding RNA genes
+FBgn0266814	non-coding RNA genes
+FBgn0265855	non-coding RNA genes
+FBgn0265945	non-coding RNA genes
+FBgn0265454	non-coding RNA genes
+FBgn0267310	non-coding RNA genes
+FBgn0266180	non-coding RNA genes
+FBgn0267195	non-coding RNA genes
+FBgn0265931	non-coding RNA genes
+FBgn0265812	non-coding RNA genes
+FBgn0265739	non-coding RNA genes
+FBgn0266828	non-coding RNA genes
+FBgn0265871	non-coding RNA genes
+FBgn0266011	non-coding RNA genes
+FBgn0265703	non-coding RNA genes
+FBgn0265724	non-coding RNA genes
+FBgn0266305	non-coding RNA genes
+FBgn0265878	non-coding RNA genes
+FBgn0266879	non-coding RNA genes
+FBgn0267157	non-coding RNA genes
+FBgn0267085	non-coding RNA genes
+FBgn0267167	non-coding RNA genes
+FBgn0265376	non-coding RNA genes
+FBgn0265849	non-coding RNA genes
+FBgn0267319	non-coding RNA genes
+FBgn0265300	non-coding RNA genes
+FBgn0265858	non-coding RNA genes
+FBgn0266248	non-coding RNA genes
+FBgn0267197	non-coding RNA genes
+FBgn0265546	non-coding RNA genes
+FBgn0265534	non-coding RNA genes
+FBgn0266651	non-coding RNA genes
+FBgn0051840	non-coding RNA genes
+FBgn0267150	non-coding RNA genes
+FBgn0265815	non-coding RNA genes
+FBgn0265145	non-coding RNA genes
+FBgn0267285	non-coding RNA genes
+FBgn0267097	non-coding RNA genes
+FBgn0265794	non-coding RNA genes
+FBgn0266376	non-coding RNA genes
+FBgn0266799	non-coding RNA genes
+FBgn0266156	non-coding RNA genes
+FBgn0266728	non-coding RNA genes
+FBgn0266818	non-coding RNA genes
+FBgn0265634	non-coding RNA genes
+FBgn0265892	non-coding RNA genes
+FBgn0267226	non-coding RNA genes
+FBgn0265596	non-coding RNA genes
+FBgn0266390	non-coding RNA genes
+FBgn0266020	non-coding RNA genes
+FBgn0265641	non-coding RNA genes
+FBgn0266229	non-coding RNA genes
+FBgn0266031	non-coding RNA genes
+FBgn0265790	non-coding RNA genes
+FBgn0266863	non-coding RNA genes
+FBgn0265896	non-coding RNA genes
+FBgn0267308	non-coding RNA genes
+FBgn0267056	non-coding RNA genes
+FBgn0265709	non-coding RNA genes
+FBgn0265943	non-coding RNA genes
+FBgn0267295	non-coding RNA genes
+FBgn0265870	non-coding RNA genes
+FBgn0266706	non-coding RNA genes
+FBgn0265688	non-coding RNA genes
+FBgn0265918	non-coding RNA genes
+FBgn0265958	non-coding RNA genes
+FBgn0265160	non-coding RNA genes
+FBgn0266804	non-coding RNA genes
+FBgn0265176	non-coding RNA genes
+FBgn0266742	non-coding RNA genes
+FBgn0263764	non-coding RNA genes
+FBgn0267127	non-coding RNA genes
+FBgn0266096	non-coding RNA genes
+FBgn0266209	non-coding RNA genes
+FBgn0265649	non-coding RNA genes
+FBgn0265612	non-coding RNA genes
+FBgn0265742	non-coding RNA genes
+FBgn0265869	non-coding RNA genes
+FBgn0266766	non-coding RNA genes
+FBgn0265824	non-coding RNA genes
+FBgn0266822	non-coding RNA genes
+FBgn0266238	non-coding RNA genes
+FBgn0266749	non-coding RNA genes
+FBgn0265939	non-coding RNA genes
+FBgn0267008	non-coding RNA genes
+FBgn0265496	non-coding RNA genes
+FBgn0266887	non-coding RNA genes
+FBgn0266993	non-coding RNA genes
+FBgn0265658	non-coding RNA genes
+FBgn0267137	non-coding RNA genes
+FBgn0265686	non-coding RNA genes
+FBgn0262355	non-coding RNA genes
+FBgn0265365	non-coding RNA genes
+FBgn0267135	non-coding RNA genes
+FBgn0265671	non-coding RNA genes
+FBgn0266675	non-coding RNA genes
+FBgn0266679	non-coding RNA genes
+FBgn0262979	non-coding RNA genes
+FBgn0265753	non-coding RNA genes
+FBgn0265852	non-coding RNA genes
+FBgn0265828	non-coding RNA genes
+FBgn0266222	non-coding RNA genes
+FBgn0265999	non-coding RNA genes
+FBgn0266204	non-coding RNA genes
+FBgn0267314	non-coding RNA genes
+FBgn0266182	non-coding RNA genes
+FBgn0267021	non-coding RNA genes
+FBgn0267271	non-coding RNA genes
+FBgn0266256	non-coding RNA genes
+FBgn0265764	non-coding RNA genes
+FBgn0265882	non-coding RNA genes
+FBgn0262622	non-coding RNA genes
+FBgn0266816	non-coding RNA genes
+FBgn0266257	non-coding RNA genes
+FBgn0266200	non-coding RNA genes
+FBgn0265853	non-coding RNA genes
+FBgn0266252	non-coding RNA genes
+FBgn0262974	non-coding RNA genes
+FBgn0267079	non-coding RNA genes
+FBgn0266153	non-coding RNA genes
+FBgn0265948	non-coding RNA genes
+FBgn0266241	non-coding RNA genes
+FBgn0266796	non-coding RNA genes
+FBgn0266588	non-coding RNA genes
+FBgn0267262	non-coding RNA genes
+FBgn0266088	non-coding RNA genes
+FBgn0266168	non-coding RNA genes
+FBgn0266680	non-coding RNA genes
+FBgn0265680	non-coding RNA genes
+FBgn0266852	non-coding RNA genes
+FBgn0266005	non-coding RNA genes
+FBgn0266302	non-coding RNA genes
+FBgn0265537	non-coding RNA genes
+FBgn0267072	non-coding RNA genes
+FBgn0267123	non-coding RNA genes
+FBgn0265847	non-coding RNA genes
+FBgn0264601	non-coding RNA genes
+FBgn0265916	non-coding RNA genes
+FBgn0265309	non-coding RNA genes
+FBgn0267040	non-coding RNA genes
+FBgn0265306	non-coding RNA genes
+FBgn0267036	non-coding RNA genes
+FBgn0265837	non-coding RNA genes
+FBgn0267112	non-coding RNA genes
+FBgn0266701	non-coding RNA genes
+FBgn0267270	non-coding RNA genes
+FBgn0267010	non-coding RNA genes
+FBgn0267058	non-coding RNA genes
+FBgn0266942	non-coding RNA genes
+FBgn0267210	non-coding RNA genes
+FBgn0266751	non-coding RNA genes
+FBgn0265500	non-coding RNA genes
+FBgn0265588	non-coding RNA genes
+FBgn0266968	non-coding RNA genes
+FBgn0267145	non-coding RNA genes
+FBgn0265818	non-coding RNA genes
+FBgn0266225	non-coding RNA genes
+FBgn0265755	non-coding RNA genes
+FBgn0265706	non-coding RNA genes
+FBgn0266046	non-coding RNA genes
+FBgn0267184	non-coding RNA genes
+FBgn0266278	non-coding RNA genes
+FBgn0266747	non-coding RNA genes
+FBgn0267117	non-coding RNA genes
+FBgn0265954	non-coding RNA genes
+FBgn0266690	non-coding RNA genes
+FBgn0266859	non-coding RNA genes
+FBgn0265981	non-coding RNA genes
+FBgn0266785	non-coding RNA genes
+FBgn0267146	non-coding RNA genes
+FBgn0266329	non-coding RNA genes
+FBgn0265445	non-coding RNA genes
+FBgn0265817	non-coding RNA genes
+FBgn0265956	non-coding RNA genes
+FBgn0267245	non-coding RNA genes
+FBgn0266640	non-coding RNA genes
+FBgn0267259	non-coding RNA genes
+FBgn0267230	non-coding RNA genes
+FBgn0261833	non-coding RNA genes
+FBgn0265995	non-coding RNA genes
+FBgn0267240	non-coding RNA genes
+FBgn0266860	non-coding RNA genes
+FBgn0266023	non-coding RNA genes
+FBgn0266004	non-coding RNA genes
+FBgn0058172	non-coding RNA genes
+FBgn0267031	non-coding RNA genes
+FBgn0266035	non-coding RNA genes
+FBgn0266641	non-coding RNA genes
+FBgn0266309	non-coding RNA genes
+FBgn0267306	non-coding RNA genes
+FBgn0265590	non-coding RNA genes
+FBgn0267190	non-coding RNA genes
+FBgn0267260	non-coding RNA genes
+FBgn0267156	non-coding RNA genes
+FBgn0266862	non-coding RNA genes
+FBgn0266750	non-coding RNA genes
+FBgn0267193	non-coding RNA genes
+FBgn0266071	non-coding RNA genes
+FBgn0266952	non-coding RNA genes
+FBgn0265799	non-coding RNA genes
+FBgn0266964	non-coding RNA genes
+FBgn0266875	non-coding RNA genes
+FBgn0266824	non-coding RNA genes
+FBgn0266260	non-coding RNA genes
+FBgn0265884	non-coding RNA genes
+FBgn0266949	non-coding RNA genes
+FBgn0262895	non-coding RNA genes
+FBgn0267121	non-coding RNA genes
+FBgn0267168	non-coding RNA genes
+FBgn0267205	non-coding RNA genes
+FBgn0266419	non-coding RNA genes
+FBgn0266935	non-coding RNA genes
+FBgn0266915	non-coding RNA genes
+FBgn0267111	non-coding RNA genes
+FBgn0265346	non-coding RNA genes
+FBgn0266929	non-coding RNA genes
+FBgn0266788	non-coding RNA genes
+FBgn0265693	non-coding RNA genes
+FBgn0267312	non-coding RNA genes
+FBgn0267066	non-coding RNA genes
+FBgn0266396	non-coding RNA genes
+FBgn0265729	non-coding RNA genes
+FBgn0265664	non-coding RNA genes
+FBgn0267064	non-coding RNA genes
+FBgn0266844	non-coding RNA genes
+FBgn0266885	non-coding RNA genes
+FBgn0265316	non-coding RNA genes
+FBgn0265913	non-coding RNA genes
+FBgn0267303	non-coding RNA genes
+FBgn0267224	non-coding RNA genes
+FBgn0267061	non-coding RNA genes
+FBgn0266872	non-coding RNA genes
+FBgn0266957	non-coding RNA genes
+FBgn0266991	non-coding RNA genes
+FBgn0265203	non-coding RNA genes
+FBgn0265757	non-coding RNA genes
+FBgn0265374	non-coding RNA genes
+FBgn0265673	non-coding RNA genes
+FBgn0266220	non-coding RNA genes
+FBgn0266097	non-coding RNA genes
+FBgn0266313	non-coding RNA genes
+FBgn0265371	non-coding RNA genes
+FBgn0265786	non-coding RNA genes
+FBgn0265452	non-coding RNA genes
+FBgn0267068	non-coding RNA genes
+FBgn0265368	non-coding RNA genes
+FBgn0266650	non-coding RNA genes
+FBgn0264482	non-coding RNA genes
+FBgn0265758	non-coding RNA genes
+FBgn0267087	non-coding RNA genes
+FBgn0267012	non-coding RNA genes
+FBgn0265842	non-coding RNA genes
+FBgn0265638	non-coding RNA genes
+FBgn0261522	non-coding RNA genes
+FBgn0266621	non-coding RNA genes
+FBgn0265932	non-coding RNA genes
+FBgn0265310	non-coding RNA genes
+FBgn0262879	non-coding RNA genes
+FBgn0266820	non-coding RNA genes
+FBgn0266620	non-coding RNA genes
+FBgn0267162	non-coding RNA genes
+FBgn0267101	non-coding RNA genes
+FBgn0267268	non-coding RNA genes
+FBgn0266321	non-coding RNA genes
+FBgn0267124	non-coding RNA genes
+FBgn0266415	non-coding RNA genes
+FBgn0267239	non-coding RNA genes
+FBgn0265929	non-coding RNA genes
+FBgn0266072	non-coding RNA genes
+FBgn0266900	non-coding RNA genes
+FBgn0265966	non-coding RNA genes
+FBgn0267196	non-coding RNA genes
+FBgn0266857	non-coding RNA genes
+FBgn0266164	non-coding RNA genes
+FBgn0266198	non-coding RNA genes
+FBgn0266146	non-coding RNA genes
+FBgn0266243	non-coding RNA genes
+FBgn0266537	non-coding RNA genes
+FBgn0265550	non-coding RNA genes
+FBgn0265311	non-coding RNA genes
+FBgn0265614	non-coding RNA genes
+FBgn0266037	non-coding RNA genes
+FBgn0265675	non-coding RNA genes
+FBgn0265529	non-coding RNA genes
+FBgn0266691	non-coding RNA genes
+FBgn0266366	non-coding RNA genes
+FBgn0266247	non-coding RNA genes
+FBgn0267237	non-coding RNA genes
+FBgn0265427	non-coding RNA genes
+FBgn0264603	non-coding RNA genes
+FBgn0265894	non-coding RNA genes
+FBgn0267114	non-coding RNA genes
+FBgn0265657	non-coding RNA genes
+FBgn0265795	non-coding RNA genes
+FBgn0265749	non-coding RNA genes
+FBgn0085582	non-coding RNA genes
+FBgn0266227	non-coding RNA genes
+FBgn0265868	non-coding RNA genes
+FBgn0267158	non-coding RNA genes
+FBgn0265952	non-coding RNA genes
+FBgn0266157	non-coding RNA genes
+FBgn0266250	non-coding RNA genes
+FBgn0267126	non-coding RNA genes
+FBgn0266867	non-coding RNA genes
+FBgn0265865	non-coding RNA genes
+FBgn0265651	non-coding RNA genes
+FBgn0265800	non-coding RNA genes
+FBgn0266348	non-coding RNA genes
+FBgn0266905	non-coding RNA genes
+FBgn0267099	non-coding RNA genes
+FBgn0267215	non-coding RNA genes
+FBgn0265893	non-coding RNA genes
+FBgn0265200	non-coding RNA genes
+FBgn0266150	non-coding RNA genes
+FBgn0265716	non-coding RNA genes
+FBgn0266769	non-coding RNA genes
+FBgn0266937	non-coding RNA genes
+FBgn0265383	non-coding RNA genes
+FBgn0267304	non-coding RNA genes
+FBgn0266395	non-coding RNA genes
+FBgn0265924	non-coding RNA genes
+FBgn0266246	non-coding RNA genes
+FBgn0266308	non-coding RNA genes
+FBgn0265549	non-coding RNA genes
+FBgn0265542	non-coding RNA genes
+FBgn0267221	non-coding RNA genes
+FBgn0265904	non-coding RNA genes
+FBgn0266941	non-coding RNA genes
+FBgn0265425	non-coding RNA genes
+FBgn0266988	non-coding RNA genes
+FBgn0265701	non-coding RNA genes
+FBgn0266926	non-coding RNA genes
+FBgn0265732	non-coding RNA genes
+FBgn0267202	non-coding RNA genes
+FBgn0266868	non-coding RNA genes
+FBgn0266236	non-coding RNA genes
+FBgn0266797	non-coding RNA genes
+FBgn0265792	non-coding RNA genes
+FBgn0267077	non-coding RNA genes
+FBgn0262892	non-coding RNA genes
+FBgn0266233	non-coding RNA genes
+FBgn0267192	non-coding RNA genes
+FBgn0266161	non-coding RNA genes
+FBgn0266895	non-coding RNA genes
+FBgn0266842	non-coding RNA genes
+FBgn0265885	non-coding RNA genes
+FBgn0265977	non-coding RNA genes
+FBgn0266833	non-coding RNA genes
+FBgn0265695	non-coding RNA genes
+FBgn0266649	non-coding RNA genes
+FBgn0267200	non-coding RNA genes
+FBgn0265656	non-coding RNA genes
+FBgn0265746	non-coding RNA genes
+FBgn0266855	non-coding RNA genes
+FBgn0265743	non-coding RNA genes
+FBgn0265807	non-coding RNA genes
+FBgn0267088	non-coding RNA genes
+FBgn0266403	non-coding RNA genes
+FBgn0267234	non-coding RNA genes
+FBgn0265830	non-coding RNA genes
+FBgn0267017	non-coding RNA genes
+FBgn0266320	non-coding RNA genes
+FBgn0266914	non-coding RNA genes
+FBgn0265543	non-coding RNA genes
+FBgn0265305	non-coding RNA genes
+FBgn0267266	non-coding RNA genes
+FBgn0266179	non-coding RNA genes
+FBgn0266389	non-coding RNA genes
+FBgn0265823	non-coding RNA genes
+FBgn0265722	non-coding RNA genes
+FBgn0266861	non-coding RNA genes
+FBgn0267249	non-coding RNA genes
+FBgn0267241	non-coding RNA genes
+FBgn0266943	non-coding RNA genes
+FBgn0267222	non-coding RNA genes
+FBgn0266771	non-coding RNA genes
+FBgn0265586	non-coding RNA genes
+FBgn0266593	non-coding RNA genes
+FBgn0267244	non-coding RNA genes
+FBgn0265827	non-coding RNA genes
+FBgn0266886	non-coding RNA genes
+FBgn0265927	non-coding RNA genes
+FBgn0266318	non-coding RNA genes
+FBgn0263324	non-coding RNA genes
+FBgn0267294	non-coding RNA genes
+FBgn0265684	non-coding RNA genes
+FBgn0266777	non-coding RNA genes
+FBgn0267194	non-coding RNA genes
+FBgn0266827	non-coding RNA genes
+FBgn0265994	non-coding RNA genes
+FBgn0266038	non-coding RNA genes
+FBgn0266595	non-coding RNA genes
+FBgn0267016	non-coding RNA genes
+FBgn0266312	non-coding RNA genes
+FBgn0266239	non-coding RNA genes
+FBgn0266405	non-coding RNA genes
+FBgn0265751	non-coding RNA genes
+FBgn0265983	non-coding RNA genes
+FBgn0265900	non-coding RNA genes
+FBgn0265667	non-coding RNA genes
+FBgn0265813	non-coding RNA genes
+FBgn0267103	non-coding RNA genes
+FBgn0266148	non-coding RNA genes
+FBgn0266775	non-coding RNA genes
+FBgn0265584	non-coding RNA genes
+FBgn0265737	non-coding RNA genes
+FBgn0267004	non-coding RNA genes
+FBgn0266158	non-coding RNA genes
+FBgn0265637	non-coding RNA genes
+FBgn0265659	non-coding RNA genes
+FBgn0265582	non-coding RNA genes
+FBgn0265856	non-coding RNA genes
+FBgn0266086	non-coding RNA genes
+FBgn0265340	non-coding RNA genes
+FBgn0265375	non-coding RNA genes
+FBgn0265450	non-coding RNA genes
+FBgn0265933	non-coding RNA genes
+FBgn0265886	non-coding RNA genes
+FBgn0261927	non-coding RNA genes
+FBgn0266323	non-coding RNA genes
+FBgn0266841	non-coding RNA genes
+FBgn0265704	non-coding RNA genes
+FBgn0267296	non-coding RNA genes
+FBgn0265873	non-coding RNA genes
+FBgn0267086	non-coding RNA genes
+FBgn0266874	non-coding RNA genes
+FBgn0266021	non-coding RNA genes
+FBgn0267006	non-coding RNA genes
+FBgn0266763	non-coding RNA genes
+FBgn0265911	non-coding RNA genes
+FBgn0265905	non-coding RNA genes
+FBgn0267289	non-coding RNA genes
+FBgn0266251	non-coding RNA genes
+FBgn0267173	non-coding RNA genes
+FBgn0265840	non-coding RNA genes
+FBgn0267080	non-coding RNA genes
+FBgn0265949	non-coding RNA genes
+FBgn0266397	non-coding RNA genes
+FBgn0266002	non-coding RNA genes
+FBgn0266590	non-coding RNA genes
+FBgn0265874	non-coding RNA genes
+FBgn0267209	non-coding RNA genes
+FBgn0266646	non-coding RNA genes
+FBgn0265381	non-coding RNA genes
+FBgn0266221	non-coding RNA genes
+FBgn0266995	non-coding RNA genes
+FBgn0264824	non-coding RNA genes
+FBgn0265682	non-coding RNA genes
+FBgn0266044	non-coding RNA genes
+FBgn0265205	non-coding RNA genes
+FBgn0265816	non-coding RNA genes
+FBgn0266803	non-coding RNA genes
+FBgn0265997	non-coding RNA genes
+FBgn0266686	non-coding RNA genes
+FBgn0266773	non-coding RNA genes
+FBgn0266953	non-coding RNA genes
+FBgn0266908	non-coding RNA genes
+FBgn0266969	non-coding RNA genes
+FBgn0266210	non-coding RNA genes
+FBgn0265367	non-coding RNA genes
+FBgn0266780	non-coding RNA genes
+FBgn0267211	non-coding RNA genes
+FBgn0265802	non-coding RNA genes
+FBgn0265761	non-coding RNA genes
+FBgn0265731	non-coding RNA genes
+FBgn0266963	non-coding RNA genes
+FBgn0265717	non-coding RNA genes
+FBgn0265301	non-coding RNA genes
+FBgn0266040	non-coding RNA genes
+FBgn0266847	non-coding RNA genes
+FBgn0266025	non-coding RNA genes
+FBgn0266378	non-coding RNA genes
+FBgn0266829	non-coding RNA genes
+FBgn0265545	non-coding RNA genes
+FBgn0265443	non-coding RNA genes
+FBgn0265665	non-coding RNA genes
+FBgn0266959	non-coding RNA genes
+FBgn0267136	non-coding RNA genes
+FBgn0266258	non-coding RNA genes
+FBgn0267182	non-coding RNA genes
+FBgn0266986	non-coding RNA genes
+FBgn0266223	non-coding RNA genes
+FBgn0265967	non-coding RNA genes
+FBgn0265843	non-coding RNA genes
+FBgn0267071	non-coding RNA genes
+FBgn0262905	non-coding RNA genes
+FBgn0266955	non-coding RNA genes
+FBgn0267030	non-coding RNA genes
+FBgn0266399	non-coding RNA genes
+FBgn0265912	non-coding RNA genes
+FBgn0261586	non-coding RNA genes
+FBgn0266971	non-coding RNA genes
+FBgn0265497	non-coding RNA genes
+FBgn0267225	non-coding RNA genes
+FBgn0266306	non-coding RNA genes
+FBgn0266948	non-coding RNA genes
+FBgn0266234	non-coding RNA genes
+FBgn0267258	non-coding RNA genes
+FBgn0267263	non-coding RNA genes
+FBgn0267292	non-coding RNA genes
+FBgn0040965	non-coding RNA genes
+FBgn0265859	non-coding RNA genes
+FBgn0266808	non-coding RNA genes
+FBgn0265850	non-coding RNA genes
+FBgn0265953	non-coding RNA genes
+FBgn0266240	non-coding RNA genes
+FBgn0265468	non-coding RNA genes
+FBgn0266697	non-coding RNA genes
+FBgn0265876	non-coding RNA genes
+FBgn0265944	non-coding RNA genes
+FBgn0267134	non-coding RNA genes
+FBgn0266753	non-coding RNA genes
+FBgn0265372	non-coding RNA genes
+FBgn0267131	non-coding RNA genes
+FBgn0266782	non-coding RNA genes
+FBgn0266703	non-coding RNA genes
+FBgn0265457	non-coding RNA genes
+FBgn0266253	non-coding RNA genes
+FBgn0266594	non-coding RNA genes
+FBgn0265960	non-coding RNA genes
+FBgn0266183	non-coding RNA genes
+FBgn0265908	non-coding RNA genes
+FBgn0266896	non-coding RNA genes
+FBgn0266807	non-coding RNA genes
+FBgn0266967	non-coding RNA genes
+FBgn0267290	non-coding RNA genes
+FBgn0265723	non-coding RNA genes
+FBgn0265639	non-coding RNA genes
+FBgn0263323	non-coding RNA genes
+FBgn0265791	non-coding RNA genes
+FBgn0267298	non-coding RNA genes
+FBgn0265377	non-coding RNA genes
+FBgn0266032	non-coding RNA genes
+FBgn0266208	non-coding RNA genes
+FBgn0267219	non-coding RNA genes
+FBgn0265426	non-coding RNA genes
+FBgn0265797	non-coding RNA genes
+FBgn0266205	non-coding RNA genes
+FBgn0265747	non-coding RNA genes
+FBgn0267272	non-coding RNA genes
+FBgn0266790	non-coding RNA genes
+FBgn0266974	non-coding RNA genes
+FBgn0267070	non-coding RNA genes
+FBgn0266045	non-coding RNA genes
+FBgn0267138	non-coding RNA genes
+FBgn0267307	non-coding RNA genes
+FBgn0265448	non-coding RNA genes
+FBgn0266876	non-coding RNA genes
+FBgn0267261	non-coding RNA genes
+FBgn0266866	non-coding RNA genes
+FBgn0052582	non-coding RNA genes
+FBgn0052636	non-coding RNA genes
+FBgn0052652	non-coding RNA genes
+FBgn0261632	non-coding RNA genes
+FBgn0262564	non-coding RNA genes
+FBgn0262606	non-coding RNA genes
+FBgn0262680	non-coding RNA genes
+FBgn0262722	non-coding RNA genes
+FBgn0267794	non-coding RNA genes
+FBgn0262822	non-coding RNA genes
+FBgn0262967	non-coding RNA genes
+FBgn0263325	non-coding RNA genes
+FBgn0263778	non-coding RNA genes
+FBgn0267399	non-coding RNA genes
+FBgn0267400	non-coding RNA genes
+FBgn0267438	non-coding RNA genes
+FBgn0267440	non-coding RNA genes
+FBgn0267441	non-coding RNA genes
+FBgn0267442	non-coding RNA genes
+FBgn0267443	non-coding RNA genes
+FBgn0267453	non-coding RNA genes
+FBgn0267455	non-coding RNA genes
+FBgn0267458	non-coding RNA genes
+FBgn0267459	non-coding RNA genes
+FBgn0267460	non-coding RNA genes
+FBgn0267461	non-coding RNA genes
+FBgn0267469	non-coding RNA genes
+FBgn0267470	non-coding RNA genes
+FBgn0267471	non-coding RNA genes
+FBgn0267473	non-coding RNA genes
+FBgn0267474	non-coding RNA genes
+FBgn0267475	non-coding RNA genes
+FBgn0267476	non-coding RNA genes
+FBgn0267483	non-coding RNA genes
+FBgn0267526	non-coding RNA genes
+FBgn0267536	non-coding RNA genes
+FBgn0267537	non-coding RNA genes
+FBgn0267538	non-coding RNA genes
+FBgn0267539	non-coding RNA genes
+FBgn0267540	non-coding RNA genes
+FBgn0267541	non-coding RNA genes
+FBgn0267543	non-coding RNA genes
+FBgn0267544	non-coding RNA genes
+FBgn0267547	non-coding RNA genes
+FBgn0267548	non-coding RNA genes
+FBgn0267553	non-coding RNA genes
+FBgn0267557	non-coding RNA genes
+FBgn0267558	non-coding RNA genes
+FBgn0267559	non-coding RNA genes
+FBgn0267560	non-coding RNA genes
+FBgn0267561	non-coding RNA genes
+FBgn0267562	non-coding RNA genes
+FBgn0267563	non-coding RNA genes
+FBgn0267564	non-coding RNA genes
+FBgn0267565	non-coding RNA genes
+FBgn0267566	non-coding RNA genes
+FBgn0267570	non-coding RNA genes
+FBgn0267571	non-coding RNA genes
+FBgn0267573	non-coding RNA genes
+FBgn0267574	non-coding RNA genes
+FBgn0267575	non-coding RNA genes
+FBgn0267576	non-coding RNA genes
+FBgn0267577	non-coding RNA genes
+FBgn0267578	non-coding RNA genes
+FBgn0267579	non-coding RNA genes
+FBgn0267580	non-coding RNA genes
+FBgn0267581	non-coding RNA genes
+FBgn0267582	non-coding RNA genes
+FBgn0267585	non-coding RNA genes
+FBgn0267597	non-coding RNA genes
+FBgn0267598	non-coding RNA genes
+FBgn0267599	non-coding RNA genes
+FBgn0267600	non-coding RNA genes
+FBgn0267601	non-coding RNA genes
+FBgn0267602	non-coding RNA genes
+FBgn0267603	non-coding RNA genes
+FBgn0267604	non-coding RNA genes
+FBgn0267607	non-coding RNA genes
+FBgn0267611	non-coding RNA genes
+FBgn0267612	non-coding RNA genes
+FBgn0267615	non-coding RNA genes
+FBgn0267616	non-coding RNA genes
+FBgn0267618	non-coding RNA genes
+FBgn0267619	non-coding RNA genes
+FBgn0267620	non-coding RNA genes
+FBgn0267621	non-coding RNA genes
+FBgn0267623	non-coding RNA genes
+FBgn0267624	non-coding RNA genes
+FBgn0267625	non-coding RNA genes
+FBgn0267626	non-coding RNA genes
+FBgn0267627	non-coding RNA genes
+FBgn0267628	non-coding RNA genes
+FBgn0267629	non-coding RNA genes
+FBgn0267633	non-coding RNA genes
+FBgn0267634	non-coding RNA genes
+FBgn0267635	non-coding RNA genes
+FBgn0267637	non-coding RNA genes
+FBgn0267638	non-coding RNA genes
+FBgn0267639	non-coding RNA genes
+FBgn0267640	non-coding RNA genes
+FBgn0267641	non-coding RNA genes
+FBgn0267642	non-coding RNA genes
+FBgn0267643	non-coding RNA genes
+FBgn0267644	non-coding RNA genes
+FBgn0267645	non-coding RNA genes
+FBgn0267646	non-coding RNA genes
+FBgn0267647	non-coding RNA genes
+FBgn0267653	non-coding RNA genes
+FBgn0267655	non-coding RNA genes
+FBgn0267656	non-coding RNA genes
+FBgn0267658	non-coding RNA genes
+FBgn0267659	non-coding RNA genes
+FBgn0267660	non-coding RNA genes
+FBgn0267662	non-coding RNA genes
+FBgn0267663	non-coding RNA genes
+FBgn0267664	non-coding RNA genes
+FBgn0267665	non-coding RNA genes
+FBgn0267666	non-coding RNA genes
+FBgn0267667	non-coding RNA genes
+FBgn0267668	non-coding RNA genes
+FBgn0267671	non-coding RNA genes
+FBgn0267672	non-coding RNA genes
+FBgn0267673	non-coding RNA genes
+FBgn0267674	non-coding RNA genes
+FBgn0267675	non-coding RNA genes
+FBgn0267677	non-coding RNA genes
+FBgn0267678	non-coding RNA genes
+FBgn0267679	non-coding RNA genes
+FBgn0267680	non-coding RNA genes
+FBgn0267681	non-coding RNA genes
+FBgn0267683	non-coding RNA genes
+FBgn0267685	non-coding RNA genes
+FBgn0267686	non-coding RNA genes
+FBgn0267687	non-coding RNA genes
+FBgn0267688	non-coding RNA genes
+FBgn0267692	non-coding RNA genes
+FBgn0267694	non-coding RNA genes
+FBgn0267695	non-coding RNA genes
+FBgn0267696	non-coding RNA genes
+FBgn0267702	non-coding RNA genes
+FBgn0267703	non-coding RNA genes
+FBgn0267706	non-coding RNA genes
+FBgn0267707	non-coding RNA genes
+FBgn0267708	non-coding RNA genes
+FBgn0267709	non-coding RNA genes
+FBgn0267710	non-coding RNA genes
+FBgn0267713	non-coding RNA genes
+FBgn0267719	non-coding RNA genes
+FBgn0267720	non-coding RNA genes
+FBgn0267723	non-coding RNA genes
+FBgn0267724	non-coding RNA genes
+FBgn0267729	non-coding RNA genes
+FBgn0267730	non-coding RNA genes
+FBgn0267731	non-coding RNA genes
+FBgn0267732	non-coding RNA genes
+FBgn0267733	non-coding RNA genes
+FBgn0267742	non-coding RNA genes
+FBgn0267744	non-coding RNA genes
+FBgn0267745	non-coding RNA genes
+FBgn0267746	non-coding RNA genes
+FBgn0267747	non-coding RNA genes
+FBgn0267748	non-coding RNA genes
+FBgn0267749	non-coding RNA genes
+FBgn0267752	non-coding RNA genes
+FBgn0267753	non-coding RNA genes
+FBgn0267754	non-coding RNA genes
+FBgn0267755	non-coding RNA genes
+FBgn0267756	non-coding RNA genes
+FBgn0267757	non-coding RNA genes
+FBgn0267759	non-coding RNA genes
+FBgn0267763	non-coding RNA genes
+FBgn0267764	non-coding RNA genes
+FBgn0267767	non-coding RNA genes
+FBgn0267769	non-coding RNA genes
+FBgn0267771	non-coding RNA genes
+FBgn0267772	non-coding RNA genes
+FBgn0267775	non-coding RNA genes
+FBgn0267777	non-coding RNA genes
+FBgn0267779	non-coding RNA genes
+FBgn0267780	non-coding RNA genes
+FBgn0267781	non-coding RNA genes
+FBgn0267782	non-coding RNA genes
+FBgn0267783	non-coding RNA genes
+FBgn0283501	non-coding RNA genes
+FBgn0267785	non-coding RNA genes
+FBgn0267786	non-coding RNA genes
+FBgn0267787	non-coding RNA genes
+FBgn0267788	non-coding RNA genes
+FBgn0267789	non-coding RNA genes
+FBgn0267797	non-coding RNA genes
+FBgn0267798	non-coding RNA genes
+FBgn0267799	non-coding RNA genes
+FBgn0267800	non-coding RNA genes
+FBgn0267801	non-coding RNA genes
+FBgn0267802	non-coding RNA genes
+FBgn0267805	non-coding RNA genes
+FBgn0267806	non-coding RNA genes
+FBgn0267807	non-coding RNA genes
+FBgn0267816	non-coding RNA genes
+FBgn0267817	non-coding RNA genes
+FBgn0267818	non-coding RNA genes
+FBgn0267826	non-coding RNA genes
+FBgn0267827	non-coding RNA genes
+FBgn0267865	non-coding RNA genes
+FBgn0267868	non-coding RNA genes
+FBgn0267913	non-coding RNA genes
+FBgn0267915	non-coding RNA genes
+FBgn0267916	non-coding RNA genes
+FBgn0267917	non-coding RNA genes
+FBgn0267918	non-coding RNA genes
+FBgn0267919	non-coding RNA genes
+FBgn0267921	non-coding RNA genes
+FBgn0267922	non-coding RNA genes
+FBgn0267923	non-coding RNA genes
+FBgn0267924	non-coding RNA genes
+FBgn0267925	non-coding RNA genes
+FBgn0267926	non-coding RNA genes
+FBgn0267927	non-coding RNA genes
+FBgn0267928	non-coding RNA genes
+FBgn0267929	non-coding RNA genes
+FBgn0267930	non-coding RNA genes
+FBgn0267932	non-coding RNA genes
+FBgn0267933	non-coding RNA genes
+FBgn0267934	non-coding RNA genes
+FBgn0267935	non-coding RNA genes
+FBgn0267936	non-coding RNA genes
+FBgn0267937	non-coding RNA genes
+FBgn0267938	non-coding RNA genes
+FBgn0267939	non-coding RNA genes
+FBgn0267940	non-coding RNA genes
+FBgn0267941	non-coding RNA genes
+FBgn0283626	non-coding RNA genes
+FBgn0267944	non-coding RNA genes
+FBgn0267945	non-coding RNA genes
+FBgn0267946	non-coding RNA genes
+FBgn0267947	non-coding RNA genes
+FBgn0267948	non-coding RNA genes
+FBgn0267949	non-coding RNA genes
+FBgn0267950	non-coding RNA genes
+FBgn0267951	non-coding RNA genes
+FBgn0267953	non-coding RNA genes
+FBgn0267954	non-coding RNA genes
+FBgn0267955	non-coding RNA genes
+FBgn0267956	non-coding RNA genes
+FBgn0267957	non-coding RNA genes
+FBgn0267958	non-coding RNA genes
+FBgn0267959	non-coding RNA genes
+FBgn0267960	non-coding RNA genes
+FBgn0267961	non-coding RNA genes
+FBgn0267962	non-coding RNA genes
+FBgn0267963	non-coding RNA genes
+FBgn0267965	non-coding RNA genes
+FBgn0267969	non-coding RNA genes
+FBgn0267970	non-coding RNA genes
+FBgn0267982	non-coding RNA genes
+FBgn0267983	non-coding RNA genes
+FBgn0267985	non-coding RNA genes
+FBgn0267986	non-coding RNA genes
+FBgn0267987	non-coding RNA genes
+FBgn0267990	non-coding RNA genes
+FBgn0267991	non-coding RNA genes
+FBgn0267992	non-coding RNA genes
+FBgn0267993	non-coding RNA genes
+FBgn0275433	non-coding RNA genes
+FBgn0278597	non-coding RNA genes
+FBgn0278598	non-coding RNA genes
+FBgn0283428	non-coding RNA genes
+FBgn0283426	non-coding RNA genes
+FBgn0284238	non-coding RNA genes
+FBgn0284412	non-coding RNA genes
+FBgn0284414	non-coding RNA genes
+FBgn0285940	non-coding RNA genes
+FBgn0285941	non-coding RNA genes
+FBgn0286028	non-coding RNA genes
+FBgn0286029	non-coding RNA genes
+FBgn0286030	non-coding RNA genes
+FBgn0286031	non-coding RNA genes
+FBgn0286032	non-coding RNA genes
+FBgn0286033	non-coding RNA genes
+FBgn0000071	cell adhesion molecules
+FBgn0000119	cell adhesion molecules
+FBgn0000463	cell adhesion molecules
+FBgn0000464	cell adhesion molecules
+FBgn0000497	cell adhesion molecules
+FBgn0000547	cell adhesion molecules
+FBgn0000633	cell adhesion molecules
+FBgn0000635	cell adhesion molecules
+FBgn0000636	cell adhesion molecules
+FBgn0001075	cell adhesion molecules
+FBgn0001137	cell adhesion molecules
+FBgn0001189	cell adhesion molecules
+FBgn0001253	cell adhesion molecules
+FBgn0001257	cell adhesion molecules
+FBgn0001967	cell adhesion molecules
+FBgn0002306	cell adhesion molecules
+FBgn0002526	cell adhesion molecules
+FBgn0002543	cell adhesion molecules
+FBgn0003137	cell adhesion molecules
+FBgn0003174	cell adhesion molecules
+FBgn0003255	cell adhesion molecules
+FBgn0003285	cell adhesion molecules
+FBgn0003366	cell adhesion molecules
+FBgn0003390	cell adhesion molecules
+FBgn0003391	cell adhesion molecules
+FBgn0003719	cell adhesion molecules
+FBgn0003731	cell adhesion molecules
+FBgn0003733	cell adhesion molecules
+FBgn0003984	cell adhesion molecules
+FBgn0004197	cell adhesion molecules
+FBgn0004364	cell adhesion molecules
+FBgn0004368	cell adhesion molecules
+FBgn0004369	cell adhesion molecules
+FBgn0004370	cell adhesion molecules
+FBgn0004449	cell adhesion molecules
+FBgn0004647	cell adhesion molecules
+FBgn0004649	cell adhesion molecules
+FBgn0004657	cell adhesion molecules
+FBgn0004839	cell adhesion molecules
+FBgn0004885	cell adhesion molecules
+FBgn0005592	cell adhesion molecules
+FBgn0005631	cell adhesion molecules
+FBgn0005672	cell adhesion molecules
+FBgn0005775	cell adhesion molecules
+FBgn0010114	cell adhesion molecules
+FBgn0010238	cell adhesion molecules
+FBgn0010389	cell adhesion molecules
+FBgn0010395	cell adhesion molecules
+FBgn0010452	cell adhesion molecules
+FBgn0010473	cell adhesion molecules
+FBgn0011204	cell adhesion molecules
+FBgn0011260	cell adhesion molecules
+FBgn0011592	cell adhesion molecules
+FBgn0011828	cell adhesion molecules
+FBgn0013272	cell adhesion molecules
+FBgn0013433	cell adhesion molecules
+FBgn0013984	cell adhesion molecules
+FBgn0013997	cell adhesion molecules
+FBgn0014007	cell adhesion molecules
+FBgn0015399	cell adhesion molecules
+FBgn0015400	cell adhesion molecules
+FBgn0015609	cell adhesion molecules
+FBgn0015770	cell adhesion molecules
+FBgn0015773	cell adhesion molecules
+FBgn0015774	cell adhesion molecules
+FBgn0016061	cell adhesion molecules
+FBgn0016650	cell adhesion molecules
+FBgn0017590	cell adhesion molecules
+FBgn0021742	cell adhesion molecules
+FBgn0021764	cell adhesion molecules
+FBgn0022800	cell adhesion molecules
+FBgn0023095	cell adhesion molecules
+FBgn0024189	cell adhesion molecules
+FBgn0024836	cell adhesion molecules
+FBgn0025878	cell adhesion molecules
+FBgn0025936	cell adhesion molecules
+FBgn0026403	cell adhesion molecules
+FBgn0026760	cell adhesion molecules
+FBgn0027594	cell adhesion molecules
+FBgn0027929	cell adhesion molecules
+FBgn0028369	cell adhesion molecules
+FBgn0028370	cell adhesion molecules
+FBgn0028482	cell adhesion molecules
+FBgn0028518	cell adhesion molecules
+FBgn0028523	cell adhesion molecules
+FBgn0028542	cell adhesion molecules
+FBgn0028543	cell adhesion molecules
+FBgn0028644	cell adhesion molecules
+FBgn0028645	cell adhesion molecules
+FBgn0028872	cell adhesion molecules
+FBgn0028888	cell adhesion molecules
+FBgn0028936	cell adhesion molecules
+FBgn0029082	cell adhesion molecules
+FBgn0029114	cell adhesion molecules
+FBgn0029167	cell adhesion molecules
+FBgn0029974	cell adhesion molecules
+FBgn0030174	cell adhesion molecules
+FBgn0030245	cell adhesion molecules
+FBgn0030466	cell adhesion molecules
+FBgn0030551	cell adhesion molecules
+FBgn0030603	cell adhesion molecules
+FBgn0030706	cell adhesion molecules
+FBgn0030723	cell adhesion molecules
+FBgn0030887	cell adhesion molecules
+FBgn0031016	cell adhesion molecules
+FBgn0031089	cell adhesion molecules
+FBgn0031100	cell adhesion molecules
+FBgn0031414	cell adhesion molecules
+FBgn0031548	cell adhesion molecules
+FBgn0031627	cell adhesion molecules
+FBgn0031725	cell adhesion molecules
+FBgn0031837	cell adhesion molecules
+FBgn0031850	cell adhesion molecules
+FBgn0031872	cell adhesion molecules
+FBgn0031879	cell adhesion molecules
+FBgn0031981	cell adhesion molecules
+FBgn0032006	cell adhesion molecules
+FBgn0032095	cell adhesion molecules
+FBgn0032233	cell adhesion molecules
+FBgn0032235	cell adhesion molecules
+FBgn0032479	cell adhesion molecules
+FBgn0032484	cell adhesion molecules
+FBgn0032629	cell adhesion molecules
+FBgn0032683	cell adhesion molecules
+FBgn0032752	cell adhesion molecules
+FBgn0032797	cell adhesion molecules
+FBgn0033159	cell adhesion molecules
+FBgn0033250	cell adhesion molecules
+FBgn0034013	cell adhesion molecules
+FBgn0034070	cell adhesion molecules
+FBgn0034083	cell adhesion molecules
+FBgn0034085	cell adhesion molecules
+FBgn0034262	cell adhesion molecules
+FBgn0034286	cell adhesion molecules
+FBgn0034476	cell adhesion molecules
+FBgn0034540	cell adhesion molecules
+FBgn0034602	cell adhesion molecules
+FBgn0034717	cell adhesion molecules
+FBgn0034718	cell adhesion molecules
+FBgn0034723	cell adhesion molecules
+FBgn0034724	cell adhesion molecules
+FBgn0034725	cell adhesion molecules
+FBgn0034788	cell adhesion molecules
+FBgn0034797	cell adhesion molecules
+FBgn0034920	cell adhesion molecules
+FBgn0035043	cell adhesion molecules
+FBgn0035170	cell adhesion molecules
+FBgn0035539	cell adhesion molecules
+FBgn0035575	cell adhesion molecules
+FBgn0035798	cell adhesion molecules
+FBgn0036040	cell adhesion molecules
+FBgn0036145	cell adhesion molecules
+FBgn0036146	cell adhesion molecules
+FBgn0036391	cell adhesion molecules
+FBgn0036454	cell adhesion molecules
+FBgn0036494	cell adhesion molecules
+FBgn0036587	cell adhesion molecules
+FBgn0036715	cell adhesion molecules
+FBgn0036978	cell adhesion molecules
+FBgn0036995	cell adhesion molecules
+FBgn0037107	cell adhesion molecules
+FBgn0037240	cell adhesion molecules
+FBgn0037291	cell adhesion molecules
+FBgn0037295	cell adhesion molecules
+FBgn0037552	cell adhesion molecules
+FBgn0037553	cell adhesion molecules
+FBgn0037736	cell adhesion molecules
+FBgn0037908	cell adhesion molecules
+FBgn0037956	cell adhesion molecules
+FBgn0037963	cell adhesion molecules
+FBgn0037993	cell adhesion molecules
+FBgn0038084	cell adhesion molecules
+FBgn0038087	cell adhesion molecules
+FBgn0038092	cell adhesion molecules
+FBgn0038098	cell adhesion molecules
+FBgn0038156	cell adhesion molecules
+FBgn0038247	cell adhesion molecules
+FBgn0038279	cell adhesion molecules
+FBgn0038282	cell adhesion molecules
+FBgn0038439	cell adhesion molecules
+FBgn0038494	cell adhesion molecules
+FBgn0038498	cell adhesion molecules
+FBgn0038638	cell adhesion molecules
+FBgn0038865	cell adhesion molecules
+FBgn0038866	cell adhesion molecules
+FBgn0038975	cell adhesion molecules
+FBgn0039089	cell adhesion molecules
+FBgn0039155	cell adhesion molecules
+FBgn0039294	cell adhesion molecules
+FBgn0039332	cell adhesion molecules
+FBgn0039354	cell adhesion molecules
+FBgn0039431	cell adhesion molecules
+FBgn0039528	cell adhesion molecules
+FBgn0039584	cell adhesion molecules
+FBgn0039617	cell adhesion molecules
+FBgn0039647	cell adhesion molecules
+FBgn0039709	cell adhesion molecules
+FBgn0039728	cell adhesion molecules
+FBgn0039862	cell adhesion molecules
+FBgn0039928	cell adhesion molecules
+FBgn0040388	cell adhesion molecules
+FBgn0040505	cell adhesion molecules
+FBgn0040726	cell adhesion molecules
+FBgn0040823	cell adhesion molecules
+FBgn0041097	cell adhesion molecules
+FBgn0043903	cell adhesion molecules
+FBgn0046685	cell adhesion molecules
+FBgn0050418	cell adhesion molecules
+FBgn0051092	cell adhesion molecules
+FBgn0051195	cell adhesion molecules
+FBgn0051361	cell adhesion molecules
+FBgn0051431	cell adhesion molecules
+FBgn0051619	cell adhesion molecules
+FBgn0051646	cell adhesion molecules
+FBgn0051665	cell adhesion molecules
+FBgn0051708	cell adhesion molecules
+FBgn0051774	cell adhesion molecules
+FBgn0051814	cell adhesion molecules
+FBgn0051823	cell adhesion molecules
+FBgn0051999	cell adhesion molecules
+FBgn0052055	cell adhesion molecules
+FBgn0052057	cell adhesion molecules
+FBgn0052179	cell adhesion molecules
+FBgn0052373	cell adhesion molecules
+FBgn0052600	cell adhesion molecules
+FBgn0052702	cell adhesion molecules
+FBgn0052791	cell adhesion molecules
+FBgn0053087	cell adhesion molecules
+FBgn0053143	cell adhesion molecules
+FBgn0053179	cell adhesion molecules
+FBgn0053196	cell adhesion molecules
+FBgn0053202	cell adhesion molecules
+FBgn0053481	cell adhesion molecules
+FBgn0053512	cell adhesion molecules
+FBgn0053516	cell adhesion molecules
+FBgn0053543	cell adhesion molecules
+FBgn0053978	cell adhesion molecules
+FBgn0066101	cell adhesion molecules
+FBgn0083949	cell adhesion molecules
+FBgn0083950	cell adhesion molecules
+FBgn0085382	cell adhesion molecules
+FBgn0085397	cell adhesion molecules
+FBgn0085400	cell adhesion molecules
+FBgn0085414	cell adhesion molecules
+FBgn0085420	cell adhesion molecules
+FBgn0085440	cell adhesion molecules
+FBgn0086604	cell adhesion molecules
+FBgn0243486	cell adhesion molecules
+FBgn0243514	cell adhesion molecules
+FBgn0250908	cell adhesion molecules
+FBgn0259110	cell adhesion molecules
+FBgn0259140	cell adhesion molecules
+FBgn0259213	cell adhesion molecules
+FBgn0259245	cell adhesion molecules
+FBgn0259677	cell adhesion molecules
+FBgn0259685	cell adhesion molecules
+FBgn0259714	cell adhesion molecules
+FBgn0259716	cell adhesion molecules
+FBgn0259896	cell adhesion molecules
+FBgn0260011	cell adhesion molecules
+FBgn0260793	cell adhesion molecules
+FBgn0260995	cell adhesion molecules
+FBgn0261046	cell adhesion molecules
+FBgn0261053	cell adhesion molecules
+FBgn0261260	cell adhesion molecules
+FBgn0261269	cell adhesion molecules
+FBgn0261509	cell adhesion molecules
+FBgn0261514	cell adhesion molecules
+FBgn0261563	cell adhesion molecules
+FBgn0261574	cell adhesion molecules
+FBgn0261674	cell adhesion molecules
+FBgn0261800	cell adhesion molecules
+FBgn0261822	cell adhesion molecules
+FBgn0261871	cell adhesion molecules
+FBgn0262018	cell adhesion molecules
+FBgn0262473	cell adhesion molecules
+FBgn0262509	cell adhesion molecules
+FBgn0262870	cell adhesion molecules
+FBgn0263219	cell adhesion molecules
+FBgn0264089	cell adhesion molecules
+FBgn0264339	cell adhesion molecules
+FBgn0264975	cell adhesion molecules
+FBgn0265002	cell adhesion molecules
+FBgn0265296	cell adhesion molecules
+FBgn0265607	cell adhesion molecules
+FBgn0266801	cell adhesion molecules
+FBgn0267001	cell adhesion molecules
+FBgn0267348	cell adhesion molecules
+FBgn0267428	cell adhesion molecules
+FBgn0267435	cell adhesion molecules
+FBgn0267728	cell adhesion molecules
+FBgn0267911	cell adhesion molecules
+FBgn0268063	cell adhesion molecules
+FBgn0000036	receptor and ligands
+FBgn0000037	receptor and ligands
+FBgn0000038	receptor and ligands
+FBgn0000039	receptor and ligands
+FBgn0000206	receptor and ligands
+FBgn0001085	receptor and ligands
+FBgn0002940	receptor and ligands
+FBgn0003248	receptor and ligands
+FBgn0003249	receptor and ligands
+FBgn0003250	receptor and ligands
+FBgn0003444	receptor and ligands
+FBgn0003747	receptor and ligands
+FBgn0003892	receptor and ligands
+FBgn0004118	receptor and ligands
+FBgn0004168	receptor and ligands
+FBgn0004514	receptor and ligands
+FBgn0004573	receptor and ligands
+FBgn0004619	receptor and ligands
+FBgn0004622	receptor and ligands
+FBgn0004841	receptor and ligands
+FBgn0004842	receptor and ligands
+FBgn0010399	receptor and ligands
+FBgn0011582	receptor and ligands
+FBgn0014019	receptor and ligands
+FBgn0015519	receptor and ligands
+FBgn0016797	receptor and ligands
+FBgn0019940	receptor and ligands
+FBgn0019985	receptor and ligands
+FBgn0023000	receptor and ligands
+FBgn0024944	receptor and ligands
+FBgn0025595	receptor and ligands
+FBgn0025631	receptor and ligands
+FBgn0025632	receptor and ligands
+FBgn0025740	receptor and ligands
+FBgn0025741	receptor and ligands
+FBgn0026255	receptor and ligands
+FBgn0027342	receptor and ligands
+FBgn0027343	receptor and ligands
+FBgn0027575	receptor and ligands
+FBgn0028875	receptor and ligands
+FBgn0028956	receptor and ligands
+FBgn0029723	receptor and ligands
+FBgn0029768	receptor and ligands
+FBgn0029909	receptor and ligands
+FBgn0029961	receptor and ligands
+FBgn0029965	receptor and ligands
+FBgn0029966	receptor and ligands
+FBgn0029968	receptor and ligands
+FBgn0030108	receptor and ligands
+FBgn0030297	receptor and ligands
+FBgn0030385	receptor and ligands
+FBgn0030437	receptor and ligands
+FBgn0030766	receptor and ligands
+FBgn0030941	receptor and ligands
+FBgn0030954	receptor and ligands
+FBgn0031181	receptor and ligands
+FBgn0031209	receptor and ligands
+FBgn0031261	receptor and ligands
+FBgn0031275	receptor and ligands
+FBgn0031294	receptor and ligands
+FBgn0031634	receptor and ligands
+FBgn0031770	receptor and ligands
+FBgn0032151	receptor and ligands
+FBgn0032416	receptor and ligands
+FBgn0032682	receptor and ligands
+FBgn0033058	receptor and ligands
+FBgn0033313	receptor and ligands
+FBgn0033515	receptor and ligands
+FBgn0033579	receptor and ligands
+FBgn0033648	receptor and ligands
+FBgn0033651	receptor and ligands
+FBgn0033744	receptor and ligands
+FBgn0033932	receptor and ligands
+FBgn0034023	receptor and ligands
+FBgn0034219	receptor and ligands
+FBgn0034272	receptor and ligands
+FBgn0034456	receptor and ligands
+FBgn0034457	receptor and ligands
+FBgn0034458	receptor and ligands
+FBgn0034994	receptor and ligands
+FBgn0034996	receptor and ligands
+FBgn0035010	receptor and ligands
+FBgn0035019	receptor and ligands
+FBgn0035131	receptor and ligands
+FBgn0035132	receptor and ligands
+FBgn0035167	receptor and ligands
+FBgn0035331	receptor and ligands
+FBgn0035385	receptor and ligands
+FBgn0035468	receptor and ligands
+FBgn0035486	receptor and ligands
+FBgn0035538	receptor and ligands
+FBgn0035604	receptor and ligands
+FBgn0035610	receptor and ligands
+FBgn0035623	receptor and ligands
+FBgn0035789	receptor and ligands
+FBgn0035847	receptor and ligands
+FBgn0035870	receptor and ligands
+FBgn0036010	receptor and ligands
+FBgn0036083	receptor and ligands
+FBgn0036150	receptor and ligands
+FBgn0036250	receptor and ligands
+FBgn0036260	receptor and ligands
+FBgn0036278	receptor and ligands
+FBgn0036757	receptor and ligands
+FBgn0036789	receptor and ligands
+FBgn0036790	receptor and ligands
+FBgn0036829	receptor and ligands
+FBgn0036934	receptor and ligands
+FBgn0036937	receptor and ligands
+FBgn0037100	receptor and ligands
+FBgn0037408	receptor and ligands
+FBgn0037501	receptor and ligands
+FBgn0037546	receptor and ligands
+FBgn0037630	receptor and ligands
+FBgn0037960	receptor and ligands
+FBgn0038063	receptor and ligands
+FBgn0038139	receptor and ligands
+FBgn0038140	receptor and ligands
+FBgn0038153	receptor and ligands
+FBgn0038201	receptor and ligands
+FBgn0038440	receptor and ligands
+FBgn0038541	receptor and ligands
+FBgn0038542	receptor and ligands
+FBgn0038653	receptor and ligands
+FBgn0038789	receptor and ligands
+FBgn0038837	receptor and ligands
+FBgn0038840	receptor and ligands
+FBgn0038874	receptor and ligands
+FBgn0038880	receptor and ligands
+FBgn0038980	receptor and ligands
+FBgn0039079	receptor and ligands
+FBgn0039080	receptor and ligands
+FBgn0039396	receptor and ligands
+FBgn0039419	receptor and ligands
+FBgn0039520	receptor and ligands
+FBgn0039595	receptor and ligands
+FBgn0039747	receptor and ligands
+FBgn0039818	receptor and ligands
+FBgn0039821	receptor and ligands
+FBgn0039879	receptor and ligands
+FBgn0039916	receptor and ligands
+FBgn0039927	receptor and ligands
+FBgn0040849	receptor and ligands
+FBgn0041224	receptor and ligands
+FBgn0041225	receptor and ligands
+FBgn0041229	receptor and ligands
+FBgn0041231	receptor and ligands
+FBgn0041233	receptor and ligands
+FBgn0041234	receptor and ligands
+FBgn0041235	receptor and ligands
+FBgn0041236	receptor and ligands
+FBgn0041237	receptor and ligands
+FBgn0041238	receptor and ligands
+FBgn0041239	receptor and ligands
+FBgn0041240	receptor and ligands
+FBgn0041241	receptor and ligands
+FBgn0041242	receptor and ligands
+FBgn0041243	receptor and ligands
+FBgn0041245	receptor and ligands
+FBgn0041246	receptor and ligands
+FBgn0041247	receptor and ligands
+FBgn0041248	receptor and ligands
+FBgn0041249	receptor and ligands
+FBgn0041250	receptor and ligands
+FBgn0045442	receptor and ligands
+FBgn0045443	receptor and ligands
+FBgn0045468	receptor and ligands
+FBgn0045469	receptor and ligands
+FBgn0045470	receptor and ligands
+FBgn0045471	receptor and ligands
+FBgn0045473	receptor and ligands
+FBgn0045474	receptor and ligands
+FBgn0045476	receptor and ligands
+FBgn0045477	receptor and ligands
+FBgn0045478	receptor and ligands
+FBgn0045479	receptor and ligands
+FBgn0045482	receptor and ligands
+FBgn0045483	receptor and ligands
+FBgn0045485	receptor and ligands
+FBgn0045486	receptor and ligands
+FBgn0045487	receptor and ligands
+FBgn0045495	receptor and ligands
+FBgn0045497	receptor and ligands
+FBgn0045498	receptor and ligands
+FBgn0045500	receptor and ligands
+FBgn0045501	receptor and ligands
+FBgn0045502	receptor and ligands
+FBgn0046687	receptor and ligands
+FBgn0046885	receptor and ligands
+FBgn0046886	receptor and ligands
+FBgn0046887	receptor and ligands
+FBgn0050018	receptor and ligands
+FBgn0050081	receptor and ligands
+FBgn0050106	receptor and ligands
+FBgn0050125	receptor and ligands
+FBgn0050340	receptor and ligands
+FBgn0050361	receptor and ligands
+FBgn0050464	receptor and ligands
+FBgn0050468	receptor and ligands
+FBgn0050469	receptor and ligands
+FBgn0051164	receptor and ligands
+FBgn0051225	receptor and ligands
+FBgn0051423	receptor and ligands
+FBgn0051424	receptor and ligands
+FBgn0051660	receptor and ligands
+FBgn0051718	receptor and ligands
+FBgn0051720	receptor and ligands
+FBgn0052058	receptor and ligands
+FBgn0052255	receptor and ligands
+FBgn0052447	receptor and ligands
+FBgn0052475	receptor and ligands
+FBgn0052476	receptor and ligands
+FBgn0052547	receptor and ligands
+FBgn0052693	receptor and ligands
+FBgn0052704	receptor and ligands
+FBgn0052843	receptor and ligands
+FBgn0053513	receptor and ligands
+FBgn0053517	receptor and ligands
+FBgn0053639	receptor and ligands
+FBgn0053696	receptor and ligands
+FBgn0053971	receptor and ligands
+FBgn0083979	receptor and ligands
+FBgn0085410	receptor and ligands
+FBgn0086778	receptor and ligands
+FBgn0087012	receptor and ligands
+FBgn0250910	receptor and ligands
+FBgn0259185	receptor and ligands
+FBgn0259187	receptor and ligands
+FBgn0259188	receptor and ligands
+FBgn0259189	receptor and ligands
+FBgn0259190	receptor and ligands
+FBgn0259193	receptor and ligands
+FBgn0259194	receptor and ligands
+FBgn0259215	receptor and ligands
+FBgn0259227	receptor and ligands
+FBgn0259231	receptor and ligands
+FBgn0259683	receptor and ligands
+FBgn0260446	receptor and ligands
+FBgn0260753	receptor and ligands
+FBgn0260874	receptor and ligands
+FBgn0261401	receptor and ligands
+FBgn0261402	receptor and ligands
+FBgn0261929	receptor and ligands
+FBgn0263116	receptor and ligands
+FBgn0264000	receptor and ligands
+FBgn0264002	receptor and ligands
+FBgn0264556	receptor and ligands
+FBgn0265138	receptor and ligands
+FBgn0265139	receptor and ligands
+FBgn0266137	receptor and ligands
+FBgn0266347	receptor and ligands
+FBgn0266429	receptor and ligands
+FBgn0287775	receptor and ligands
+FBgn0000490	receptor and ligands
+FBgn0000500	receptor and ligands
+FBgn0000564	receptor and ligands
+FBgn0000715	receptor and ligands
+FBgn0000719	receptor and ligands
+FBgn0003034	receptor and ligands
+FBgn0003495	receptor and ligands
+FBgn0003751	receptor and ligands
+FBgn0004108	receptor and ligands
+FBgn0004360	receptor and ligands
+FBgn0004552	receptor and ligands
+FBgn0004644	receptor and ligands
+FBgn0004956	receptor and ligands
+FBgn0005590	receptor and ligands
+FBgn0010194	receptor and ligands
+FBgn0010453	receptor and ligands
+FBgn0011259	receptor and ligands
+FBgn0011581	receptor and ligands
+FBgn0012344	receptor and ligands
+FBgn0013323	receptor and ligands
+FBgn0013767	receptor and ligands
+FBgn0014135	receptor and ligands
+FBgn0015591	receptor and ligands
+FBgn0016059	receptor and ligands
+FBgn0023178	receptor and ligands
+FBgn0024234	receptor and ligands
+FBgn0024913	receptor and ligands
+FBgn0026199	receptor and ligands
+FBgn0027109	receptor and ligands
+FBgn0027111	receptor and ligands
+FBgn0028374	receptor and ligands
+FBgn0028418	receptor and ligands
+FBgn0028738	receptor and ligands
+FBgn0029002	receptor and ligands
+FBgn0030904	receptor and ligands
+FBgn0030964	receptor and ligands
+FBgn0031256	receptor and ligands
+FBgn0031461	receptor and ligands
+FBgn0031888	receptor and ligands
+FBgn0031902	receptor and ligands
+FBgn0031903	receptor and ligands
+FBgn0031959	receptor and ligands
+FBgn0032048	receptor and ligands
+FBgn0032311	receptor and ligands
+FBgn0032315	receptor and ligands
+FBgn0032336	receptor and ligands
+FBgn0032337	receptor and ligands
+FBgn0032362	receptor and ligands
+FBgn0032840	receptor and ligands
+FBgn0033358	receptor and ligands
+FBgn0033483	receptor and ligands
+FBgn0033649	receptor and ligands
+FBgn0033652	receptor and ligands
+FBgn0034199	receptor and ligands
+FBgn0034200	receptor and ligands
+FBgn0034935	receptor and ligands
+FBgn0035023	receptor and ligands
+FBgn0035056	receptor and ligands
+FBgn0035092	receptor and ligands
+FBgn0035282	receptor and ligands
+FBgn0035379	receptor and ligands
+FBgn0036046	receptor and ligands
+FBgn0036690	receptor and ligands
+FBgn0036713	receptor and ligands
+FBgn0037976	receptor and ligands
+FBgn0038134	receptor and ligands
+FBgn0038147	receptor and ligands
+FBgn0038199	receptor and ligands
+FBgn0038901	receptor and ligands
+FBgn0039007	receptor and ligands
+FBgn0039031	receptor and ligands
+FBgn0039666	receptor and ligands
+FBgn0039722	receptor and ligands
+FBgn0039914	receptor and ligands
+FBgn0040717	receptor and ligands
+FBgn0042201	receptor and ligands
+FBgn0044046	receptor and ligands
+FBgn0044047	receptor and ligands
+FBgn0044048	receptor and ligands
+FBgn0044049	receptor and ligands
+FBgn0044050	receptor and ligands
+FBgn0044051	receptor and ligands
+FBgn0045038	receptor and ligands
+FBgn0053527	receptor and ligands
+FBgn0053542	receptor and ligands
+FBgn0063368	receptor and ligands
+FBgn0085407	receptor and ligands
+FBgn0085512	receptor and ligands
+FBgn0086677	receptor and ligands
+FBgn0086782	receptor and ligands
+FBgn0250832	receptor and ligands
+FBgn0261386	receptor and ligands
+FBgn0261526	receptor and ligands
+FBgn0264273	receptor and ligands
+FBgn0264810	receptor and ligands
+FBgn0284084	receptor and ligands
+FBgn0284221	receptor and ligands
+FBgn0287423	receptor and ligands
+FBgn0000152	ion channels
+FBgn0000535	ion channels
+FBgn0001134	ion channels
+FBgn0001991	ion channels
+FBgn0003011	ion channels
+FBgn0003353	ion channels
+FBgn0003380	ion channels
+FBgn0003386	ion channels
+FBgn0003429	ion channels
+FBgn0003710	ion channels
+FBgn0003861	ion channels
+FBgn0004244	ion channels
+FBgn0004620	ion channels
+FBgn0005564	ion channels
+FBgn0005614	ion channels
+FBgn0010051	ion channels
+FBgn0010240	ion channels
+FBgn0011286	ion channels
+FBgn0011589	ion channels
+FBgn0015558	ion channels
+FBgn0016920	ion channels
+FBgn0017561	ion channels
+FBgn0020258	ion channels
+FBgn0020429	ion channels
+FBgn0022981	ion channels
+FBgn0023523	ion channels
+FBgn0024319	ion channels
+FBgn0024963	ion channels
+FBgn0026384	ion channels
+FBgn0026385	ion channels
+FBgn0026386	ion channels
+FBgn0026388	ion channels
+FBgn0026389	ion channels
+FBgn0026390	ion channels
+FBgn0026391	ion channels
+FBgn0026392	ion channels
+FBgn0026393	ion channels
+FBgn0026394	ion channels
+FBgn0026395	ion channels
+FBgn0026396	ion channels
+FBgn0026397	ion channels
+FBgn0026398	ion channels
+FBgn0026399	ion channels
+FBgn0027589	ion channels
+FBgn0028422	ion channels
+FBgn0028863	ion channels
+FBgn0028879	ion channels
+FBgn0028946	ion channels
+FBgn0028963	ion channels
+FBgn0029521	ion channels
+FBgn0029733	ion channels
+FBgn0029761	ion channels
+FBgn0030016	ion channels
+FBgn0030204	ion channels
+FBgn0030298	ion channels
+FBgn0030349	ion channels
+FBgn0030529	ion channels
+FBgn0030707	ion channels
+FBgn0030715	ion channels
+FBgn0030795	ion channels
+FBgn0030844	ion channels
+FBgn0031802	ion channels
+FBgn0031803	ion channels
+FBgn0031893	ion channels
+FBgn0032096	ion channels
+FBgn0032593	ion channels
+FBgn0032602	ion channels
+FBgn0032706	ion channels
+FBgn0033041	ion channels
+FBgn0033043	ion channels
+FBgn0033257	ion channels
+FBgn0033404	ion channels
+FBgn0033422	ion channels
+FBgn0033494	ion channels
+FBgn0033558	ion channels
+FBgn0033727	ion channels
+FBgn0033755	ion channels
+FBgn0033995	ion channels
+FBgn0034473	ion channels
+FBgn0034489	ion channels
+FBgn0034730	ion channels
+FBgn0034865	ion channels
+FBgn0034866	ion channels
+FBgn0034965	ion channels
+FBgn0035113	ion channels
+FBgn0035192	ion channels
+FBgn0035382	ion channels
+FBgn0035458	ion channels
+FBgn0035504	ion channels
+FBgn0035505	ion channels
+FBgn0035696	ion channels
+FBgn0035785	ion channels
+FBgn0035934	ion channels
+FBgn0036009	ion channels
+FBgn0036019	ion channels
+FBgn0036078	ion channels
+FBgn0036080	ion channels
+FBgn0036235	ion channels
+FBgn0036414	ion channels
+FBgn0036474	ion channels
+FBgn0036491	ion channels
+FBgn0036492	ion channels
+FBgn0036566	ion channels
+FBgn0036709	ion channels
+FBgn0036727	ion channels
+FBgn0037322	ion channels
+FBgn0037324	ion channels
+FBgn0037399	ion channels
+FBgn0037576	ion channels
+FBgn0037590	ion channels
+FBgn0037591	ion channels
+FBgn0037594	ion channels
+FBgn0037685	ion channels
+FBgn0037690	ion channels
+FBgn0037766	ion channels
+FBgn0037950	ion channels
+FBgn0038165	ion channels
+FBgn0038203	ion channels
+FBgn0038621	ion channels
+FBgn0038721	ion channels
+FBgn0038798	ion channels
+FBgn0039033	ion channels
+FBgn0039034	ion channels
+FBgn0039081	ion channels
+FBgn0039424	ion channels
+FBgn0039551	ion channels
+FBgn0039582	ion channels
+FBgn0039675	ion channels
+FBgn0039676	ion channels
+FBgn0039677	ion channels
+FBgn0039679	ion channels
+FBgn0039839	ion channels
+FBgn0039840	ion channels
+FBgn0040238	ion channels
+FBgn0040697	ion channels
+FBgn0041195	ion channels
+FBgn0041585	ion channels
+FBgn0041621	ion channels
+FBgn0041622	ion channels
+FBgn0041623	ion channels
+FBgn0041624	ion channels
+FBgn0041625	ion channels
+FBgn0041626	ion channels
+FBgn0042185	ion channels
+FBgn0045073	ion channels
+FBgn0046113	ion channels
+FBgn0050181	ion channels
+FBgn0051065	ion channels
+FBgn0051105	ion channels
+FBgn0051116	ion channels
+FBgn0051201	ion channels
+FBgn0052792	ion channels
+FBgn0053289	ion channels
+FBgn0053349	ion channels
+FBgn0053508	ion channels
+FBgn0060296	ion channels
+FBgn0062440	ion channels
+FBgn0062565	ion channels
+FBgn0065108	ion channels
+FBgn0065109	ion channels
+FBgn0065110	ion channels
+FBgn0067407	ion channels
+FBgn0085395	ion channels
+FBgn0085398	ion channels
+FBgn0085425	ion channels
+FBgn0085434	ion channels
+FBgn0086693	ion channels
+FBgn0259145	ion channels
+FBgn0260005	ion channels
+FBgn0260971	ion channels
+FBgn0261041	ion channels
+FBgn0261361	ion channels
+FBgn0261444	ion channels
+FBgn0261612	ion channels
+FBgn0261698	ion channels
+FBgn0261722	ion channels
+FBgn0261999	ion channels
+FBgn0262516	ion channels
+FBgn0262593	ion channels
+FBgn0262685	ion channels
+FBgn0263111	ion channels
+FBgn0263220	ion channels
+FBgn0263257	ion channels
+FBgn0263397	ion channels
+FBgn0264386	ion channels
+FBgn0264908	ion channels
+FBgn0264953	ion channels
+FBgn0265001	ion channels
+FBgn0265042	ion channels
+FBgn0265194	ion channels
+FBgn0266346	ion channels
+FBgn0267430	ion channels
+FBgn0285944	ion channels
+FBgn0287724	ion channels
+FBgn0000479	synaptic genes
+FBgn0052677	synaptic genes
+FBgn0003360	synaptic genes
+FBgn0001624	synaptic genes
+FBgn0003301	synaptic genes
+FBgn0000319	synaptic genes
+FBgn0030897	synaptic genes
+FBgn0083228	synaptic genes
+FBgn0250906	synaptic genes
+FBgn0004242	synaptic genes
+FBgn0263916	synaptic genes
+FBgn0026439	synaptic genes
+FBgn0259822	synaptic genes
+FBgn0032901	synaptic genes
+FBgn0086784	synaptic genes
+FBgn0259246	synaptic genes
+FBgn0266708	synaptic genes
+FBgn0001123	synaptic genes
+FBgn0035390	synaptic genes
+FBgn0004574	synaptic genes
+FBgn0259824	synaptic genes
+FBgn0250791	synaptic genes
+FBgn0025702	synaptic genes
+FBgn0266672	synaptic genes
+FBgn0086372	synaptic genes
+FBgn0000024	synaptic genes
+FBgn0016672	synaptic genes
+FBgn0013334	synaptic genes
+FBgn0039774	synaptic genes
+FBgn0264607	synaptic genes
+FBgn0025726	synaptic genes
+FBgn0029147	synaptic genes
+FBgn0000017	synaptic genes
+FBgn0263995	synaptic genes
+FBgn0003392	synaptic genes
+FBgn0263120	synaptic genes
+FBgn0002921	synaptic genes
+FBgn0029830	synaptic genes
+FBgn0026313	synaptic genes
+FBgn0052220	synaptic genes
+FBgn0023090	synaptic genes
+FBgn0052056	synaptic genes
+FBgn0016975	synaptic genes

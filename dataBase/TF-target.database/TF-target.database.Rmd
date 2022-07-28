@@ -1,0 +1,116 @@
+---
+title: "fly TF-target database summary"
+author: "Ming Yang"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    #theme: united
+date: 'Compiled: `r format(Sys.Date(), "%B %d, %Y")`'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message=F,warning = F)
+```
+
+## load TF-target network data
+
+I downloaded raw data as [Supp S1.zip](https://genome.cshlp.org/content/suppl/2012/03/23/gr.127191.111.DC1/S1_integrative_regulatory_networks.zip) from the original publication and saved to local folder `2012_data`.
+
+Original publication : Marbach, Daniel, et al. "Predictive regulatory models in Drosophila melanogaster by integrative inference of transcriptional networks." Genome research 22.7 (2012): 1334-1349.
+
+```{r}
+df=read.table("./2012_data/S1_integrative_regulatory_networks/flynet_supervised_0.6.txt",
+              as.is=T);
+head(df);dim(df)
+str(df)
+```
+
+## gene ID mapping: change FBgn id to gene symbol
+```{r}
+library(AnnotationDbi);
+library(org.Dm.eg.db,verbose=F,quietly=T)
+package.version("org.Dm.eg.db")
+x1<-AnnotationDbi::select(org.Dm.eg.db,
+          keys=df[,1],keytype="FLYBASE",c("SYMBOL","GENENAME"))
+dim(x1);dim(df)
+# how many genes don't have a mapped gene symbol
+unique(x1[is.na(x1$SYMBOL),1])
+```
+
+## Deal with fly base secondary ID
+```{r}
+#check one gene ("FBgn0000054") in more detail
+#googled online, FBgn0000054 symbol is Adf1
+select(org.Dm.eg.db,keys='Adf1',keytype='SYMBOL',c("FLYBASE","GENENAME"))
+#check another gene('FBgn0033310')
+#googled online, FBgn0033310 symbol is dar1
+select(org.Dm.eg.db,keys='dar1',keytype='SYMBOL',c("FLYBASE","GENENAME"))
+```
+
+As shown (online)[!https://wiki.flybase.org/wiki/FlyBase:ID_Validator], those IDs are called 'secondary ID' which is not used any more, but could be mapped to one current gene ID.
+
+```{r eval=F}
+unmap.genes<-unique(x1[is.na(x1$SYMBOL),1])
+browseURL(url='https://flybase.org/convert/id')
+paste(unmap.genes,collapse =' ')
+```
+
+You can paste those gene names in the query box in FlyBase.
+As it is kinda messy, instead, I just throw those genes away.
+
+## use mapped gene symbols to generate database
+```{r}
+x1<-AnnotationDbi::select(org.Dm.eg.db,
+          keys=df[,1],keytype="FLYBASE",c("SYMBOL","GENENAME"))
+dim(x1)
+length(unique(x1[is.na(x1$SYMBOL),1]))
+
+x2<-AnnotationDbi::select(org.Dm.eg.db,
+       keys=df[,2],keytype="FLYBASE",c("SYMBOL","GENENAME"))
+dim(x2)
+length(unique(x2[is.na(x2$SYMBOL),1]))
+
+df1<-data.frame(x1$SYMBOL,x2$SYMBOL,df$V3,stringsAsFactors = F)
+df2<-df1[!is.na(df1[,1]) & !is.na(df1[,2]),]
+dim(df1);#310634
+dim(df2);#272822
+```
+
+## remove self loop (from and to is the same gene)
+```{r}
+## remove redundancy
+colnames(df2)=c('from','to','link');
+sum(df2$from==df2$to)
+
+## check for edge redundancy
+edge=paste(df2[,1],df2[,2])
+(dups=table(edge)[table(edge)>1]) #no redundancy
+head(df2)
+saveRDS(df2,'./processed_flynet_supervised_0.6.rds')
+```
+
+## characterize TF-target database
+```{r}
+df=readRDS('./processed_flynet_supervised_0.6.rds')
+tf=unique(df$from);
+target=unique(df$to);
+
+# pure TF, TF&target, pure target
+library(RVenn)
+library(ggplot2)
+my.sets=list(tf=tf,target=target)
+out=Venn(my.sets)
+ggvenn(out, slice = c(1, 2))
+
+summary(as.numeric(table(df$from)))
+hist(table(df$from),main='kout')
+
+summary(as.numeric(table(df$to)))
+hist(table(df$to),main='kin')
+```
+
+```{r}
+installed.packages()[names(sessionInfo()$otherPkgs), "Version"]
+```
+
