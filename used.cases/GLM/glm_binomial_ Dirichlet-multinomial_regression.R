@@ -154,3 +154,9 @@ m_results %>% arrange(desc(odds.ratio))
 ########################################################################
 # 用 Dirichlet-multinomial regression在单细胞数据中检测细胞成分变化
 # https://zhuanlan.zhihu.com/p/341941329
+
+########################################################################
+# Anova – Type I/II/III SS explained
+# https://md.psych.bio.uni-goettingen.de/mv/unit/lm_cat/lm_cat_unbal_ss_explained.html
+
+
