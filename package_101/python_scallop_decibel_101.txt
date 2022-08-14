@@ -80,13 +80,15 @@ gcl_out=dcb.gcl(adata,50) #Return type pd.DataFrame
 gcl_out #length=50 array
 
 ######################################################################
-# module.decibel.scallop_pipeline(adata, res_vals=None)
+#https://decibel.readthedocs.io/en/latest/modules.html#module.decibel.scallop_pipeline: module.decibel.scallop_pipeline(adata, res_vals=None)
+
 inp_sce=sc.read('/Users/mingyang/Documents/Data_mouse_aging_atlas/TMS.gene.data_final/tabula-muris-senis-facs-official-raw-obj.h5ad');       
 inp_sce # cell x gene =110824 × 22966
 inp_sce.obs['cell_ontology_class']
 
 #pick=(inp_sce.obs['cell_ontology_class']=='skeletal muscle satellite cell')
 pick=(inp_sce.obs['cell_ontology_class']=='skeletal muscle satellite cell') & (inp_sce.obs['age']=='3m')
+pick=(inp_sce.obs['cell_ontology_class']=='skeletal muscle satellite cell') & (inp_sce.obs['age']=='24m')
 test = inp_sce[pick]
 
 sc.pp.normalize_total(test, target_sum=1e4)
@@ -105,8 +107,14 @@ sc.pp.neighbors(test)
 test.obs['condition']=1  #must have a 'condition' column, if already per cell type per age, set it to 1
 dcb.scallop_pipeline(test, res_vals=None) #need neighbor information, so sc.pp.neighbors is a must
 test.obs
-test.obs['scallop_noise']
 
+young=test.obs['scallop_noise']
+old=test.obs['scallop_noise']
+
+young.median()
+old.median()
+young.mean()
+old.mean()
 
 ######################################################################
 ## test scallop
