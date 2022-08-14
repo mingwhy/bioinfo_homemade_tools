@@ -79,9 +79,18 @@ dcb.distance_to_celltype_mean(adata,'batch')
 gcl_out=dcb.gcl(adata,50) #Return type pd.DataFrame
 gcl_out #length=50 array
 
-pick=(inp_sce.obs['tissue_ct']=='Brain_Non-Myeloid_neuron') & (inp_sce.obs ['age']=='3m')
+inp_sce=sc.read('/Users/mingyang/Documents/Data_mouse_aging_atlas/TMS.gene.data_final/tabula-muris-senis-facs-official-raw-obj.h5ad');       
+inp_sce # cell x gene =110824 × 22966
+inp_sce.obs['tissue_ct']=inp_sce.obs['tissue'].str.cat(inp_sce.obs['cell_ontology_class'],sep=":")
+set(inp_sce.obs['tissue_ct'])
+
+tc='Brain_Non-Myeloid:neuron'
+tc='Brain_Non-Myeloid:oligodendrocyte'
+tc='Marrow:NK cell'
+tc="Heart:atrial myocyte"   
+pick=(inp_sce.obs['tissue_ct']==tc) & (inp_sce.obs ['age']=='3m')
 test1 = inp_sce[pick]
-pick=(inp_sce.obs['tissue_ct']=='Brain_Non-Myeloid_neuron') & (inp_sce.obs ['age']=='24m')
+pick=(inp_sce.obs['tissue_ct']==tc) & (inp_sce.obs ['age']=='24m')
 test2 = inp_sce[pick]
 
 sc.pp.normalize_total(test1, target_sum=1e4)
