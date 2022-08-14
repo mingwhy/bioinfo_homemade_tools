@@ -79,6 +79,13 @@ dcb.distance_to_celltype_mean(adata,'batch')
 gcl_out=dcb.gcl(adata,50) #Return type pd.DataFrame
 gcl_out #length=50 array
 
+pick=(inp_sce.obs['tissue_ct']=='Brain_Non-Myeloid_neuron') & (inp_sce.obs ['age']=='3m')
+test1 = inp_sce[pick]
+pick=(inp_sce.obs['tissue_ct']=='Brain_Non-Myeloid_neuron') & (inp_sce.obs ['age']=='24m')
+test2 = inp_sce[pick]
+young_gcl=dcb.gcl(test1,50)
+old_gcl=dcb.gcl(test2,50)
+
 ######################################################################
 #https://decibel.readthedocs.io/en/latest/modules.html#module.decibel.scallop_pipeline: module.decibel.scallop_pipeline(adata, res_vals=None)
 
