@@ -29,7 +29,7 @@ inp_sce # cell x gene =110824 × 22966, 22958 × 22966
 inp_sce.obs['tissue_ct']=inp_sce.obs['tissue'].str.cat(inp_sce.obs['cell_ontology_class'],sep=":")
 
 all_tc=list(set(inp_sce.obs['tissue_ct']))
-
+num_div=100;
 gcl_out=pd.DataFrame()
 for tc in all_tc:
 	print(tc)
@@ -44,8 +44,8 @@ for tc in all_tc:
 		sc.pp.filter_genes(test1, min_cells=5) #test
 		sc.pp.filter_cells(test1, min_genes=100) #test
 		
-		out=dcb.gcl(test1,100)
-		data = {'tc':np.repeat(tc,100), 'age': np.repeat(age,100), 'gcl':out}
+		out=dcb.gcl(test1,num_div)
+		data = {'tc':np.repeat(tc,num_div), 'age': np.repeat(age,num_div), 'gcl':out}
 		df=pd.DataFrame(data)		
 		gcl_out=gcl_out.append(df)	
 
