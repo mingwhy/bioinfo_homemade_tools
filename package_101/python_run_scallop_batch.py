@@ -29,13 +29,13 @@ inp_sce # cell x gene =110824 × 22966, 22958 × 22966
 inp_sce.obs['tissue_ct']=inp_sce.obs['tissue'].str.cat(inp_sce.obs['cell_ontology_class'],sep=":")
 
 all_tc=list(set(inp_sce.obs['tissue_ct']))
-
 scallop_out=pd.DataFrame()
+
 for tc in all_tc:
 	print(tc)
 	inp_sce_age=inp_sce[inp_sce.obs['tissue_ct']==tc]
 	ages=list(set(inp_sce_age.obs['age']))
-	tc_out=pd.DataFrame()
+
 	for age in ages:
 		pick= (inp_sce_age.obs['age']==age) 
 		test1 = inp_sce_age[pick]
@@ -45,9 +45,13 @@ for tc in all_tc:
 		sc.pp.filter_genes(test1, min_cells=5) #test
 		sc.pp.filter_cells(test1, min_genes=100) #test
 		sc.pp.pca(test1) #test.obsm
-		sc.pp.neighbors(test1) #test.obsp['distances']
-		tk.tl.triku(test1) #Run PCA, feature selection (triku), test.var
-		sc.pp.pca(test1) #test.obsm['X_pca']
+		sc.pp.neighbors(test1,n_neighbors=15) #test.obsp['distances']
+		
+		tk.tl.triku(test1) #need to run PCA, before feature selection (triku), test.var
+		sc.pp.pca(test1) #test.obsm['X_pca']		
+		sc.pp.neighbors(test1,n_neighbors=15) #test.obsp['distances'] #have must at least 2 clusters
+		# change `#if adata_sample.shape[0] > 50:` in decibel.py into `adata_sample.shape[0] >= 40:` as my tc contain>=50cells
+
 		test1.obs['condition']=1  #must have a 'condition' column, if already per cell type per age, set it to 1
 		dcb.scallop_pipeline(test1, res_vals=None) #need neighbor information, so sc.pp.neighbors is a must
 		out=test1.obs
@@ -56,9 +60,7 @@ for tc in all_tc:
 		#print(noise.median(),noise.median())
 		#scallop_out.columns.values
 		#scallop_out.groupby(['age'])['scallop_noise'].mean()
-		tc_out=tc_out.append(out)
-		
-	scallop_out=scallop_out.append(tc_out)	
+		scallop_out=scallop_out.append(out)
 
 scallop_out.to_pickle("scallop_out.pkl")  
 
