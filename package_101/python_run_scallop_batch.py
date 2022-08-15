@@ -47,9 +47,9 @@ for tc in all_tc:
 		sc.pp.pca(test1) #test.obsm
 		sc.pp.neighbors(test1,n_neighbors=15) #test.obsp['distances']
 		
-		tk.tl.triku(test1) #need to run PCA, before feature selection (triku), test.var
-		sc.pp.pca(test1) #test.obsm['X_pca']		
-		sc.pp.neighbors(test1,n_neighbors=15) #test.obsp['distances'] #have must at least 2 clusters
+		#tk.tl.triku(test1) #need to run PCA, before feature selection (triku), test.var
+		#sc.pp.pca(test1) #test.obsm['X_pca']		
+		#sc.pp.neighbors(test1,n_neighbors=15) #test.obsp['distances'] #have must at least 2 clusters
 		# change `#if adata_sample.shape[0] > 50:` in decibel.py into `adata_sample.shape[0] >= 40:` as my tc contain>=50cells
 
 		test1.obs['condition']=1  #must have a 'condition' column, if already per cell type per age, set it to 1
