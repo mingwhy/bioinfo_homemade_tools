@@ -67,9 +67,10 @@ library(reticulate)
 np <- import("numpy")
 dist.out=np$load('mmd_distances_cell_stim.npy')
 pval.out=np$load('mmd_p_values_cell_stim.npy')
-dim(dist.out) #8 100   3
+dim(dist.out) #8 100   3 (between, within, within)
 dim(pval.out) #8 100   3
 
 dim(dist.out[1,,]) #1st cell type, 100x3
+
 
 
