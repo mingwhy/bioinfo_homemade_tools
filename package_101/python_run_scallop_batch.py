@@ -10,6 +10,8 @@
 
 ######################################################################
 
+## conda activate RCFGL or conda activate myenv beforehand
+
 import pandas as pd
 import numpy as np
 import scanpy as sc
@@ -24,7 +26,7 @@ dcb
 dcb.enge_euclidean_dist #make sure this function works
 
 #inp_sce=sc.read('/Users/mingyang/Documents/Data_mouse_aging_atlas/TMS.gene.data_final/tabula-muris-senis-facs-official-raw-obj.h5ad');       
-inp_sce=sc.read('/Users/mingyang/Documents/aging_cell.turnover/DV_0619_normcounts_lifespan/select.tc_subsampled.h5ad');
+inp_sce=sc.read('/Users/mingyang/Documents/aging_cell.turnover/0619_DV_normcounts/select.tc_subsampled.h5ad');
 inp_sce # cell x gene =110824 × 22966, 22958 × 22966
 inp_sce.obs['tissue_ct']=inp_sce.obs['tissue'].str.cat(inp_sce.obs['cell_ontology_class'],sep=":")
 
@@ -47,9 +49,9 @@ for tc in all_tc:
 		sc.pp.pca(test1) #test.obsm
 		sc.pp.neighbors(test1,n_neighbors=15) #test.obsp['distances']
 		
-		#tk.tl.triku(test1) #need to run PCA, before feature selection (triku), test.var
-		#sc.pp.pca(test1) #test.obsm['X_pca']		
-		#sc.pp.neighbors(test1,n_neighbors=15) #test.obsp['distances'] #have must at least 2 clusters
+		tk.tl.triku(test1) #need to run PCA, before feature selection (triku), test.var
+		sc.pp.pca(test1) #test.obsm['X_pca']		
+		sc.pp.neighbors(test1,n_neighbors=15) #test.obsp['distances'] #have must at least 2 clusters
 		# change `#if adata_sample.shape[0] > 50:` in decibel.py into `adata_sample.shape[0] >= 40:` as my tc contain>=50cells
 
 		test1.obs['condition']=1  #must have a 'condition' column, if already per cell type per age, set it to 1
@@ -64,3 +66,4 @@ for tc in all_tc:
 
 scallop_out.to_pickle("scallop_out.pkl")  
 
+## conda deactivate 
