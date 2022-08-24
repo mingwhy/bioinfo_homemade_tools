@@ -23,8 +23,8 @@ inp_sce # cell x gene =22958 × 22909
 all_tc=list(set(inp_sce.obs['tissue_cell.type']))
 len(all_tc) #48
 
-scallop_out=pd.DataFrame()
-
+#scallop_out=pd.DataFrame()
+scallop_out=np.empty((1,6))
 for tc in all_tc:
 	print(tc)
 	sce=inp_sce[inp_sce.obs['tissue_cell.type']==tc]
@@ -45,7 +45,7 @@ for tc in all_tc:
 	ages=sce.obs['age'].unique()
 	for age1 in ages[0:1]:
 		for age2 in ages[1:2]:
-			print(i,j,tc)
+			print(age1,age2,tc)
 			test=sce[sce.obs['age'].isin([age1,age2])]			
 			distances, p_values = scmmd.compute_mmd_contrast(
 			    adata=test, # [Cells, Genes] object
@@ -64,10 +64,15 @@ for tc in all_tc:
 			col.shape
 			distances = np.append(arr, col, axis=1)
 			distances.shape #add age1, age2, tc info
-			df=pd.DataFrame(distances)
-			scallop_out=scallop_out.append(df)
 
+			scallop_out= np.vstack([scallop_out, distances]) #numpy array
 
-scallop_out.to_pickle("MMD_out.pkl")  
+			#df=pd.DataFrame(distances) #pandas data.frame
+			#scallop_out=scallop_out.append(df)
+
+#scallop_out.columns=['dist1','dist2','dist3','pval1','pval2','pval3','age1','age2','tc']
+#scallop_out.to_pickle("MMD_out.pkl")  
+#print(pd.__version__) #1.4.3
+np.save('MMD_out.npy', scallop_out)
 
 
