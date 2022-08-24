@@ -24,7 +24,8 @@ all_tc=list(set(inp_sce.obs['tissue_cell.type']))
 len(all_tc) #48
 
 #scallop_out=pd.DataFrame()
-scallop_out=np.empty((1,9))
+#scallop_out=np.empty((1,9))
+scallop_out=['dist1','dist2','dist3','pval1','pval2','pval3','age1','age2','tc']
 for tc in all_tc:
 	print(tc)
 	sce=inp_sce[inp_sce.obs['tissue_cell.type']==tc]
