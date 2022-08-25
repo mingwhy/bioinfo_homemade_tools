@@ -49,6 +49,10 @@ param jack_knife_percentage: Percentage of cells to choose for jackknife realiza
 param task: String, either 'jackknife' or 'regular_calc' for the requested task.
 return: none.
 """
+csv_mat = np.genfromtxt(files_arr[0], delimiter=',')
+csv_mat.shape #(3000, 202), 3000 gene by 202 cell
+np.sum(csv_mat,axis=1) # rowSum
+np.sum(csv_mat,axis=0) # colSum
 
 result_arr, file_names = [], []
 for file in files_arr:
