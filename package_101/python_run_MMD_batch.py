@@ -44,8 +44,8 @@ for tc in all_tc:
 	# change `#if adata_sample.shape[0] > 50:` in decibel.py into `adata_sample.shape[0] >= 40:` as my tc contain>=50cells
 
 	ages=sce.obs['age'].unique()
-	for age1 in ages[0:1]:
-		for age2 in ages[1:2]:
+	for age1 in ages[0:(len(ages)-1)]:
+		for age2 in ages[1:len(ages)]:
 			print(age1,age2,tc)
 			test=sce[sce.obs['age'].isin([age1,age2])]			
 			distances, p_values = scmmd.compute_mmd_contrast(
