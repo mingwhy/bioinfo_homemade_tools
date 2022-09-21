@@ -4,4 +4,7 @@ The script generating the html file is: **introR_ming_20220919.qmd**
 
 My customerized scss file is: **ming_custom.scss**
 
-Have a look at the **introR_ming_20220919.html** and enjoy the R journey~
+Have a look at the **introR_ming_20220919.html** or on [my blog](https://mingwhy.github.io//talks/). 
+
+Enjoy the R journey~
+
