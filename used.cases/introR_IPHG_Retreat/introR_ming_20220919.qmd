@@ -149,11 +149,6 @@ A R Pipeline example from my research project. [Github link](https://github.com/
 - ***Friendly community (R packages and many contributors)***
 - ***Reproducible research***
 
-## Reproducible research
-
-![Image [source](https://www.alautarescu.com/post/advanced-methods-in-reproducible-science-2020)](images/reproduce.research.png)
-
-
 ## R package
 <h4 color="white">R packages are the flesh and bone of R. <br>Packages contain functions, which are just ***verbs***</h4>
 
@@ -272,6 +267,20 @@ anim_save("animation-scatterplots.gif")
 [The COVID19 package, an interface to the COVID-19 Data Hub](https://rviews.rstudio.com/2021/12/08/the-r-package-covid19/)
 
 <img src="images/covid19-R-package.png" height="300" width="1000"/>
+
+
+## Reproducible research
+
+
+Can I replicate results from publications?
+
+![Image [source](https://www.alautarescu.com/post/advanced-methods-in-reproducible-science-2020)](images/reproduce.research.png)
+
+## Reproducible research Aided by Rmarkdown
+
+Key ingredients: method, code, data.
+
+**RMarkdown**, a variant of Markdown that has embedded R code chunks to create reproducible reports.
 
 ## Learning Curve
 

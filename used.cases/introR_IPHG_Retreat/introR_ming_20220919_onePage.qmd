@@ -25,6 +25,7 @@ format:
   #   fig-align: center
 ---
 
+
 # Outline
 - What is R
 - Why use R
@@ -150,11 +151,6 @@ A R Pipeline example from my research project. [Github link](https://github.com/
 - ***Friendly community (R packages and many contributors)***
 - ***Reproducible research***
 
-## Reproducible research
-
-![Image [source](https://www.alautarescu.com/post/advanced-methods-in-reproducible-science-2020)](images/reproduce.research.png)
-
-
 ## R package
 <h4 color="white">R packages are the flesh and bone of R. <br>Packages contain functions, which are just ***verbs***</h4>
 
@@ -205,9 +201,6 @@ legend('topright',legend=c("setosa", "versicolor", "virginica" ),pch=16,col=c('b
 
 ##
 ```{r}
-#| fig-align: center
-#| fig-height: 6
-#| fig-width: 10
 library(ggplot2)
 data(iris)
 ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width))+
@@ -218,6 +211,8 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width))+
   scale_fill_manual(values = c("#00AFBB", "#E7B800", "#FC4E07"))+
   theme_classic(base_size = 25)
 ```
+
+<img src="images/iris_eg.png" height="200" width="600"/>
 
 
 ## More fancy stuff
@@ -255,26 +250,39 @@ anim_save("animation-scatterplots.gif")
 
 <div class="image123">
   <div class="imgContainer">
-  <img src="images/animation-datasaurus.gif" height="150" width="150"/>
+  <img src="images/animation-datasaurus.gif" height="250" width="250"/>
   </div>
   <div class="imgContainer">
-  <img src="images/animation-scatterplots.gif" height="150" width="150"/>
+  <img src="images/animation-scatterplots.gif" height="250" width="250"/>
   </div>
   <div class="imgContainer">
-  <img src="images/rmarkdown.png" height="150" width="150"/>
+  <img src="images/rmarkdown.png" height="250" width="250"/>
   </div>
   <div class="imgContainer">
-  <img src="images/rbookdown.png" height="150" width="150"/>
+  <img src="images/rbookdown.png" height="250" width="250"/>
   </div>
 </div>
 
-<br>
 
-<img src="images/covid19-R-package.png" height="300" width="1000"/>
+## The COVID19 package 
 
 [The COVID19 package, an interface to the COVID-19 Data Hub](https://rviews.rstudio.com/2021/12/08/the-r-package-covid19/)
 
+<img src="images/covid19-R-package.png" height="300" width="1000"/>
 
+
+## Reproducible research
+
+
+Can I replicate results from publications?
+
+![Image [source](https://www.alautarescu.com/post/advanced-methods-in-reproducible-science-2020)](images/reproduce.research.png)
+
+## Reproducible research Aided by Rmarkdown
+
+Key ingredients: method, code, data.
+
+**RMarkdown**, a variant of Markdown that has embedded R code chunks to create reproducible reports.
 
 ## Learning Curve
 
