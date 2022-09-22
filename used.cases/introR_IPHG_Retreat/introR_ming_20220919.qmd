@@ -144,14 +144,6 @@ A R Pipeline example from my research project. [Github link](https://github.com/
 - R tutorials
 - R packages
 
-# Why use R
-- Free and open-source (R and Rstudio)
-- Runs on a variety of platforms including Windows, Unix and MacOS
-- Extremely easy data manipulations
-- Basic and advanced visualizations
-- Easily extends to serve your specific needs
-- ***Friendly community (R packages and many contributors)***
-- ***Reproducible research***
 
 ## R package
 <h4 color="white">R packages are the flesh and bone of R. <br>Packages contain functions, which are just ***verbs***</h4>
@@ -273,8 +265,17 @@ anim_save("animation-scatterplots.gif")
 <img src="images/covid19-R-package.png" height="300" width="1000"/>
 
 
-## Reproducible research
+# Why use R
+- Free and open-source (R and Rstudio)
+- Runs on a variety of platforms including Windows, Unix and MacOS
+- Extremely easy data manipulations
+- Basic and advanced visualizations
+- Easily extends to serve your specific needs
+- ***Friendly community (R packages and many contributors)***
+- ***Reproducible research***
 
+
+## Reproducible research
 
 Can I replicate results from publications?
 
