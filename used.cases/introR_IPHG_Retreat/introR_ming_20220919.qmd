@@ -41,7 +41,7 @@ format:
    which means you need to `download` and `install` it on your computer.
 
 - Install R
-   <br> R core: [https://cran.rstudio.com/](https://cran.rstudio.com/)
+   <br> R engine: [https://cran.rstudio.com/](https://cran.rstudio.com/)
 - Install RStudio
     <br>User friendly interface: [https://www.rstudio.com/products/rstudio/download/](https://www.rstudio.com/products/rstudio/download/)
     
@@ -65,12 +65,15 @@ format:
 2 + 3 * 4 # Operator precedence [1] 14
 3 ^ 2 # Exponentiation
 
-exp(1) # Basic mathematical functions are available
-sqrt(10)
+sqrt(10) # Basic mathematical functions are available
+log(10)
 
 pi # The constant pi is predefined
 # Circumference: 2*pi*r
 2*pi*6378 # Circumference of earth at equator (in km)
+
+exp(1) # the exponential growth constant
+exp(10)
 ```
 
 ##
@@ -94,6 +97,7 @@ This.Year
 
 1:10
 sum(1:10)
+prod(1:10)
 ```
 
 ## R to dig into data
@@ -278,9 +282,23 @@ Can I replicate results from publications?
 
 ## Reproducible research Aided by Rmarkdown
 
-Key ingredients: method, code, data.
+Key ingredients: ***data, code, method***
 
-**RMarkdown**, a variant of Markdown that has embedded R code chunks to create reproducible reports.
+![Image [source](https://www.displayr.com/what-is-reproducible-research/)](images/reproduce.research2.png)
+
+## A minimal R Markdown document
+**RMarkdown**, a document that contains ***a title***, ***some texts*** and ***R code chunks*** to create reproducible reports.
+
+<img src="images/hello-rmd.png" height="500" width="700"/>
+
+```{r, animation.hook='gifski'}
+#| echo: false
+for (i in 1:2) {
+  pie(c(i %% 2, 6), col = c('red', 'yellow'), labels = NA)
+}
+```
+
+[Example code source](https://slides.yihui.org/2020-covid-rmarkdown.html#15)
 
 ## Learning Curve
 
@@ -314,8 +332,8 @@ Hunting for what you want can be time consuming.
 
 - RStudio help interface `?sum`
 - Ask people around
-- Google: copy and paste error message 
-- Stackoverflow: keywords matter
+- `Google`: copy and paste error message 
+- `Stackoverflow`: keywords matter
 
 # Some basics
 
