@@ -18,7 +18,7 @@
 | [spatial_single.cell](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/spatial_single.cell) | 2021-11-18|
 |[digital.sexing.cells](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/digital.sexing.cells) | 2021-11-22 |
 | [single.cell_transcriptome.index](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/single.cell_transcriptome.index) | 2021-12-02 |
-
+| [introduction to R and Rstudio](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/introR_IPHG_Retreat) | 2022-09-23 |
 
 # bioinfo_dataBase
 
