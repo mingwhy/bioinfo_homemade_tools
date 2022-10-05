@@ -61,7 +61,7 @@ plot(meta$age,ae_test_dog$age.estimates[,1],pch=16)
 abline(a=0,b=1,lty=5)
 cor(meta$age,ae_test_dog$age.estimates[,1]) #0.5193442
 ########################################################
-res=ae_test_dog$age.estimates[,1]-meta$age
+res=resid(lm(ae_test_dog$age.estimates[,1]~meta$age))
 create_plot<-function(name1,name2){
   x=meta[[name1]];
   y=res
