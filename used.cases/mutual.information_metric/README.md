@@ -20,3 +20,10 @@ r code demo
 
 # a minimal code for sex label
 
+# `normalized MI`
+
+I've implemented a iterative PCA approach to remove multi-batch effects in analyzing metablome data from DAG (dog aging project). When accessing the 'contribution' of each covar to PCs, I noticed covars with a higher number of categories tend to have larger MI value with PCs. N
+
+Now I realized it may be the inherent `bias` in calculating MI, inspired from a paper titled '[2015 Discovering What Dimensionality Reduction Really Tells Us About RNA-Seq Data](https://www.liebertpub.com/doi/10.1089/cmb.2015.0085)' from Prof Bonnie Berger.
+
+Thus, one way to adjust this bias might be: MI.adj = MI(PCX,COVAR)/H(COVAR)
