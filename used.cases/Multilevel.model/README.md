@@ -66,4 +66,28 @@
 ## Datasets
 - `flowerdata.csv` from [2018 How to analyse plant phenotypic plasticity in response to a changing climate](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.15656)
 - `dragons.RData` from [INTRODUCTION TO LINEAR MIXED MODELS](https://ourcodingclub.github.io/tutorials/mixed-models/)
--  `sleepstudy` [Plotting partial pooling in mixed-effects models](https://www.tjmahr.com/plotting-partial-pooling-in-mixed-effects-models/) More on `complete pooling, no pooling, and partial pooling` and visualize the `shrinkage` effect of `partial pooling' approach.
+-  `sleepstudy` [Plotting partial pooling in mixed-effects models](https://www.tjmahr.com/plotting-partial-pooling-in-mixed-effects-models/) More on `complete pooling, no pooling, and partial pooling` and visualize the `shrinkage` effect of `partial pooling` approach.
+
+## Note
+[When Mixed Effects (Hierarchical) Models Fail: Pooling and Uncertainty](https://towardsdatascience.com/when-mixed-effects-hierarchical-models-fail-pooling-and-uncertainty-77e667823ae8)
+
+- Complete pooling (or simple linear regression)
+- No-pooling model (or separate linear regressions)
+- Partial-pooling model (or linear mixed effects)
+
+***When partial-pooling goes wrong***
+In essence what we see is smaller groups “borrow information” from larger groups and get their estimates shrunk towards the population values.
+1. Vanishing confidence intervals
+>Simply put, this warning tells us that the model is too complex for the data to support. In our case, in counties with smaller sample sizes, the random intercept accounts for most of the variability so when we try to fit a county-specific slope there isn’t enough information left to do so.
+2. Unintended Shrinkage (cautionary tale) 
+>Before moving on it is important to note a crucial lesson about how partial-pooling/shrinkage might lead to unintended consequences. In 2016, George et al. showed that partial pooling can lead to artificially low predicted mortality rates for smaller hospitals. As seen in the figures below, the predicted mortality rates (y-axis) have been “artificially shrunk” for hospitals with smaller numbers of beds (x-axis). That is to say, the model is systematically down-weighting the observed (higher) mortality in smaller hospitals. In this scenario, partial-pooling from a standard mixed effects model has potentially nightmarish public health and legal consequences. This under-prediction of the observed mortality rate could affect patients down the line.
+
+**Bayes to the rescue**
+>Bayesian mixed effects method are powerful alternatives to more commonly used Frequentist approaches (as above). Particularly, they are able to account for uncertainty when estimating group-level effects and provide stable estimates for groups with smaller sample sizes with the help of weakly informative priors.
+
+**Conclusions**
+Here’s some final thoughts to consider
+1. Mixed effects models are powerful methods that help us account for complex, nested structures in our data
+2. Keep in mind that, depending on the context/problem, partial-pooling can hurt you rather than help you
+3. Consider using a Bayesian framework when appropriate (I’ll cover this in detail in the next article)
+
