@@ -67,6 +67,8 @@
 - `flowerdata.csv` from [2018 How to analyse plant phenotypic plasticity in response to a changing climate](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.15656) Use fitted random slope to assess the variation of plasticity across genotypes, i.e., how a phenotype (plastic trait) respond to temperature change (large slope ~ high change, zero slope ~ plasticity), and how this plasticity vary across genotypes.
 - `dragons.RData` from [INTRODUCTION TO LINEAR MIXED MODELS](https://ourcodingclub.github.io/tutorials/mixed-models/)
 -  `sleepstudy` [Plotting partial pooling in mixed-effects models](https://www.tjmahr.com/plotting-partial-pooling-in-mixed-effects-models/) More on `complete pooling, no pooling, and partial pooling` and visualize the `shrinkage` effect of `partial pooling` approach.
+- `R package variancePartition` from [variancePartition: interpreting drivers of variation in complex gene expression studies](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1323-z)
+
 
 ## Note
 [When Mixed Effects (Hierarchical) Models Fail: Pooling and Uncertainty](https://towardsdatascience.com/when-mixed-effects-hierarchical-models-fail-pooling-and-uncertainty-77e667823ae8)
