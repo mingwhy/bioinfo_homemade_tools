@@ -66,4 +66,4 @@
 ## Datasets
 - `flowerdata.csv` from [2018 How to analyse plant phenotypic plasticity in response to a changing climate](https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.15656)
 - `dragons.RData` from [INTRODUCTION TO LINEAR MIXED MODELS](https://ourcodingclub.github.io/tutorials/mixed-models/)
-  
+-  `sleepstudy` [Plotting partial pooling in mixed-effects models](https://www.tjmahr.com/plotting-partial-pooling-in-mixed-effects-models/) More on `complete pooling, no pooling, and partial pooling` and visualize the `shrinkage` effect of `partial pooling' approach.
