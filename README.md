@@ -62,3 +62,28 @@
 
 # Useful documents:
 [Converting single-cell data structures between Bioconductor and Python](http://www.bioconductor.org/packages/devel/bioc/vignettes/zellkonverter/inst/doc/zellkonverter.html)
+
+# KnowledgeBase outline:
+## theory
+- quantitative genetics
+- population genetics
+- life history evolution
+*Aging*
+*Sex difference*
+*Developmental biology*
+## empirical
+- lab experiment
+- natural population
+- cross-species divergence or convergence
+- temporal, spatial, group (condition: time points, various tissues, sex)
+## method
+- G matrix, additive genetic var, heritibility
+- Ne, selection coefficient, site frequency spectrum, coalescent
+## math and stats
+- matrix facterization
+- random matrix
+- diffusion process (drift, cell lineage)
+- dynamic system (discrete, matrix, cell kinetics)
+- multi-level model (linear mixed model)
+- entropy (aging)
+
