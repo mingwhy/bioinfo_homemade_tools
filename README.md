@@ -86,4 +86,4 @@
 - dynamic system (discrete, matrix, cell kinetics)
 - multi-level model (linear mixed model)
 - entropy (aging)
-
+- Structural equation modelling (SEM)
