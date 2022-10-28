@@ -20,6 +20,7 @@
 | [single.cell_transcriptome.index](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/single.cell_transcriptome.index) | 2021-12-02 |
 | [introduction to R and Rstudio](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/introR_IPHG_Retreat) | 2022-09-23 |
 | [Multilevel model ,or Linear Mixed Model](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/Multilevel.model) | 2022-10-16 |
+| [Seamless_between_R_and_Python](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/Seamless_between_R_and_Python) | 2022-10-28 |
 
 # bioinfo_dataBase
 
