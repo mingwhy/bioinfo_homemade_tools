@@ -100,9 +100,11 @@ np=import('numpy')
 
 #https://nimfa.biolab.si/
 #LSNMF on numpy dense matrix with quality and performance measures.
+outDir='select_NMF_rank/';
+if(!dir.exists(outDir)){dir.create(outDir)}
 V = as.matrix(input.mat) #important for computing speed!!
-for(rank in c(20,50,100,200)){
-  output.file=paste0('nmf_',rank,'.rds')
+for(rank in c(20,50,80,100,150,200,250,500,1000,1500,2000)){
+  output.file=paste0(outDir,'/nmf_',rank,'.rds')
   #lsnmf = nimfa$Lsnmf(V, seed='random_vcol', rank=as.integer(50), max_iter=as.integer(100))
   lsnmf = nimfa$Lsnmf(V, seed='random_vcol', rank=as.integer(rank), max_iter=as.integer(100))
   start.time=Sys.time()
@@ -113,7 +115,7 @@ for(rank in c(20,50,100,200)){
   
   cat('Iterations:' ,lsnmf_fit$n_iter,'\n')
   cat('Rss:' , lsnmf_fit$fit$rss(),'\n')
-  cat('Evar: ', lsnmf_fit$fit$evar(),'\n')
+  cat('Evar: ', lsnmf_fit$fit$evar(),'\n') #Compute the explained variance of the NMF estimate of the target matrix.
   cat('K-L divergence:' , lsnmf_fit$distance(metric='kl'),'\n')
   cat('Sparseness, W: , H: ' , unlist(lsnmf_fit$fit$sparseness()),'\n')
   #https://github.com/mims-harvard/nimfa/issues/54
@@ -128,3 +130,4 @@ for(rank in c(20,50,100,200)){
     Evar=lsnmf_fit$fit$evar(),kl=lsnmf_fit$distance(metric='kl'),
     W.sparseness=tmp[[1]],H.sparseness=tmp[[2]]),file=output.file,)
 }
+

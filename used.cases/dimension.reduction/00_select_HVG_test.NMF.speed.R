@@ -79,12 +79,14 @@ if(!file.exists('hvg2k_mat.rds')){
 
 input.mat=readRDS('hvg2k_mat.rds')
 
-# save a npy or npz version for python
-library(reticulate)
-np=import('numpy')
-x=input.mat
-#np$savez('hvg2k_mat.npz',x=input.mat)
-np$save('hvg2k_mat.npy', x)
+if(!file.exists('hvg2k_mat.npy')){
+  # save a npy or npz version for python
+  library(reticulate)
+  np=import('numpy')
+  x=input.mat
+  #np$savez('hvg2k_mat.npz',x=input.mat)
+  np$save('hvg2k_mat.npy', x)
+}
 
 #######################################################################################################################
 ## NMF (call python in R, key points: `Sys.setenv` for load modules, `.->$`, as.interger() or 'xxx' to pass parameters)
@@ -106,7 +108,7 @@ if(F){
   
   cat('Iterations:' ,lsnmf_fit$n_iter,'\n')
   cat('Rss:' , lsnmf_fit$fit$rss(),'\n')
-  cat('Evar: ', lsnmf_fit$fit$evar(),'\n')
+  cat('Evar: ', lsnmf_fit$fit$evar(),'\n') #Compute the explained variance of the NMF estimate of the target matrix.
   cat('K-L divergence:' , lsnmf_fit$distance(metric='kl'),'\n')
   cat('Sparseness, W: , H: ' , unlist(lsnmf_fit$fit$sparseness()),'\n')
   #https://github.com/mims-harvard/nimfa/issues/54
@@ -158,4 +160,23 @@ dim(W) #5839 x 50, Basis matrix
 H = lsnmf_fit$coef()
 dim(H) #50 x 34, Mixture matrix
 
+#######################################################################################################################
+# https://nimfa.biolab.si/nimfa.methods.factorization.lsnmf.html
+# Latent dimensionality selection
+rank_cands = c(20,50,100,200)
+V=as.matrix(input.mat)
+dim(V) # 2000 47898
+lsnmf_estrank = nimfa$Lsnmf(V, seed='random_vcol', max_iter=100) #set up function
+
+start.time=Sys.time() # start at 1:44 pm
+summary = lsnmf_estrank$estimate_rank(rank_range=as.integer(rank_cands), n_run=as.integer(2), what='all') #run function
+end.time=Sys.time()
+
+#https://nimfa.biolab.si/nimfa.methods.factorization.lsnmf.html
+#parameter of Lsnmf `evar`
+#Compute the explained variance of the NMF estimate of the target matrix.
+#This measure can be used for comparing the ability of models for accurately 
+#reproducing the original target matrix. 
+#Some methods specifically aim at minimizing the RSS and maximizing the explained variance 
+#while others not, which one should note when using this measure.
 
