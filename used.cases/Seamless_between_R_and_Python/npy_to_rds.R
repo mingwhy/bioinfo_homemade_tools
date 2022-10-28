@@ -36,8 +36,9 @@ for(file in files){
   saveRDS(new.list,file=output.file)
 }
 
-########################################
-## save npy or npz files 
+##########################################################
+## save npy or npz files in R
+#Using reticulate to read and write NumPy files
 #https://cran.r-project.org/web/packages/RcppCNPy/vignettes/UsingReticulate.pdf
 tfile <- tempfile(fileext=".npy")
 set.seed(42)
@@ -49,4 +50,22 @@ x <- seq(1, 10)
 y <- sin(x)
 np$savez("file1.npz", x, y)
 np$savez("file2.npz", x=x, y=y)
+
+##########################################################
+# in python
+
+import numpy as np
+import nimfa
+import datetime
+import scipy.sparse as spr
+
+data=np.load('hvg2k_mat.npy',allow_pickle =True)
+Vm= data.all() #extract sparse matrix from array[sparse matrix ... ]
+
+start= datetime.datetime.now()
+nmf = nimfa.Nmf(Vm, rank=50, max_iter=100, update='euclidean', objective='fro')
+nmf_fit = nmf()
+end= datetime.datetime.now()
+print(end-start)
+
 
