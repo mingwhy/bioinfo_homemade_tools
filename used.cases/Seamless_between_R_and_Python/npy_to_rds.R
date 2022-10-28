@@ -9,7 +9,7 @@ sapply(raw[[1]][3][[1]],dim)
 ########################################
 ## ming's code below (don't run)
 library(reticulate)
-np<-import('numpy')
+np<-import('numpy') 
 (files=Sys.glob('*npy'))
 for(file in files){
   #raw<-np$load('genotype_young.npy',allow_pickle = 'True')
@@ -35,4 +35,18 @@ for(file in files){
   #saveRDS('genotype_young.rds')   
   saveRDS(new.list,file=output.file)
 }
+
+########################################
+## save npy or npz files 
+#https://cran.r-project.org/web/packages/RcppCNPy/vignettes/UsingReticulate.pdf
+tfile <- tempfile(fileext=".npy")
+set.seed(42)
+m <- matrix(sort(rnorm(6)), 3, 2)
+m
+np$save(tfile, m)
+
+x <- seq(1, 10)
+y <- sin(x)
+np$savez("file1.npz", x, y)
+np$savez("file2.npz", x=x, y=y)
 
