@@ -93,6 +93,8 @@ if(!file.exists('hvg2k_mat.npy')){
 #######################################################################################################################
 ## NMF (call python in R, key points: `Sys.setenv` for load modules, `.->$`, as.interger() or 'xxx' to pass parameters)
 ## select rank in NMF
+input.mat=readRDS('hvg2k_mat.rds')
+
 library(reticulate)
 #Sys.setenv(RETICULATE_PYTHON = "/Users/mingyang/anaconda3/envs/myenv/bin/python")
 Sys.setenv(RETICULATE_PYTHON ='/Users/mingyang/anaconda3/bin')
@@ -198,7 +200,7 @@ C <- matrix(apply(cmb,1,cos.sim),n,n)
 dim(C) #cos.similarity matrix 72 tc x 72 tc
 rownames(C)=colnames(C)=colnames(df)
 
-pdf('cosine.similarity.heatmap.pdf',height = 14,width = 12)
+pdf('nmf_cosine.similarity.heatmap.pdf',height = 14,width = 12,useDingbats = T)
 print(pheatmap::pheatmap(C, show_colnames = FALSE))
 dev.off()
 
@@ -206,32 +208,37 @@ dev.off()
 ## UMAP or tSNE 2D plot of cells with 50 NMF embedding (both ages included)
 dim(cell.coord) # 50 47898
 
-x=scater::calculateUMAP(cell.coord) 
-df.umap=as.data.frame(x)
+if(!file.exists('nmf150_umap_tsne.rds')){
+  x=scater::calculateUMAP(cell.coord) 
+  df.reduce=as.data.frame(x)
+  x=scater::calculateTSNE(cell.coord)
+  df.tsne=as.data.frame(x)
+  saveRDS(list(umap=df.reduce,tsne=df.tsne),file='nmf150_umap_tsne.rds')
+}
 
-x=scater::calculateTSNE(cell.coord)
-df.tsne=as.data.frame(x)
+x=readRDS('nmf150_umap_tsne.rds')
+#df.reduce=x$umap;
+df.reduce=x$tsne; 
+colnames(df.reduce)=c('dim1','dim2')
+df.reduce$tissue=cell.meta$tissue
+df.reduce$tissue_cell.type=cell.meta$tissue_cell.type
+df.reduce$cell.type=cell.meta$cell_ontology_class
+df.reduce$age=cell.meta$age
+df.reduce$cell.type=droplevels(df.reduce$cell.type)
+unique(df.reduce$cell.type) #52 cell types
 
-colnames(df.umap)=c('umap1','umap2')
-df.umap$tissue=cell.meta$tissue
-df.umap$tissue_cell.type=cell.meta$tissue_cell.type
-df.umap$cell.type=cell.meta$cell_ontology_class
-df.umap$age=cell.meta$age
-df.umap$cell.type=droplevels(df.umap$cell.type)
-unique(df.umap$cell.type) #52 cell types
-
-p0=ggplot(df.umap,aes(x=umap1,y=umap2,col=cell.type))+
+p0=ggplot(df.reduce,aes(x=dim1,y=dim2,col=cell.type))+
   geom_point(size=0.5)+theme_classic()+
   scale_color_viridis(option='turbo',alpha=0.6,discrete = T)
 
-df.umap.sub=df.umap[grep('endo|Brain',ignore.case = T,df.umap$tissue_cell.type),]
-unique(df.umap.sub$tissue_cell.type);unique(df.umap.sub$cell.type)
-df.umap.sub$tissue2='non-Brain'
-df.umap.sub$tissue2[grep('Brain',ignore.case = T,df.umap.sub$tissue)]='Brain';
-df.umap.sub$cell.type2=as.character(df.umap.sub$cell.type)
-df.umap.sub$cell.type2[grep('endothelia',ignore.case = T,df.umap.sub$tissue_cell.type)]='endothelia cell';
+df.reduce.sub=df.reduce[grep('endo|Brain',ignore.case = T,df.reduce$tissue_cell.type),]
+unique(df.reduce.sub$tissue_cell.type);unique(df.reduce.sub$cell.type)
+df.reduce.sub$tissue2='non-Brain'
+df.reduce.sub$tissue2[grep('Brain',ignore.case = T,df.reduce.sub$tissue)]='Brain';
+df.reduce.sub$cell.type2=as.character(df.reduce.sub$cell.type)
+df.reduce.sub$cell.type2[grep('endothelia',ignore.case = T,df.reduce.sub$tissue_cell.type)]='endothelia cell';
 
-p=ggplot(df.umap.sub,aes(x=umap1,y=umap2))+
+p=ggplot(df.reduce.sub,aes(x=dim1,y=dim2))+
   theme_classic(base_size = 15)+
   guides(color = guide_legend(override.aes = list(size = 8)),
          shape = guide_legend(override.aes = list(size = 8)))+
@@ -243,7 +250,8 @@ p+geom_point(aes(col=age,shape=tissue2),size=4)+
   scale_color_manual(values=grDevices::adjustcolor(c("#009E73","#F0E442"),alpha=0.2))
 # plot UMAP for 3m and 24m separately, maybe
 
-pdf('umap.pdf',width = 9)
+#pdf('umap.pdf',width = 9,useDingbats = T)
+pdf('tsne.pdf',width = 9,useDingbats = T)
 print(p0+theme(legend.position = 'none'));
 legend <- cowplot::get_legend(p0+ 
     guides(color = guide_legend(override.aes = list(size = 8)))+
@@ -258,7 +266,7 @@ p+geom_point(aes(col=age,shape=tissue2),size=4)+
   scale_color_manual(values=grDevices::adjustcolor(c("#009E73","#F0E442"),alpha=0.2))
 dev.off()
 
-##############
+########################################################
 ## for cell.types in multiple tissues, variance in NMF distribution explained by tissue, cell type and their interaction
 library('variancePartition');library(tidyverse)
 cell.meta %>% as.data.frame() %>% group_by(cell_ontology_class) %>% 
@@ -298,4 +306,7 @@ varPart <- fitExtractVarPartModel( cell.coord, form, cell.meta2)
 dim(varPart) #50  3
 head(varPart)
 vp <- sortCols( varPart )
-plotVarPart(vp)
+fig=plotVarPart(vp)
+pdf('var_explained.pdf',useDingbats = T)
+print(fig)
+dev.off()
