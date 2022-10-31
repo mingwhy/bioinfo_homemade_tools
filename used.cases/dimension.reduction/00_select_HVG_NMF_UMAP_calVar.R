@@ -158,10 +158,10 @@ head(df)
 df$rank=as.numeric(df$rank)
 ggplot(df,aes(x=rank,y=evar,group=rep,col=factor(rank)))+geom_point()+theme_classic()
 ggplot(df,aes(x=rank,y=rss,group=rep,col=factor(rank)))+geom_point()+theme_classic()
-# choose 150 and 250
+
 df[which.max(df$evar),]
-#######################################################################################################################
-## compute aging vectors per tc: Centroid(Young)-> Centroid(Old)
+
+# choose rank=250
 cell.embed=readRDS('select_NMF_rank/nmf_250_rep2.rds')
 dim(cell.embed$W) #2000 gene by 50 dims
 dim(cell.embed$H) #50 dim by 47898 cells
@@ -173,6 +173,120 @@ cell.meta$sex=droplevels(cell.meta$sex) #only male data
 tc.names=sort(unique(cell.meta$tissue_cell.type))
 unique(cell.meta$age) #3m and 24m
 
+###########################################################################
+## UMAP or tSNE 2D plot of cells with 50 NMF embedding (both ages included)
+dim(cell.coord) # 50 47898
+
+if(!file.exists('nmf250_umap_tsne.rds')){
+  x=scater::calculateUMAP(cell.coord) 
+  df.reduce=as.data.frame(x)
+  x=scater::calculateTSNE(cell.coord)
+  df.tsne=as.data.frame(x)
+  saveRDS(list(umap=df.reduce,tsne=df.tsne),file='nmf250_umap_tsne.rds')
+}
+
+x=readRDS('nmf250_umap_tsne.rds')
+df.reduce=x$umap;
+#df.reduce=x$tsne; 
+colnames(df.reduce)=c('dim1','dim2')
+df.reduce$tissue=cell.meta$tissue
+df.reduce$tissue_cell.type=cell.meta$tissue_cell.type
+df.reduce$cell.type=cell.meta$cell_ontology_class
+df.reduce$age=cell.meta$age
+df.reduce$cell.type=droplevels(df.reduce$cell.type)
+unique(df.reduce$cell.type) #52 cell types
+
+p0=ggplot(df.reduce,aes(x=dim1,y=dim2,col=cell.type))+
+  geom_point(size=0.5)+theme_classic()+
+  scale_color_viridis(name='cell.state',option='turbo',alpha=0.6,discrete = T)
+
+df.reduce.sub=df.reduce[grep('endo|Brain',ignore.case = T,df.reduce$tissue_cell.type),]
+#unique(df.reduce.sub$tissue_cell.type);unique(df.reduce.sub$cell.type)
+df.reduce.sub$tissue2='non-Brain'
+df.reduce.sub$tissue2[grep('Brain',ignore.case = T,df.reduce.sub$tissue)]='Brain';
+df.reduce.sub$cell.identity=as.character(df.reduce.sub$cell.type)
+df.reduce.sub$cell.identity[grep('endothelia',ignore.case = T,df.reduce.sub$tissue_cell.type)]='endothelia cell';
+
+p=ggplot(df.reduce.sub,aes(x=dim1,y=dim2))+
+  theme_classic(base_size = 15)+
+  guides(color = guide_legend(override.aes = list(size = 8)),
+         shape = guide_legend(override.aes = list(size = 8)))+
+  scale_color_viridis(option='turbo',alpha=0.4,discrete = T)
+  #theme(legend.position = 'bottom')
+p+geom_point(aes(col=tissue_cell.type,shape=tissue2),size=4)
+p+geom_point(aes(col=cell.identity,shape=tissue2),size=4)+
+  scale_color_manual(values=grDevices::adjustcolor(c("#009E73","#F0E442", "#0072B2", "#D55E00", "#CC79A7"), alpha.f = 0.3))
+p+geom_point(aes(col=age,shape=tissue2),size=4)+
+  scale_color_manual(values=grDevices::adjustcolor(c("#009E73","#F0E442"),alpha=0.2))
+# plot UMAP for 3m and 24m separately, maybe
+
+pdf('umap.pdf',width = 9,useDingbats = T)
+#pdf('tsne.pdf',width = 9,useDingbats = T)
+print(p0+theme(legend.position = 'none'));
+legend <- cowplot::get_legend(p0+ 
+              guides(color = guide_legend(override.aes = list(size = 8)))+
+              scale_color_viridis(name='cell state',option='turbo',discrete=T,alpha=0.6))
+grid.newpage()
+grid.draw(legend)
+# theme(legend.position = 'bottom'))
+print(p+geom_point(aes(col=tissue_cell.type,shape=tissue2),size=4))
+p+geom_point(aes(col=cell.identity,shape=tissue2),size=4)+
+  scale_color_manual(values=grDevices::adjustcolor(c("#009E73","#F0E442", "#0072B2", "#D55E00", "#CC79A7"), alpha.f = 0.3))
+p+geom_point(aes(col=age,shape=tissue2),size=4)+
+  scale_color_manual(values=grDevices::adjustcolor(c("#009E73","#F0E442"),alpha=0.2))
+dev.off()
+
+########################################################
+## for cell.types in multiple tissues, variance in NMF distribution explained by tissue, cell type and their interaction
+library('variancePartition');library(tidyverse)
+
+cell.meta=readRDS('TMS_male_colData.rds');
+cell.meta$cell.identity=cell.meta$cell_ontology_class
+#unique(cell.meta[grep('B cell',cell.meta$cell.identity),]$cell.identity)
+cell.meta[grep('endothelia',cell.meta$cell.identity),]$cell.identity='endothelial cell';
+cell.meta[grep('T cell',cell.meta$cell.identity),]$cell.identity='T cell';
+#unique(cell.meta[cell.meta$tissue=='Thymus',]$cell_ontology_class)
+cell.meta[cell.meta$tissue=='Thymus',]$cell.identity='T cell';
+
+cell.meta$cell.identity=droplevels(cell.meta$cell.identity)
+tmp=cell.meta %>% as.data.frame() %>% group_by(cell.identity,tissue) %>% 
+  summarise(ncell.3m=sum(age=='3m'),ncell.24m=sum(age=='24m'))
+tmp
+
+as.data.frame(sort(table(tmp$cell.identity),decreasing = T)) %>% 
+  rename(cell.identity = Var1, show.up.in.n.tissue=Freq) %>% 
+  filter(show.up.in.n.tissue>1) %>% select(cell.identity) ->pick.cell.types
+pick.cell.types=as.character(unlist(pick.cell.types))
+
+cell.meta.sub=cell.meta[cell.meta$cell.identity %in% pick.cell.types,]
+#cell.meta.sub=cell.meta[grep('endothelial|B cell',ignore.case = T,cell.meta$tissue_cell.type),]
+#cell.meta.sub=cell.meta.sub[-grep('Marrow:',cell.meta.sub$tissue_cell.type),]
+unique(cell.meta.sub$tissue_cell.type); #31 tissues
+unique(cell.meta.sub$tissue) #16 tissues
+cell.meta.sub$cell.identity=droplevels(cell.meta.sub$cell.identity)
+unique(cell.meta.sub$cell.identity) #8 
+
+cell.coord.sub=cell.coord[,rownames(cell.meta.sub)]
+dim(cell.coord.sub) #feature by sample matrix 
+cell.meta.sub$tissue=droplevels(cell.meta.sub$tissue)
+
+cell.meta.sub$age=as.numeric(gsub('m','',cell.meta.sub$age)) #for LMM to work
+form <- ~ age + (1|tissue)+(1|cell.identity) 
+varPart <- fitExtractVarPartModel( cell.coord.sub, form, cell.meta.sub )
+
+dim(varPart) #50  3
+head(varPart)
+vp <- sortCols( varPart )
+plotPercentBars( vp[1:20,] ) + xlab('Dimensions from NMF')
+fig=plotVarPart(vp)
+
+pdf('var_explained.pdf',useDingbats = T,width = 9)
+grid.arrange(
+  plotPercentBars( vp[1:20,] ) + xlab('Dimensions from NMF'),fig,ncol=2)
+dev.off()
+
+#######################################################################################################################
+## compute aging vectors per tc: Centroid(Young)-> Centroid(Old)
 age.vectors=lapply(tc.names,function(tc){
   young= cell.meta$tissue_cell.type==tc & cell.meta$age=='3m'
   old= cell.meta$tissue_cell.type==tc & cell.meta$age=='24m'
@@ -204,109 +318,3 @@ pdf('nmf_cosine.similarity.heatmap.pdf',height = 14,width = 12,useDingbats = T)
 print(pheatmap::pheatmap(C, show_colnames = FALSE))
 dev.off()
 
-###############
-## UMAP or tSNE 2D plot of cells with 50 NMF embedding (both ages included)
-dim(cell.coord) # 50 47898
-
-if(!file.exists('nmf150_umap_tsne.rds')){
-  x=scater::calculateUMAP(cell.coord) 
-  df.reduce=as.data.frame(x)
-  x=scater::calculateTSNE(cell.coord)
-  df.tsne=as.data.frame(x)
-  saveRDS(list(umap=df.reduce,tsne=df.tsne),file='nmf150_umap_tsne.rds')
-}
-
-x=readRDS('nmf150_umap_tsne.rds')
-#df.reduce=x$umap;
-df.reduce=x$tsne; 
-colnames(df.reduce)=c('dim1','dim2')
-df.reduce$tissue=cell.meta$tissue
-df.reduce$tissue_cell.type=cell.meta$tissue_cell.type
-df.reduce$cell.type=cell.meta$cell_ontology_class
-df.reduce$age=cell.meta$age
-df.reduce$cell.type=droplevels(df.reduce$cell.type)
-unique(df.reduce$cell.type) #52 cell types
-
-p0=ggplot(df.reduce,aes(x=dim1,y=dim2,col=cell.type))+
-  geom_point(size=0.5)+theme_classic()+
-  scale_color_viridis(option='turbo',alpha=0.6,discrete = T)
-
-df.reduce.sub=df.reduce[grep('endo|Brain',ignore.case = T,df.reduce$tissue_cell.type),]
-unique(df.reduce.sub$tissue_cell.type);unique(df.reduce.sub$cell.type)
-df.reduce.sub$tissue2='non-Brain'
-df.reduce.sub$tissue2[grep('Brain',ignore.case = T,df.reduce.sub$tissue)]='Brain';
-df.reduce.sub$cell.type2=as.character(df.reduce.sub$cell.type)
-df.reduce.sub$cell.type2[grep('endothelia',ignore.case = T,df.reduce.sub$tissue_cell.type)]='endothelia cell';
-
-p=ggplot(df.reduce.sub,aes(x=dim1,y=dim2))+
-  theme_classic(base_size = 15)+
-  guides(color = guide_legend(override.aes = list(size = 8)),
-         shape = guide_legend(override.aes = list(size = 8)))+
-  scale_color_viridis(option='turbo',alpha=0.4,discrete = T)
-p+geom_point(aes(col=tissue_cell.type,shape=tissue2),size=4)
-p+geom_point(aes(col=cell.type2,shape=tissue2),size=4)+
-  scale_color_manual(values=grDevices::adjustcolor(c("#009E73","#F0E442", "#0072B2", "#D55E00", "#CC79A7"), alpha.f = 0.3))
-p+geom_point(aes(col=age,shape=tissue2),size=4)+
-  scale_color_manual(values=grDevices::adjustcolor(c("#009E73","#F0E442"),alpha=0.2))
-# plot UMAP for 3m and 24m separately, maybe
-
-#pdf('umap.pdf',width = 9,useDingbats = T)
-pdf('tsne.pdf',width = 9,useDingbats = T)
-print(p0+theme(legend.position = 'none'));
-legend <- cowplot::get_legend(p0+ 
-    guides(color = guide_legend(override.aes = list(size = 8)))+
-  scale_color_viridis(name='cell type',option='turbo',discrete=T,alpha=0.6))
-grid.newpage()
-grid.draw(legend)
-# theme(legend.position = 'bottom'))
-print(p+geom_point(aes(col=tissue_cell.type,shape=tissue2),size=4))
-p+geom_point(aes(col=cell.type2,shape=tissue2),size=4)+
-  scale_color_manual(values=grDevices::adjustcolor(c("#009E73","#F0E442", "#0072B2", "#D55E00", "#CC79A7"), alpha.f = 0.3))
-p+geom_point(aes(col=age,shape=tissue2),size=4)+
-  scale_color_manual(values=grDevices::adjustcolor(c("#009E73","#F0E442"),alpha=0.2))
-dev.off()
-
-########################################################
-## for cell.types in multiple tissues, variance in NMF distribution explained by tissue, cell type and their interaction
-library('variancePartition');library(tidyverse)
-cell.meta %>% as.data.frame() %>% group_by(cell_ontology_class) %>% 
-  dplyr::summarise(n=length(unique(tissue_cell.type))) %>% dplyr::arrange(desc(n))
-# endothelial cell,  B cell 
-
-cell.meta.sub=cell.meta[grep('endothelial|B cell',ignore.case = T,cell.meta$tissue_cell.type),]
-cell.meta.sub=cell.meta.sub[-grep('Marrow:',cell.meta.sub$tissue_cell.type),]
-unique(cell.meta.sub$tissue_cell.type); #12 tissues
-
-cell.coord.sub=cell.coord[,rownames(cell.meta.sub)]
-dim(cell.coord.sub) #feature by sample matrix 
-cell.meta.sub$tissue=droplevels(cell.meta.sub$tissue)
-cell.meta.sub$cell.type='endothelial'
-cell.meta.sub[grep('B cell',cell.meta.sub$tissue_cell.type),]$cell.type='B cell'
-
-cell.meta.sub$age=as.numeric(gsub('m','',cell.meta.sub$age)) #for LMM to work
-form <- ~ age + (1|tissue)+(1|cell.type) 
-varPart <- fitExtractVarPartModel( cell.coord.sub, form, cell.meta.sub )
-
-dim(varPart) #50  3
-head(varPart)
-vp <- sortCols( varPart )
-plotVarPart(vp)
-
-## examine all cell types
-cell.meta2=cell.meta
-cell.meta2$cell.identity=cell.meta2$cell_ontology_class
-cell.meta2[grep('endothelial',cell.meta2$cell.identity),]$cell.identity='endothelial cell'
-cell.meta2$cell.identity=droplevels(cell.meta2$cell.identity)
-table(cell.meta2$cell.identity)
-
-cell.meta2$age=as.numeric(gsub('m','',cell.meta2$age)) #for LMM to work
-form <- ~ age + (1|tissue)+(1|cell.identity) 
-varPart <- fitExtractVarPartModel( cell.coord, form, cell.meta2)
-
-dim(varPart) #50  3
-head(varPart)
-vp <- sortCols( varPart )
-fig=plotVarPart(vp)
-pdf('var_explained.pdf',useDingbats = T)
-print(fig)
-dev.off()
