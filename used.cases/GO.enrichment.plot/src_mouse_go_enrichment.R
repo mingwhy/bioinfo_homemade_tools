@@ -49,7 +49,7 @@ dotplot_GOenrich<-function(x1,count.cut=5){
   #x1=x1[x1$Count>=5,]
   x1$desp=factor(x1$Description,levels=rev(x1$Description))
   
-  count.cut=3; #minimal GO term gene count
+  #count.cut=count.cut; #minimal GO term gene count
   p=ggplot(subset(x1,Count>=count.cut),aes(x=GeneRatio,y=desp,size=Count,col=p.adjust))+
     geom_point()+theme_bw(base_size=14)+
     scale_color_gradient(low="blue", high="red")+
@@ -59,7 +59,7 @@ dotplot_GOenrich<-function(x1,count.cut=5){
     #ylab('desp, Molecular Function')+
     #ylab(basename(file))+
     #ylab('Biological Process GO enrichment analysis of tissue specific genes')+
-    ylab('')+ggtitle(paste('annotation',i))+
+    ylab('')+
     theme(
       plot.title =element_text(size=20, face='bold'),
       panel.grid = element_blank(),
@@ -92,8 +92,7 @@ barplot_GOenrich<-function(x1, only.plot.top.n.GO=6){
     geom_bar(fill=adjustcolor('grey10',alpha.f =0.2),stat='identity',width=0.9)+
     coord_flip()+
     geom_text(aes(label=desp),y=max(x2$log.p.adjust*0.01),vjust=0,hjust = 0,size=8)+
-    theme_bw(base_size=24)+ylab('-log10(p.adjust)')+xlab('')+
-    ggtitle(paste('annotation',i))+
+    theme_bw(base_size=24)+ylab('-log10(p.adjust)')+xlab('')+    
     scale_y_continuous(expand = expansion(mult = c(0, 0.02)),limits = c(0, NA))+
     theme(legend.position = 'none',
           axis.title = element_text(size=22),
