@@ -23,8 +23,6 @@ num_divisions=as.integer(10) #for each sampled 70% cell, report Mean(10 division
 
 tc.names=names(out)
 if(!file.exists(outfile)){
-  ## compute cell type specific E-R anticorrelation and plot against #detected.genes
-  gcl.per.cell.type=list()
   
   for(tc in tc.names){ 
     sce.tc=out[[tc]]
@@ -53,7 +51,7 @@ if(!file.exists(outfile)){
       cat('tc',tc,'at age',age,'is done\n')
     }
   }
-  print(proc.time()-start) #38 tc, 3.5hr
+  print(proc.time()-start) #38 tc, 3.5hr. neuron, 9166geneX265cell,3min
   saveRDS(res.df,outfile)
 }  
 
