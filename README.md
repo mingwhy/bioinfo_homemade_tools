@@ -22,6 +22,7 @@
 | [Multilevel model ,or Linear Mixed Model](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/Multilevel.model) | 2022-10-16 |
 | [Seamless_between_R_and_Python](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/Seamless_between_R_and_Python) | 2022-10-28 | 
 |[GO.enrichment.plot](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/GO.enrichment.plot) | 2021-10-30 |
+| [maximum mean discrepancy (MMD) calculation](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/MMD_calculation) | 2022-11-03 |
 
 # bioinfo_dataBase
 
