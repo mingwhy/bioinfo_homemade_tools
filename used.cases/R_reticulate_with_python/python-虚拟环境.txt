@@ -1,0 +1,61 @@
+查看已经存在的虚拟环境
+
+conda info --env
+conda activate RCFGL
+conda deactivate 
+
+1, 通过执行下面的命令来创建 Virtualenv 环境：
+
+$ virtualenv --system-site-packages targetDirectory # 对应 Python 2.7
+$ virtualenv --system-site-packages -p python3 targetDirectory # 对应 Python 3.n
+
+其中 targetDirectory 表示 Virtualenv 目录树所在的顶层路径。我们假设 targetDirectory 为 ~/tensorflow，但你也可以选择任何你喜欢的路径。
+
+2, 通过执行下面的命令来激活 Virtualenv 环境：
+
+$ cd targetDirectory
+$ source ./bin/activate # 如果是使用 bash、sh、ksh、
+
+激活虚拟环境以后，命令行提示符前会显示当前虚拟环境的名字：
+(snow-venv) $
+使用 deactivate 命令可以退出虚拟环境。
+$ deactivate
+
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+通常，虚拟环境被创造后，存在这里：
+/Users/ming/anaconda3/envs
+
+# How to create conda environment with specific python version?
+https://stackoverflow.com/questions/56713744/how-to-create-conda-environment-with-specific-python-version
+
+conda create -n "myenv" python=3.9.10 ipython
+
+conda create -n cnmf_env 
+conda activate cnmf_env
+conda deactivate 
+
+3, How to duplicate virtualenv
+https://stackoverflow.com/questions/7438681/how-to-duplicate-virtualenv
+## a complicated solution
+# To generate a requirements file, go into your original virtualenv, and run:
+$ pip freeze >RCFGL_requirements.txt
+
+# delete rows with out python package info, keep those like 
+aiosignal==1.2.0
+anndata==0.8.0
+$grep '==' RCFGL_requirements.txt >RCFGL_env_requirements.txt
+
+#create a new env and enter the env
+$conda create -n 'myenv'
+
+#Lastly, activate your new virtualenv, and run:
+$ conda activate myenv
+$ pip install -r RCFGL_env_requirements.txt
+
+## a much simplier solution:
+$ pip install virtualenv-clone
+$ python -m clonevirtualenv /Users/mingyang/anaconda3/envs/RCFGL /Users/mingyang/anaconda3/envs/myenv
+
+
+
+
