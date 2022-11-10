@@ -102,19 +102,24 @@ for(file in files){
   x=readRDS(file)
   expr.mat=x@assays$RNA@data
   
+  dosage.genes=grep('msl|sxl',ignore.case = T,rownames(expr.mat))
+  tmp=expr.mat[dosage.genes,]
+  dosage.genes.ncell=Matrix::rowSums(tmp>0)
+  
   tmp=expr.mat[y.genes,]
   y.cell=Matrix::colSums(tmp) #y.expr per cell
   #sum(y.cell==0)/length(y.cell)
   
   
   time=gsub('_finished_processing.rds','',basename(file))
-  x=c(time, length(y.cell), sum(y.cell==0))
+  x=c(time, length(y.cell), sum(y.cell==0),dosage.genes.ncell)
   print(x)
   out=rbind(out,x)
 }
 
 df.out=as.data.frame(out)
-colnames(df.out)=c('time.window','ncell','ncell.with.zero.Y')
+colnames(df.out)=c('time.window','ncell','ncell.with.zero.Y','ncell.expr.msl-3','ncell.expr.Sxl',
+                   'ncell.expr.msl-2','ncell.expr.msl-1')
 df.out$start=as.numeric(unlist(lapply(strsplit(df.out$time.window,'-'),'[',1)))
 df.out=df.out[order(df.out$start),]
 df.out
