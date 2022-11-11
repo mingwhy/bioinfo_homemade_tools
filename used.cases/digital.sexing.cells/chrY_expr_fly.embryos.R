@@ -100,7 +100,7 @@ out=c()
 for(file in files){
   #x=readRDS('./RNA_seurat_object/pred_windows/18-20hrs_finished_processing.rds')
   x=readRDS(file)
-  expr.mat=x@assays$RNA@data
+  expr.mat=x@assays$RNA@counts
   
   dosage.genes=grep('msl|sxl',ignore.case = T,rownames(expr.mat))
   tmp=expr.mat[dosage.genes,]
@@ -112,13 +112,14 @@ for(file in files){
   
   
   time=gsub('_finished_processing.rds','',basename(file))
-  x=c(time, length(y.cell), sum(y.cell==0),dosage.genes.ncell)
+  x=c(time, length(y.cell), sum(y.cell!=0),dosage.genes.ncell)
   print(x)
+  
   out=rbind(out,x)
 }
 
 df.out=as.data.frame(out)
-colnames(df.out)=c('time.window','ncell','ncell.with.zero.Y','ncell.expr.msl-3','ncell.expr.Sxl',
+colnames(df.out)=c('time.window','ncell','ncell.expr.Y','ncell.expr.msl-3','ncell.expr.Sxl',
                    'ncell.expr.msl-2','ncell.expr.msl-1')
 df.out$start=as.numeric(unlist(lapply(strsplit(df.out$time.window,'-'),'[',1)))
 df.out=df.out[order(df.out$start),]
