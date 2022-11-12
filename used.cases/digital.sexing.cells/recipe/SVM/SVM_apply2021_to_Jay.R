@@ -12,14 +12,14 @@ length(classifier.gene.names) #6073 genes
 
 ###############################
 # read in gene.meta info which contains chr info
-gene.meta=data.table::fread('../validated_15392genes.txt')
+gene.meta=data.table::fread('~/Documents/Data_Jay_fly_development/validated_15392genes.txt')
 y.genes=gene.meta[gene.meta$chromosome_name=='Y',]$SYMBOL
 length(y.genes) #34 y genes
 gene.meta=as.data.frame(gene.meta)
 rownames(gene.meta)=gene.meta$SYMBOL
 
 # read in embryo data by pred time window
-(files=Sys.glob('../RNA_seurat_object/pred_windows/*.rds'))
+(files=Sys.glob('~/Documents/Data_Jay_fly_development/RNA_seurat_object/pred_windows/*.rds'))
 
 start.time=Sys.time()
 
@@ -80,6 +80,7 @@ dev.off();
 
 lapply(out,function(i){
   preds=attr(i,'probabilities')
-  predict.labels=ifelse(preds[,1]>0.5,'embryoFemale','embryoMale')
+  #predict.labels=ifelse(preds[,1]>0.5,'embryoFemale','embryoMale')
+  predict.labels=ifelse(preds[,1]>0.9,'embryoFemale','embryoMale')
   table(predict.labels)
 })

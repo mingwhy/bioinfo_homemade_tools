@@ -11,13 +11,13 @@ length(classifier.gene.names) #6073 genes
 
 ###############################
 tissue='embryo'
-dat=readRDS('../../single.cell_datasets/embryo/whole_embryo_filtered_valid.rds')
+dat=readRDS('~/Documents/Data_fly_FCA/embryo/whole_embryo_filtered_valid.rds')
 dat #9710 features across 1297 samples within 1 assay 
 mat <- dat@assays$RNA@counts
 gene.names <- rownames(mat)
 cell.names <- colnames(mat)
 
-gene.meta=data.table::fread('../../single.cell_datasets/embryo/gene.meta_embryo.txt')
+gene.meta=data.table::fread('~/Documents/Data_fly_FCA/embryo/gene.meta_embryo.txt')
 gene.meta=as.data.frame(gene.meta)
 head(gene.meta)
 dim(gene.meta) #9710

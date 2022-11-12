@@ -3,13 +3,13 @@ library(ggplot2)
 library(gridExtra)
 library(Seurat)
 
-dat.both=readRDS('~/Documents/to_be_removed/sc_sex.differences/embryo_sex.cells/integrated.sexed.samples_seurat.obj.rds')
+dat.both=readRDS('../../single.cell_sex.differences/embryo_sex.cells/integrated.sexed.samples_seurat.obj.rds')
 grep("Sxl|msl-2",rownames(dat.both))
 gene.names=rownames(dat.both)
 
 ########################################################
 ## read in gene chro info
-df.gene.table=data.table::fread('~/Documents/Data_fly_FCA/embryo_germline/gene.meta_embryo.txt',header=T,sep='\t')
+df.gene.table=data.table::fread('../../single.cell_datasets/embryo_germline/gene.meta_embryo.txt',header=T,sep='\t')
 head(df.gene.table)
 table(df.gene.table$LOCATION_ARM) #15 Y-chromosome genes
 
@@ -34,20 +34,20 @@ expr.mat=dat.both@assays$RNA@counts
 ## calculate two set of gene: HVG, 
 ## (binary or continuous) mutual information about sex label
 ## filter gene: expr in 5% cell
-if(F){
-dat.both<-NormalizeData(dat.both)
-dat.both <- FindVariableFeatures(dat.both, selection.method = "vst", 
-                          nfeatures = 2000)
-features=VariableFeatures(dat.both)
-expr.mat=expr.mat[features,]
-}
 if(T){
+  dat.both<-NormalizeData(dat.both)
+  dat.both <- FindVariableFeatures(dat.both, selection.method = "vst", 
+                            nfeatures = 2000)
+  features=VariableFeatures(dat.both)
+  expr.mat=expr.mat[features,]
+}
+if(F){
   i=Matrix::rowSums(expr.mat>0)
   expr.mat=expr.mat[i>0.05*ncol(expr.mat),]
 }
 
 #change symbol to FBgn
-dim(expr.mat) #6369 17142, 2000 17142 if HVG
+dim(expr.mat) #6369 17142
 #rownames(expr.mat)<-df.gene.table[overlap.genes,]$FBID_KEY
 rownames(expr.mat)<-df.gene.table[rownames(expr.mat),]$FBID_KEY
 expr.mat[1:3,1:3]
@@ -62,7 +62,7 @@ tail(colnames(data)) #last column is sex label
 library(e1071)
 library(caTools)
 gene.names=rownames(expr.mat)
-length(unique(gene.names))# 6073, or 2000 if HVG
+length(unique(gene.names))# 6073
 dim(data) # 17142  6074 (gene+sex.label.column)
 
 dataset=data
@@ -86,31 +86,20 @@ training_set[-label.column] = scale(training_set[-label.column])
 test_set[-label.column] = scale(test_set[-label.column])
 training_set$y=factor(training_set$y)
 
-# use caret to perform SVM https://rpubs.com/uky994/593668
-library(caret)
-library(doMC)
-registerDoMC()
-
-#By default caret builds the SVM linear classifier using C = 1.
-# Set up Repeated k-fold Cross Validation
-train_control <- trainControl(method="repeatedcv", number=5, repeats=1)
-classifier = train(#formula = y ~ ., #not so sure which one, form or formula
-                   form = y ~ ., #
-                   data = dataset,
-                   method = "svmLinear",
-                   trControl = train_control,
-                   preProcess = c("center","scale"),
-                   probability = TRUE);
-                   #tuneGrid = expand.grid(C = seq(0, 2, length = 20))); #compute SVM for a grid values of C and choose automatically the final model for predictions:
-
-                   
+  
+if(T){
+  classifier = svm(formula = y ~ .,
+                   data = training_set,
+                   type = 'C-classification',
+                   probability = TRUE,
+                   kernel = 'linear',cost=10)
+  #gamma=0.05,kernel = 'radial', cost=10)
   y_pred = predict(classifier, newdata = test_set[-label.column])
   #y_pred = predict(classifier, newdata = test_set[-label.column],prob=T)
   table(test_set[,label.column],y_pred)
   #classifier
   #saveRDS(classifier,'svm_classifier_2019_train34samples.rds')
-  #saveRDS(classifier,'svm_2021sc_HVG2000_train80samples.rds')
-  saveRDS(classifier,'svm_2021sc_train80samples.rds')
+  saveRDS(classifier,'svm_2021sc_HVG2000_train80samples.rds') #44min
   end.time=Sys.time();
   print(end.time-start.time)
   #Time difference of 1.4 hours, 80%
@@ -118,7 +107,6 @@ classifier = train(#formula = y ~ ., #not so sure which one, form or formula
 }
 
 classifier=readRDS('svm_2021sc_train80samples.rds')
-#classifier=readRDS('svm_2021sc_train70samples.rds')
 #classifier=readRDS('svm_2021sc_HVG2000_train80samples.rds')
 # 1hr for 12k cell in 6k genes
 #https://stackoverflow.com/questions/34781495/how-to-find-important-factors-in-support-vector-machine
@@ -137,12 +125,10 @@ head(w,30) #top 30 contain, Sxl, msl-2, roX1, and roX2
 
 library(org.Dm.eg.db)
 dim(dataset) #49 x 5
-#top.genes=names(w)[1:30]
 top.genes=names(w)[1:100]
 x=AnnotationDbi::select(org.Dm.eg.db,keys=top.genes,
                         keytype='FLYBASE',columns=c('SYMBOL'))
 x$SYMBOL  
-sort(x$SYMBOL)
 table(df.gene.table[x$SYMBOL,]$LOCATION_ARM)
 x$SYMBOL[grep('Sxl|roX|msl',ignore.case = T,x$SYMBOL)] #in top30
 

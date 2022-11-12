@@ -8,13 +8,13 @@ library(ggplot2)
 library(gridExtra)
 library(Seurat)
 
-dat.both=readRDS('~/Documents/single.cell_sex.differences/embryo_sex.cells/integrated.sexed.samples_seurat.obj.rds')
+dat.both=readRDS('~/Documents/Data_fly_FCA/embryo_germline/embryo_sex.cells/integrated.sexed.samples_seurat.obj.rds')
 grep("Sxl|msl-2",rownames(dat.both))
 gene.names=rownames(dat.both)
 
 ########################################################
 ## read in gene chro info
-df.gene.table=data.table::fread('~/Documents/single.cell_datasets/embryo_germline/gene.meta_embryo.txt',header=T,sep='\t')
+df.gene.table=data.table::fread('~/Documents/Data_fly_FCA/embryo_germline/gene.meta_embryo.txt',header=T,sep='\t')
 head(df.gene.table)
 table(df.gene.table$LOCATION_ARM) #15 Y-chromosome genes
 
@@ -30,6 +30,8 @@ rownames(df.gene.table)=df.gene.table$submitted_item
 overlap.genes=gene.names[gene.names %in% df.gene.table$submitted_item]
 dat.both=dat.both[overlap.genes,]
 dat.both
+
+dim(dat.both) # 11740 17142
 
 
 reference <- dat.both
@@ -117,15 +119,20 @@ head(sort(gene.pc[,1],decreasing = T)) #PC1
 pc1=sort(gene.pc[,1],decreasing = T)
 grep('Sxl|roX|msl',names(pc1)) #1  43 693
 
-# start predction: Cell classification
+# start predction: random sample 4000 cells for prediction
+query=dat.both[,sample(1:ncol(dat.both),4000,replace = F)]
 query<-NormalizeData(query)
 system.time(query <- scPredict(query, reference)) #12sec
+table(query$sex,query$scpred_prediction)
 
+if(F){
+#https://github.com/mingwhy/bioinfo_homemade_tools/blob/main/package_101/scPred_101.R
 #scPred now uses Harmony to align the query data onto the training low-dimensional space used as reference. Once the data is aligned, cells are classified using the pre-trained models.
 
 DimPlot(query, group.by = "scpred_prediction", reduction = "scpred")
 query <- RunUMAP(query, reduction = "scpred", dims = 1:30)
 DimPlot(query, group.by = "scpred_prediction", label = TRUE, repel = TRUE)
+
 
 FeaturePlot(query, c("scpred_B.cell", "scpred_CD4.T.cell", "scpred_CD8.T.cell", 
                      "scpred_cMono", "scpred_ncMono", "scpred_Plasma.cell", 
@@ -149,3 +156,4 @@ reference <- trainModel(reference, model = "mda", allowParallel = TRUE)
 ## extract the classifier from the Seurat obj
 scpred <- get_scpred(reference)
 query <- scPredict(query, scpred)
+}
