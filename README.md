@@ -46,7 +46,7 @@
 | [Fly genes divergence measured by dN, dS](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/dataBase/flygene_dNdS) | 2021-07-07 |
 | [PPI database (string, biogrid)](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/dataBase/PPI_string-biogrid) | 2021-07-07 |
 | [Flycircuit](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/dataBase/Flycircuit) | 2021-08-26 |
-| [GO terms map to fly genes](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/dataBase/GOterms_map2_flygenes) | 2021-09-04|
+| [GO terms map to genes](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/dataBase/GOterms_map2_flygenes) | 2021-09-04|
 | [DroID_TF-gene interaction](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/dataBase/DroID) | 2021-09-07 | 
 | [fly X.chr, distance between dosage.compensation.complex and HAS](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/dataBase/DosageCompensation_HAS.distance) | 2021-11-02 | 
 | [fly metabolomics](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/dataBase/lnR_metabolomics) | 2021-11-12 | 
