@@ -50,7 +50,7 @@
 | [DroID_TF-gene interaction](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/dataBase/DroID) | 2021-09-07 | 
 | [fly X.chr, distance between dosage.compensation.complex and HAS](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/dataBase/DosageCompensation_HAS.distance) | 2021-11-02 | 
 | [fly metabolomics](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/dataBase/lnR_metabolomics) | 2021-11-12 | 
-
+| [Gene Origin inference by phylostratigraphy](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/dataBase/Phylostratigraphy_GeneOrigin) | 2022-11-22 | 
 
 # aditional bioinfo_database
 
