@@ -24,7 +24,7 @@
 |[GO.enrichment.plot](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/GO.enrichment.plot) | 2021-10-30 |
 | [maximum mean discrepancy (MMD) calculation](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/MMD_calculation) | 2022-11-03 |
 | [R_reticulate_with_python](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/R_reticulate_with_python) | 2022-11-04 |
-
+| [GO term semantic similarity](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/GO_terms_similarity) | 2022-11-23 | 
 
 # bioinfo_dataBase
 
