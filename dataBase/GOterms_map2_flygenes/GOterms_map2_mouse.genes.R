@@ -18,6 +18,10 @@ head(fb2go) #pay attention to EVIDENCE column
 table(fb2go[!duplicated(fb2go$GO),]$ONTOLOGY)
 #BP    CC    MF 
 #12545  1751  4417  
+x<-split(fb2go$ENSEMBL,fb2go$GO)
+length(x) #12545 BP terms
+go2fb<-sapply(x,function(x){ unique(x)}) #assign genes to each GO term
+saveRDS(go2fb,'Mmus_go2ENSEMBL.rds')
 
 ## select BP
 sub.fb2go=fb2go[fb2go$ONTOLOGY=='BP',]
