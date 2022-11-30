@@ -82,6 +82,8 @@ sapply(spp.kegg,function(x){
   length(unique(as.character(c(x$from,x$to)))) 
 }); #numer of genes in each pathway
 ########################################################
+########################################################
+########################################################
 head(fly.kegg[[1]])
 unique(c(fly.kegg[[1]]$to,fly.kegg[[1]]$from)) #55 genes; https://www.genome.jp/entry/pathway+dme00010
 fly.kegg[[1]][grep('Pepck',fly.kegg[[1]]$from),]
