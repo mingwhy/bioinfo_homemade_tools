@@ -1,5 +1,8 @@
+
 # KEGG: Kyoto Encyclopedia of Genes and Genomes
 KEGG: https://www.genome.jp/kegg/
+KEGG Mus musculus (house mouse): https://www.genome.jp/kegg-bin/show_organism?menu_type=pathway_maps&org=mmu
+
 
 ## Download KGML for mouse KEGG pathways
 
@@ -49,6 +52,24 @@ There are 137 KGML files for dme in total.
 
 I used R package [`KEGGgraph`](https://www.bioconductor.org/packages/release/bioc/html/KEGGgraph.html) to parse downloaded KGML files, online [manual1](https://www.bioconductor.org/packages/release/bioc/vignettes/KEGGgraph/inst/doc/KEGGgraphApp.pdf) and [manual2](https://www.bioconductor.org/packages/release/bioc/vignettes/KEGGgraph/inst/doc/KEGGgraph.pdf)
 
+
+
+## Download gene list for mouse KEGG pathways
+
+I downloaded `gene list` of these 348 pathways (https://www.biostars.org/p/366067/)
+
+```
+#http://rest.kegg.jp/list/pathway/dme
+$ curl -s https://rest.kegg.jp/list/pathway/mmu >mmu_348path.txt  # it's https!!!
+$ curl -s https://rest.kegg.jp/list/pathway/mmu | awk '{split($1,a,":"); print "curl -s https://rest.kegg.jp/get/"a[2]" -o ./geneList_mmu/"a[2]".txt"}' > my.sh
+$ wc -l my.sh
+# 348 pathway
+$ mkdir geneList_mmu;
+$ chmod 755 my.sh 
+$ ./my.sh 
+```
+
+or run `geneList_kegg_mice.R` , following https://www.biostars.org/p/366067/
 
 
 ## KEGG id, annotations and gene members
