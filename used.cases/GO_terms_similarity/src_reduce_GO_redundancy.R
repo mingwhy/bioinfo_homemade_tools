@@ -4,6 +4,9 @@
 #References:
 #https://github.com/YuLab-SMU/clusterProfiler/issues/162
 # two must included column in res: res$ID and res$p.adjust
+#avaiable similarity measures:https://www.bioconductor.org/packages/devel/bioc/manuals/GOSim/man/GOSim.pdf 
+#measure One of "Resnik", "Lin", "Rel", "Jiang" "TCSS" and "Wang" methods.
+
 # usage
 #res$ID=res$GO
 #res$p.adjust=res$FDR
