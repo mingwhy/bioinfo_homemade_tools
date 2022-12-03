@@ -11,10 +11,16 @@
 #res$ID=res$GO
 #res$p.adjust=res$FDR
 #MmGO <- GOSemSim::godata('org.Mm.eg.db', ont="BP") #https://yulab-smu.top/biomedical-knowledge-mining-book/GOSemSim.html
+
 # by=p.adjust, use min(p.adjust) to select retained GO terms
 #simplify_internal(res,cutoff=0.7, by="p.adjust", select_fun=min, measure="Rel", ontology='BP',semData=MmGO)
-#  by=ngene, use max(ngene) to select retained GO terms
+
+# by=ngene, use max(ngene) to select retained GO terms
 #res.simple=simplify_internal(res,cutoff=0.1, by="ngene", select_fun=max, measure="Wang", ontology='BP',semData=MmGO)
+
+# by=abs(rho), use max(rho) to select retained GO terms
+#res$abs.rho=abs(res$Spearman.rho)
+#res.simple=simplify_internal(res,cutoff=0.25, by="abs.rho", select_fun=max,measure="Wang", ontology='BP',semData=MmGO)
 
 simplify_internal <- function(res, cutoff=0.7, by="p.adjust", select_fun=min, 
                               measure="Wang", ontology='BP', semData) {
