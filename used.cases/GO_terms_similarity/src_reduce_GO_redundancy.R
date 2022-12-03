@@ -51,14 +51,15 @@ simplify_internal <- function(res, cutoff=0.7, by="p.adjust", select_fun=min,
   
   GO_to_remove <- character()
   for (i in seq_along(ID)) {
-    ii <- which(sim.df$go2 == ID[i] & sim.df$similarity > cutoff)
+    ii <- which(sim.df$go2 == ID[i] & sim.df$similarity > cutoff) #similarity larger than cutoff
     ## if length(ii) == 1, then go1 == go2
     if (length(ii) < 2)
       next
     
     sim_subset <- sim.df[ii,]
     
-    jj <- which(sim_subset[, by] == select_fun(sim_subset[, by]))
+    jj <- which(sim_subset[, by] == select_fun(sim_subset[, by])) #select one with minimal p.value, 
+    #jj may contain multiple GO ids if they are share the same minimal p.value
     
     ## sim.df <- sim.df[-ii[-jj]]
     GO_to_remove <- c(GO_to_remove, sim_subset$go1[-jj]) %>% unique
