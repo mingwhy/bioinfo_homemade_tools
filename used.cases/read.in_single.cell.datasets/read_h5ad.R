@@ -39,3 +39,26 @@ library(SeuratDisk)
 library(SeuratData)
 library(patchwork)
 
+#########################################################################################################
+library(zellkonverter)
+library(SingleCellExperiment)
+library(scater);library(scran)
+library(ggplot2);library(gridExtra);
+library(tidyverse);
+library(zellkonverter)
+library(SummarizedExperiment)
+library(viridis)
+library(ggpubr)
+
+## read in data (https://hongjielilab.shinyapps.io/AFCA/)
+sce=readH5AD('adata_headBody_S_v1.0.h5ad') # 22966 31001  
+sce #SingleCellExperiment,  15992 566254 
+cell.meta=colData(sce)
+colnames(cell.meta)
+table(cell.meta$sex,cell.meta$age)
+head(cell.meta)
+#table(cell.meta$afca_annotation_broad,cell.meta$afca_annotation)
+length(table(cell.meta$afca_annotation)) # 163 cell types
+
+
+
