@@ -34,3 +34,4 @@ saveRDS(t2g,'t2g_chr.coord.rds')
 t2g=readRDS('t2g_chr.coord.rds')
 # one gene has multiple rows as muliple transcripts
 df.gene.length=t2g[!duplicated(t2g$ensembl_gene_id),]
+dim(df.gene.length) #23932    11
