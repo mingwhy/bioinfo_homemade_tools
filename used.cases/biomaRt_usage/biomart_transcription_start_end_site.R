@@ -27,11 +27,13 @@ t2g<-getBM(attributes=c('ensembl_gene_id',"gene_biotype",
                         "chromosome_name","strand","transcript_biotype", 
                         'start_position','end_position',
                         'flybase_transcript_id',"transcript_length","transcript_count"), mart = ensembl)
-dim(t2g) #41209    11
+dim(t2g) #41209    13
 head(t2g)
 saveRDS(t2g,'t2g_chr.coord.rds')
 }
 t2g=readRDS('t2g_chr.coord.rds')
 # one gene has multiple rows as muliple transcripts
 df.gene.length=t2g[!duplicated(t2g$ensembl_gene_id),]
-dim(df.gene.length) #23932    11
+table(df.gene.length$gene_biotype)
+df.gene.length=df.gene.length[df.gene.length$gene_biotype == 'protein_coding',]
+dim(df.gene.length) #13968    13
