@@ -24,8 +24,8 @@ grep('transcript',attributes$name,value=TRUE,ignore.case = TRUE)
 t2g<-getBM(attributes=c('ensembl_gene_id',"gene_biotype",
                         "ensembl_transcript_id","transcript_start","transcript_end",
                         #"ensembl_exon_id","exon_chrom_start","exon_chrom_end",
-                        "strand","chromosome_name","transcript_biotype", 
-                        'chromosome_name','start_position','end_position',
+                        "chromosome_name","strand","transcript_biotype", 
+                        'start_position','end_position',
                         'flybase_transcript_id',"transcript_length","transcript_count"), mart = ensembl)
 dim(t2g) #41209    11
 head(t2g)
