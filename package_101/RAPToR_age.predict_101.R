@@ -115,10 +115,49 @@ summary(lm_dsaeschimann2017)
 summary(ae_dsaeschimann2017)
 head(ae_dsaeschimann2017$age.estimates)
 #age.estimate, the global estimate for the sample (whole gene set).
-#lb, ub, the lower and upper bounds of the bootstrapped age estimates’ confidence interval (Median Absolute Deviation).
+#lb, ub, the lower and upper bounds of the bootstrapped age estimates? confidence interval (Median Absolute Deviation).
 #cor.score, the correlation score between the sample and reference at the age estimate.
 par(mfrow=c(2,2))
 plot_cor.ae(ae_dsaeschimann2017, subset = c(1,4,9,11))
+
+################################################################
+## https://github.com/LBMC/RAPToR/blob/master/vignettes/RAPToR.Rmd
+
+# Building your own references
+m_dsaeschimann2017 <- ge_im(X = dsaeschimann2017$g, p = dsaeschimann2017$p, 
+                            formula = "X ~ s(age, bs = 'ts') + strain", nc = 32)
+
+## Finding the appropriate model and parameters
+pca_dsaeschimann2017 <- stats::prcomp(t(dsaeschimann2017$g), center = TRUE, scale = FALSE, rank = 25)
+nc <- sum(summary(pca_dsaeschimann2017)$importance[3,] < .99) + 1
+nc # 32
+
+## Predicting from the model
+# setup new data
+n.inter <- 100
+ndat <- data.frame(age = seq(min(dsaeschimann2017$p$age), max(dsaeschimann2017$p$age),  l = n.inter), 
+                   strain = rep("N2", n.inter))
+# predict
+pred_dsaeschimann2017_comp <- predict(m_dsaeschimann2017, ndat, as.c = TRUE) # in component space
+pred_dsaeschimann2017_ge <- predict(m_dsaeschimann2017, ndat)
+
+## Checking/Validating the interpolation
+par(mfrow = c(2,4))
+invisible(sapply(seq_len(8), function(i){
+  plot(dsaeschimann2017$p$age, pca_dsaeschimann2017$x[,i], lwd = 2, col = dsaeschimann2017$p$strain,
+       xlab = "age", ylab = "PC", main = paste0("PC", i))
+  sapply(seq_along(levels(dsaeschimann2017$p$strain)), function(l){
+    s <- which(dsaeschimann2017$p$strain == levels(dsaeschimann2017$p$strain)[l])
+    points(dsaeschimann2017$p$age[s], pca_dsaeschimann2017$x[s,i], col = l, 
+           type = 'l', lty = 2)
+  })
+  points(ndat$age, pred_dsaeschimann2017_comp[, i], col = "royalblue", type = 'l', lwd = 2)
+  if(i == 1){
+    legend("topleft", bty = 'n', legend = c("let-7", "lin-41", "let-7/lin-41", "N2", "pred"),
+           pch = c(rep(1, 4), NA), lty = c(rep(NA, 4), 1), col = c(1:4, "royalblue"), lwd = 3)
+  }
+}))
+
 
 ################################
 ## metabolome
