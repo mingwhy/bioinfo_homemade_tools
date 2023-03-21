@@ -1,6 +1,27 @@
 
-# https://github.com/perishky/meffonym/
 
+# https://github.com/perishky/meffonym/
+library(meffonym)
+# when loading library, you can see message in Rstudio
+# loading /Library/Frameworks/R.framework/Versions/4.1/Resources/library/meffonym/hannum/coefs.csv  ...
+# the already-constructed model can be accessed following this path
+# this clock only contains 71 sites 
+hannum.clock=data.table::fread('/Library/Frameworks/R.framework/Versions/4.1/Resources/library/meffonym/hannum/coefs.csv',header = T)
+dim(hannum.clock) #71, site, coef
+
+library(IlluminaHumanMethylation450kanno.ilmn12.hg19)
+library(minfi)
+packageVersion("IlluminaHumanMethylation450kanno.ilmn12.hg19")
+#[1] '0.6.0'
+ann450k <- getAnnotation(IlluminaHumanMethylation450kanno.ilmn12.hg19)
+head(ann450k)
+dim(ann450k) #485512     33
+
+# use ann450k to characterize the 71 site in hannum clock
+x=ann450k[hannum.clock$pred.var,]
+table(x$Regulatory_Feature_Group)
+
+################################################################################################################################################
 # Download 'GSE40279_series_matrix.txt.gz' from the Hannum et al. data from https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE40279
 source('read-gse-matrix-file.r')
 hannum=read.gse.matrix.file('./GSE40279/GSE40279_series_matrix.txt.gz') #https://rdrr.io/github/perishky/meffonym/f/vignettes/age-tutorial.rmd
