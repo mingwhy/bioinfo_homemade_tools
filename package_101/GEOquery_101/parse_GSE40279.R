@@ -24,6 +24,10 @@ gse
 #                                                                         1)], quote = "\"", na.strings = c("NA", "null", "NULL", "Null"))
 
 ################################################################################################################
+# I further checked `GSE40279_average_beta.txt.gz`, they contain the same information as `GSE40279_series_matrix.txt.gz`.
+#https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM989827
+
+################################################################################################################
 # homemade read in code, adapted from https://rdrr.io/github/perishky/meffonym/src/vignettes/read-gse-matrix-file.r
 # used case: https://rdrr.io/github/perishky/meffonym/f/vignettes/age-tutorial.rmd
 filename='./GSE40279/GSE40279_series_matrix.txt.gz'
