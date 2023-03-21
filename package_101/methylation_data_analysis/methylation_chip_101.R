@@ -21,6 +21,8 @@ dataDirectory='methylationArrayAnalysis/'
 list.files(dataDirectory, recursive = TRUE)
 
 # get the 450k annotation data
+packageVersion("IlluminaHumanMethylation450kanno.ilmn12.hg19")
+#[1] '0.6.0'
 ann450k <- getAnnotation(IlluminaHumanMethylation450kanno.ilmn12.hg19)
 head(ann450k)
 dim(ann450k) #485512     33
