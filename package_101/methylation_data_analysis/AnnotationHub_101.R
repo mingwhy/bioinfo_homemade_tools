@@ -8,4 +8,4 @@ ahub[grep('CpG',ahub$title,ignore.case = T),] #
 
 ahub["AH6117"]
 cpgs <- ahub[["AH6117"]]
-cpgs
+cpgs #16026 ranges
