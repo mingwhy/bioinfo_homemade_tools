@@ -69,7 +69,7 @@ write.table(target$download_path, file = "extdata/sraFilesPath.txt", quote= FALS
 #$ fastq $~/Documents/bioinfo_software/TrimGalore-0.6.10/trim_galore --paired --fastqc SRR949211.sralite.1_1.fastq SRR949211.sralite.1_2.fastq 
 
 #######
-# Alignment and Mapping paired-end reads
+# reference setup 
 # First download the human genome file (.fa) from ENSEMBL.
 # $ cd reference
 # $ wget ftp://ftp.ensembl.org/pub/release-79/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
@@ -80,6 +80,7 @@ write.table(target$download_path, file = "extdata/sraFilesPath.txt", quote= FALS
 # $ ~/Documents/bioinfo_software/Bismark-0.24.0/bismark_genome_preparation --bowtie2 ./
  
 ####### 
+# Alignment and Mapping paired-end reads
 # Using the Bismark read aligner 8hr
 #Each sample will take many hours (~10-20 hrs depending on the file size)
 # $ cd ../fastq/
@@ -90,10 +91,14 @@ write.table(target$download_path, file = "extdata/sraFilesPath.txt", quote= FALS
 # report 2k, SRR949211.sralite.1_1_val_1_bismark_bt2_PE_report.txt
 
 #######
-# Post-alignment steps (613pm - ?)
+# Post-alignment steps (3.5hr)
 # Extracting methylation calls
 # $ nohup ~/Documents/bioinfo_software/Bismark-0.24.0/bismark_methylation_extractor -p --no_overlap --comprehensive  --multicore 4 --buffer_size 5G --bedGraph --counts --gzip  SRR949211.sralite.1_1_val_1_bismark_bt2_pe.bam 2>error.log &
 # Assessing the alignment
 # $ for f in `cat ../extdata/sraFiles.txt`; do awk -F"\t" '$1 == "22" { print $0 }' \ 
 #  $f\_1_val_1.fq_bismark_bt2_pe.bismark.cov > $f.chr22.cov; done
+
+# $ awk -F"\t" '$1=="22" {print $0}' SRR949211.sralite.1_1_val_1_bismark_bt2_pe.bismark.cov >SRR949211.chr22.cov 
+
+
 
