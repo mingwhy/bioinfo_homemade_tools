@@ -81,3 +81,47 @@ seqlengths(range_reads)
 seqlengths(anno)
 overlap <- findOverlaps(range_reads,anno,ignore.strand=ignore.strand)
 overlap #hit per range_reads 
+
+
+query <- queryHits(overlap)
+query <- unique(query)
+range_reads <- range_reads[query]
+
+####### REPRESENTATION ############
+#This part clasifies all reads into either discordant or concordant
+range_cpgs <- ranges(anno)
+starts_cpgs <- start(range_cpgs)
+rm(range_cpgs)
+seqs_reads <- as.character(values(range_reads)$seq)
+starts_reads <- start(ranges(range_reads))
+
+overlap <- findOverlaps(range_reads,anno,ignore.strand=ignore.strand)
+match_read_cpg <- as(overlap,"list")
+range_reads #252 ranges
+length(match_read_cpg) #252 input reads
+table(sapply(match_read_cpg,length))
+# contain reads with>=4 CpG
+
+overlap <- findOverlaps(anno,range_reads,ignore.strand=ignore.strand)
+pdrs <- as.list(rep(NA,length(anno)))
+rm(anno)
+
+# we classify each read into either discordant or concordant
+source('WSHPackage-master/R/calculate_scores.R')
+classified_reads <- as.list(1:length(range_reads))
+classified_reads <- lapply(classified_reads,classify.read,match_read_cpg,starts_cpgs,starts_reads,seqs_reads)
+
+#table(unlist(match_read_cpg))
+head(which(unlist(match_read_cpg)>4))
+classify.read(20,match_read_cpg,starts_cpgs,starts_reads,seqs_reads)
+
+rm(match_read_cpg)
+rm(starts_reads)
+rm(seqs_reads)
+rm(starts_cpgs)
+values(range_reads) <- DataFrame(cbind('isDiscordant'=classified_reads))
+rm(classified_reads)
+logger.completed()
+
+
+
