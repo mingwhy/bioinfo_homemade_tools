@@ -10,6 +10,7 @@ e <- gse[[1]]
 pd <- pData(e)
 # subset for colon samples only
 pd <- pd[grepl("Colon", pd$title),]
+
 #######
 #The information which connects the sample information from GEO with the SRA run id is downloaded 
 # from SRA using the Send to: File button. Add the SRA ID to the end of the csv file name.
@@ -25,6 +26,7 @@ rownames(target) <- target$Run
 #The SRA names and SRA file paths were saved to help extract the SRA files from NCBI.
 write.table(target$Run, file = "extdata/sraFiles.txt", quote= FALSE,row.names = FALSE, col.names = FALSE)
 write.table(target$download_path, file = "extdata/sraFilesPath.txt", quote= FALSE,row.names = FALSE, col.names = FALSE)
+
 #######
 # recommend only download SRR949211.sralite.1 to save time and diskspace
 #Obtaining FASTQ files from SRA
@@ -39,22 +41,29 @@ write.table(target$download_path, file = "extdata/sraFilesPath.txt", quote= FALS
 #$ cat ../extdata/sraFiles.txt | parallel -j 6 ~/Documents/bioinfo_software/sratoolkit.3.0.1-mac64/bin/fastq-dump -I --split-files ../sra/{}.sralite.1 
 #($~/Documents/bioinfo_software/sratoolkit.3.0.1-mac64/bin/fastq-dump -I --split-files ../sra/SRR949210.sralite.1 )
 # after extraction, two files each ~60GB
+
 #######
-# install java version: fastqc from https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+# to use Trim_Galore, 
+# require cutadapt and fastqc (check out README.txt file)
+
+# install cutadapt 
+# $pip3 install cutadapt
+
+# install fastqc
+# java version: fastqc from https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 # or command line: $conda install -c bioconda fastqc
 #$ fastqc *.fastq
 # Look at QC report produced by fastqc: fastqc_report.html
 
-#######
-#Adapter and quality trimming
-# install Trim_Galore from: https://www.bioinformatics.babraham.ac.uk/projects/download.html#trim_galore
-# user guide: https://github.com/FelixKrueger/TrimGalore/blob/master/Docs/Trim_Galore_User_Guide.md
-# require cutadapt and fastqc (check out README.txt file)
-# install cutadapt $pip3 install cutadapt
 # $cutadapt --version
 # 4.3
 # $fastqc -v
 # FastQC v0.12.1
+
+#######
+# Adapter and quality trimming
+# install Trim_Galore from: https://www.bioinformatics.babraham.ac.uk/projects/download.html#trim_galore
+# user guide: https://github.com/FelixKrueger/TrimGalore/blob/master/Docs/Trim_Galore_User_Guide.md
 
 #$ cd fastq;
 #$ fastq $~/Documents/bioinfo_software/TrimGalore-0.6.10/trim_galore --paired --fastqc SRR949211.sralite.1_1.fastq SRR949211.sralite.1_2.fastq 
@@ -67,8 +76,10 @@ write.table(target$download_path, file = "extdata/sraFilesPath.txt", quote= FALS
 # $ gunzip Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
 
 # Building the bisulfite genome indexes using Bowtie2,take ~1.5hr 
-# $ reference $~/Documents/bioinfo_software/Bismark-0.24.0/bismark_genome_preparation --bowtie2 ./
-  
+# $ cd reference 
+# $ ~/Documents/bioinfo_software/Bismark-0.24.0/bismark_genome_preparation --bowtie2 ./
+ 
+####### 
 # Using the Bismark read aligner 8hr
 #Each sample will take many hours (~10-20 hrs depending on the file size)
 # $ cd ../fastq/
