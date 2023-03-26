@@ -134,5 +134,5 @@ reads <- unlist(reads)
 #names(values(reads))
 
 #export(reads,file.path(store.path,store.name))
-saveRDS(reads,file.path(store.path,store.name),compress = TRUE)
+saveRDS(reads,file.path(store.path,store.name),compress = TRUE) #no difference
 
