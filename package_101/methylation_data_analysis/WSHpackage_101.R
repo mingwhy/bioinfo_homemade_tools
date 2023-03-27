@@ -1,3 +1,8 @@
+#you may need to install dependencies ‘RnBeads’, ‘RnBeads.hg38’ first
+BiocManager::install("RnBeads")
+BiocManager::install("RnBeads.hg38")
+devtools::install_github("MPIIComputationalEpigenetics/WSHPackage")
+
 #https://github.com/MPIIComputationalEpigenetics/WSHPackage/blob/master/vignettes/WSH.md
 library(WSH)
 example.bam <- system.file(file.path("extData","small_example.bam"),
