@@ -1,6 +1,7 @@
 #you may need to install dependencies ‘RnBeads’, ‘RnBeads.hg38’ first
 BiocManager::install("RnBeads")
 BiocManager::install("RnBeads.hg38")
+BiocManager::install('RnBeads.mm10')
 devtools::install_github("MPIIComputationalEpigenetics/WSHPackage")
 
 #https://github.com/MPIIComputationalEpigenetics/WSHPackage/blob/master/vignettes/WSH.md
