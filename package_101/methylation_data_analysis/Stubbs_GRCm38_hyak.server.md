@@ -266,12 +266,6 @@ $ cat ../sra_data/sraFiles.txt | parallel -j 4 bismark_methylation_extractor -p 
 
 ( if use 3 nodes, each handle 10+10+11 files, 1.5hr) 
 
-## Assessing the alignment
-$ for f in `cat ../extdata/sraFiles.txt`; do awk -F"\t" '$1 == "22" { print $0 }' $f\_1_val_1.fq_bismark_bt2_pe.bismark.cov > $f.chr22.cov; done
-$ awk -F"\t" '$1=="22" {print $0}' SRR949211.sralite.1_1_val_1_bismark_bt2_pe.bismark.cov >SRR949211.chr22.cov 
-
-
-
 # use metheor (written in rust language) to calculate WSH scores
 ## on server (metheor only supports linux), need sorted.bam files
 $ which conda
@@ -320,8 +314,9 @@ cat ../sra_data/sraFiles.txt | parallel -j 16 metheor fdrp --input ../mapping/{}
 
 $ conda deactivate 
 
-# mapping results summary
-## Number of mapped reads from BAM file
+######
+## mapping results summary
+#Number of mapped reads from BAM file
 https://www.biostars.org/p/138116/
 $ samtools flagstat file.sorted.bam
 $ wc -l fq file
@@ -335,7 +330,25 @@ $ ( for i in mapping/*sorted.bam ; do echo $i; echo 'hello'; done )
 $ ( for i in mapping/*sorted.bam ; do echo $i; samtools flagstat $i ; done) > reads_in_sorted.bam.txt &
 https://www.biostars.org/p/413593/
 
+## Assessing the alignment
+$ for f in `cat ../extdata/sraFiles.txt`; do awk -F"\t" '$1 == "22" { print $0 }' $f\_1_val_1.fq_bismark_bt2_pe.bismark.cov > $f.chr22.cov; done
+$ awk -F"\t" '$1=="22" {print $0}' SRR949211.sralite.1_1_val_1_bismark_bt2_pe.bismark.cov >SRR949211.chr22.cov 
 
+## counting number of CpGs that are methylated and unmethylated in a read of whole genome bisulfite data
+https://www.biostars.org/p/384127/
+
+#install MethylDackel: https://github.com/dpryan79/MethylDackel, https://anaconda.org/bioconda/methyldackel
+#require htslib and libbigwig
+$ conda install -c bioconda libbigwig
+$ conda install -c bioconda htslib
+$ not use this one, as the version didn't support 'perRead' conda install -c "bioconda/label/main" methyldackel 
+$ conda install -c "bioconda/label/main" methyldackel
+$ MethylDackel 
+MethylDackel: A tool for processing bisulfite sequencing alignments.
+Version: 0.5.1 (using HTSlib version 1.9)
+
+$ salloc -N 1 -p csde -A csde  --time=2:00:00 --mem=10G
+$ MethylDackel perRead reference_GRCm38_mm10/Mus_musculus.GRCm38.dna.primary_assembly.fa mapping/SRR5195656_sorted.bam 
 
 ##########################################################################################
 ##########################################################################################
