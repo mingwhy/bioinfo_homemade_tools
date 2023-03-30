@@ -4,10 +4,20 @@
 
 # Obtaining sample information from GEO
 #in R
+#if error: https://github.com/seandavi/GEOquery/issues/110
+#BiocManager::install('seandavi/GEOquery')
 library("GEOquery")
-gse <- getGEO("GSE93957")
-e <- gse[[1]] #62 samples
-pd <- pData(e) #62 x 41 df
+if(F){ #online
+  gse <- getGEO("GSE93957") #GSE93957_series_matrix.txt.gz
+  e <- gse[[1]] #62 samples
+  pd <- pData(e) #62 x 41 df
+  head(pd$title)
+}
+# read from local downloaded file
+gse <- getGEO(filename='Stubbs_GSE93957_series_matrix.txt.gz',getGPL = FALSE)
+pd <- pData(gse) #62 x 41 df
+head(pd$title)
+
 unique(pd$`tissue:ch1`)
 #"Cortex" "Heart"  "Liver"  "Lung"  
 #subset for heart and lung samples only
@@ -32,6 +42,7 @@ write.table(target$download_path, file = "sra_data/sraFilesPath.txt", quote= FAL
 #Downloading all .sra files in the sraFilesPath.txt:
 $ cd sra_data
 $ cat sraFilesPath.txt | wget -i -
+$ rename -- sralite.1 sra SRR*
 
 #store data in /gscratch/scrubbed/mingy16
 $ du -h ./ --max-depth=2 #check storage space
@@ -148,6 +159,8 @@ cat ../sra_data/sraFiles.txt | parallel -j 20 /gscratch/csde-promislow/bioinfo_s
 
 output SRR5195656_1.clock_UMI.R1_val_1.fq file
 
+`if run all above sequentially, 10+11+10 runs, time cost 15min`
+
 # reference setup  
 ## find out which ensembl version release <=> GRCm38 mm10
 #GRCm38 mm10: https://www.ncbi.nlm.nih.gov/assembly/GCF_000001635.20/
@@ -231,6 +244,15 @@ $ cat ../sra_data/sraFiles.txt | parallel -j 11 perl ../UmiBam.pl -p --bam --dou
 #view alignment in terminal(http://www.htslib.org/doc/samtools-view.html)
 $ samtools view -f 2 SRR5195656.sralite.1_1.clock_UMI.R1_val_1_bismark_bt2_pe.UMI_deduplicated.bam | less -SN 
 
+# sorting bam files in the mapping folder
+$ cd mapping;
+$ samtools sort SRR5195656_1.clock_UMI.R1_val_1_bismark_bt2_pe.UMI_deduplicated.bam -o SRR5195656_sorted.bam
+$ cat ../sra_data/sraFiles.txt | parallel -j 8 samtools sort {}\_1.clock_UMI.R1_val_1_bismark_bt2_pe.UMI_deduplicated.bam -o {}\_sorted.bam
+
+( if use 3 nodes, each handle 10+10+11 files, 30min) 
+
+`if run all above sequentially, 10+11+10 runs, time cost 705pm -- ??`
+
 
 # Extracting methylation calls using unsorted bam!!
 https://htmlpreview.github.io/?https://github.com/genomicsclass/colonCancerWGBS/blob/master/scripts/createObject.html
@@ -244,16 +266,11 @@ $ cat ../sra_data/sraFiles.txt | parallel -j 4 bismark_methylation_extractor -p 
 
 ( if use 3 nodes, each handle 10+10+11 files, 1.5hr) 
 
-# Assessing the alignment
+## Assessing the alignment
 $ for f in `cat ../extdata/sraFiles.txt`; do awk -F"\t" '$1 == "22" { print $0 }' $f\_1_val_1.fq_bismark_bt2_pe.bismark.cov > $f.chr22.cov; done
 $ awk -F"\t" '$1=="22" {print $0}' SRR949211.sralite.1_1_val_1_bismark_bt2_pe.bismark.cov >SRR949211.chr22.cov 
 
-# sorting bam files in the mapping folder
-$ cd mapping;
-$ samtools sort SRR5195656_1.clock_UMI.R1_val_1_bismark_bt2_pe.UMI_deduplicated.bam -o SRR5195656_sorted.bam
-$ cat ../sra_data/sraFiles.txt | parallel -j 8 samtools sort {}\_1.clock_UMI.R1_val_1_bismark_bt2_pe.UMI_deduplicated.bam -o {}\_sorted.bam
 
-( if use 3 nodes, each handle 10+10+11 files, 30min) 
 
 # use metheor (written in rust language) to calculate WSH scores
 ## on server (metheor only supports linux), need sorted.bam files
@@ -281,6 +298,25 @@ $ vim run_metheor.sh
 cat ../sra_data/sraFiles.txt | parallel -j 16 metheor qfdrp --input ../mapping/{}\_sorted.bam --output qfdrp\_{}.tsv
 (use nohup .. &, even if you logged off hyak, sh still run, 30min )
 
+$ cat process_metheor.slurm 
+#!/bin/bash -l
+#SBATCH --time=4-24:00:00
+#SBATCH --mem=200G
+cd /gscratch/scrubbed/mingy16/GSE93957/score
+
+pwd
+conda info --envs
+conda activate /gscratch/csde-promislow/anaconda3/envs/rust_env
+
+module load contrib/samtools/1.9 
+
+#cat ../sra_data/sraFiles.txt | parallel -j 16 metheor qfdrp --input ../mapping/{}\_sorted.bam --output qfdrp\_{}.tsv
+#cat ../sra_data/sraFiles.txt | parallel -j 16 metheor pdr --input ../mapping/{}\_sorted.bam --output pdr\_{}.tsv
+#cat ../sra_data/sraFiles.txt | parallel -j 16 metheor pm --input ../mapping/{}\_sorted.bam --output pm\_{}.tsv
+#cat ../sra_data/sraFiles.txt | parallel -j 16 metheor mhl --input ../mapping/{}\_sorted.bam --output mhl\_{}.tsv
+cat ../sra_data/sraFiles.txt | parallel -j 16 metheor fdrp --input ../mapping/{}\_sorted.bam --output fdrp\_{}.tsv
+
+(with slurm, 3min for pdr, 5min for pm, 5min for mhl, 20min for fdrp)
 
 $ conda deactivate 
 
