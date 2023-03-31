@@ -251,7 +251,7 @@ $ cat ../sra_data/sraFiles.txt | parallel -j 8 samtools sort {}\_1.clock_UMI.R1_
 
 ( if use 3 nodes, each handle 10+10+11 files, 30min) 
 
-`if run all above sequentially, 10+11+10 runs, time cost 705pm -- ??`
+`if run all above sequentially, 10+11+10 runs, time cost 6hr`
 
 
 # Extracting methylation calls using unsorted bam!!
@@ -284,7 +284,7 @@ $ metheor qfdrp --input SRR5195656_sorted.bam --output qfdrp.tsv #511MB, 4min
 $ srun -p csde -A csde --time=4:00:00 --mem=200G --pty /bin/bash
 
 $ conda activate rust_env
-$ mkdir score;
+$ mkdir score && cd $_
 $ metheor qfdrp --input ../mapping/SRR5195656_sorted.bam --output qfdrp_SRR5195638.tsv
 
 $ vim run_metheor.sh
@@ -311,6 +311,22 @@ module load contrib/samtools/1.9
 cat ../sra_data/sraFiles.txt | parallel -j 16 metheor fdrp --input ../mapping/{}\_sorted.bam --output fdrp\_{}.tsv
 
 (with slurm, 3min for pdr, 5min for pm, 5min for mhl, 20min for fdrp)
+(run sequentially, 50min)
+
+$ wc -l *tsv
+  1140890 fdrp_SRR5195656.tsv
+  1140890 qfdrp_SRR5195656.tsv  
+   439066 pdr_SRR5195656.tsv
+   437908 mhl_SRR5195656.tsv
+   194023 pm_SRR5195656.tsv
+$ wc -l *SRR5195674*
+  1744425 fdrp_SRR5195674.tsv
+  1744425 qfdrp_SRR5195674.tsv       
+   745038 pdr_SRR5195674.tsv
+   742425 mhl_SRR5195674.tsv
+   359419 pm_SRR5195674.tsv
+   359419 me_SRR5195674.tsv
+  
 
 $ conda deactivate 
 
@@ -324,15 +340,13 @@ $ wc -l fq file
 $ cd fastq;
 $ nohup wc -l *_1.clock_UMI.R1_val_1.fq >../reads_in_fastq.txt &
 
- 
+
+$ cd mapping; 
 $ module load contrib/samtools/1.9 
 $ ( for i in mapping/*sorted.bam ; do echo $i; echo 'hello'; done )
-$ ( for i in mapping/*sorted.bam ; do echo $i; samtools flagstat $i ; done) > reads_in_sorted.bam.txt &
+$ ( for i in *sorted.bam ; do echo $i; samtools flagstat $i ; done) > ../reads_in_sorted.bam.txt &
 https://www.biostars.org/p/413593/
 
-## Assessing the alignment
-$ for f in `cat ../extdata/sraFiles.txt`; do awk -F"\t" '$1 == "22" { print $0 }' $f\_1_val_1.fq_bismark_bt2_pe.bismark.cov > $f.chr22.cov; done
-$ awk -F"\t" '$1=="22" {print $0}' SRR949211.sralite.1_1_val_1_bismark_bt2_pe.bismark.cov >SRR949211.chr22.cov 
 
 ## counting number of CpGs that are methylated and unmethylated in a read of whole genome bisulfite data
 https://www.biostars.org/p/384127/
@@ -347,11 +361,48 @@ $ MethylDackel
 MethylDackel: A tool for processing bisulfite sequencing alignments.
 Version: 0.5.1 (using HTSlib version 1.9)
 
+$ srun -p csde -A csde  --time=2:00:00 --mem=30G --pty /bin/bash
 $ salloc -N 1 -p csde -A csde  --time=2:00:00 --mem=10G
-$ MethylDackel perRead reference_GRCm38_mm10/Mus_musculus.GRCm38.dna.primary_assembly.fa mapping/SRR5195656_sorted.bam 
+$ nohup MethylDackel perRead ../GSE93957/reference_GRCm38_mm10/Mus_musculus.GRCm38.dna.primary_assembly.fa ../GSE93957/mapping/SRR5195656_sorted.bam >test.out &
+
+$ module load contrib/samtools/1.9 
+$ samtools view -f 2 ../GSE93957/mapping/SRR5195656_sorted.bam | less -SN
+$ awk '{if(NR>1)print $5}' test.out | sort | uniq -c >cpg.per.read.count.txt
+
+$ mkdir perRead;
+$ cat process_perRead.slurm 
+#!/bin/bash
+#SBATCH --time=4-24:00:00
+#SBATCH --mem=200G
+cd /gscratch/scrubbed/mingy16/Cortex_Liver/perRead
+module load contrib/samtools/1.9 
+cat ../sra_data/sraFiles.txt | parallel -j 8 MethylDackel perRead ../reference_GRCm38_mm10/Mus_musculus.GRCm38.dna.primary_assembly.fa ../mapping/{}_sorted.bam ">" ./{}_perRead.out
+({} usage: https://opensource.com/article/18/5/gnu-parallel)
+(time cost 5min)
+
+## the number of CpG with methylation level and FDRP
+https://github.com/FelixKrueger/Bismark/tree/master/Docs
+not so sure about the mapping quality filter, Devon Ryan suggested filter out mapq<10 (https://www.biostars.org/p/155605/)
+
+https://github.com/dohlee/metheor
+-q, --min-qual: Minimum quality for a read to be considered. [default: 10]
+-d, --min-depth: Minimum depth of reads covering epialleles to consider. [default: 10]
+
+#bismark output file: The coverage output looks like this
+#<chromosome>  <start position>  <end position>  <methylation percentage>  <count methylated>  <count non-methylated>
+$ awk -F"\t" '{print($5+$6)}' SRR5195656_1.clock_UMI.R1_val_1_bismark_bt2_pe.UMI_deduplicated.bismark.cov
+$ awk -F"\t" '{if(($5+$6)>=10)print}' SRR5195656_1.clock_UMI.R1_val_1_bismark_bt2_pe.UMI_deduplicated.bismark.cov | wc -l
+  1027681 CpG sites
+$ wc -l fdrp_SRR5195656.tsv
+  1140890 fdrp_SRR5195656.tsv
 
 ##########################################################################################
 ##########################################################################################
+## Assessing the alignment
+$ for f in `cat ../extdata/sraFiles.txt`; do awk -F"\t" '$1 == "22" { print $0 }' $f\_1_val_1.fq_bismark_bt2_pe.bismark.cov > $f.chr22.cov; done
+$ awk -F"\t" '$1=="22" {print $0}' SRR949211.sralite.1_1_val_1_bismark_bt2_pe.bismark.cov >SRR949211.chr22.cov 
+
+
 # read in bismark.cov.gz in R
 methy.calls=as.data.frame(data.table::fread('fastq_SRR5195656/SRR5195656.sralite.1_1.clock_UMI.R1_val_1_bismark_bt2_pe.UMI_deduplicated.bismark.cov.gz'))
 head(methy.calls) 
