@@ -380,6 +380,18 @@ cat ../sra_data/sraFiles.txt | parallel -j 8 MethylDackel perRead ../reference_G
 ({} usage: https://opensource.com/article/18/5/gnu-parallel)
 (time cost 5min)
 
+
+## use MethylDackel to call methylation level
+https://github.com/dpryan79/MethylDackel
+#MethylDackel can filter reads and bases according to MAPQ and Phred score, respectively. The default minimums are MAPQ >= 10 and Phred >= 5, though these can be changed with the -q and -p options. 
+$ MethylDackel extract ../reference_GRCm38_mm10/Mus_musculus.GRCm38.dna.primary_assembly.fa ../mapping/SRR5195656_sorted.bam -q 10 -p 5 -o SRR5195656 &
+
+$ mkdir cpg_level && cd;
+$ cat ../sra_data/sraFiles.txt | parallel -j 16 MethylDackel extract ../reference_GRCm38_mm10/Mus_musculus.GRCm38.dna.primary_assembly.fa ../mapping/{}_sorted.bam -q 10 -p 5 -o {} 
+
+(time cost, only takes 10min, way faster then bismark)
+
+
 ## the number of CpG with methylation level and FDRP
 https://github.com/FelixKrueger/Bismark/tree/master/Docs
 not so sure about the mapping quality filter, Devon Ryan suggested filter out mapq<10 (https://www.biostars.org/p/155605/)
@@ -395,6 +407,22 @@ $ awk -F"\t" '{if(($5+$6)>=10)print}' SRR5195656_1.clock_UMI.R1_val_1_bismark_bt
   1027681 CpG sites
 $ wc -l fdrp_SRR5195656.tsv
   1140890 fdrp_SRR5195656.tsv
+
+
+## Extract Reads From A Bam File That Fall Within A Given Region
+https://www.biostars.org/p/48719/
+#need sorted bam, indexed bai, and reference fasta
+#[main_samview] random alignment retrieval only works for indexed BAM or CRAM files.
+$ module load contrib/samtools/1.9 
+$ samtools view SRR5195656_sorted.bam "12:24498313-24498313" >test.sam
+$ samtools view SRR5195656_sorted.bam "1:153890241-153890241" -T ../reference_GRCm38_mm10/Mus_musculus.GRCm38.dna.primary_assembly.fa >test.sam
+
+#in file `SRR5195656_1.clock_UMI.R1_val_1_bismark_bt2_pe.UMI_deduplicated.bismark.cov` 
+1725360 1       153890241       153890241       26.6666666666667        4       11
+
+#$ wc -l test.sam 
+30 test.sam #15 paired-end reads
+
 
 ##########################################################################################
 ##########################################################################################
