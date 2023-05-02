@@ -31,3 +31,15 @@ length(unique(annotLookup2$uniprot_gn_id)) #51102
 
 saveRDS(annotLookup2,'mmus_id_ensembl2uniprot.rds')
 
+####################################
+## reading in gene id.mapping
+id.mapping=data.table::fread('~/Documents/Data_mouse_aging_atlas/fac_20449genes_id.mapping.txt')  #readin_h5ad.R
+colnames(annotLookup2)
+colnames(id.mapping)
+gene.meta=merge(id.mapping,annotLookup2)
+dim(gene.meta) #44806    10
+length(unique(gene.meta$uniprot_gn_id)) #44744
+length(unique(gene.meta$mgi_symbol)) #18060, one gene -> multiple peptides
+
+saveRDS(annotLookup2,'mmus_id_ensembl2uniprot.rds')
+
