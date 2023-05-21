@@ -28,6 +28,7 @@
 | [optimal distance in scRNA-seq](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/optimal_distance)| 2022-11-24|
 |[Biological Process Activity (BPA) analysis](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/Biological.Process.Activity) | 2022-12-06 | 
 | [Methylation data analysis](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/package_101/methylation_data_analysis) | 2023-03-20 |
+| [Amino Acide Usage analysis](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/amino.acid.usage) | 2023-05-20 |
 
 # bioinfo_dataBase
 
