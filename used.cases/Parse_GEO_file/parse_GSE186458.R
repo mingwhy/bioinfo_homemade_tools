@@ -31,3 +31,5 @@ colnames(df)
 #View(df)
 length(unique(df$`cell type:ch1`)) #39
 df$title
+tc=unique(paste(df$`tissue:ch1`,df$`cell type:ch1`,sep=':')) #79
+tc[-grep('NA',tc)] #77 tc
