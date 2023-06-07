@@ -30,6 +30,7 @@
 | [Methylation data analysis](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/package_101/methylation_data_analysis) | 2023-03-20 |
 | [Amino Acide Usage analysis](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/amino.acid.usage) | 2023-05-20 |
 | [Parse GEO file](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/Parse_GEO_file) | 2023-06-04 |
+| [wgbstools: DNA methylation atlas of human cell types](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/package_101/wgbstools) | 2023-06-07 |
 
 # bioinfo_dataBase
 
