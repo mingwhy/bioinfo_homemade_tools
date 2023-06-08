@@ -41,4 +41,8 @@ https://bioconductor.org/packages/devel/bioc/vignettes/ramwas/inst/doc/RW2_CpG_s
 options(timeout = 1200)  # is 20 minutes enough? #https://support.bioconductor.org/p/p133518/
 BiocManager::install("BSgenome.Hsapiens.UCSC.hg19")
 hg19_cpgs <- suppressWarnings(methrix::extract_CPGs(ref_genome = "BSgenome.Hsapiens.UCSC.hg19"))
+[1] Done. Extracted 28,217,448 CpGs from 25 contigs.
+dim(hg19_cpgs$cpgs)
+[1] 28217448        5
+
 
