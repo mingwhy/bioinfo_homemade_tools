@@ -14,5 +14,31 @@ bigWigToWig bigWigExample.bw out.wig
 ## convert wig to bed
 wig2bed < out.wig > out.bed
 
-bigWigToWig executable is from UCSC Kent utilities. Also, make sure to read manpage for wig2bed for details, particularly on 0- vs 1-based index and preserving header data.
+bigWigToWig executable is from UCSC Kent utilities. 
+Also, make sure to read manpage for wig2bed for details, particularly on 0- vs 1-based index and preserving header data.
+
+--------------------
+$~/Documents/UCSC_Kent/bigWigToWig GSE186458_3tc/GSM5652176_Adipocytes-Z000000T7.bigwig test.wig
+$grep 'bedGraph' test.wig | wc -l
+   26861
+$~/Documents/UCSC_Kent/bigWigToWig GSE186458_3tc/GSM5652197_Pancreas-Islet-Endothel-Z0000042Y.bigwig test2.wig
+$grep 'bedGraph' test2.wig | wc -l
+   26833
+
+-----------------
+fname='./GSE186458_3tc/GSM5652176_Adipocytes-Z000000T7.beta'
+N <- file.info(fname)$size
+content <- matrix(readBin(fname, "integer", N, size = 1, signed = FALSE), N / 2, 2, byrow=TRUE)
+head(content)
+dim(content)
+#28217448        2
+
+## chr coordinate of the 28,217,448 CpGs from known reference CpGs
+https://www.bioconductor.org/packages/release/bioc/vignettes/methrix/inst/doc/methrix.html
+https://compepigen.github.io/methrix_docs/index.html
+https://bioconductor.org/packages/devel/bioc/vignettes/ramwas/inst/doc/RW2_CpG_sets.html
+
+options(timeout = 1200)  # is 20 minutes enough? #https://support.bioconductor.org/p/p133518/
+BiocManager::install("BSgenome.Hsapiens.UCSC.hg19")
+hg19_cpgs <- suppressWarnings(methrix::extract_CPGs(ref_genome = "BSgenome.Hsapiens.UCSC.hg19"))
 
