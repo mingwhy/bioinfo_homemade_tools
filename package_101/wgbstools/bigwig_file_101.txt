@@ -1,0 +1,18 @@
+# download softwares from ucsc : 
+http://hgdownload.cse.ucsc.edu/admin/exe/
+ref:
+1. https://www.biostars.org/p/71692/
+2. https://cloud.tencent.com/developer/article/1771487
+3. http://www.bio-info-trainee.com/1815.html
+
+on my mac, follow instructions on http://hgdownload.cse.ucsc.edu/admin/exe/
+$ rsync -aP rsync://hgdownload.soe.ucsc.edu/genome/admin/exe/macOSX.x86_64/ ./
+
+wget http://genome.ucsc.edu/goldenPath/help/examples/bigWigExample.bw
+## convert to intermediate wig format
+bigWigToWig bigWigExample.bw out.wig
+## convert wig to bed
+wig2bed < out.wig > out.bed
+
+bigWigToWig executable is from UCSC Kent utilities. Also, make sure to read manpage for wig2bed for details, particularly on 0- vs 1-based index and preserving header data.
+
