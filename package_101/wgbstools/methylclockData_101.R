@@ -42,6 +42,7 @@ print(dim(betas)) ## probes in row and samples in column
 availableClock() ## List all supported clocks
 # "HannumG2013"  "HorvathS2013" "LevineM2018"  "ZhangQ2019"   "ShirebyG2020"  "YangZ2016"    "ZhangY2017"
 data('HorvathS2013')
+head(coefs)
 
 clock_name <- 'HorvathS2013'  # Select one of the supported clocks.
 ## Use Horvath's clock with adjusted-BMIQ normalisation (same as Horvath's paper)
