@@ -38,6 +38,7 @@ https://www.bioconductor.org/packages/release/bioc/vignettes/methrix/inst/doc/me
 https://compepigen.github.io/methrix_docs/index.html
 https://bioconductor.org/packages/devel/bioc/vignettes/ramwas/inst/doc/RW2_CpG_sets.html
 
+BiocManager::install("methrix")
 options(timeout = 1200)  # is 20 minutes enough? #https://support.bioconductor.org/p/p133518/
 BiocManager::install("BSgenome.Hsapiens.UCSC.hg19")
 hg19_cpgs <- suppressWarnings(methrix::extract_CPGs(ref_genome = "BSgenome.Hsapiens.UCSC.hg19"))
