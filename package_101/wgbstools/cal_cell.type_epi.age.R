@@ -1,3 +1,5 @@
+library(ggplot2)
+library(viridis)
 ##########
 ## chr coordinate of the 28,217,448 CpGs from known reference CpGs
 #https://www.bioconductor.org/packages/release/bioc/vignettes/methrix/inst/doc/methrix.html
@@ -49,6 +51,7 @@ sum(hg19_cpgs_keep$chr_pos==clock.cpg$chr_pos) #482419 or 353
 
 ##########
 #https://github.com/nloyfer/wgbs_tools/blob/master/docs/beta_format.md
+if(F){
 files= Sys.glob('./beta_files/*.beta')
 files=files[-grep('hg38',files)]
 length(files) #253 files
@@ -76,7 +79,8 @@ sample.names=lapply(files,function(fname){
 colnames(df.res)=unlist(sample.names)
 rownames(df.res)=clock.cpg$Name
 saveRDS(df.res,'253samples_hg19_cpgs.rds')
-
+}
+df.res=readRDS('253samples_hg19_cpgs.rds')
 ########## use R package `dnaMethyAge`
 ## estimate age
 #https://github.com/mingwhy/bioinfo_homemade_tools/blob/main/package_101/wgbstools/methylclockData_101.R
@@ -152,11 +156,13 @@ summary(dfc$Hannum)
 colnames(dfc)
 plot(dfc$Hannum,dfc$skinHorvath)
 plot(dfc$age, dfc$skinHorvath)
+cor(dfc$age, dfc$skinHorvath,use="pairwise.complete.obs")
 
-library(ggplot2)
 dfc$mAge=dfc$skinHorvath
-ggplot(dfc,aes(x=reorder(dfc$cell.type, dfc$mAge, median),y=mAge))+#geom_violin()+
-  geom_jitter()+theme_classic()+coord_flip()
+ggplot(dfc,aes(x=reorder(dfc$cell.type, dfc$mAge, median),
+               y=mAge,col=dfc$age))+#geom_violin()+
+  geom_jitter()+theme_classic()+coord_flip()+
+  scale_color_viridis()
 
 
 
