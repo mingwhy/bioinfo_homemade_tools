@@ -1,36 +1,3 @@
-# used.cases
-
-<!--START_SECTION:# stat_used.cases-->
-
-| Name                                                         | Date       |
-| ------------------------------------------------------------ | ---------- |
-| [Measuring fly eye size using R](https://htmlpreview.github.io/?https://github.com/mingwhy/bioinfo_homemade_tools/blob/main/used.cases/measure.fly.eye.size/2021-07-01-measuring-fly-eye-size-using-R.html) | 2021-07-03 |
-| [Global Coordination Level (GCL) calculation](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/GCL_calculation) | 2021-08-26 |
-| [anova_VS_Anova](https://htmlpreview.github.io/?https://github.com/mingwhy/bioinfo_homemade_tools/blob/main/used.cases/anova_VS_Anova/anova_VS_Anova.html) | 2021-09-21 |
-| [single fly embryo RNA-seq data](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/2019_paper_reproduce.result_single.fly.embryo.RNA) | 2021-10-12 |
-| [dimension.reduction](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/dimension.reduction) | 2021-10-16 |
-| [read.in_single.cell.datasets](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/read.in_single.cell.datasets) | 2021-10-20 |
-| [mutual.information_metric](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/mutual.information_metric) | 2021-10-24 |
-| [benchmark_gene.coexpr_single.cells](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/benchmark_gene.coexpr_single.cells) | 2021-11-02 |
-| [fly metabolomics](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/lnR_metabolomics) | 2021-11-08 |
-| [biomaRt_usage](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/biomaRt_usage) | 2021-11-10 |
-| [gene.expr.modeling_scRNA-seq](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/gene.expr.model_scRNA-seq) | 2021-11-15 |
-| [spatial_single.cell](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/spatial_single.cell) | 2021-11-18|
-|[digital.sexing.cells](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/digital.sexing.cells) | 2021-11-22 |
-| [single.cell_transcriptome.index](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/single.cell_transcriptome.index) | 2021-12-02 |
-| [introduction to R and Rstudio](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/introR_IPHG_Retreat) | 2022-09-23 |
-| [Multilevel model ,or Linear Mixed Model](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/Multilevel.model) | 2022-10-16 |
-| [Seamless_between_R_and_Python](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/Seamless_between_R_and_Python) | 2022-10-28 | 
-|[GO.enrichment.plot](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/GO.enrichment.plot) | 2021-10-30 |
-| [maximum mean discrepancy (MMD) calculation](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/MMD_calculation) | 2022-11-03 |
-| [R_reticulate_with_python](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/R_reticulate_with_python) | 2022-11-04 |
-| [GO term semantic similarity](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/GO_terms_similarity) | 2022-11-23 | 
-| [optimal distance in scRNA-seq](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/optimal_distance)| 2022-11-24|
-|[Biological Process Activity (BPA) analysis](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/Biological.Process.Activity) | 2022-12-06 | 
-| [Methylation data analysis](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/package_101/methylation_data_analysis) | 2023-03-20 |
-| [Amino Acide Usage analysis](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/amino.acid.usage) | 2023-05-20 |
-| [Parse GEO file](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/used.cases/Parse_GEO_file) | 2023-06-04 |
-| [wgbstools: DNA methylation atlas of human cell types](https://github.com/mingwhy/bioinfo_homemade_tools/tree/main/package_101/wgbstools) | 2023-06-07 |
 
 # bioinfo_dataBase
 
