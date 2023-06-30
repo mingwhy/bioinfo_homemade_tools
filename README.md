@@ -42,9 +42,10 @@
 [Converting single-cell data structures between Bioconductor and Python](http://www.bioconductor.org/packages/devel/bioc/vignettes/zellkonverter/inst/doc/zellkonverter.html)
 
 # Scripts showcases:
-[Data pre-processing and normalization](https://github.com/mmccferreira/Aging_2021/blob/main/Normalization/normalization.md#principal-component-analysis-of-each-tissue)
-[Download data in R via url](https://www.nature.com/articles/s41467-022-32552-1#additional-information)
-[Download bioproject and perform mapping in perl](https://github.com/sjbush/expr_atlas/tree/main)
+- [Data pre-processing and normalization](https://github.com/mmccferreira/Aging_2021/blob/main/Normalization/normalization.md#principal-component-analysis-of-each-tissue)
+- [Download data in R via url](https://www.nature.com/articles/s41467-022-32552-1#additional-information)
+- [Download bioproject and perform mapping in perl](https://github.com/sjbush/expr_atlas/tree/main)
+
 
 # KnowledgeBase outline:
 ## theory
