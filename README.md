@@ -41,6 +41,9 @@
 # Useful documents:
 [Converting single-cell data structures between Bioconductor and Python](http://www.bioconductor.org/packages/devel/bioc/vignettes/zellkonverter/inst/doc/zellkonverter.html)
 
+# Scripts showcases:
+[Data pre-processing and normalization](https://github.com/mmccferreira/Aging_2021/blob/main/Normalization/normalization.md#principal-component-analysis-of-each-tissue)
+
 # KnowledgeBase outline:
 ## theory
 - quantitative genetics
