@@ -61,6 +61,10 @@ Ngroups <- Ngroups[!(GenomeID %in% Dup)]
 }
 
 # one-to-one orthologs
+x=grep('9606|10090|10116', Gs$GenomeID)
+table(Gs[x,]$GenomeID)
+#10090_0 10116_0  9606_0 
+#22111   21982   20313 
 Gs_3species=Gs[GenomeID %in% c('9606_0','10090_0','10116_0'),]
 
 Ngenes <- Gs_3species[,.(Total=.N),by="Orthogroup"]
@@ -69,10 +73,15 @@ group.names=Ngenes[Total==3,Orthogroup]
 oneTo1_3species=Gs_3species[ Orthogroup %in% group.names,]
 table(table(oneTo1_3species$Orthogroup)) #all contain 3 gene members, 13159 groups
 
+saveRDS(oneTo1_3species,'oneTo1_3species.rds')
+
 # convert GeneID in Orthodb to external gene identifiers
-#OGs to genes correspondence
-genes <- fread(paste0(oDB,'_genes.tab.gz'), header=F, tmpdir='.', sep = '\t',
-             col.names=c('OrthoDB.gene.id','organism.id','protein.id','synonyms','uniprot.id','Ensembl.id','ncbi.id','description'))
+#OGs to genes correspondence (read in R, too slow)
+#genes <- fread(paste0(oDB,'_genes.tab.gz'), header=F, tmpdir='.', sep = '\t',
+#             col.names=c('OrthoDB.gene.id','organism.id','protein.id','synonyms','uniprot.id','Ensembl.id','ncbi.id','description'))
 #genes.xref <- fread(paste0(oDB,'_gene_xrefs.tab.gz'), header=F, tmpdir='.', sep = '\t',
 #               col.names=c('OrthoDB.gene.id','external.gene.identifier','external.DB.name')
 
+# use terminal instead:
+#$grep '^9606_0|^10090_0|^10116_0' odb11v0_gene_xrefs.tab >tmp.out
+#$grep '^9606_0|^10090_0|^10116_0' odb11v0_genes.tab >tmp2.out
