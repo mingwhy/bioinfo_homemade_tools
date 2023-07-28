@@ -1,4 +1,7 @@
+
+#https://www.cs.hhu.de/en/research-groups/computational-cell-biology/software-contributions/sybil
 #https://github.com/csbl/iSIM
+
 ######## Read and save the iSIM model from TSV files ########
 if(F){
 # This section only needs to be run once  
@@ -13,7 +16,7 @@ biocLite("dplyr")
 # reshape2: useful for reshaping data frames and matrices
 biocLite("reshape2")
 }
-
+# use github to install as `sybil`
 #devtools::install_github("SysBioChalmers/sybil")
 
 ######## Load packages ########
