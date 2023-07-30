@@ -107,3 +107,46 @@ mart <- useDataset("hsapiens_gene_ensembl", useMart("ensembl"))
 attributes <- listAttributes(mart)
 genes <- getBM(attributes = c("hgnc_symbol", "entrezgene_id"),
                mart = mart)
+
+##################################################################
+## extract compounds of kegg pathway
+pathways=c("dme00190","dme03010","dme01100")
+library(KEGGREST) #http://www.bioconductor.org/packages/release/bioc/vignettes/KEGGREST/inst/doc/KEGGREST-vignette.html
+library(KEGGgraph)#https://bioconductor.org/packages/release/bioc/vignettes/KEGGgraph/inst/doc/KEGGgraph.pdf
+#https://github.com/Accio/KEGGgraph/blob/master/vignettes/KEGGgraph.Rnw
+i=1;
+query <- keggGet(pathways[[i]])
+length(query)
+names(query[[1]])
+query[[1]]$GENE
+query[[1]]$CLASS
+length(query[[1]]$GENE)/2
+query[[1]]$COMPOUND # C____
+query[[1]]$KO_PATHWAY
+
+dir.create('retrieve_KGML')
+(mapkKGML=paste0('./retrieve_KGML/',pathways[[i]],'.xml'))
+if(!file.exists(mapkKGML)){
+  #tmp <- tempfile()
+  #tmp='./retrieve_KGML/dme00190.xml'
+  #retrieveKGML("00190", organism="dme", destfile=tmp, method="auto", quiet=TRUE)
+  retrieveKGML(gsub('dme','',pathways[[i]]), organism="dme", destfile=mapkKGML, method="auto", quiet=TRUE)
+}
+mapkG <- parseKGML2Graph(mapkKGML,expandGenes=TRUE)
+mapkG #146 genes
+mapkG <- parseKGML2Graph(mapkKGML,genesOnly=FALSE)
+mapkG
+mapkpathway <- parseKGML(mapkKGML)
+mapkpathway
+mapkGedgedata <- getKEGGedgeData(mapkG)
+mapkGedgedata[1]
+nodes(mapkG) #genes, compounds, enzymes
+edges(mapkG)
+
+plotKEGGgraph(mapkG)
+#http://www.bioconductor.org/packages/release/bioc/html/pathview.html
+#https://www.bioconductor.org/packages/release/bioc/vignettes/pathview/inst/doc/pathview.pdf
+
+
+
+
