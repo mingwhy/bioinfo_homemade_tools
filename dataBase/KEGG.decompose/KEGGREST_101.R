@@ -149,6 +149,9 @@ plotKEGGgraph(mapkG)
 
 
 
+
+################################################################
+################################################################
 #pathway, module, compounds, genes
 ################################################################
 #https://stackoverflow.com/questions/28724674/does-anyone-know-how-to-retrieve-list-of-cell-cycle-genes-from-kegg-in-r
@@ -222,12 +225,21 @@ df <- x %>% tibble(module =., compound = gsub("cpd:", "", names(.)))
 df$module=gsub('md:','',df$module)
 head(df)
 dim(df) #2927
-pathways_compounds<-df
-tmp=pathways_compounds %>% group_by(module) %>% summarise(ngene=n())
+modules_compounds<-df
+tmp=modules_compounds %>% group_by(module) %>% summarise(ncompound=n())
 
 saveRDS(file='kegg_fly.rds',
   object=list(pathways_modules=pathways_modules, modules_genes=modules_genes, 
               modules_compounds=modules_compounds))
+
+#####
+kegg_fly=readRDS('kegg_fly.rds')
+names(kegg_fly)
+x1=kegg_fly$modules_genes %>% group_by(module) %>% summarise(ngene=n())
+x2=kegg_fly$modules_compounds %>% group_by(module) %>% summarise(ncompound=n())
+x=merge(x1,x2)
+
+
 
 
 
