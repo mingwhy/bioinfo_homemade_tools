@@ -149,4 +149,85 @@ plotKEGGgraph(mapkG)
 
 
 
+#pathway, module, compounds, genes
+################################################################
+#https://stackoverflow.com/questions/28724674/does-anyone-know-how-to-retrieve-list-of-cell-cycle-genes-from-kegg-in-r
+## pathway ~ gene
+library(KEGGREST)
+library(org.Dm.eg.db)
+library(tidyverse)
+
+# get pathways and their entrez gene ids
+pathway_dme<-keggLink("pathway", "dme") 
+dme_path_entrez  <- pathway_dme %>% tibble(pathway = ., FLYBASECG = sub("dme:Dmel_", "", names(.)))
+head(dme_path_entrez)
+dim(dme_path_entrez) #7321
+
+# get gene symbols and ensembl ids using entrez gene ids
+dme_kegg_anno <- dme_path_entrez %>%
+  mutate(
+    symbol = mapIds(org.Dm.eg.db, FLYBASECG, "SYMBOL", "FLYBASECG"),
+    ensembl = mapIds(org.Dm.eg.db, FLYBASECG, "ENSEMBL", "FLYBASECG")
+  )
+dim(dme_kegg_anno)#7321    4
+
+# Pathway names
+dme_pathways <-keggList("pathway", "dme") %>% tibble(pathway = names(.), description = .)
+head(dme_kegg_anno)
+head(dme_pathways)
+dme_kegg_anno$pathway=gsub('path:','',dme_kegg_anno$pathway)
+
+pathways_genes <- left_join(dme_kegg_anno, dme_pathways)
+pathways_genes[is.na(pathways_genes$symbol),] # zero
+pathways_genes[is.na(pathways_genes$ensembl),] # some
+#pathways_genes=pathways_genes[!is.na(pathways_genes$ensembl),]
+
+tmp=pathways_genes %>% group_by(pathway,description) %>% summarise(ngene=n())
+pathways_genes$map=paste0('map',gsub('dme','',pathways_genes$pathway))
+head(pathways_genes)
+
+################################################################
+## pathway ~ module
+x<-keggLink("pathway", "module") 
+df <- x %>% tibble(map =., module = gsub("md:", "", names(.)))
+df$map=gsub('path:','',df$map)
+head(df)
+dim(df) #1343
+pathways_modules<-df
+
+# annotate pathways
+dme_pathways <-keggList("pathway", "dme") %>% tibble(pathway = names(.), pathway.description = .)
+dme_pathways$map=paste0('map',gsub('dme','',dme_pathways$pathway))
+df.anno=merge(dme_pathways,pathways_modules)
+dim(df.anno) #890
+
+# annotate modules
+dme_modules <-keggList("module") %>% tibble(module = names(.), module.description = .)
+pathways_modules=merge(df.anno,dme_modules)
+dim(pathways_modules) #890
+
+# module ~ gene
+x<-keggLink("module", "dme") 
+df <- x %>% tibble(module =., FLYBASECG = sub("dme:Dmel_", "", names(.)))
+df$module=gsub('md:dme_','',df$module)
+head(df)
+dim(df) #1140
+modules_genes<-df
+tmp=modules_genes %>% group_by(module) %>% summarise(ngene=n())
+dim(tmp) #176 modules, https://www.genome.jp/dbget-bin/get_linkdb?-t+2+gn:T00030
+
+# module ~ compound
+x<-keggLink("module", "compound") 
+df <- x %>% tibble(module =., compound = gsub("cpd:", "", names(.)))
+df$module=gsub('md:','',df$module)
+head(df)
+dim(df) #2927
+pathways_compounds<-df
+tmp=pathways_compounds %>% group_by(module) %>% summarise(ngene=n())
+
+saveRDS(file='kegg_fly.rds',
+  object=list(pathways_modules=pathways_modules, modules_genes=modules_genes, 
+              modules_compounds=modules_compounds))
+
+
 
