@@ -1,7 +1,7 @@
 # GEM intro: https://www.gu.se/sites/default/files/2021-09/WangH_GOTBIN_seminar_20210928.pdf
 # download Fruitfly-GEM from https://github.com/SysBioChalmers/Fruitfly-GEM
 library(R.matlab) #in matlab `load(Fruitfly-GEM.mat)`
-x=readMat('~/Documents/aging_GEM_metabolic.models/Fruitfly-GEM-main/model/Fruitfly-GEM.mat')
+x=readMat('~/Documents/aging_metabolic.models/Fruitfly-GEM-main/model/Fruitfly-GEM.mat')
 x
 ifly=x[[1]][,,1]
 ifly$S[1:3,1:3] #sparse matrix
@@ -49,3 +49,34 @@ length(x) #137 pathways (by Jul 7, 2021) https://github.com/mingwhy/bioinfo_home
 kegg.genes=unique(unlist(lapply(x,'[[',2)))
 length(kegg.genes) #3263 fly genes
 
+#########################################################
+# extract genes based on mz-rxn-gene associations
+library(R.matlab) #in matlab `load(Fruitfly-GEM.mat)`
+x=readMat('~/Documents/aging_metabolic.models/Fruitfly-GEM-main/model/Fruitfly-GEM.mat')
+x
+ifly=x[[1]][,,1]
+names(ifly)
+ifly$S[1:3,1:3] #sparse matrix
+ifly$rxnGeneMat[1:3,1:3] #sparse matrix
+dim(ifly$S) #8135 mets X 11898 rxn
+dim(ifly$rxnGeneMat) ## 11898 rxn X 1753 genes
+genes=unlist(ifly$genes)
+length(genes) #1753 genes
+
+mz='KYNURENINE';
+mz.index=grep(mz,unlist(ifly$metNames),ignore.case = T)
+mz.index
+#ifly$S[mz.index,]
+#colSums(ifly$S[mz.index,])
+#which(colSums(ifly$S[mz.index,])!=0)
+rxn.index=which(colSums(ifly$S[mz.index,])!=0)
+rxn.index
+gene.index=which(colSums(ifly$rxnGeneMat[rxn.index,])!=0)
+gene.index
+unlist(ifly$genes)[gene.index]
+
+load('age-associated.metabolites.for.Ming')
+ls()
+for.Ming$mz
+metabolome=for.Ming %>% arrange(desc(beta),FDR) 
+head(metabolome)
