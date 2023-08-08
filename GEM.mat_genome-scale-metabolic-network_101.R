@@ -11,6 +11,9 @@ dim(ifly$rxnGeneMat) #11898 rxn X 1753 genes
 names(ifly)
 genes=unlist(ifly$genes)
 length(genes) #1753 genes
+length(ifly$subSystems)#11898
+length(ifly$grRules) #11898
+length(ifly$rxnNames) #11898
 subSystems=unlist(ifly$subSystems)
 table(unlist(lapply(ifly$subSystems,length)))
 length(subSystems) #11899, each reaction belong to one subSystem or pathway
@@ -63,9 +66,10 @@ dim(ifly$rxnGeneMat) ## 11898 rxn X 1753 genes
 genes=unlist(ifly$genes)
 length(genes) #1753 genes
 
-mz='KYNURENINE';
+mz='HISTAMINE';
 mz.index=grep(mz,unlist(ifly$metNames),ignore.case = T)
-mz.index
+mz.index=mz.index[c(1,2)]
+unlist(ifly$metNames[mz.index])
 #ifly$S[mz.index,]
 #colSums(ifly$S[mz.index,])
 #which(colSums(ifly$S[mz.index,])!=0)
@@ -74,6 +78,16 @@ rxn.index
 gene.index=which(colSums(ifly$rxnGeneMat[rxn.index,])!=0)
 gene.index
 unlist(ifly$genes)[gene.index]
+
+subSystems=unlist(ifly$subSystems)
+length(subSystems)
+subSystems[rxn.index]
+
+rxn.index=which(subSystems=='Histidine metabolism')
+gene.index=which(colSums(ifly$rxnGeneMat[rxn.index,])!=0)
+gene.index
+unlist(ifly$genes)[gene.index]
+ifly$rxnNames[rxn.index]
 
 load('age-associated.metabolites.for.Ming')
 ls()
